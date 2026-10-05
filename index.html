@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' file:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="light dark">
+<title>Medi-NW-Check</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 16c4-7 9-10 14-10s10 3 14 10c-4 7-9 10-14 10S6 23 2 16z' fill='%230b6e99'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23fff'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%230b6e99'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f5f6f8; --flaeche: #ffffff; --flaeche-2: #f0f2f5; --text: #1b2230; --text-2: #4a5466; --text-3: #6b7484;
+  --linie: #dde2ea; --akzent: #0b6e99; --akzent-text: #ffffff; --akzent-weich: #e2f1f7;
+  --warn: #8a4b00; --warn-bg: #fff3dd; --ok: #17663f; --ok-bg: #e4f3ea; --fehler: #b42318; --fehler-bg: #fdecea;
+  --qa-A: #17663f; --qa-B: #1f5aa8; --qa-C: #6f3aa8; --qa-D: #8a5300; --qa-E: #586174;
+  --ww: #9a4a00; --fokus: #0b6e99; --schatten: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f131a; --flaeche: #171d26; --flaeche-2: #1d2430; --text: #e6eaf0; --text-2: #b0b9c6; --text-3: #8d97a6;
+    --linie: #2a3340; --akzent: #5db7df; --akzent-text: #0b1a22; --akzent-weich: #14303c;
+    --warn: #f2b35b; --warn-bg: #33250d; --ok: #6cc795; --ok-bg: #11301f; --fehler: #ff8a80; --fehler-bg: #3a1716;
+    --qa-A: #6cc795; --qa-B: #7fb0f5; --qa-C: #c29df2; --qa-D: #f0b45a; --qa-E: #a7b0bf;
+    --ww: #f2a65a; --fokus: #5db7df; --schatten: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f131a; --flaeche: #171d26; --flaeche-2: #1d2430; --text: #e6eaf0; --text-2: #b0b9c6; --text-3: #8d97a6;
+  --linie: #2a3340; --akzent: #5db7df; --akzent-text: #0b1a22; --akzent-weich: #14303c;
+  --warn: #f2b35b; --warn-bg: #33250d; --ok: #6cc795; --ok-bg: #11301f; --fehler: #ff8a80; --fehler-bg: #3a1716;
+  --qa-A: #6cc795; --qa-B: #7fb0f5; --qa-C: #c29df2; --qa-D: #f0b45a; --qa-E: #a7b0bf;
+  --ww: #f2a65a; --fokus: #5db7df; --schatten: none;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--akzent); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, textarea:focus-visible { outline: 3px solid var(--fokus); outline-offset: 2px; border-radius: 6px; }
+.huelle { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Kopf */
+header.kopf { background: var(--flaeche); border-bottom: 1px solid var(--linie); position: sticky; top: 0; z-index: 20; }
+.kopf .huelle { display: flex; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
+.marke { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1.1rem; margin-right: auto; }
+.marke svg { width: 26px; height: 26px; flex: none; }
+.stand { font-size: .82rem; color: var(--text-2); width: 100%; order: 3; }
+.knopfreihe { display: flex; gap: 8px; }
+button { font: inherit; }
+.knopf { border: 1px solid var(--linie); background: var(--flaeche); color: var(--text); border-radius: 10px; padding: 8px 12px; min-height: 40px; cursor: pointer; }
+.knopf:hover { background: var(--flaeche-2); }
+.knopf.primaer { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.knopf.klein { padding: 4px 10px; min-height: 32px; font-size: .9rem; }
+.hinweisband { background: var(--warn-bg); color: var(--warn); border-bottom: 1px solid var(--linie); font-size: .9rem; }
+.hinweisband .huelle { padding-top: 8px; padding-bottom: 8px; }
+
+/* Eingabe */
+main { padding: 16px 0 40px; }
+.eingabe { background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--radius); padding: 14px; box-shadow: var(--schatten); }
+.feld { margin-bottom: 14px; position: relative; }
+.feld > label, .feldtitel { display: block; font-weight: 650; margin-bottom: 6px; }
+.feldhilfe { font-size: .82rem; color: var(--text-3); margin-top: 4px; }
+.eingabebox { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; border: 1px solid var(--linie); border-radius: 10px; padding: 6px; background: var(--flaeche); min-height: 46px; }
+.eingabebox:focus-within { border-color: var(--akzent); box-shadow: 0 0 0 3px var(--akzent-weich); }
+.eingabebox input { flex: 1 1 160px; min-width: 120px; border: 0; outline: 0; background: transparent; color: var(--text); font: inherit; padding: 6px 4px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 4px 6px 4px 10px; font-size: .9rem; border: 1px solid var(--linie); background: var(--flaeche-2); max-width: 100%; }
+.chip .chip-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.combo { position: relative; }
+.vorschlag-leer { padding: 9px 10px; color: var(--text-3); font-size: .9rem; }
+.chip button { border: 0; background: transparent; color: inherit; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; font-size: 1rem; line-height: 1; }
+.chip button:hover { background: rgba(127,127,127,.18); }
+.chip.wirkstoff { border-color: var(--ok); background: var(--ok-bg); }
+.chip.gruppe { border-color: var(--warn); background: var(--warn-bg); }
+.chip.frei { border-style: dashed; }
+.chip.befund, .chip.region { border-color: var(--akzent); background: var(--akzent-weich); }
+.vorschlaege { position: absolute; left: 0; right: 0; top: 100%; z-index: 15; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.18); margin-top: 4px; max-height: 320px; overflow: auto; padding: 4px; }
+.vorschlaege[hidden] { display: none; }
+.vorschlag { display: flex; justify-content: space-between; gap: 10px; width: 100%; text-align: left; padding: 9px 10px; border: 0; background: transparent; color: var(--text); border-radius: 8px; cursor: pointer; }
+.vorschlag[aria-selected="true"], .vorschlag:hover { background: var(--akzent-weich); }
+.vorschlag .typ { color: var(--text-3); font-size: .8rem; white-space: nowrap; }
+.meintest { margin-top: 6px; font-size: .92rem; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.meintest[hidden] { display: none; }
+.zeile { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filter { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: .92rem; }
+.filter label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.filter input { width: 18px; height: 18px; accent-color: var(--akzent); }
+
+/* Regionen-Auswahl */
+.regionen { margin-top: 8px; border: 1px solid var(--linie); border-radius: 10px; padding: 8px; background: var(--flaeche-2); }
+.regionen[hidden] { display: none; }
+.regionen-liste { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 6px; }
+.regionen-liste button, .befundliste .knopf { text-align: left; }
+.befundliste { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.knopf .anz { color: var(--text-3); font-size: .8rem; margin-left: 6px; }
+.knopf.gewaehlt { border-color: var(--akzent); background: var(--akzent-weich); }
+
+/* Ergebnisse */
+.ergebnis { margin-top: 18px; }
+.ergebnis h2 { font-size: 1.15rem; margin: 22px 0 10px; }
+.ergebnis h2:first-child { margin-top: 0; }
+.leer { color: var(--text-2); background: var(--flaeche); border: 1px dashed var(--linie); border-radius: var(--radius); padding: 18px; }
+.leer .zweck { margin-top: 0; padding-bottom: 10px; border-bottom: 1px solid var(--linie); font-size: .92rem; }
+.aussage { border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; border: 1px solid var(--linie); background: var(--flaeche); }
+.aussage.ja { border-color: var(--ok); background: var(--ok-bg); }
+.aussage.nein { border-color: var(--warn); background: var(--warn-bg); }
+.aussage.info { background: var(--akzent-weich); border-color: var(--akzent); }
+.aussage p { margin: 4px 0; }
+.karte { background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--radius); margin: 12px 0; box-shadow: var(--schatten); overflow: hidden; }
+.karte > .karte-kopf { padding: 12px 14px; border-bottom: 1px solid var(--linie); }
+.karte h3 { margin: 0; font-size: 1.08rem; }
+.karte h3 .en { font-weight: 400; color: var(--text-3); font-size: .9rem; margin-left: 6px; }
+.meta { font-size: .86rem; color: var(--text-2); margin-top: 3px; }
+.handelsnamen { font-size: .86rem; margin-top: 4px; }
+.unsicher { display: inline-block; font-size: .78rem; font-weight: 650; color: var(--warn); background: var(--warn-bg); border: 1px solid var(--warn); border-radius: 6px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
+.karte-inhalt { padding: 6px 14px 12px; }
+.region-titel { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--text-3); margin: 12px 0 4px; font-weight: 650; }
+details.eintrag { border: 1px solid var(--linie); border-radius: 10px; margin: 6px 0; background: var(--flaeche); }
+details.eintrag[open] { background: var(--flaeche); }
+details.eintrag > summary { list-style: none; cursor: pointer; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+details.eintrag > summary::-webkit-details-marker { display: none; }
+.pfeil::before { content: "▸"; display: inline-block; width: 14px; color: var(--text-3); transition: transform .15s; }
+details.eintrag[open] > summary .pfeil::before { transform: rotate(90deg); }
+.befundname { font-weight: 650; }
+.befundname .en { font-weight: 400; color: var(--text-3); font-size: .88rem; }
+.treffer { box-shadow: inset 4px 0 0 var(--ok); }
+.badge { display: inline-flex; align-items: center; gap: 4px; font-size: .74rem; font-weight: 650; border-radius: 6px; padding: 1px 6px; border: 1px solid currentColor; white-space: nowrap; }
+.qa-A { color: var(--qa-A); } .qa-B { color: var(--qa-B); } .qa-C { color: var(--qa-C); } .qa-D { color: var(--qa-D); } .qa-E { color: var(--qa-E); }
+.badge.ww { color: var(--ww); } .badge.einord { color: var(--text-3); font-weight: 500; } .badge.rel { color: var(--text-2); } .badge.rel.passend { color: var(--ok); }
+.redaktionell { font-size: .78rem; color: var(--text-3); }
+.kurzliste { margin: 6px 0 10px; padding-left: 20px; }
+.kurzliste li { margin: 3px 0; }
+.tabelle-huelle { overflow-x: auto; }
+.kurz { font-size: .84rem; color: var(--text-2); }
+.eintrag-inhalt { padding: 0 12px 12px; border-top: 1px solid var(--linie); }
+.felder { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .9rem; }
+.felder th { text-align: left; vertical-align: top; width: 34%; color: var(--text-2); font-weight: 600; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--linie); }
+.felder td { padding: 6px 0; border-bottom: 1px solid var(--linie); }
+.felder td .wert { display: block; margin-bottom: 4px; }
+.felder td .na { color: var(--text-3); font-style: italic; }
+.quellmarke { font-size: .74rem; color: var(--text-3); margin-left: 4px; white-space: nowrap; }
+.abschnitt { margin-top: 12px; }
+.abschnitt h4 { margin: 0 0 6px; font-size: .92rem; }
+.abschnitt ul { font-size: .9rem; padding-left: 18px; margin: 4px 0; }
+.abschnitt li { margin: 3px 0; }
+.beleg { border-left: 3px solid var(--linie); padding: 6px 0 6px 10px; margin: 8px 0; font-size: .9rem; }
+.beleg.art-A { border-left-color: var(--qa-A); } .beleg.art-B { border-left-color: var(--qa-B); } .beleg.art-C { border-left-color: var(--qa-C); } .beleg.art-D { border-left-color: var(--qa-D); } .beleg.art-E { border-left-color: var(--qa-E); }
+.beleg .kopfzeile { font-weight: 600; }
+.beleg .zitat { font-style: italic; color: var(--text-2); margin: 3px 0; }
+.beleg .herkunft { font-size: .8rem; color: var(--text-3); }
+.leerhinweis { color: var(--text-3); font-style: italic; font-size: .9rem; }
+.karte-fuss { padding: 10px 14px; border-top: 1px solid var(--linie); background: var(--flaeche-2); font-size: .85rem; color: var(--text-2); }
+.karte-fuss p { margin: 4px 0; }
+details.mehr > summary { cursor: pointer; color: var(--akzent); font-size: .9rem; padding: 6px 0; }
+.nachfragen { font-size: .9rem; }
+.pruefstand { font-size: .85rem; }
+.pruefstand ul { margin: 6px 0; padding-left: 18px; }
+
+/* Fuß und Dialoge */
+footer.fuss { border-top: 1px solid var(--linie); background: var(--flaeche); font-size: .88rem; color: var(--text-2); }
+footer.fuss .huelle { padding-top: 14px; padding-bottom: 24px; }
+footer.fuss p { margin: 6px 0; }
+.fusslinks { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+dialog { border: 1px solid var(--linie); border-radius: 14px; padding: 0; width: min(760px, calc(100vw - 24px)); max-height: calc(100vh - 32px); background: var(--flaeche); color: var(--text); }
+dialog::backdrop { background: rgba(10, 14, 20, .55); }
+.dialog-kopf { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--linie); position: sticky; top: 0; background: var(--flaeche); }
+.dialog-kopf h2 { margin: 0; font-size: 1.1rem; }
+.dialog-inhalt { padding: 12px 16px 18px; overflow: auto; font-size: .93rem; }
+.dialog-inhalt h3 { font-size: 1rem; margin: 16px 0 6px; }
+.dialog-inhalt ul { padding-left: 18px; }
+.dialog-inhalt li { margin: 4px 0; }
+textarea.prompt { width: 100%; min-height: 300px; font: .85rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--text); background: var(--flaeche-2); border: 1px solid var(--linie); border-radius: 10px; padding: 10px; }
+.tabelle { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.tabelle th, .tabelle td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--linie); vertical-align: top; }
+@media (max-width: 719px) { header.kopf { position: static; } }
+#btn-theme svg { width: 18px; height: 18px; vertical-align: -3px; }
+@media (min-width: 720px) {
+  .stand { width: auto; order: 0; margin-left: 4px; }
+  .eingabe .zwei { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+}
+@media print { header.kopf { position: static; } .eingabe, footer.fuss, .knopfreihe { display: none; } }
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="huelle">
+    <div class="marke">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16c4-7 9-10 14-10s10 3 14 10c-4 7-9 10-14 10S6 23 2 16z" fill="var(--akzent)"/><circle cx="16" cy="16" r="5.5" fill="var(--flaeche)"/><circle cx="16" cy="16" r="2.6" fill="var(--akzent)"/></svg>
+      <span>Medi-NW-Check</span>
+    </div>
+    <div class="knopfreihe">
+      <button class="knopf klein" id="btn-update" type="button">Update-Prompt</button>
+      <button class="knopf klein" id="btn-info" type="button" aria-label="Info und Hinweise">Info</button>
+      <button class="knopf klein" id="btn-theme" type="button" aria-label="Hell/Dunkel umschalten" title="Hell/Dunkel umschalten"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
+    </div>
+    <div class="stand" id="stand" aria-live="polite"></div>
+  </div>
+  <div class="hinweisband" id="hinweisband" hidden><div class="huelle" id="hinweisband-text"></div></div>
+</header>
+
+<main>
+  <div class="huelle">
+    <section class="eingabe" aria-label="Eingabe">
+      <div class="zwei">
+        <div class="feld">
+          <label for="med-input">Medikamente</label>
+          <div class="combo">
+            <div class="eingabebox" id="med-box">
+              <span id="med-chips" class="zeile"></span>
+              <input id="med-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="med-vorschlaege" placeholder="Wirkstoff, Handelsname, Gruppe, Anwendungsgebiet …">
+            </div>
+            <div class="vorschlaege" id="med-vorschlaege" role="listbox" aria-label="Vorschläge Medikamente" hidden></div>
+          </div>
+          <div class="meintest" id="med-meintest" hidden></div>
+          <div class="feldhilfe">Mehrere möglich – auch als Liste einfügen (Komma oder Zeilenumbruch).</div>
+        </div>
+        <div class="feld">
+          <label for="bef-input">Befund</label>
+          <div class="combo">
+            <div class="eingabebox" id="bef-box">
+              <span id="bef-chips" class="zeile"></span>
+              <input id="bef-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="bef-vorschlaege" placeholder="z. B. Makulaödem, Doppelbilder, optic neuropathy …">
+            </div>
+            <div class="vorschlaege" id="bef-vorschlaege" role="listbox" aria-label="Vorschläge Befunde" hidden></div>
+          </div>
+          <div class="meintest" id="bef-meintest" hidden></div>
+          <div class="zeile" style="margin-top:6px">
+            <button class="knopf klein" id="btn-regionen" type="button" aria-expanded="false" aria-controls="regionen">Nach Region wählen ▾</button>
+          </div>
+          <div class="regionen" id="regionen" hidden></div>
+        </div>
+      </div>
+      <div class="zeile" style="justify-content:space-between">
+        <div class="filter" role="group" aria-label="Kategorie">
+          <span class="feldtitel" style="margin:0">Anzeigen:</span>
+          <label><input type="checkbox" id="f-sys" checked> systemisch</label>
+          <label><input type="checkbox" id="f-lok" checked> lokal am Auge</label>
+        </div>
+        <button class="knopf klein" id="btn-reset" type="button">Alles zurücksetzen</button>
+      </div>
+    </section>
+
+    <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+    <section class="ergebnis" id="ergebnis" aria-label="Ergebnis"></section>
+  </div>
+</main>
+
+<footer class="fuss">
+  <div class="huelle">
+    <p><strong>Verdachtsfall melden:</strong></p>
+    <div class="fusslinks">
+      <a class="knopf klein" href="https://www.akdae.de/arzneimittelsicherheit/uaw-meldung/online" target="_blank" rel="noopener noreferrer">AkdÄ – UAW-Online-Meldung</a>
+      <a class="knopf klein" href="https://nebenwirkungen.bund.de/" target="_blank" rel="noopener noreferrer">BfArM/PEI – nebenwirkungen.bund.de</a>
+    </div>
+    <div class="fusslinks">
+      <button class="knopf klein" id="btn-quellen" type="button">Quellenverzeichnis</button>
+      <button class="knopf klein" id="btn-protokoll" type="button">Änderungsprotokoll</button>
+    </div>
+    <p><strong>Zweckbestimmung:</strong> Lern- und Nachschlagehilfe für ärztliches Fachpersonal. Zeigt, was Fachinformationen, Behörden und Literatur zu okulären Nebenwirkungen beschreiben. Keine Diagnose- oder Therapieempfehlung, nicht für Patientendaten bestimmt; ersetzt weder die aktuelle Fachinformation noch die ärztliche Beurteilung. Nicht in der Datenbank heißt: nicht ausgeschlossen.</p>
+    <p>Datenschutz: Diese Seite speichert keine Eingaben, setzt keine Cookies und lädt keine externen Inhalte.</p>
+  </div>
+</footer>
+
+<dialog id="dlg-info" aria-labelledby="dlg-info-titel"><div class="dialog-kopf"><h2 id="dlg-info-titel">Info und Hinweise</h2><button class="knopf klein" data-schliessen type="button">Schließen</button></div><div class="dialog-inhalt" id="dlg-info-inhalt"></div></dialog>
+<dialog id="dlg-quellen" aria-labelledby="dlg-quellen-titel"><div class="dialog-kopf"><h2 id="dlg-quellen-titel">Quellenverzeichnis</h2><button class="knopf klein" data-schliessen type="button">Schließen</button></div><div class="dialog-inhalt" id="dlg-quellen-inhalt"></div></dialog>
+<dialog id="dlg-protokoll" aria-labelledby="dlg-protokoll-titel"><div class="dialog-kopf"><h2 id="dlg-protokoll-titel">Änderungsprotokoll</h2><button class="knopf klein" data-schliessen type="button">Schließen</button></div><div class="dialog-inhalt" id="dlg-protokoll-inhalt"></div></dialog>
+<dialog id="dlg-update" aria-labelledby="dlg-update-titel"><div class="dialog-kopf"><h2 id="dlg-update-titel">Update-Prompt</h2><button class="knopf klein" data-schliessen type="button">Schließen</button></div>
+  <div class="dialog-inhalt">
+    <p>So geht's: Neuen Chat mit Claude öffnen, die Dateien <strong>daten.js</strong> und <strong>synonyme.js</strong> anhängen und diesen Text einfügen.</p>
+    <textarea class="prompt" id="update-text" readonly aria-label="Update-Prompt"></textarea>
+    <div class="zeile" style="margin-top:8px"><button class="knopf primaer" id="btn-kopieren" type="button">Prompt kopieren</button><span id="kopier-status" class="kurz" aria-live="polite"></span></div>
+  </div>
+</dialog>
+
+<script src="synonyme.js"></script>
+<script src="daten.js"></script>
+<script id="logik">
+/* ===== Medi-NW-Check: Datenlogik und Suche (ohne Oberfläche, testbar) ===== */
+"use strict";
+var MNW = (function () {
+  var S = window.MNW_SYNONYME, D = window.MNW_DATEN;
+  if (!S || !D) return null;
+
+  var BEF = new Map(), REG = new Map(), KLA = new Map(), GEB = new Map(), WIR = new Map(), QUE = D.QUELLEN, KINDER = new Map();
+  S.BEFUNDE.forEach(function (b) { BEF.set(b.id, b); });
+  S.REGIONEN.forEach(function (r) { REG.set(r.id, r); });
+  S.KLASSEN.forEach(function (k) { KLA.set(k.id, k); });
+  S.ANWENDUNGSGEBIETE.forEach(function (a) { GEB.set(a.id, a); });
+  D.WIRKSTOFFE.forEach(function (w) { WIR.set(w.id, w); });
+  S.BEFUNDE.forEach(function (b) { if (b.ober) { if (!KINDER.has(b.ober)) KINDER.set(b.ober, []); KINDER.get(b.ober).push(b.id); } });
+
+  var REGION_REIHENFOLGE = S.REGIONEN.map(function (r) { return r.id; });
+  var ART_REIHENFOLGE = ["A", "B", "C", "D", "E"];
+  var EINORDNUNG = { nebenwirkung: "Nebenwirkung", grunderkrankung: "Grunderkrankung", wechselwirkung: "Wechselwirkung", pv_signal: "PV-Signal", hypothese: "Hypothese" };
+  var ART_NAME = { A: "Fachinformation / Label", B: "Regulatorische Sicherheitsinformation", C: "Pharmakovigilanzdaten", D: "Wissenschaftliche Literatur", E: "Sekundäre Fachquelle" };
+
+  /* ---------- Normalisierung und Tippfehler-Toleranz ---------- */
+  function norm(s) {
+    if (!s) return "";
+    s = String(s).toLowerCase()
+      .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[’'`´]/g, "")
+      .replace(/[^a-z0-9]+/g, " ").trim();
+    s = s.replace(/ae/g, "e").replace(/oe/g, "e").replace(/ue/g, "u")
+      .replace(/ph/g, "f").replace(/th/g, "t").replace(/rh/g, "r")
+      .replace(/c(?=[eiy])/g, "z").replace(/c/g, "k")
+      .replace(/y/g, "i")
+      .replace(/our\b/g, "or")
+      .replace(/([a-z])\1+/g, "$1");
+    return s;
+  }
+  function distanz(a, b, max) {
+    var la = a.length, lb = b.length;
+    if (Math.abs(la - lb) > max) return max + 1;
+    var vor2 = null, vor = new Array(lb + 1), akt = new Array(lb + 1), i, j;
+    for (j = 0; j <= lb; j++) vor[j] = j;
+    for (i = 1; i <= la; i++) {
+      akt[0] = i; var zeilenMin = i;
+      for (j = 1; j <= lb; j++) {
+        var kosten = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+        var v = Math.min(vor[j] + 1, akt[j - 1] + 1, vor[j - 1] + kosten);
+        if (i > 1 && j > 1 && a.charAt(i - 1) === b.charAt(j - 2) && a.charAt(i - 2) === b.charAt(j - 1)) v = Math.min(v, vor2[j - 2] + 1);
+        akt[j] = v; if (v < zeilenMin) zeilenMin = v;
+      }
+      if (zeilenMin > max) return max + 1;
+      vor2 = vor; vor = akt; akt = new Array(lb + 1);
+    }
+    return vor[lb];
+  }
+  function maxFehler(len) { return len <= 3 ? 0 : len <= 5 ? 1 : len <= 9 ? 2 : 3; }
+
+  var STOPP = new Set(["wegen", "der", "die", "das", "den", "dem", "des", "ein", "eine", "einer", "einen", "gegen", "fur", "fuer", "mit", "und", "oder", "von", "vom", "zum", "zur", "bei", "beim", "nimmt", "nehme", "nimmst", "tablette", "tabletten", "medikament", "medikamente", "mittel", "the", "for", "of", "and", "pill", "pills", "drug", "drugs", "seit", "auch", "noch", "patient", "patientin", "wird", "behandelt", "bekommt", "er", "sie"].map(norm));
+  /* ohne Leerzeichen, Doppelbuchstaben danach erneut zusammengezogen („Hornhaut trübung“ = „Hornhauttrübung“) */
+  function kompakt(n) { return n.replace(/ /g, "").replace(/([a-z])\1+/g, "$1"); }
+  function ohneStopp(n) { return n.split(" ").filter(function (t) { return t && !STOPP.has(t); }).join(" "); }
+
+  /* ---------- Suchindex ---------- */
+  function eintragIndex(liste, text, typ, ref, prio) {
+    var n = norm(text); if (!n) return;
+    var varianten = [n];
+    function dazu(v) { if (v && varianten.indexOf(v) < 0) varianten.push(v); }
+    function umlautlos(t) { return String(t).replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/Ä/g, "A").replace(/Ö/g, "O").replace(/Ü/g, "U"); }
+    /* Variante für Eingaben ohne Umlaut-Umschreibung (ö → o statt oe) */
+    dazu(norm(umlautlos(text)));
+    /* Variante ohne Klammerzusatz („Retinopathie (toxisch)“ → „Retinopathie“) */
+    if (String(text).indexOf("(") >= 0) { var ohneKlammer = String(text).replace(/\s*\([^)]*\)/g, " ").trim(); dazu(norm(ohneKlammer)); dazu(norm(umlautlos(ohneKlammer))); }
+    varianten.forEach(function (k) {
+      liste.push({ key: k, keyOhneStopp: ohneStopp(k), kompakt: kompakt(k), tokens: k.split(" "), text: text, typ: typ, ref: ref, prio: prio });
+    });
+  }
+  var INDEX_MED = [], INDEX_BEF = [];
+  D.WIRKSTOFFE.forEach(function (w) {
+    eintragIndex(INDEX_MED, w.inn_de, "wirkstoff", w.id, 1);
+    if (w.inn_en && norm(w.inn_en) !== norm(w.inn_de)) eintragIndex(INDEX_MED, w.inn_en, "wirkstoff", w.id, 1);
+    (w.synonyme || []).forEach(function (s) { eintragIndex(INDEX_MED, s, "wirkstoff", w.id, 1); });
+    (w.handelsnamen_de || []).forEach(function (h) { eintragIndex(INDEX_MED, h, "handelsname", w.id, 2); });
+    (w.handelsnamen_us || []).forEach(function (h) { eintragIndex(INDEX_MED, h, "handelsname_us", w.id, 2); });
+  });
+  S.KLASSEN.forEach(function (k) {
+    eintragIndex(INDEX_MED, k.de, "klasse", k.id, 3); eintragIndex(INDEX_MED, k.en, "klasse", k.id, 3);
+    (k.syn || []).forEach(function (s) { eintragIndex(INDEX_MED, s, "klasse", k.id, 3); });
+  });
+  S.ANWENDUNGSGEBIETE.forEach(function (a) {
+    eintragIndex(INDEX_MED, a.de, "gebiet", a.id, 4); eintragIndex(INDEX_MED, a.en, "gebiet", a.id, 4);
+    (a.alltag || []).forEach(function (s) { eintragIndex(INDEX_MED, s, "gebiet", a.id, 4); });
+  });
+  S.BEFUNDE.forEach(function (b) {
+    [b.de, b.en].concat(b.syn_de || [], b.syn_en || [], b.patient || [], b.abk || []).forEach(function (t) {
+      eintragIndex(INDEX_BEF, t, "befund", b.id, 1);
+      /* zusammengesetzte Bezeichnungen „A / B“: jeden Teil zusätzlich als Suchbegriff */
+      if (String(t).indexOf(" / ") >= 0) String(t).split(" / ").forEach(function (teil) { if (teil.trim().length >= 3) eintragIndex(INDEX_BEF, teil.trim(), "befund", b.id, 1); });
+    });
+  });
+  S.REGIONEN.forEach(function (r) {
+    [r.de, r.en].concat(r.begriffe || []).forEach(function (t) { eintragIndex(INDEX_BEF, t, "region", r.id, 2); });
+  });
+
+  function bewerte(q, qOhne, e) {
+    var k = e.key;
+    if (k === q) return { score: 100, art: "exakt" };
+    if (qOhne && qOhne !== q && e.keyOhneStopp === qOhne) return { score: 98, art: "exakt" };
+    if (q.length >= 4 && kompakt(q) === e.kompakt) return { score: 99, art: "exakt" };
+    if (q.length >= 2 && k.indexOf(q) === 0) return { score: 80 + Math.round(10 * q.length / k.length), art: "anfang" };
+    /* Eingabe beginnt mit einem vollständigen Namen, danach Zusätze (z. B. „Tamoxifen AbZ“, „Makulaödem rechts“) */
+    if (k.length >= 4 && q.indexOf(k + " ") === 0) return { score: 78, art: "name_mit_zusatz" };
+    if (q.length >= 3) { for (var t = 1; t < e.tokens.length; t++) if (e.tokens[t].indexOf(q) === 0) return { score: 72, art: "wortanfang" }; }
+    if (q.length >= 4 && k.indexOf(q) > 0) return { score: 64, art: "enthalten" };
+    var qq = qOhne || q;
+    if (qq.length >= 4) {
+      var m = maxFehler(qq.length), d = distanz(qq, k, m);
+      if (d <= m) return { score: 55 - d * 8, art: "tippfehler", d: d };
+      if (e.tokens.length > 1) {
+        for (var i = 0; i < e.tokens.length; i++) {
+          var tok = e.tokens[i]; if (tok.length < 4) continue;
+          var m2 = maxFehler(tok.length), d2 = distanz(qq, tok, m2);
+          if (d2 <= m2) return { score: 48 - d2 * 8, art: "tippfehler", d: d2 };
+        }
+      }
+      var qt = qq.split(" ");
+      if (qt.length > 1) {
+        var alle = qt.every(function (w) { return e.tokens.some(function (tok) { return tok.indexOf(w) === 0 || (w.length >= 5 && distanz(w, tok, maxFehler(w.length)) <= maxFehler(w.length)); }); });
+        if (alle) return { score: 66, art: "woerter" };
+      }
+      if (qt.length > 1 && k.length >= 5 && qq.indexOf(k) >= 0) return { score: 40, art: "teil" };
+    }
+    return null;
+  }
+  function suche(text, feld, max) {
+    var q = norm(text); if (!q) return [];
+    var qOhne = ohneStopp(q);
+    var index = feld === "befund" ? INDEX_BEF : INDEX_MED;
+    var beste = new Map();
+    index.forEach(function (e) {
+      var r = bewerte(q, qOhne, e); if (!r) return;
+      var schl = gruppenSchluessel(e);
+      var bisher = beste.get(schl);
+      if (!bisher || r.score > bisher.score || (r.score === bisher.score && e.prio < bisher.prio)) beste.set(schl, { score: r.score, art: r.art, typ: e.typ, ref: e.ref, text: e.text, prio: e.prio });
+    });
+    var liste = Array.from(beste.values());
+    liste.sort(function (a, b) { return b.score - a.score || a.prio - b.prio || a.text.localeCompare(b.text, "de"); });
+    return liste.slice(0, max || 8);
+  }
+  /* Handelsname und Wirkstoff gelten als derselbe Treffer */
+  function gruppenSchluessel(x) { return (x.typ.indexOf("handelsname") === 0 || x.typ === "wirkstoff" ? "wirkstoff" : x.typ) + ":" + x.ref; }
+  function entscheide(text, feld) {
+    var t = suche(text, feld, 6);
+    if (!t.length) return { status: "unbekannt", kandidaten: [] };
+    var top = t[0];
+    function andere(x) { return gruppenSchluessel(x) !== gruppenSchluessel(top); }
+    if (top.score >= 98) {
+      var gleich98 = t.filter(function (x) { return x.score >= 98 && andere(x); });
+      return gleich98.length ? { status: "mehrdeutig", kandidaten: t.filter(function (x) { return x.score >= 98; }) } : { status: "eindeutig", treffer: top, kandidaten: t };
+    }
+    if (top.score >= 72) {
+      /* Konkurrenz: andere Begriffe mit gutem Treffer; Ober-/Unterbegriffe desselben Befunds zählen nicht als Konkurrenz */
+      var konkurrenz = t.filter(function (x) {
+        if (!andere(x) || x.score < 60) return false;
+        if (x.typ === "befund" && top.typ === "befund") { var r = relation(x.ref, top.ref); if (r === "spezifischer" || r === "allgemeiner") return false; }
+        return true;
+      });
+      if (!konkurrenz.length) return { status: "eindeutig", treffer: top, kandidaten: t };
+      return { status: "mehrdeutig", kandidaten: [top].concat(konkurrenz) };
+    }
+    return { status: "meintest", kandidaten: t.filter(function (x) { return x.score >= 30; }).slice(0, 3) };
+  }
+
+  /* ---------- Liste von Wirkstoffen einfügen ---------- */
+  function zerlegeListe(text) {
+    return String(text).split(/[\n\r;,]+|\s\+\s/).map(function (teil) {
+      return teil
+        .replace(/\(.*?\)/g, " ")
+        .replace(/\b\d+([.,]\d+)?\s*(mg|µg|ug|mcg|g|ml|ie|i\.e\.|%|mmol|mikrogramm|milligramm)\b/gi, " ")
+        .replace(/\b\d+(\s*[-–\/]\s*\d+){1,3}\b/g, " ")
+        .replace(/\b(filmtabletten|tabletten|tablette|tbl|tabl|hartkapseln|weichkapseln|kapseln|kps|retardtabletten|retard|tropfen|lösung|loesung|pulver|granulat|injektionslösung|fertigspritze|pen|zum einnehmen|zur injektion)\b/gi, " ")
+        .replace(/\b\d+\b/g, " ")
+        .replace(/\s+/g, " ").trim();
+    }).filter(function (t) { return t.length >= 2; });
+  }
+
+  /* ---------- Hierarchie der Befunde ---------- */
+  function nachfahren(id) {
+    var erg = new Set(), stapel = [id];
+    while (stapel.length) { var x = stapel.pop(); (KINDER.get(x) || []).forEach(function (k) { if (!erg.has(k)) { erg.add(k); stapel.push(k); } }); }
+    return erg;
+  }
+  function vorfahren(id) { var erg = [], b = BEF.get(id), n = 0; while (b && b.ober && n < 20) { erg.push(b.ober); b = BEF.get(b.ober); n++; } return erg; }
+  function relation(eintragBefund, gesucht) {
+    if (eintragBefund === gesucht) return "exakt";
+    if (nachfahren(gesucht).has(eintragBefund)) return "spezifischer";
+    if (vorfahren(gesucht).indexOf(eintragBefund) >= 0) return "allgemeiner";
+    var sb = BEF.get(gesucht), eb = BEF.get(eintragBefund);
+    if (sb && (sb.siehe || []).indexOf(eintragBefund) >= 0) return "verwandt";
+    if (eb && (eb.siehe || []).indexOf(gesucht) >= 0) return "verwandt";
+    return null;
+  }
+  var RELATION_TEXT = { exakt: "passend", spezifischer: "passend (spezifischerer Befund)", allgemeiner: "verwandt (allgemeinerer Befund)", verwandt: "verwandter Befund" };
+  function relationRang(r) { return { exakt: 0, spezifischer: 1, allgemeiner: 2, verwandt: 3 }[r]; }
+
+  /* ---------- Einträge und Belege ---------- */
+  function belegeGeprueft(e) { return e.belege.filter(function (b) { return b.status === "geprueft" && QUE[b.quelle] && QUE[b.quelle].zugang === "frei"; }); }
+  function eintragGeprueft(e) { return belegeGeprueft(e).length > 0; }
+  var EINTRAEGE = D.EINTRAEGE.filter(eintragGeprueft);
+  function besteArt(e) { var arten = belegeGeprueft(e).map(function (b) { return QUE[b.quelle].art; }); return ART_REIHENFOLGE.filter(function (a) { return arten.indexOf(a) >= 0; })[0] || "E"; }
+  function artenVon(e) { var arten = belegeGeprueft(e).map(function (b) { return QUE[b.quelle].art; }); return ART_REIHENFOLGE.filter(function (a) { return arten.indexOf(a) >= 0; }); }
+  function eintraegeFuerWirkstoff(wid) { return EINTRAEGE.filter(function (e) { return e.wirkstoff === wid || (e.ww_partner || []).indexOf(wid) >= 0; }); }
+  function hauptRegion(e) { var b = BEF.get(e.befund); return b ? b.region[0] : null; }
+  function passtZuFilter(e, filter) {
+    var beste = null;
+    (filter.befunde || []).forEach(function (bid) { var r = relation(e.befund, bid); if (r && (beste === null || relationRang(r) < relationRang(beste))) beste = r; });
+    (filter.regionen || []).forEach(function (rid) { var b = BEF.get(e.befund); if (b && b.region.indexOf(rid) >= 0 && (beste === null || relationRang("exakt") < relationRang(beste))) beste = "exakt"; });
+    return beste;
+  }
+  /* Warnhinweis, Gegenanzeige oder Behördeninformation vorhanden (redaktionelle Sortierhilfe innerhalb gleicher Quellenart) */
+  function hatWarnung(e) { return belegeGeprueft(e).some(function (b) { return /warn|boxed|gegenanzeige|contraindication|rote-hand|dhpc|psusa|sicherheitsschreiben/i.test(b.typ || ""); }) ? 1 : 0; }
+  function sortiereEintraege(liste) {
+    return liste.slice().sort(function (a, b) {
+      var ra = REGION_REIHENFOLGE.indexOf(hauptRegion(a)), rb = REGION_REIHENFOLGE.indexOf(hauptRegion(b));
+      return ra - rb || ART_REIHENFOLGE.indexOf(besteArt(a)) - ART_REIHENFOLGE.indexOf(besteArt(b)) || hatWarnung(b) - hatWarnung(a) || BEF.get(a.befund).de.localeCompare(BEF.get(b.befund).de, "de");
+    });
+  }
+  function wirkstoffeInGruppe(typ, id) {
+    return D.WIRKSTOFFE.filter(function (w) { return typ === "klasse" ? (w.klassen || []).indexOf(id) >= 0 : (w.anwendungsgebiete || []).indexOf(id) >= 0; });
+  }
+  function hatRaum(e, raum) {
+    return belegeGeprueft(e).some(function (b) { var q = QUE[b.quelle]; return q.art === "A" && (raum === "USA" ? q.raum === "USA" : (q.raum === "DE" || q.raum === "EU")); });
+  }
+  function pruefstandFuer(w, raum) { return (w.pruefstand || []).filter(function (p) { return raum === "USA" ? p.raum === "USA" : (p.raum === "DE" || p.raum === "EU"); })[0] || null; }
+  function belegTitel(b) {
+    var a = b.abschnitt || "", t = b.typ || "";
+    if (!a) return t;
+    if (!t || a.indexOf(t) === 0) return a;
+    return /^\d/.test(a) ? t + " " + a : t + " (" + a + ")";
+  }
+  function beschreibeA(liste) {
+    return liste.map(function (b) { return belegTitel(b) + (b.haeufigkeit ? " – Häufigkeit: " + b.haeufigkeit : ""); }).join("; ");
+  }
+  function unterschiede(e) {
+    var w = WIR.get(e.wirkstoff), g = belegeGeprueft(e), aus = [];
+    var eu = g.filter(function (b) { var q = QUE[b.quelle]; return q.art === "A" && (q.raum === "DE" || q.raum === "EU"); });
+    var us = g.filter(function (b) { var q = QUE[b.quelle]; return q.art === "A" && q.raum === "USA"; });
+    if (eu.length && us.length) {
+      aus.push("Deutschland/EU: " + beschreibeA(eu) + ".");
+      aus.push("USA: " + beschreibeA(us) + ".");
+    } else if (eu.length || us.length) {
+      var fehltRaum = eu.length ? "USA" : "EU", fehltName = eu.length ? "USA" : "Deutschland/EU";
+      var p = pruefstandFuer(w, fehltRaum);
+      var verwandte = eintraegeFuerWirkstoff(w.id).filter(function (x) { return x.id !== e.id && x.einordnung === e.einordnung && relation(x.befund, e.befund) && hatRaum(x, fehltRaum); });
+      aus.push((eu.length ? "Deutschland/EU: " + beschreibeA(eu) : "USA: " + beschreibeA(us)) + ".");
+      if (!p || !p.quelle) aus.push(fehltName + ": keine frei zugängliche Fachinformation geprüft" + (p && p.ergebnis ? " (" + p.ergebnis + ")" : "") + ".");
+      else if (verwandte.length) aus.push(fehltName + ": kein gleichlautender Eintrag; beschrieben ist ein verwandter Befund: " + verwandte.map(function (x) { return BEF.get(x.befund).de; }).join(", ") + ".");
+      else aus.push(fehltName + ": in der geprüften Fassung nicht gefunden (" + QUE[p.quelle].titel + ", " + QUE[p.quelle].dokumentstand + ").");
+    }
+    if (e.unterschied_notiz) aus.push(e.unterschied_notiz);
+    return aus;
+  }
+
+  /* ---------- Links ---------- */
+  function pubmedLink(drugEn, befundId, freitext) {
+    var teile = [];
+    if (drugEn) teile.push('"' + drugEn + '"[tiab]');
+    if (befundId && BEF.get(befundId)) {
+      var b = BEF.get(befundId);
+      var begriffe = [b.en].concat(b.syn_en || []).filter(Boolean).slice(0, 6).map(function (t) { return '"' + t + '"[tiab]'; });
+      teile.push("(" + begriffe.join(" OR ") + ")");
+      if (!drugEn) teile.push("(drug-induced OR adverse OR toxicity)");
+    } else if (freitext) {
+      teile.push("(" + freitext + ")");
+      if (!drugEn) teile.push("(drug-induced OR adverse OR toxicity)");
+    } else {
+      teile.push("(eye OR ocular OR ophthalmic OR retina OR retinal OR visual OR uveitis OR cornea)");
+    }
+    return "https://pubmed.ncbi.nlm.nih.gov/?term=" + encodeURIComponent(teile.join(" AND "));
+  }
+  function adrreportsLink(w) {
+    if (w.adrreports && w.adrreports.code) return "https://dap.ema.europa.eu/analyticsSOAP/saw.dll?PortalPages&PortalPath=%2Fshared%2FPHV%20DAP%2F_portal%2FDAP&Action=Navigate&P0=1&P1=eq&P2=%22Line%20Listing%20Objects%22.%22Substance%20High%20Level%20Code%22&P3=1+" + encodeURIComponent(w.adrreports.code);
+    var b = (w.adrreports && w.adrreports.buchstabe) || (w.inn_en || "a").charAt(0).toLowerCase();
+    return "https://www.adrreports.eu/tables/substance/" + b + ".html";
+  }
+
+  /* ---------- Stand, Zählung, Update-Prompt ---------- */
+  function zaehlung() {
+    var bg = 0, bo = 0, eg = 0, eo = 0;
+    D.EINTRAEGE.forEach(function (e) { var g = belegeGeprueft(e).length; bg += g; bo += e.belege.length - g; if (g) eg++; else eo++; });
+    return { eintraegeGeprueft: eg, eintraegeOffen: eo, belegeGeprueft: bg, belegeOffen: bo,
+      wirkstoffeGeprueft: D.WIRKSTOFFE.filter(function (w) { return w.status === "geprueft"; }).length,
+      wirkstoffeGeplant: D.WIRKSTOFFE.filter(function (w) { return w.status === "geplant"; }).length,
+      quellen: Object.keys(QUE).length, befunde: S.BEFUNDE.length };
+  }
+  function tageSeit(datum, heute) {
+    var d = new Date(datum + "T00:00:00"), h = heute ? new Date(heute) : new Date();
+    return Math.floor((h - d) / 86400000);
+  }
+  function datumDE(iso) { if (!iso) return ""; var t = iso.split("-"); return t[2] + "." + t[1] + "." + t[0]; }
+  function updatePrompt() {
+    var M = D.META;
+    return [
+      "Du aktualisierst die Datenbank der Web-App „Medi-NW-Check“ (okuläre Nebenwirkungen von Medikamenten). Zweckbestimmung, unverändert beibehalten: Lern- und Nachschlagehilfe für ärztliches Fachpersonal; keine Diagnose- oder Therapieempfehlung, keine Auswertung von Patientendaten. Formuliere neue Einträge als Wiedergabe der Quelle, nicht als Empfehlung für einzelne Patienten.",
+      "Angehängt sind daten.js und synonyme.js. Aktueller Stand: Version " + M.version + ", Recherchestand " + datumDE(M.recherchestand) + ".",
+      "",
+      "GRUNDSATZ: Nachvollziehbarkeit vor Menge. Jede medizinische Aussage muss auf eine tatsächlich aufgerufene, frei zugängliche Quelle zurückführbar sein. Nichts erfinden; fehlende Angaben = „nicht angegeben“ (null). Quellen nur mit Login zählen nicht als geprüft. Medizinische Felder (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) nur aus Quellen, nicht aus Fachwissen. ADRreports nur als Direktlink, keine Meldezahlen, keine Raten. Ein Beleg gilt erst als geprüft, wenn die Aussage in zwei Abfragen übereinstimmend in der Quelle gefunden wurde. Zusammenhänge nur aus der Literatur (auch Einzelfallberichte) werden mit Studientyp aufgenommen. Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) nur, wenn sie in der Fachinformation als Warnhinweis stehen. Quellenart A–E und Einordnung wie in daten.js.",
+      "",
+      "SCHRITT 1 – NUR PRÜFEN, NOCH KEINE DATEIEN ÄNDERN. Prüfe für den Zeitraum seit " + datumDE(M.recherchestand) + ":",
+      "1. EMA: PRAC-Empfehlungen zu Signalen, PSUSA-Ergebnisse, DHPCs und Referrals mit okulärem Bezug – für erfasste und für neue Wirkstoffe.",
+      "2. Geänderte Fachinformationen: neuere Fassungen der in QUELLEN erfassten EMA-Produktinformationen, deutschen Hersteller-Fachinformationen und DailyMed-Labels (Stand/Revision vergleichen); dabei 4.3/4.4/4.5/4.8 bzw. Boxed Warning/Warnings and Precautions/Adverse Reactions mit den Synonymen aus synonyme.js durchsuchen.",
+      "3. Rote-Hand-Briefe (AkdÄ-Liste) und FDA Drug Safety Communications mit okulärem Bezug.",
+      "4. Neue Wirkstoffe (EU-/US-Zulassungen) mit okulären Warnhinweisen oder Nebenwirkungen.",
+      "5. Neue Leitlinien oder Empfehlungen (z. B. AAO, RCOphth) zu erfassten Wirkstoffen.",
+      "6. Alle Belege mit Status „offen“, die „offene_punkte“ in META und die Wirkstoffe mit Status „geplant“.",
+      "Antworte zuerst NUR mit „Stand aktuell“ oder mit einer Liste der Neuerungen (je: Wirkstoff, Befund, Art der Änderung, Quelle mit Link, Datum). Frage mich dann, welche Neuerungen übernommen werden sollen.",
+      "",
+      "SCHRITT 2 – ERST NACH MEINER FREIGABE: Erstelle vollständige neue Dateien daten.js und synonyme.js mit identischem Aufbau. Prüfe jeden neuen oder geänderten Beleg (Quelle aufrufen, Aussage wörtlich finden, Abschnitt, Stand, Link, Prüfdatum). Erhöhe die Version in beiden Dateien auf dieselbe neue Nummer, setze den Recherchestand auf das heutige Datum, ergänze das Änderungsprotokoll und nenne mir ehrlich die Zahl geprüfter und offener Einträge und Belege. Liefere die beiden Dateien vollständig zum Herunterladen; index.html bleibt unverändert."
+    ].join("\n");
+  }
+
+  return {
+    S: S, D: D, BEF: BEF, REG: REG, KLA: KLA, GEB: GEB, WIR: WIR, QUE: QUE, EINTRAEGE: EINTRAEGE,
+    REGION_REIHENFOLGE: REGION_REIHENFOLGE, ART_REIHENFOLGE: ART_REIHENFOLGE, EINORDNUNG: EINORDNUNG, ART_NAME: ART_NAME, RELATION_TEXT: RELATION_TEXT,
+    norm: norm, distanz: distanz, suche: suche, entscheide: entscheide, zerlegeListe: zerlegeListe,
+    nachfahren: nachfahren, vorfahren: vorfahren, relation: relation, relationRang: relationRang,
+    belegeGeprueft: belegeGeprueft, besteArt: besteArt, artenVon: artenVon, eintraegeFuerWirkstoff: eintraegeFuerWirkstoff,
+    passtZuFilter: passtZuFilter, sortiereEintraege: sortiereEintraege, wirkstoffeInGruppe: wirkstoffeInGruppe, unterschiede: unterschiede,
+    hauptRegion: hauptRegion, belegTitel: belegTitel, hatWarnung: hatWarnung, pubmedLink: pubmedLink, adrreportsLink: adrreportsLink, zaehlung: zaehlung, tageSeit: tageSeit, datumDE: datumDE, updatePrompt: updatePrompt
+  };
+})();
+</script>
+<script id="ui">
+/* ===== Medi-NW-Check: Oberfläche ===== */
+"use strict";
+(function () {
+  var erg = document.getElementById("ergebnis");
+  if (!window.MNW) {
+    erg.innerHTML = '<div class="aussage nein"><p><strong>Die Datendateien fehlen oder sind beschädigt.</strong> daten.js und synonyme.js müssen im selben Ordner wie index.html liegen.</p></div>';
+    return;
+  }
+  var D = MNW.D, S = MNW.S, BEF = MNW.BEF, REG = MNW.REG, KLA = MNW.KLA, GEB = MNW.GEB, WIR = MNW.WIR, QUE = MNW.QUE;
+  var Z = { meds: [], befunde: [], sys: true, lok: true };
+  var fragen = { med: [], bef: [] };
+  var PV_HINWEIS = "Spontanmeldungen zeigen Verdachtsfälle; sie beweisen keinen Zusammenhang und erlauben ohne Exposition keine Häufigkeitsaussage.";
+  var LINK_AKDAE = "https://www.akdae.de/arzneimittelsicherheit/uaw-meldung/online", LINK_BFARM = "https://nebenwirkungen.bund.de/";
+  var FELDER = [["haeufigkeit", "Häufigkeit laut Quelle"], ["latenz", "Latenz"], ["dosisabhaengigkeit", "Dosisabhängigkeit"], ["reversibilitaet", "Reversibilität"], ["dringlichkeit", "Dringlichkeit"], ["kontrollen", "Empfohlene Kontrollen"]];
+  var TRENNER = /[\n\r;,]|\s\+\s/, TRENNER_SPLIT = /[\n\r;,]+|\s\+\s/;
+  var ZWECK = "Medi-NW-Check ist eine Lern- und Nachschlagehilfe für ärztliches Fachpersonal. Die App zeigt, welche okulären Nebenwirkungen in Fachinformationen, behördlichen Sicherheitsinformationen und Fachliteratur zu einzelnen Wirkstoffen beschrieben sind – jeweils mit Quelle. Sie ist nicht dazu bestimmt, Diagnosen zu stellen, Behandlungen zu empfehlen oder Daten einzelner Patienten auszuwerten, und nicht für die Eingabe von Patientendaten gedacht. Sie ersetzt weder die aktuelle Fachinformation noch die ärztliche Beurteilung.";
+
+  /* ---------- Hilfsfunktionen ---------- */
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function link(url, text) { return '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(text) + "</a>"; }
+  function $(id) { return document.getElementById(id); }
+  function raumLabel(r) { return { DE: "DE", EU: "EU", USA: "USA", INT: "international" }[r] || r; }
+  function istEU(q) { return q.raum === "DE" || q.raum === "EU"; }
+  function kategorieOk(w) { return w.kategorie === "lokal_auge" ? Z.lok : Z.sys; }
+  function feldArt(feld) { return feld === "bef" ? "befund" : "med"; }
+  function befDe(id) { var b = BEF.get(id); return b ? b.de : id; }
+  function befEn(id) { var b = BEF.get(id); return b ? b.en : ""; }
+  function regDe(id) { var r = REG.get(id); return r ? r.de : id; }
+  function klaDe(id) { var k = KLA.get(id); return k ? k.de : id; }
+  function gebDe(id) { var g = GEB.get(id); return g ? g.de : id; }
+  function namenListe(w) {
+    var t = [];
+    if (w.handelsnamen_de && w.handelsnamen_de.length) t.push("DE: " + w.handelsnamen_de.join(", "));
+    if (w.handelsnamen_us && w.handelsnamen_us.length) t.push("US: " + w.handelsnamen_us.join(", "));
+    return t.join(" · ");
+  }
+  function kurzname(w) { var hn = (w.handelsnamen_de || [])[0] || (w.handelsnamen_us || [])[0]; return w.inn_de + (hn ? " (" + hn + ")" : ""); }
+
+  /* Einträge mit unbekannten Verweisen (z. B. nach einem unvollständigen Update) nicht anzeigen, aber melden */
+  var defekt = [];
+  for (var i = MNW.EINTRAEGE.length - 1; i >= 0; i--) {
+    var e0 = MNW.EINTRAEGE[i], b0 = BEF.get(e0.befund);
+    if (!b0 || !REG.get(b0.region[0]) || (e0.wirkstoff && !WIR.get(e0.wirkstoff)) || (!e0.wirkstoff && !(e0.anwendungsgebiet && GEB.get(e0.anwendungsgebiet)))) { defekt.push(e0.id); MNW.EINTRAEGE.splice(i, 1); }
+  }
+  function istGrunderkrankung(e) { return e.einordnung === "grunderkrankung"; }
+
+  /* ---------- Kopfbereich ---------- */
+  function renderStand() {
+    var z = MNW.zaehlung(), M = D.META;
+    $("stand").textContent = "Stand " + MNW.datumDE(M.recherchestand) + " · Version " + M.version + " · " + (z.eintraegeGeprueft - defekt.length) + " geprüfte Einträge (" + z.wirkstoffeGeprueft + " Wirkstoffe)";
+    var tage = MNW.tageSeit(M.recherchestand), meldungen = [];
+    if (tage >= 90) meldungen.push("Seit " + tage + " Tagen kein Update (Recherchestand " + MNW.datumDE(M.recherchestand) + ") – bitte mit dem Update-Prompt prüfen lassen.");
+    if (S.version !== M.version) meldungen.push("Achtung: synonyme.js (Version " + S.version + ") und daten.js (Version " + M.version + ") gehören nicht zur selben Version.");
+    if (defekt.length) meldungen.push("Achtung: " + defekt.length + " Einträge verweisen auf unbekannte Begriffe und werden nicht angezeigt (" + defekt.join(", ") + ") – Datendateien prüfen.");
+    if (meldungen.length) { $("hinweisband-text").textContent = meldungen.join(" "); $("hinweisband").hidden = false; }
+  }
+
+  /* ---------- Chips ---------- */
+  function chipHTML(cls, txt, attr, i, label) {
+    return '<span class="chip ' + cls + '"><span class="chip-text" title="' + esc(txt) + '">' + esc(txt) + '</span><button type="button" ' + attr + '="' + i + '" aria-label="' + esc(label) + ' entfernen">×</button></span>';
+  }
+  function renderChips() {
+    $("med-chips").innerHTML = Z.meds.map(function (m, i) {
+      var txt = m.via ? m.via + " → " + m.label : m.label, cls = "frei";
+      if (m.art === "wirkstoff") { cls = "wirkstoff"; if (WIR.get(m.ref).status !== "geprueft") txt += " · noch nicht geprüft"; }
+      else if (m.art === "gruppe") { cls = "gruppe"; txt += " · " + (m.typ === "klasse" ? "Wirkstoffklasse" : "Anwendungsgebiet"); }
+      else txt += " · nicht in der Datenbank";
+      return chipHTML(cls, txt, "data-entf-med", i, m.label);
+    }).join("");
+    $("bef-chips").innerHTML = Z.befunde.map(function (b, i) {
+      var txt = (b.art === "region" ? "Region: " : "") + b.label + (b.via ? " (" + b.via + ")" : "") + (b.art === "frei" ? " · nicht in der Begriffsliste" : "");
+      return chipHTML(b.art, txt, "data-entf-bef", i, b.label);
+    }).join("");
+  }
+  function itemAusTreffer(feld, t, eingabe) {
+    if (feld === "med") {
+      if (t.typ === "wirkstoff" || t.typ.indexOf("handelsname") === 0) return { art: "wirkstoff", ref: t.ref, label: WIR.get(t.ref).inn_de, via: t.typ.indexOf("handelsname") === 0 ? t.text : null };
+      if (t.typ === "klasse") return { art: "gruppe", typ: "klasse", ref: t.ref, label: klaDe(t.ref) };
+      return { art: "gruppe", typ: "gebiet", ref: t.ref, label: gebDe(t.ref) };
+    }
+    if (t.typ === "region") return { art: "region", ref: t.ref, label: regDe(t.ref) };
+    var de = befDe(t.ref);
+    return { art: "befund", ref: t.ref, label: de, via: (MNW.norm(t.text) !== MNW.norm(de) && MNW.norm(eingabe || "") !== MNW.norm(de)) ? t.text : null };
+  }
+  function freiItem(text) { return { art: "frei", ref: null, label: text.trim() }; }
+  function hinzufuegen(feld, item, still) {
+    var liste = feld === "med" ? Z.meds : Z.befunde;
+    var doppelt = liste.some(function (x) { return x.art === item.art && (item.art === "frei" ? MNW.norm(x.label) === MNW.norm(item.label) : x.ref === item.ref && x.typ === item.typ); });
+    if (!doppelt) liste.push(item);
+    if (!still) { renderChips(); renderErgebnis(); }
+  }
+
+  /* ---------- Eingabe deuten: eindeutig, mehrdeutig, „Meintest du“, Freitext ---------- */
+  function bestimme(feld, roh) {
+    roh = roh.trim();
+    var e = MNW.entscheide(roh, feldArt(feld));
+    if (feld !== "med" || e.status === "eindeutig") return { e: e, text: roh };
+    var c = MNW.zerlegeListe(roh)[0];           /* Dosis, Darreichungsform usw. entfernen */
+    if (c && MNW.norm(c) !== MNW.norm(roh)) {
+      var e2 = MNW.entscheide(c, "med");
+      if (e2.status !== "unbekannt" || e.status === "unbekannt") return { e: e2, text: c };
+    }
+    return { e: e, text: roh };
+  }
+  function teileVon(feld, text) {
+    if (!TRENNER.test(text)) return text.trim() ? [text.trim()] : [];
+    if (feld === "med") return MNW.zerlegeListe(text);
+    return text.split(/[\n\r;,]+/).map(function (s) { return s.trim(); }).filter(Boolean);
+  }
+  function verarbeite(feld, teile) {
+    teile.forEach(function (t) {
+      var r = bestimme(feld, t);
+      if (r.e.status === "eindeutig") hinzufuegen(feld, itemAusTreffer(feld, r.e.treffer, r.text), true);
+      else if (r.e.status === "unbekannt" || !(r.e.kandidaten || []).length) hinzufuegen(feld, freiItem(r.text), true);
+      else fragen[feld].push({ text: r.text, e: r.e });
+    });
+    renderChips(); renderErgebnis();
+    if ($(feld + "-meintest").hidden) naechsteFrage(feld);
+  }
+  function naechsteFrage(feld) {
+    var box = $(feld + "-meintest"), f = fragen[feld].shift();
+    if (!f) { box.hidden = true; box.innerHTML = ""; box._frage = null; return; }
+    var titel = f.e.status === "mehrdeutig" ? "Mehrere Treffer für „" + f.text + "“ – bitte wählen:" : "„" + f.text + "“ nicht gefunden. Meintest du:";
+    box.innerHTML = "<span>" + esc(titel) + "</span>" + f.e.kandidaten.map(function (t, i) {
+      return '<button type="button" class="knopf klein" data-wahl="' + i + '">' + esc(anzeigeText(t)) + (f.e.status === "meintest" ? "?" : "") + "</button>";
+    }).join("") + '<button type="button" class="knopf klein" data-freitext>Als Freitext übernehmen</button><button type="button" class="knopf klein" data-verwerfen>Verwerfen</button>' +
+      (fragen[feld].length ? '<span class="kurz">(noch ' + fragen[feld].length + " weitere Rückfrage" + (fragen[feld].length > 1 ? "n" : "") + ")</span>" : "");
+    box._frage = f; box.hidden = false;
+  }
+
+  /* ---------- Vorschlagsliste ---------- */
+  var aktiv = { med: -1, bef: -1 }, letzte = { med: [], bef: [] };
+  function typBeschreibung(t) {
+    if (t.typ === "wirkstoff") return "Wirkstoff" + (WIR.get(t.ref).status !== "geprueft" ? " · noch nicht geprüft" : "");
+    if (t.typ === "handelsname") return "Handelsname DE → " + WIR.get(t.ref).inn_de;
+    if (t.typ === "handelsname_us") return "Handelsname US → " + WIR.get(t.ref).inn_de;
+    if (t.typ === "klasse") return "Wirkstoffklasse";
+    if (t.typ === "gebiet") return "Anwendungsgebiet";
+    if (t.typ === "region") return "Region";
+    var b = BEF.get(t.ref); return "Befund · " + (b ? regDe(b.region[0]) : "");
+  }
+  function anzeigeText(t) {
+    var ziel = t.typ === "befund" ? befDe(t.ref) : t.typ === "region" ? regDe(t.ref) : t.typ === "klasse" ? klaDe(t.ref) : t.typ === "gebiet" ? gebDe(t.ref) : null;
+    if (!ziel || t.typ === "region") return ziel || t.text;
+    return MNW.norm(t.text) === MNW.norm(ziel) ? ziel : t.text + " → " + ziel;
+  }
+  function suchtext(feld, wert) {
+    var segs = wert.split(TRENNER_SPLIT), letzt = segs[segs.length - 1].trim();
+    if (feld !== "med") return letzt;
+    var c = MNW.zerlegeListe(letzt)[0];
+    return c && c.length >= 2 ? c : letzt;
+  }
+  function zeigeVorschlaege(feld) {
+    var inp = $(feld + "-input"), box = $(feld + "-vorschlaege"), q = suchtext(feld, inp.value);
+    aktiv[feld] = -1; inp.removeAttribute("aria-activedescendant");
+    if (q.length < 2) { schliesseVorschlaege(feld); letzte[feld] = []; return; }
+    var liste = MNW.suche(q, feldArt(feld), 8);
+    letzte[feld] = liste;
+    if (!liste.length) box.innerHTML = '<div class="vorschlag-leer">Kein Eintrag – Enter übernimmt „' + esc(q) + '“ als Freitext</div>';
+    else box.innerHTML = liste.map(function (t, i) {
+      return '<button type="button" tabindex="-1" class="vorschlag" role="option" id="' + feld + "-opt-" + i + '" data-i="' + i + '" aria-selected="false"><span>' + esc(anzeigeText(t)) + '</span><span class="typ">' + esc(typBeschreibung(t)) + (t.score < 56 ? " · Tippfehler?" : "") + "</span></button>";
+    }).join("");
+    box.hidden = false; inp.setAttribute("aria-expanded", "true");
+  }
+  function markiere(feld) {
+    var box = $(feld + "-vorschlaege"), inp = $(feld + "-input");
+    Array.prototype.forEach.call(box.querySelectorAll(".vorschlag"), function (el, i) {
+      el.setAttribute("aria-selected", i === aktiv[feld] ? "true" : "false");
+      if (i === aktiv[feld] && el.scrollIntoView) el.scrollIntoView({ block: "nearest" });
+    });
+    if (aktiv[feld] >= 0) inp.setAttribute("aria-activedescendant", feld + "-opt-" + aktiv[feld]); else inp.removeAttribute("aria-activedescendant");
+  }
+  function schliesseVorschlaege(feld) { $(feld + "-vorschlaege").hidden = true; $(feld + "-input").setAttribute("aria-expanded", "false"); $(feld + "-input").removeAttribute("aria-activedescendant"); aktiv[feld] = -1; }
+  function waehleVorschlag(feld, i) {
+    var t = letzte[feld][i]; if (!t) return;
+    var inp = $(feld + "-input"), wert = inp.value, segs = wert.split(TRENNER_SPLIT);
+    segs.pop();
+    hinzufuegen(feld, itemAusTreffer(feld, t, suchtext(feld, wert)), true);
+    inp.value = ""; schliesseVorschlaege(feld);
+    var rest = segs.join("\n");
+    verarbeite(feld, rest.trim() ? teileVon(feld, rest) : []);
+    inp.focus();
+  }
+  function verbindeFeld(feld) {
+    var inp = $(feld + "-input"), box = $(feld + "-vorschlaege");
+    inp.addEventListener("input", function () { zeigeVorschlaege(feld); });
+    inp.addEventListener("keydown", function (ev) {
+      var n = letzte[feld].length;
+      if (ev.key === "ArrowDown" && !box.hidden && n) { ev.preventDefault(); aktiv[feld] = (aktiv[feld] + 1) % n; markiere(feld); }
+      else if (ev.key === "ArrowUp" && !box.hidden && n) { ev.preventDefault(); aktiv[feld] = (aktiv[feld] - 1 + n) % n; markiere(feld); }
+      else if (ev.key === "Escape") { schliesseVorschlaege(feld); }
+      else if (ev.key === "Enter") {
+        ev.preventDefault();
+        if (aktiv[feld] >= 0 && !box.hidden) { waehleVorschlag(feld, aktiv[feld]); return; }
+        var text = inp.value; if (!text.trim()) return;
+        inp.value = ""; schliesseVorschlaege(feld);
+        verarbeite(feld, teileVon(feld, text));
+      } else if (ev.key === "Backspace" && !inp.value) {
+        var liste = feld === "med" ? Z.meds : Z.befunde;
+        if (liste.length) { liste.pop(); renderChips(); renderErgebnis(); }
+      }
+    });
+    inp.addEventListener("blur", function () { setTimeout(function () { schliesseVorschlaege(feld); }, 150); });
+    inp.addEventListener("paste", function (ev) {
+      var cd = ev.clipboardData || window.clipboardData; if (!cd) return;
+      var text = cd.getData("text"); if (!text || !TRENNER.test(text)) return;
+      ev.preventDefault(); schliesseVorschlaege(feld);
+      verarbeite(feld, teileVon(feld, text));
+    });
+    box.addEventListener("mousedown", function (ev) { ev.preventDefault(); });
+    box.addEventListener("click", function (ev) { var b = ev.target.closest("[data-i]"); if (b) waehleVorschlag(feld, +b.getAttribute("data-i")); });
+    $(feld + "-box").addEventListener("click", function (ev) { if (ev.target === this || ev.target.classList.contains("zeile")) inp.focus(); });
+    $(feld + "-meintest").addEventListener("click", function (ev) {
+      var b = ev.target.closest("button"), f = this._frage; if (!b || !f) return;
+      if (b.hasAttribute("data-wahl")) hinzufuegen(feld, itemAusTreffer(feld, f.e.kandidaten[+b.getAttribute("data-wahl")], f.text));
+      else if (b.hasAttribute("data-freitext")) hinzufuegen(feld, freiItem(f.text));
+      naechsteFrage(feld);
+      inp.focus();
+    });
+  }
+
+  /* ---------- Auswahl nach Region ---------- */
+  var regionOffen = null;
+  function anzahlFuerBefund(bid) { return MNW.EINTRAEGE.filter(function (e) { var r = MNW.relation(e.befund, bid); return r === "exakt" || r === "spezifischer"; }).length; }
+  function renderRegionen() {
+    var html = '<div class="regionen-liste">' + S.REGIONEN.map(function (r) {
+      var n = MNW.EINTRAEGE.filter(function (e) { var b = BEF.get(e.befund); return b.region.indexOf(r.id) >= 0; }).length;
+      return '<button type="button" class="knopf klein' + (regionOffen === r.id ? " gewaehlt" : "") + '" data-region="' + esc(r.id) + '" aria-pressed="' + (regionOffen === r.id ? "true" : "false") + '">' + esc(r.de) + (n ? '<span class="anz">' + n + "</span>" : "") + "</button>";
+    }).join("") + "</div>";
+    if (regionOffen) {
+      var befs = S.BEFUNDE.filter(function (b) { return b.region.indexOf(regionOffen) >= 0; });
+      html += '<p class="feldhilfe">Befund antippen oder die ganze Region als Filter übernehmen. Die Zahl nennt die geprüften Einträge.</p><div class="befundliste"><button type="button" class="knopf klein primaer" data-ganze-region="' + esc(regionOffen) + '">Ganze Region „' + esc(regDe(regionOffen)) + "“</button>" + befs.map(function (b) {
+        var anz = anzahlFuerBefund(b.id);
+        return '<button type="button" class="knopf klein" data-befund="' + esc(b.id) + '" title="' + esc(b.en) + '">' + esc(b.de) + (anz ? '<span class="anz">' + anz + "</span>" : "") + "</button>";
+      }).join("") + "</div>";
+    }
+    $("regionen").innerHTML = html;
+  }
+
+  function schliesseRegionen() { $("regionen").hidden = true; $("btn-regionen").setAttribute("aria-expanded", "false"); regionOffen = null; }
+
+  /* ---------- Darstellung: Beleg, Eintrag, Wirkstoffkarte ---------- */
+  function badgeArt(a) { return '<span class="badge qa-' + a + '" title="Quellenart ' + a + ": " + esc(MNW.ART_NAME[a]) + '">' + a + "</span>"; }
+  function belegHTML(b) {
+    var q = QUE[b.quelle];
+    var kopf = badgeArt(q.art) + " " + esc(MNW.belegTitel(b)) + " · " + esc(raumLabel(q.raum));
+    var herkunft = esc(q.titel) + (q.hersteller ? " · " + esc(q.hersteller) : "") + (q.dokumentstand ? " · " + esc(q.dokumentstand) : "") +
+      (q.studientyp ? " · Studientyp: " + esc(q.studientyp) : "") + (q.pmid ? " · PMID " + esc(q.pmid) : "") + " · " + link(q.url, "Quelle öffnen");
+    return '<div class="beleg art-' + q.art + '"><div class="kopfzeile">' + kopf + "</div>" +
+      "<div>" + esc(b.aussage) + "</div>" +
+      (b.zitat ? '<div class="zitat">' + esc(b.zitat) + ' <span class="herkunft">(wörtlich laut Abruf)</span></div>' : "") +
+      '<div class="herkunft">' + herkunft + "</div>" +
+      '<div class="herkunft">Aussage in der Quelle gefunden · geprüft am ' + esc(MNW.datumDE(b.geprueft_am)) + (b.pruefnotiz ? " · " + esc(b.pruefnotiz) : "") + "</div></div>";
+  }
+  function quellmarke(b) { var q = QUE[b.quelle]; return q.art + " · " + raumLabel(q.raum) + (b.abschnitt && /^\d/.test(b.abschnitt) ? " " + b.abschnitt : ""); }
+  function feldtabelle(belege) {
+    return '<table class="felder"><tbody>' + FELDER.map(function (f) {
+      var werte = belege.filter(function (b) { return b[f[0]]; });
+      var zelle = werte.length ? werte.map(function (b) { return '<span class="wert">' + esc(b[f[0]]) + ' <span class="quellmarke">[' + esc(quellmarke(b)) + "]</span></span>"; }).join("") : '<span class="na">nicht angegeben</span>';
+      return '<tr><th scope="row">' + esc(f[1]) + "</th><td>" + zelle + "</td></tr>";
+    }).join("") + "</tbody></table>";
+  }
+  function kurzHaeufigkeit(belege) {
+    var a = belege.filter(function (b) { return QUE[b.quelle].art === "A" && b.haeufigkeit; });
+    a.sort(function (x, y) { return (istEU(QUE[x.quelle]) ? 0 : 1) - (istEU(QUE[y.quelle]) ? 0 : 1); });
+    if (!a.length) return "";
+    var h = a[0].haeufigkeit; if (h.length > 80) h = h.slice(0, 77) + "…";
+    return "Häufigkeit (" + raumLabel(QUE[a[0].quelle].raum) + "): " + h;
+  }
+  function sortNachArt(l) { return l.slice().sort(function (x, y) { return MNW.ART_REIHENFOLGE.indexOf(QUE[x.quelle].art) - MNW.ART_REIHENFOLGE.indexOf(QUE[y.quelle].art); }); }
+  function einordnungBadge(e, perspektive) {
+    if (e.einordnung === "wechselwirkung") {
+      var partner = e.wirkstoff === perspektive || !perspektive ? (e.ww_partner || []).map(function (p) { return WIR.get(p) ? WIR.get(p).inn_de : p; }).join(", ") : WIR.get(e.wirkstoff).inn_de;
+      return '<span class="badge ww">Wechselwirkung mit ' + esc(partner) + "</span>";
+    }
+    return '<span class="badge ' + (e.einordnung === "nebenwirkung" ? "einord" : "ww") + '">' + esc(MNW.EINORDNUNG[e.einordnung] || e.einordnung) + "</span>";
+  }
+  function eintragHTML(e, opt) {
+    opt = opt || {};
+    var b = BEF.get(e.befund), belege = MNW.belegeGeprueft(e), w = e.wirkstoff ? WIR.get(e.wirkstoff) : null;
+    var rel = opt.relation ? '<span class="badge rel' + (opt.relation === "exakt" || opt.relation === "spezifischer" ? " passend" : "") + '">' + esc(MNW.RELATION_TEXT[opt.relation]) + "</span>" : "";
+    var kurz = kurzHaeufigkeit(belege);
+    var summary = '<summary><span class="befundname"><span class="pfeil" aria-hidden="true"></span>' + esc(b.de) + ' <span class="en">(' + esc(b.en) + ")</span></span>" +
+      MNW.artenVon(e).map(badgeArt).join(" ") + einordnungBadge(e, opt.perspektive) + rel +
+      (e.kontext ? '<span class="kurz">' + esc(e.kontext) + "</span>" : "") + (kurz ? '<span class="kurz">' + esc(kurz) + "</span>" : "") + "</summary>";
+    var eu = belege.filter(function (x) { var q = QUE[x.quelle]; return istEU(q) && (q.art === "A" || q.art === "B"); });
+    var us = belege.filter(function (x) { var q = QUE[x.quelle]; return q.raum === "USA" && (q.art === "A" || q.art === "B"); });
+    var pv = belege.filter(function (x) { return QUE[x.quelle].art === "C"; });
+    var lit = belege.filter(function (x) { var a = QUE[x.quelle].art; return a === "D" || a === "E"; });
+    var hatB = belege.some(function (x) { return QUE[x.quelle].art === "B"; });
+    var diff = w ? MNW.unterschiede(e) : [];
+    var inhalt = '<div class="eintrag-inhalt">' +
+      '<div class="meta">Region: ' + esc(b.region.map(regDe).join(" · ")) + " · Einordnung: " + esc(MNW.EINORDNUNG[e.einordnung] || e.einordnung) +
+        (e.anwendungsgebiet ? " · Anwendungsgebiet: " + esc(gebDe(e.anwendungsgebiet)) : "") + ' <span class="redaktionell">(Region und englischer Begriff: redaktionelle Zuordnung)</span></div>' +
+      feldtabelle(belege) +
+      '<div class="abschnitt"><h4>Deutschland/EU</h4>' + (eu.length ? sortNachArt(eu).map(belegHTML).join("") : '<p class="leerhinweis">Keine geprüfte Angabe' + (diff.length ? " – siehe „Unterschiede“" : "") + ".</p>") + "</div>" +
+      '<div class="abschnitt"><h4>USA</h4>' + (us.length ? sortNachArt(us).map(belegHTML).join("") : '<p class="leerhinweis">Keine geprüfte Angabe' + (diff.length ? " – siehe „Unterschiede“" : "") + ".</p>") + "</div>" +
+      '<div class="abschnitt"><h4>Unterschiede zwischen den Fachinformationen</h4>' + (diff.length ? "<ul>" + diff.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul>" : '<p class="leerhinweis">Keine Gegenüberstellung möglich.</p>') + "</div>" +
+      '<div class="abschnitt"><h4>Pharmakovigilanz</h4>' + pv.map(belegHTML).join("") +
+        (hatB ? '<p class="kurz">Behördliche Bewertungen (Quellenart B) stehen unter Deutschland/EU bzw. USA.</p>' : "") +
+        (w ? '<p class="kurz">' + link(MNW.adrreportsLink(w), "ADRreports (EudraVigilance): " + w.inn_de) + " – " + esc(PV_HINWEIS) + "</p>" : "") + "</div>" +
+      '<div class="abschnitt"><h4>Literatur</h4>' + (lit.length ? sortNachArt(lit).map(belegHTML).join("") : '<p class="leerhinweis">Keine geprüfte Literaturangabe in dieser Version.</p>') +
+        '<p class="kurz">' + link(MNW.pubmedLink(w ? w.inn_en : null, e.befund), "PubMed-Suche: " + (w ? w.inn_en + " + " : "") + b.en) + "</p></div>" +
+      "</div>";
+    return '<details class="eintrag' + (opt.treffer ? " treffer" : "") + '"' + (opt.offen ? " open" : "") + ">" + summary + inhalt + "</details>";
+  }
+  function pruefstandHTML(w) {
+    var ps = (w.pruefstand || []).map(function (p) {
+      var q = p.quelle ? QUE[p.quelle] : null;
+      return "<li><strong>" + esc(raumLabel(p.raum)) + ":</strong> " + (q ? link(q.url, q.titel) + (q.dokumentstand ? " (" + esc(q.dokumentstand) + ")" : "") : "keine frei zugängliche Fachinformation") +
+        (p.umfang ? " · " + esc(p.umfang) : "") + (p.ergebnis ? " · " + esc(p.ergebnis) : "") + (p.geprueft_am ? " · geprüft am " + esc(MNW.datumDE(p.geprueft_am)) : "") + "</li>";
+    }).join("");
+    var na = (w.nicht_aufgenommen || []).map(function (n) { return "<li>" + esc(n.text) + (n.grund ? " – " + esc(n.grund) : "") + "</li>"; }).join("");
+    return '<details class="mehr pruefstand"><summary>Geprüfte Fachinformationen' + (na ? " und nicht aufgenommene Angaben" : "") + "</summary><ul>" + ps + "</ul>" +
+      (na ? "<p>Nicht als Eintrag aufgenommen:</p><ul>" + na + "</ul>" : "") + "</details>";
+  }
+  function kartenFuss(w) {
+    return '<div class="karte-fuss">' + (w.status === "geprueft" ? pruefstandHTML(w) : "") +
+      "<p>" + link(MNW.adrreportsLink(w), "ADRreports: Verdachtsmeldungen zu " + w.inn_de) + " – " + esc(PV_HINWEIS) + "</p>" +
+      "<p>Verdachtsfall melden: " + link(LINK_AKDAE, "AkdÄ") + " · " + link(LINK_BFARM, "BfArM/PEI") + "</p></div>";
+  }
+  function wirkstoffKopf(w, unsicher) {
+    var klassen = (w.klassen || []).map(klaDe).join(", ");
+    return '<div class="karte-kopf"><h3>' + esc(w.inn_de) + '<span class="en">' + esc(w.inn_en) + "</span>" + (unsicher ? '<span class="unsicher" title="aus Wirkstoffklasse oder Anwendungsgebiet abgeleitet">abgeleitet – unsicher</span>' : "") + "</h3>" +
+      '<div class="meta">' + (w.kategorie === "lokal_auge" ? "lokal am Auge" : "systemisch") + (klassen ? " · " + esc(klassen) : "") + "</div>" +
+      (namenListe(w) ? '<div class="handelsnamen">' + esc(namenListe(w)) + "</div>" : "") +
+      (w.hinweis ? '<div class="meta">Hinweis: ' + esc(w.hinweis) + "</div>" : "") + "</div>";
+  }
+  /* innerhalb derselben Region zuerst die genau passenden Einträge (stabile Sortierung) */
+  function nachRelation(liste, rel) {
+    return liste.map(function (e, i) { return { e: e, i: i }; }).sort(function (a, b) {
+      var ra = MNW.REGION_REIHENFOLGE.indexOf(MNW.hauptRegion(a.e)), rb = MNW.REGION_REIHENFOLGE.indexOf(MNW.hauptRegion(b.e));
+      return ra - rb || MNW.relationRang(rel.get(a.e.id)) - MNW.relationRang(rel.get(b.e.id)) || a.i - b.i;
+    }).map(function (x) { return x.e; });
+  }
+  function geplantKarte(w, opt) {
+    opt = opt || {};
+    var bef = opt.befundId;
+    return '<article class="karte">' + wirkstoffKopf(w, opt.unsicher) + '<div class="karte-inhalt"><div class="aussage nein"><p><strong>Noch nicht geprüft</strong> (geplant für Etappe ' + esc(w.etappe) + ") – diese Version enthält dazu keine Einträge. <strong>Nicht ausgeschlossen.</strong></p>" +
+      "<p>" + link(MNW.pubmedLink(w.inn_en, bef || null), "PubMed-Suche: " + w.inn_en + (bef ? " + " + befEn(bef) : " + Auge")) + "</p></div></div>" + kartenFuss(w) + "</article>";
+  }
+  function keineNWSatz(w) {
+    var qs = (w.pruefstand || []).filter(function (p) { return p.quelle && QUE[p.quelle]; }).map(function (p) { var q = QUE[p.quelle]; return q.titel + (q.dokumentstand ? " (" + q.dokumentstand + ")" : ""); });
+    return '<div class="aussage info"><p><strong>Keine belegte okuläre Nebenwirkung</strong> in den geprüften Quellen' + (qs.length ? ": " + esc(qs.join("; ")) : "") + ".</p></div>";
+  }
+  function wirkstoffKarte(w, opt) {
+    opt = opt || {};
+    if (w.status !== "geprueft") return geplantKarte(w, { unsicher: opt.unsicher, befundId: opt.befundId });
+    var alle = MNW.eintraegeFuerWirkstoff(w.id);
+    var liste = opt.eintraege || alle;
+    var html = '<article class="karte">' + wirkstoffKopf(w, opt.unsicher) + '<div class="karte-inhalt">';
+    var eo = function (e) { return { relation: opt.relationen ? opt.relationen.get(e.id) : null, offen: opt.offen, treffer: opt.treffer, perspektive: w.id }; };
+    if (!alle.length) html += keineNWSatz(w);
+    else if (!liste.length) html += '<p class="leerhinweis">Keine weiteren Einträge.</p>';
+    else {
+      var nw = MNW.sortiereEintraege(liste.filter(function (e) { return e.einordnung !== "wechselwirkung"; }));
+      if (opt.relationen) nw = nachRelation(nw, opt.relationen);
+      var ww = MNW.sortiereEintraege(liste.filter(function (e) { return e.einordnung === "wechselwirkung"; }));
+      var letzteRegion = null;
+      nw.forEach(function (e) {
+        var r = MNW.hauptRegion(e);
+        if (r !== letzteRegion) { html += '<div class="region-titel">' + esc(regDe(r)) + "</div>"; letzteRegion = r; }
+        html += eintragHTML(e, eo(e));
+      });
+      if (ww.length) { html += '<div class="region-titel">Wechselwirkungen</div>'; ww.forEach(function (e) { html += eintragHTML(e, eo(e)); }); }
+    }
+    html += "</div>" + (opt.ohneFuss ? "" : kartenFuss(w)) + "</article>";
+    return html;
+  }
+
+  /* ---------- Treffer-Logik ---------- */
+  function befundFilter() {
+    return { befunde: Z.befunde.filter(function (b) { return b.art === "befund"; }).map(function (b) { return b.ref; }),
+             regionen: Z.befunde.filter(function (b) { return b.art === "region"; }).map(function (b) { return b.ref; }) };
+  }
+  function befundText() { return Z.befunde.filter(function (b) { return b.art !== "frei"; }).map(function (b) { return (b.art === "region" ? "Region " : "") + b.label; }).join(" / "); }
+  function treffer(w, filter) {
+    var rel = new Map(), liste = [];
+    MNW.eintraegeFuerWirkstoff(w.id).forEach(function (e) { if (istGrunderkrankung(e)) return; var r = MNW.passtZuFilter(e, filter); if (r) { rel.set(e.id, r); liste.push(e); } });
+    return { eintraege: liste, relationen: rel, bester: liste.reduce(function (m, e) { return Math.min(m, MNW.relationRang(rel.get(e.id))); }, 9) };
+  }
+  function bestArtVon(eintraege) { var a = eintraege.map(MNW.besteArt); return MNW.ART_REIHENFOLGE.filter(function (x) { return a.indexOf(x) >= 0; })[0] || "E"; }
+  function artRang(x) { return MNW.ART_REIHENFOLGE.indexOf(bestArtVon(x.t.eintraege)); }
+  function sortiereNachRelation(arr) { return arr.sort(function (a, b) { return a.t.bester - b.t.bester || artRang(a) - artRang(b) || a.w.inn_de.localeCompare(b.w.inn_de, "de"); }); }
+  function sortiereNachArt(arr) { return arr.sort(function (a, b) { return artRang(a) - artRang(b) || a.t.bester - b.t.bester || a.w.inn_de.localeCompare(b.w.inn_de, "de"); }); }
+  function gepruefteSichtbar() { return D.WIRKSTOFFE.filter(function (w) { return w.status === "geprueft" && kategorieOk(w); }); }
+  function abdeckungHinweis() {
+    var z = MNW.zaehlung();
+    return '<div class="aussage info"><p>Geprüft sind bisher <strong>' + z.wirkstoffeGeprueft + " Wirkstoffe</strong> (Etappe " + esc(String(D.META.etappe).split(" ")[0]) + "). Fehlt ein Eintrag, ist eine Nebenwirkung dadurch <strong>nicht ausgeschlossen</strong>. Liste unter „Info“.</p></div>";
+  }
+  function grunderkrankungBlock(filter) {
+    var g = MNW.EINTRAEGE.filter(function (e) { return istGrunderkrankung(e) && MNW.passtZuFilter(e, filter); });
+    if (!g.length) return "";
+    return "<h2>Hinweise auf Grunderkrankungen</h2><p class=\"kurz\">Der Befund kann Folge der behandelten Erkrankung sein, nicht des Medikaments.</p>" +
+      g.map(function (e) { return eintragHTML(e, { relation: MNW.passtZuFilter(e, filter), perspektive: e.wirkstoff }); }).join("");
+  }
+  function gruppenBlock(g, filter) {
+    var mitglieder = MNW.wirkstoffeInGruppe(g.typ, g.ref).filter(kategorieOk);
+    var geprueft = mitglieder.filter(function (w) { return w.status === "geprueft"; });
+    var geplant = mitglieder.filter(function (w) { return w.status !== "geprueft"; });
+    var art = g.typ === "klasse" ? "Wirkstoffklasse" : "Anwendungsgebiet";
+    var abgeleitet = g.typ === "klasse" ? "Aus der Wirkstoffklasse abgeleitet" : "Aus dem Anwendungsgebiet abgeleitet";
+    var html = "<h2>" + esc(art) + ": " + esc(g.label) + "</h2>", gezeigt = [];
+    var abdeckung = "<p>Geprüft aus diesem Bereich: " + (geprueft.length ? esc(geprueft.map(kurzname).join(", ")) : "noch keiner") + ".</p>" +
+      (geplant.length ? "<p>Erfasst, aber noch nicht geprüft: " + esc(geplant.map(function (w) { return w.inn_de + " (Etappe " + w.etappe + ")"; }).join(", ")) + ".</p>" : "");
+    if (!mitglieder.length) {
+      html += '<div class="aussage nein"><p>Für diesen Bereich ist in der Datenbank noch kein Wirkstoff erfasst – <strong>keine Aussage möglich, nicht ausgeschlossen.</strong></p></div>';
+      return { html: html, gezeigt: gezeigt };
+    }
+    if (filter) {
+      var bt = befundText();
+      var passende = geprueft.map(function (w) { return { w: w, t: treffer(w, filter) }; }).filter(function (x) { return x.t.eintraege.length; });
+      sortiereNachRelation(passende);
+      if (passende.length) {
+        html += '<div class="aussage ja"><p><strong>Ja</strong> – im Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ beschrieben bei: " + esc(passende.map(function (x) { return kurzname(x.w); }).join(", ")) + ".</p>" +
+          "<p>" + abgeleitet + " – <strong>unsicher, welcher Wirkstoff gemeint ist</strong> (Handelsnamen in den Karten).</p>" + abdeckung + "</div>";
+        passende.forEach(function (x) { gezeigt.push(x.w.id); html += wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen, unsicher: true, treffer: true, offen: true }); });
+      } else if (geplant.length) {
+        html += '<div class="aussage nein"><p><strong>Noch keine Aussage möglich</strong> – ' + (geprueft.length ? "bei den geprüften Wirkstoffen aus „" + esc(g.label) + "“ ist „" + esc(bt) + "“ nicht beschrieben, aber " : "") +
+          esc(geplant.map(function (w) { return w.inn_de; }).join(", ")) + " " + (geplant.length > 1 ? "sind" : "ist") + " noch nicht geprüft. <strong>Nicht ausgeschlossen.</strong></p>" + abdeckung +
+          "<p>" + geplant.map(function (w) { return link(MNW.pubmedLink(w.inn_en, filter.befunde[0] || null), "PubMed: " + w.inn_en + (filter.befunde[0] ? " + " + befEn(filter.befunde[0]) : "")); }).join(" · ") + "</p></div>";
+      } else {
+        html += '<div class="aussage nein"><p><strong>Nein</strong> – bei keinem Wirkstoff aus dem Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ in der Datenbank beschrieben. <strong>Nicht ausgeschlossen.</strong></p>" + abdeckung + "</div>";
+      }
+    } else {
+      html += '<div class="aussage info"><p>' + abgeleitet + " – <strong>unsicher, welcher Wirkstoff gemeint ist</strong>. Handelsnamen stehen in den Karten.</p>" + abdeckung + "</div>";
+      geprueft.forEach(function (w) { gezeigt.push(w.id); html += wirkstoffKarte(w, { unsicher: true }); });
+    }
+    return { html: html, gezeigt: gezeigt };
+  }
+  function freitextBloecke(filter) {
+    var html = "", bid = filter.befunde[0] || null;
+    Z.meds.filter(function (m) { return m.art === "frei"; }).forEach(function (m) {
+      html += '<div class="aussage nein"><p><strong>„' + esc(m.label) + "“ ist nicht in der Datenbank – nicht ausgeschlossen.</strong></p><p>" +
+        link(MNW.pubmedLink(m.label, bid), "PubMed-Suche: " + m.label + (bid ? " + " + befEn(bid) : " + Auge")) + "</p></div>";
+    });
+    var medsW = Z.meds.filter(function (m) { return m.art === "wirkstoff"; }).map(function (m) { return WIR.get(m.ref); });
+    Z.befunde.filter(function (b) { return b.art === "frei"; }).forEach(function (b) {
+      html += '<div class="aussage nein"><p><strong>Befund „' + esc(b.label) + "“ ist nicht in der Begriffsliste – nicht ausgeschlossen.</strong></p><p>" +
+        (medsW.length ? medsW.map(function (w) { return link(MNW.pubmedLink(w.inn_en, null, b.label), "PubMed: " + w.inn_en + " + " + b.label); }).join(" · ")
+                      : link(MNW.pubmedLink(null, null, b.label), "PubMed-Suche: " + b.label + " (arzneimittelbedingt)")) + "</p></div>";
+    });
+    return html;
+  }
+
+  /* ---------- Startansicht ---------- */
+  function startansicht() {
+    var gepr = D.WIRKSTOFFE.filter(function (w) { return w.status === "geprueft"; });
+    return '<div class="leer"><p class="zweck"><strong>Zweck:</strong> Lern- und Nachschlagehilfe für ärztliches Fachpersonal. Sie zeigt, was Fachinformationen, Behörden und Literatur zu okulären Nebenwirkungen beschreiben. Keine Diagnose- oder Therapieempfehlung – bitte keine Patientendaten eingeben.</p>' +
+      '<p><strong>So geht’s:</strong> Wirkstoffe und/oder einen Befund eingeben.</p><ul class="kurzliste">' +
+      "<li><strong>Nur Wirkstoff</strong> → alle beschriebenen okulären Nebenwirkungen, nach Region</li>" +
+      "<li><strong>Wirkstoff + Befund</strong> → Einträge zum Befund bei diesen Wirkstoffen, dazu weitere Wirkstoffe, bei denen er beschrieben ist</li>" +
+      "<li><strong>Nur Befund</strong> → alle Wirkstoffe, bei denen er beschrieben ist</li>" +
+      "<li><strong>Anwendungsgebiet + Befund</strong> (z. B. „MS-Medikament“ + „Makulaödem“) → ausdrückliche Ja/Nein-Aussage</li></ul>" +
+      "<p><strong>Geprüfte Wirkstoffe (antippen zum Anzeigen):</strong></p><div class=\"befundliste\">" + gepr.map(function (w) { return '<button type="button" class="knopf klein" data-schnell-med="' + esc(w.id) + '">' + esc(w.inn_de) + "</button>"; }).join("") + "</div>" +
+      '<p class="kurz">Weitere ' + MNW.zaehlung().wirkstoffeGeplant + " Wirkstoffe werden erkannt, sind aber noch nicht geprüft (Etappe 1b/1c) – sie erscheinen mit dem Hinweis „nicht ausgeschlossen“.</p></div>";
+  }
+
+  /* ---------- Ergebnis ---------- */
+  function renderErgebnis() {
+    var html = "", karten = 0;
+    if (!Z.meds.length && !Z.befunde.length) { erg.innerHTML = startansicht(); melde("Startansicht"); return; }
+    if (!Z.sys && !Z.lok) { erg.innerHTML = '<div class="aussage nein"><p>Beide Kategorien sind ausgeblendet – bitte „systemisch“ und/oder „lokal am Auge“ anhaken.</p></div>'; return; }
+    var medsW = Z.meds.filter(function (m) { return m.art === "wirkstoff"; }).map(function (m) { return WIR.get(m.ref); });
+    var medsWsicht = medsW.filter(kategorieOk);
+    var medsG = Z.meds.filter(function (m) { return m.art === "gruppe"; });
+    var medsF = Z.meds.filter(function (m) { return m.art === "frei"; });
+    var filter = befundFilter();
+    var hatBefund = filter.befunde.length + filter.regionen.length > 0;
+    var bt = befundText(), bid = filter.befunde[0] || null;
+    var gezeigt = new Set();
+
+    html += freitextBloecke(filter);
+    if (medsW.length > medsWsicht.length) html += '<div class="aussage info"><p>Einige eingegebene Wirkstoffe sind durch den Filter „systemisch / lokal am Auge“ ausgeblendet.</p></div>';
+
+    if (hatBefund && (medsWsicht.length || medsF.length || medsG.length)) {
+      /* ===== Medikation + Befund (bzw. Anwendungsgebiet + Befund) ===== */
+      if (medsWsicht.length) {
+        var mit = [], ohne = [];
+        medsWsicht.forEach(function (w) {
+          if (w.status !== "geprueft") { ohne.push({ w: w, geplant: true }); return; }
+          var t = treffer(w, filter); if (t.eintraege.length) mit.push({ w: w, t: t }); else ohne.push({ w: w });
+        });
+        html += "<h2>Einträge zu „" + esc(bt) + "“ bei den eingegebenen Wirkstoffen</h2>";
+        if (mit.length) sortiereNachRelation(mit).forEach(function (x) { gezeigt.add(x.w.id); karten++; html += wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen, offen: true, treffer: true }); });
+        else html += '<div class="aussage nein"><p><strong>Bei keinem der eingegebenen Wirkstoffe</strong> ist „' + esc(bt) + "“ in der Datenbank beschrieben – <strong>nicht ausgeschlossen</strong>.</p></div>";
+        ohne.forEach(function (x) {
+          html += '<div class="aussage ' + (x.geplant ? "nein" : "info") + '"><p><strong>' + esc(kurzname(x.w)) + ":</strong> " +
+            (x.geplant ? "noch nicht geprüft (Etappe " + esc(x.w.etappe) + ") – nicht ausgeschlossen." : "„" + esc(bt) + "“ ist in der Datenbank nicht beschrieben – nicht ausgeschlossen.") +
+            " " + link(MNW.pubmedLink(x.w.inn_en, bid), "PubMed-Suche") + "</p></div>";
+        });
+      }
+      medsG.forEach(function (g) { var r = gruppenBlock(g, filter); html += r.html; r.gezeigt.forEach(function (id) { gezeigt.add(id); karten++; }); });
+
+      var weitere = gepruefteSichtbar().filter(function (w) { return !gezeigt.has(w.id) && medsW.indexOf(w) < 0; })
+        .map(function (w) { return { w: w, t: treffer(w, filter) }; }).filter(function (x) { return x.t.eintraege.length; });
+      html += "<h2>Weitere Wirkstoffe, bei denen „" + esc(bt) + "“ beschrieben ist</h2>";
+      if (weitere.length) {
+        html += '<p class="kurz">Wirkstoffe außerhalb der Eingabe, für die „' + esc(bt) + "“ in der Datenbank beschrieben ist (Handelsnamen in den Karten).</p>";
+        sortiereNachRelation(weitere).forEach(function (x) { karten++; html += wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen }); });
+      } else html += '<p class="leerhinweis">Bei keinem weiteren Wirkstoff in der Datenbank beschrieben.</p>';
+      html += grunderkrankungBlock(filter) + abdeckungHinweis();
+
+      var uebrig = medsWsicht.filter(function (w) { return w.status === "geprueft"; }).map(function (w) {
+        var ids = new Set(treffer(w, filter).eintraege.map(function (e) { return e.id; }));
+        return { w: w, rest: MNW.eintraegeFuerWirkstoff(w.id).filter(function (e) { return !ids.has(e.id); }) };
+      }).filter(function (x) { return x.rest.length; });
+      if (uebrig.length) {
+        html += '<details class="mehr uebrige"><summary>Übrige Nebenwirkungen der eingegebenen Wirkstoffe (' + uebrig.reduce(function (s, x) { return s + x.rest.length; }, 0) + ")</summary>";
+        uebrig.forEach(function (x) { html += wirkstoffKarte(x.w, { eintraege: x.rest, ohneFuss: gezeigt.has(x.w.id) }); });
+        html += "</details>";
+      }
+    } else if (hatBefund) {
+      /* ===== Nur Befund ===== */
+      var alle = gepruefteSichtbar().map(function (w) { return { w: w, t: treffer(w, filter) }; }).filter(function (x) { return x.t.eintraege.length; });
+      html += "<h2>Wirkstoffe, bei denen „" + esc(bt) + "“ beschrieben ist</h2>";
+      if (alle.length) {
+        var direkt = alle.filter(function (x) { return x.t.bester <= 1; }), verwandt = alle.filter(function (x) { return x.t.bester > 1; });
+        html += '<p class="kurz">' + (direkt.length ? direkt.length + " Wirkstoff" + (direkt.length > 1 ? "e" : "") + " mit passendem Eintrag" : "Kein direkt passender Eintrag") + (verwandt.length ? ", " + verwandt.length + " mit verwandtem Befund" : "") + " – sortiert nach Quellenart.</p>";
+        sortiereNachArt(direkt).forEach(function (x) { karten++; html += wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen, treffer: true }); });
+        if (verwandt.length) {
+          html += "<h2>Verwandte Befunde</h2>";
+          sortiereNachArt(verwandt).forEach(function (x) { karten++; html += wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen }); });
+        }
+      } else {
+        html += '<div class="aussage nein"><p>Bei keinem geprüften Wirkstoff ist „' + esc(bt) + "“ in der Datenbank beschrieben – <strong>nicht ausgeschlossen</strong>.</p>" +
+          (bid ? "<p>" + link(MNW.pubmedLink(null, bid, null), "PubMed-Suche: " + befEn(bid)) + "</p>" : "") + "</div>";
+      }
+      html += grunderkrankungBlock(filter) + abdeckungHinweis();
+    } else {
+      /* ===== Nur Medikation ===== */
+      medsWsicht.forEach(function (w) { karten++; html += wirkstoffKarte(w, {}); });
+      medsG.forEach(function (g) { var r = gruppenBlock(g, null); karten += r.gezeigt.length; html += r.html; });
+    }
+    erg.innerHTML = html || '<div class="leer">Keine Ergebnisse.</div>';
+    melde("Ergebnis aktualisiert: " + karten + " Wirkstoffkarte" + (karten === 1 ? "" : "n") + ".");
+  }
+  function melde(text) { var s = $("status"); if (s) s.textContent = text; }
+
+  /* ---------- Dialoge ---------- */
+  function oeffne(id) { var d = $(id); if (d.showModal) d.showModal(); else d.setAttribute("open", ""); }
+  function infoInhalt() {
+    var z = MNW.zaehlung(), M = D.META;
+    var gepr = D.WIRKSTOFFE.filter(function (w) { return w.status === "geprueft"; }).map(function (w) { return w.inn_de; });
+    var gepl = D.WIRKSTOFFE.filter(function (w) { return w.status !== "geprueft"; }).map(function (w) { return w.inn_de + " (" + w.etappe + ")"; });
+    return "<h3>Zweckbestimmung</h3><p>" + esc(ZWECK) + "</p>" +
+      "<h3>Stand</h3><p>Recherchestand " + esc(MNW.datumDE(M.recherchestand)) + " · Version " + esc(M.version) + " · Etappe " + esc(M.etappe) + "</p>" +
+      '<table class="tabelle"><tbody>' +
+      "<tr><th>Einträge</th><td>" + (z.eintraegeGeprueft - defekt.length) + " geprüft (angezeigt) · " + z.eintraegeOffen + " offen (nicht angezeigt)" + (defekt.length ? " · " + defekt.length + " fehlerhaft (nicht angezeigt)" : "") + "</td></tr>" +
+      "<tr><th>Belege</th><td>" + z.belegeGeprueft + " geprüft · " + z.belegeOffen + " offen (nicht angezeigt)</td></tr>" +
+      "<tr><th>Wirkstoffe</th><td>" + z.wirkstoffeGeprueft + " geprüft · " + z.wirkstoffeGeplant + " erkannt, noch nicht geprüft</td></tr>" +
+      "<tr><th>Quellen, Begriffe</th><td>" + z.quellen + " Quellen · " + z.befunde + " Befunde in der Begriffsliste</td></tr></tbody></table>" +
+      "<h3>Quellenart</h3><ul>" + MNW.ART_REIHENFOLGE.map(function (a) { return "<li>" + badgeArt(a) + " " + esc(MNW.ART_NAME[a]) + "</li>"; }).join("") + "</ul>" +
+      "<h3>Einordnung</h3><ul><li><strong>Nebenwirkung</strong> – der Befund wird als Wirkung des Medikaments beschrieben; wie gut das belegt ist, zeigen Quellenart und Studientyp.</li><li><strong>Grunderkrankung</strong> – der Befund ist Folge der behandelten Erkrankung.</li><li><strong>Wechselwirkung</strong> – der Befund entsteht durch eine Kombination; der Partner wird genannt.</li><li><strong>PV-Signal</strong> – eine Behörde führt oder bewertet ein Signal, das (noch) nicht in der Fachinformation steht.</li><li><strong>Hypothese</strong> – ein Zusammenhang wird in der Literatur nur vermutet oder ist widersprüchlich belegt.</li></ul>" +
+      "<h3>Wie geprüft wurde</h3><ul><li>" + esc(M.pruefregel) + "</li><li>Angezeigt werden nur geprüfte Belege. Medizinische Angaben (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) stammen ausschließlich aus den Quellen; fehlt eine Angabe, steht dort „nicht angegeben“.</li><li>Redaktionell zugeordnet (nicht aus der Quelle): Region, englische Bezeichnung, Synonyme und Alltagsbegriffe.</li><li>Zitate sind kurze Belegstellen „wörtlich laut Abruf“ (Abruf über ein Textwerkzeug) – über „Quelle öffnen“ gegenprüfbar.</li><li>„In der geprüften Fassung nicht gefunden“ heißt: Die Aussage stand in dieser Fassung nicht; das ist schwächer als ein positiver Fund.</li><li>Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) werden nur aufgenommen, wenn sie als Warnhinweis in der Fachinformation stehen; die übrigen stehen bei „Geprüfte Fachinformationen“ des Wirkstoffs.</li><li>Quellen, die nur mit Login lesbar sind (z. B. fachinfo.de), zählen nicht als geprüft.</li></ul>" +
+      "<h3>Offene Punkte</h3><ul>" + (M.offene_punkte || []).map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" +
+      "<h3>Geprüfte Wirkstoffe</h3><p>" + esc(gepr.join(", ")) + "</p>" +
+      "<h3>Erkannt, noch nicht geprüft</h3><p>" + esc(gepl.join(", ")) + "</p>" +
+      "<h3>Datenschutz und Haftung</h3><p>Die Seite speichert keine Eingaben, setzt keine Cookies, lädt keine externen Inhalte und ist für Suchmaschinen gesperrt (noindex). Links zu PubMed, ADRreports und den Quellen öffnen sich in einem neuen Tab; dabei wird nur der jeweilige Suchbegriff übertragen. Die App ist nicht für die Eingabe von Patientendaten bestimmt.</p>";
+  }
+  function quellenInhalt() {
+    var html = "";
+    MNW.ART_REIHENFOLGE.forEach(function (a) {
+      var qs = Object.keys(QUE).filter(function (k) { return QUE[k].art === a; });
+      if (!qs.length) return;
+      html += "<h3>" + badgeArt(a) + " " + esc(MNW.ART_NAME[a]) + '</h3><div class="tabelle-huelle"><table class="tabelle"><thead><tr><th>Quelle</th><th>Stand</th><th>Abruf</th></tr></thead><tbody>' + qs.map(function (k) {
+        var q = QUE[k];
+        return "<tr><td>" + link(q.url, q.titel) + (q.hersteller ? '<br><span class="kurz">' + esc(q.hersteller) + "</span>" : "") +
+          (q.zugang !== "frei" ? '<br><span class="unsicher">' + esc(q.zugang) + " – nicht als geprüft gezählt</span>" + (q.hinweis ? ' <span class="kurz">' + esc(q.hinweis) + "</span>" : "") : "") +
+          "</td><td>" + esc(q.dokumentstand || "nicht angegeben") + "</td><td>" + esc(MNW.datumDE(q.abgerufen)) + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+    });
+    return html;
+  }
+  function protokollInhalt() {
+    return (D.META.aenderungsprotokoll || []).slice().reverse().map(function (p) { return "<h3>Version " + esc(p.version) + " – " + esc(MNW.datumDE(p.datum)) + "</h3><ul>" + (p.aenderungen || []).map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul>"; }).join("");
+  }
+
+  /* ---------- Ereignisse ---------- */
+  verbindeFeld("med"); verbindeFeld("bef");
+  document.addEventListener("click", function (ev) {
+    var t = ev.target.closest("button"); if (!t) return;
+    if (t.hasAttribute("data-entf-med")) { Z.meds.splice(+t.getAttribute("data-entf-med"), 1); renderChips(); renderErgebnis(); }
+    else if (t.hasAttribute("data-entf-bef")) { Z.befunde.splice(+t.getAttribute("data-entf-bef"), 1); renderChips(); renderErgebnis(); }
+    else if (t.hasAttribute("data-region")) { var rid = t.getAttribute("data-region"); regionOffen = regionOffen === rid ? null : rid; renderRegionen(); }
+    else if (t.hasAttribute("data-befund")) { var b = BEF.get(t.getAttribute("data-befund")); schliesseRegionen(); hinzufuegen("bef", { art: "befund", ref: b.id, label: b.de }); }
+    else if (t.hasAttribute("data-ganze-region")) { var r = REG.get(t.getAttribute("data-ganze-region")); schliesseRegionen(); hinzufuegen("bef", { art: "region", ref: r.id, label: r.de }); }
+    else if (t.hasAttribute("data-schnell-med")) { var w = WIR.get(t.getAttribute("data-schnell-med")); hinzufuegen("med", { art: "wirkstoff", ref: w.id, label: w.inn_de }); }
+    else if (t.hasAttribute("data-schliessen")) { t.closest("dialog").close(); }
+  });
+  $("btn-regionen").addEventListener("click", function () {
+    var p = $("regionen"), auf = p.hidden; p.hidden = !auf; this.setAttribute("aria-expanded", auf ? "true" : "false");
+    if (auf) renderRegionen();
+  });
+  $("f-sys").addEventListener("change", function () { Z.sys = this.checked; renderErgebnis(); });
+  $("f-lok").addEventListener("change", function () { Z.lok = this.checked; renderErgebnis(); });
+  $("btn-reset").addEventListener("click", function () {
+    Z.meds = []; Z.befunde = []; Z.sys = true; Z.lok = true; fragen.med = []; fragen.bef = []; regionOffen = null;
+    $("f-sys").checked = true; $("f-lok").checked = true; $("med-input").value = ""; $("bef-input").value = "";
+    naechsteFrage("med"); naechsteFrage("bef"); schliesseRegionen();
+    renderChips(); renderErgebnis(); $("med-input").focus();
+  });
+  $("btn-info").addEventListener("click", function () { $("dlg-info-inhalt").innerHTML = infoInhalt(); oeffne("dlg-info"); });
+  $("btn-quellen").addEventListener("click", function () { $("dlg-quellen-inhalt").innerHTML = quellenInhalt(); oeffne("dlg-quellen"); });
+  $("btn-protokoll").addEventListener("click", function () { $("dlg-protokoll-inhalt").innerHTML = protokollInhalt(); oeffne("dlg-protokoll"); });
+  $("btn-update").addEventListener("click", function () { $("update-text").value = MNW.updatePrompt(); $("kopier-status").textContent = ""; oeffne("dlg-update"); });
+  $("btn-kopieren").addEventListener("click", function () {
+    var ta = $("update-text"), status = $("kopier-status");
+    function ersatz() { ta.focus(); ta.select(); var ok = false; try { ok = document.execCommand("copy"); } catch (e) { ok = false; } status.textContent = ok ? "Kopiert." : "Bitte den markierten Text manuell kopieren."; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(function () { status.textContent = "Kopiert."; }, ersatz); else ersatz();
+  });
+  $("btn-theme").addEventListener("click", function () {
+    var root = document.documentElement, aktuell = root.getAttribute("data-theme");
+    if (!aktuell) aktuell = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    root.setAttribute("data-theme", aktuell === "dark" ? "light" : "dark");
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("dialog"), function (d) {
+    d.addEventListener("click", function (ev) { if (ev.target === d) d.close(); });
+  });
+
+  renderStand(); renderChips(); renderErgebnis();
+})();
+</script>
+</body>
+</html>

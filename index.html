@@ -69,6 +69,8 @@ main { padding: 16px 0 40px; }
 .eingabebox input { flex: 1 1 160px; min-width: 120px; border: 0; outline: 0; background: transparent; color: var(--text); font: inherit; padding: 6px 4px; }
 .chip { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 4px 6px 4px 10px; font-size: .9rem; border: 1px solid var(--linie); background: var(--flaeche-2); max-width: 100%; }
 .chip .chip-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.eingabebox > .zeile { max-width: 100%; min-width: 0; }
+.chip { min-width: 0; }
 .combo { position: relative; }
 .vorschlag-leer { padding: 9px 10px; color: var(--text-3); font-size: .9rem; }
 .chip button { border: 0; background: transparent; color: inherit; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; font-size: 1rem; line-height: 1; }
@@ -236,7 +238,7 @@ textarea.prompt { width: 100%; min-height: 300px; font: .85rem/1.45 ui-monospace
       <div class="zeile" style="justify-content:space-between">
         <div class="filter" role="group" aria-label="Kategorie">
           <span class="feldtitel" style="margin:0">Anzeigen:</span>
-          <label><input type="checkbox" id="f-sys" checked> systemisch</label>
+          <label title="alle nicht am Auge angewendeten Präparate: oral, Injektion, inhalativ, nasal, auf der Haut (dermal)"><input type="checkbox" id="f-sys" checked> systemisch</label>
           <label><input type="checkbox" id="f-lok" checked> lokal am Auge</label>
         </div>
         <button class="knopf klein" id="btn-reset" type="button">Alles zurücksetzen</button>
@@ -581,11 +583,11 @@ var MNW = (function () {
       "Du aktualisierst die Datenbank der Web-App „Medi-NW-Check“ (okuläre Nebenwirkungen von Medikamenten). Zweckbestimmung, unverändert beibehalten: Lern- und Nachschlagehilfe für ärztliches Fachpersonal; keine Diagnose- oder Therapieempfehlung, keine Auswertung von Patientendaten. Formuliere neue Einträge als Wiedergabe der Quelle, nicht als Empfehlung für einzelne Patienten.",
       "Angehängt sind daten.js und synonyme.js. Aktueller Stand: Version " + M.version + ", Recherchestand " + datumDE(M.recherchestand) + ".",
       "",
-      "GRUNDSATZ: Nachvollziehbarkeit vor Menge. Jede medizinische Aussage muss auf eine tatsächlich aufgerufene, frei zugängliche Quelle zurückführbar sein. Nichts erfinden; fehlende Angaben = „nicht angegeben“ (null). Quellen nur mit Login zählen nicht als geprüft. Medizinische Felder (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) nur aus Quellen, nicht aus Fachwissen. ADRreports nur als Direktlink, keine Meldezahlen, keine Raten. Ein Beleg gilt erst als geprüft, wenn die Aussage in zwei Abfragen übereinstimmend in der Quelle gefunden wurde. Zusammenhänge nur aus der Literatur (auch Einzelfallberichte) werden mit Studientyp aufgenommen. Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) nur, wenn sie in der Fachinformation als Warnhinweis stehen. Quellenart A–E und Einordnung wie in daten.js.",
+      "GRUNDSATZ: Nachvollziehbarkeit vor Menge. Jede medizinische Aussage muss auf eine tatsächlich aufgerufene, frei zugängliche Quelle zurückführbar sein. Nichts erfinden; fehlende Angaben = „nicht angegeben“ (null). Quellen nur mit Login (z. B. DocCheck-geschützte Fachinformationen) zählen nicht als geprüft; ohne Login abrufbare Fachinformations-PDFs (z. B. auf fachinfo.de) sind zulässig. Medizinische Felder (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) nur aus Quellen, nicht aus Fachwissen. ADRreports nur als Direktlink, keine Meldezahlen, keine Raten. Ein Beleg gilt erst als geprüft, wenn die Aussage in zwei Abfragen übereinstimmend in der Quelle gefunden wurde. Zusammenhänge nur aus der Literatur (auch Einzelfallberichte) werden mit Studientyp aufgenommen. Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) nur, wenn sie in der Fachinformation als Warnhinweis stehen. Quellenart A–E und Einordnung wie in daten.js.",
       "",
       "SCHRITT 1 – NUR PRÜFEN, NOCH KEINE DATEIEN ÄNDERN. Prüfe für den Zeitraum seit " + datumDE(M.recherchestand) + ":",
       "1. EMA: PRAC-Empfehlungen zu Signalen, PSUSA-Ergebnisse, DHPCs und Referrals mit okulärem Bezug – für erfasste und für neue Wirkstoffe.",
-      "2. Geänderte Fachinformationen: neuere Fassungen der in QUELLEN erfassten EMA-Produktinformationen, deutschen Hersteller-Fachinformationen und DailyMed-Labels (Stand/Revision vergleichen); dabei 4.3/4.4/4.5/4.8 bzw. Boxed Warning/Warnings and Precautions/Adverse Reactions mit den Synonymen aus synonyme.js durchsuchen.",
+      "2. Geänderte Fachinformationen: neuere Fassungen der in QUELLEN erfassten EMA-Produktinformationen, deutschen Fachinformationen (Hersteller-Websites, ohne Login abrufbare PDFs auf fachinfo.de) und DailyMed-Labels (Stand/Revision vergleichen); dabei 4.3/4.4/4.5/4.8 bzw. Boxed Warning/Warnings and Precautions/Adverse Reactions mit den Synonymen aus synonyme.js durchsuchen.",
       "3. Rote-Hand-Briefe (AkdÄ-Liste) und FDA Drug Safety Communications mit okulärem Bezug.",
       "4. Neue Wirkstoffe (EU-/US-Zulassungen) mit okulären Warnhinweisen oder Nebenwirkungen.",
       "5. Neue Leitlinien oder Empfehlungen (z. B. AAO, RCOphth) zu erfassten Wirkstoffen.",
@@ -643,6 +645,10 @@ var MNW = (function () {
     if (w.handelsnamen_de && w.handelsnamen_de.length) t.push("DE: " + w.handelsnamen_de.join(", "));
     if (w.handelsnamen_us && w.handelsnamen_us.length) t.push("US: " + w.handelsnamen_us.join(", "));
     return t.join(" · ");
+  }
+  function anwendungText(w) {
+    if (w.kategorie === "lokal_auge") return "lokal am Auge";
+    return w.applikation && w.applikation.length ? "Anwendung: " + w.applikation.join(", ") : "systemisch";
   }
   function kurzname(w) { var hn = (w.handelsnamen_de || [])[0] || (w.handelsnamen_us || [])[0]; return w.inn_de + (hn ? " (" + hn + ")" : ""); }
 
@@ -872,7 +878,8 @@ var MNW = (function () {
   }
   function kurzHaeufigkeit(belege) {
     var a = belege.filter(function (b) { return QUE[b.quelle].art === "A" && b.haeufigkeit; });
-    a.sort(function (x, y) { return (istEU(QUE[x.quelle]) ? 0 : 1) - (istEU(QUE[y.quelle]) ? 0 : 1); });
+    var unsicher = function (b) { return /nicht sicher zuordenbar/.test(b.haeufigkeit) ? 1 : 0; };
+    a.sort(function (x, y) { return (istEU(QUE[x.quelle]) ? 0 : 1) - (istEU(QUE[y.quelle]) ? 0 : 1) || unsicher(x) - unsicher(y); });
     if (!a.length) return "";
     var h = a[0].haeufigkeit; if (h.length > 80) h = h.slice(0, 77) + "…";
     return "Häufigkeit (" + raumLabel(QUE[a[0].quelle].raum) + "): " + h;
@@ -932,7 +939,7 @@ var MNW = (function () {
   function wirkstoffKopf(w, unsicher) {
     var klassen = (w.klassen || []).map(klaDe).join(", ");
     return '<div class="karte-kopf"><h3>' + esc(w.inn_de) + '<span class="en">' + esc(w.inn_en) + "</span>" + (unsicher ? '<span class="unsicher" title="aus Wirkstoffklasse oder Anwendungsgebiet abgeleitet">abgeleitet – unsicher</span>' : "") + "</h3>" +
-      '<div class="meta">' + (w.kategorie === "lokal_auge" ? "lokal am Auge" : "systemisch") + (klassen ? " · " + esc(klassen) : "") + "</div>" +
+      '<div class="meta">' + esc(anwendungText(w)) + (klassen ? " · " + esc(klassen) : "") + "</div>" +
       (namenListe(w) ? '<div class="handelsnamen">' + esc(namenListe(w)) + "</div>" : "") +
       (w.hinweis ? '<div class="meta">Hinweis: ' + esc(w.hinweis) + "</div>" : "") + "</div>";
   }
@@ -1054,6 +1061,11 @@ var MNW = (function () {
   }
 
   /* ---------- Startansicht ---------- */
+  function geplanteEtappen() {
+    var e = [];
+    D.WIRKSTOFFE.forEach(function (w) { if (w.status !== "geprueft" && w.etappe && e.indexOf(w.etappe) < 0) e.push(w.etappe); });
+    return e.sort();
+  }
   function startansicht() {
     var gepr = D.WIRKSTOFFE.filter(function (w) { return w.status === "geprueft"; });
     return '<div class="leer"><p class="zweck"><strong>Zweck:</strong> Lern- und Nachschlagehilfe für ärztliches Fachpersonal. Sie zeigt, was Fachinformationen, Behörden und Literatur zu okulären Nebenwirkungen beschreiben. Keine Diagnose- oder Therapieempfehlung – bitte keine Patientendaten eingeben.</p>' +
@@ -1063,7 +1075,7 @@ var MNW = (function () {
       "<li><strong>Nur Befund</strong> → alle Wirkstoffe, bei denen er beschrieben ist</li>" +
       "<li><strong>Anwendungsgebiet + Befund</strong> (z. B. „MS-Medikament“ + „Makulaödem“) → ausdrückliche Ja/Nein-Aussage</li></ul>" +
       "<p><strong>Geprüfte Wirkstoffe (antippen zum Anzeigen):</strong></p><div class=\"befundliste\">" + gepr.map(function (w) { return '<button type="button" class="knopf klein" data-schnell-med="' + esc(w.id) + '">' + esc(w.inn_de) + "</button>"; }).join("") + "</div>" +
-      '<p class="kurz">Weitere ' + MNW.zaehlung().wirkstoffeGeplant + " Wirkstoffe werden erkannt, sind aber noch nicht geprüft (Etappe 1b/1c) – sie erscheinen mit dem Hinweis „nicht ausgeschlossen“.</p></div>";
+      '<p class="kurz">Weitere ' + MNW.zaehlung().wirkstoffeGeplant + " Wirkstoffe werden erkannt, sind aber noch nicht geprüft (Etappe " + esc(geplanteEtappen().join("/")) + ") – sie erscheinen mit dem Hinweis „nicht ausgeschlossen“.</p></div>";
   }
 
   /* ---------- Ergebnis ---------- */
@@ -1162,7 +1174,7 @@ var MNW = (function () {
       "<tr><th>Quellen, Begriffe</th><td>" + z.quellen + " Quellen · " + z.befunde + " Befunde in der Begriffsliste</td></tr></tbody></table>" +
       "<h3>Quellenart</h3><ul>" + MNW.ART_REIHENFOLGE.map(function (a) { return "<li>" + badgeArt(a) + " " + esc(MNW.ART_NAME[a]) + "</li>"; }).join("") + "</ul>" +
       "<h3>Einordnung</h3><ul><li><strong>Nebenwirkung</strong> – der Befund wird als Wirkung des Medikaments beschrieben; wie gut das belegt ist, zeigen Quellenart und Studientyp.</li><li><strong>Grunderkrankung</strong> – der Befund ist Folge der behandelten Erkrankung.</li><li><strong>Wechselwirkung</strong> – der Befund entsteht durch eine Kombination; der Partner wird genannt.</li><li><strong>PV-Signal</strong> – eine Behörde führt oder bewertet ein Signal, das (noch) nicht in der Fachinformation steht.</li><li><strong>Hypothese</strong> – ein Zusammenhang wird in der Literatur nur vermutet oder ist widersprüchlich belegt.</li></ul>" +
-      "<h3>Wie geprüft wurde</h3><ul><li>" + esc(M.pruefregel) + "</li><li>Angezeigt werden nur geprüfte Belege. Medizinische Angaben (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) stammen ausschließlich aus den Quellen; fehlt eine Angabe, steht dort „nicht angegeben“.</li><li>Redaktionell zugeordnet (nicht aus der Quelle): Region, englische Bezeichnung, Synonyme und Alltagsbegriffe.</li><li>Zitate sind kurze Belegstellen „wörtlich laut Abruf“ (Abruf über ein Textwerkzeug) – über „Quelle öffnen“ gegenprüfbar.</li><li>„In der geprüften Fassung nicht gefunden“ heißt: Die Aussage stand in dieser Fassung nicht; das ist schwächer als ein positiver Fund.</li><li>Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) werden nur aufgenommen, wenn sie als Warnhinweis in der Fachinformation stehen; die übrigen stehen bei „Geprüfte Fachinformationen“ des Wirkstoffs.</li><li>Quellen, die nur mit Login lesbar sind (z. B. fachinfo.de), zählen nicht als geprüft.</li></ul>" +
+      "<h3>Wie geprüft wurde</h3><ul><li>" + esc(M.pruefregel) + "</li><li>Angezeigt werden nur geprüfte Belege. Medizinische Angaben (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) stammen ausschließlich aus den Quellen; fehlt eine Angabe, steht dort „nicht angegeben“.</li><li>Redaktionell zugeordnet (nicht aus der Quelle): Region, englische Bezeichnung, Synonyme und Alltagsbegriffe.</li><li>Zitate sind kurze Belegstellen „wörtlich laut Abruf“ (Abruf über ein Textwerkzeug) – über „Quelle öffnen“ gegenprüfbar.</li><li>„In der geprüften Fassung nicht gefunden“ heißt: Die Aussage stand in dieser Fassung nicht; das ist schwächer als ein positiver Fund.</li><li>Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) werden nur aufgenommen, wenn sie als Warnhinweis in der Fachinformation stehen; die übrigen stehen bei „Geprüfte Fachinformationen“ des Wirkstoffs.</li><li>Quellen, die nur mit Login lesbar sind (z. B. DocCheck-geschützte Fachinformationen), zählen nicht als geprüft. Fachinformationen, die auf fachinfo.de als PDF ohne Login abrufbar sind, werden genutzt.</li><li>Filter „systemisch“: umfasst alle nicht am Auge angewendeten Präparate (oral, Injektion, inhalativ, nasal, auf der Haut); die Anwendungsarten stehen auf der Wirkstoffkarte.</li></ul>" +
       "<h3>Offene Punkte</h3><ul>" + (M.offene_punkte || []).map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" +
       "<h3>Geprüfte Wirkstoffe</h3><p>" + esc(gepr.join(", ")) + "</p>" +
       "<h3>Erkannt, noch nicht geprüft</h3><p>" + esc(gepl.join(", ")) + "</p>" +

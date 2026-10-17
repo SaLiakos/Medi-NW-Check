@@ -487,7 +487,9 @@ var MNW = (function () {
   function relationRang(r) { return { exakt: 0, spezifischer: 1, allgemeiner: 2, verwandt: 3 }[r]; }
 
   /* ---------- Einträge und Belege ---------- */
-  function belegeGeprueft(e) { return e.belege.filter(function (b) { return b.status === "geprueft" && QUE[b.quelle] && QUE[b.quelle].zugang === "frei"; }); }
+  /* Zugang: "frei" (online frei zugänglich) oder "dokument" (von der Nutzerin bereitgestelltes Dokument ohne Online-Fassung, seit 1.6.0) */
+  function zugangGeprueft(q) { return !!q && (q.zugang === "frei" || q.zugang === "dokument"); }
+  function belegeGeprueft(e) { return e.belege.filter(function (b) { return b.status === "geprueft" && zugangGeprueft(QUE[b.quelle]); }); }
   function eintragGeprueft(e) { return belegeGeprueft(e).length > 0; }
   var EINTRAEGE = D.EINTRAEGE.filter(eintragGeprueft);
   function besteArt(e) { var arten = belegeGeprueft(e).map(function (b) { return QUE[b.quelle].art; }); return ART_REIHENFOLGE.filter(function (a) { return arten.indexOf(a) >= 0; })[0] || "E"; }
@@ -531,7 +533,8 @@ var MNW = (function () {
     var a = b.abschnitt || "", t = b.typ || "";
     if (!a) return t;
     if (!t || a.indexOf(t) === 0) return a;
-    return /^\d/.test(a) ? t + " " + a : t + " (" + a + ")";
+    if (/^\d/.test(a)) return t + " " + a;
+    return /[()]/.test(t + a) ? t + " · " + a : t + " (" + a + ")";
   }
   function beschreibeA(liste) {
     return liste.map(function (b) { return belegTitel(b) + (b.haeufigkeit ? " – Häufigkeit: " + b.haeufigkeit : ""); }).join("; ");
@@ -602,7 +605,7 @@ var MNW = (function () {
       "Du aktualisierst die Datenbank der Web-App „Medi-NW-Check“ (okuläre Nebenwirkungen von Medikamenten). Zweckbestimmung, unverändert beibehalten: Lern- und Nachschlagehilfe für ärztliches Fachpersonal; keine Diagnose- oder Therapieempfehlung, keine Auswertung von Patientendaten. Formuliere neue Einträge als Wiedergabe der Quelle, nicht als Empfehlung für einzelne Patienten.",
       "Angehängt sind daten.js und synonyme.js. Aktueller Stand: Version " + M.version + ", Recherchestand " + datumDE(M.recherchestand) + ".",
       "",
-      "GRUNDSATZ: Nachvollziehbarkeit vor Menge. Jede medizinische Aussage muss auf eine tatsächlich aufgerufene, frei zugängliche Quelle zurückführbar sein. Nichts erfinden; fehlende Angaben = „nicht angegeben“ (null). Quellen nur mit Login (z. B. DocCheck-geschützte Fachinformationen) zählen nicht als geprüft; ohne Login abrufbare Fachinformations-PDFs (z. B. auf fachinfo.de) sind zulässig. Medizinische Felder (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) nur aus Quellen, nicht aus Fachwissen. ADRreports nur als Direktlink, keine Meldezahlen, keine Raten. Ein Beleg gilt erst als geprüft, wenn die Aussage in zwei Abfragen übereinstimmend in der Quelle gefunden wurde. Zusammenhänge nur aus der Literatur (auch Einzelfallberichte) werden mit Studientyp aufgenommen. Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) nur, wenn sie in der Fachinformation als Warnhinweis stehen. Quellenart A–E und Einordnung wie in daten.js.",
+      "GRUNDSATZ: Nachvollziehbarkeit vor Menge. Jede medizinische Aussage muss auf eine tatsächlich aufgerufene, frei zugängliche Quelle zurückführbar sein. Nichts erfinden; fehlende Angaben = „nicht angegeben“ (null). Quellen nur mit Login (z. B. DocCheck-geschützte Fachinformationen) zählen nicht als geprüft; ohne Login abrufbare Fachinformations-PDFs (z. B. auf fachinfo.de) sind zulässig. Quellen mit Zugang „dokument“ (von der Nutzerin bereitgestellte Dokumente ohne Online-Fassung, z. B. die Stellungnahme von DOG und BVA) gelten als geprüft, wenn der Wortlaut zweifach abgeglichen wurde; ihre Belege bleiben erhalten. Medizinische Felder (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) nur aus Quellen, nicht aus Fachwissen. ADRreports nur als Direktlink, keine Meldezahlen, keine Raten. Ein Beleg gilt erst als geprüft, wenn die Aussage in zwei Abfragen übereinstimmend in der Quelle gefunden wurde. Zusammenhänge nur aus der Literatur (auch Einzelfallberichte) werden mit Studientyp aufgenommen. Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) nur, wenn sie in der Fachinformation als Warnhinweis stehen. Quellenart A–E und Einordnung wie in daten.js.",
       "",
       "SCHRITT 1 – NUR PRÜFEN, NOCH KEINE DATEIEN ÄNDERN. Prüfe für den Zeitraum seit " + datumDE(M.recherchestand) + ":",
       "1. EMA: PRAC-Empfehlungen zu Signalen, PSUSA-Ergebnisse, DHPCs und Referrals mit okulärem Bezug – für erfasste und für neue Wirkstoffe.",
@@ -611,6 +614,7 @@ var MNW = (function () {
       "4. Neue Wirkstoffe (EU-/US-Zulassungen) mit okulären Warnhinweisen oder Nebenwirkungen.",
       "5. Neue Leitlinien oder Empfehlungen (z. B. AAO, RCOphth) zu erfassten Wirkstoffen.",
       "6. Alle Belege mit Status „offen“, die „offene_punkte“ in META, die Wirkstoffe mit Status „geplant“ und geprüfte Wirkstoffe ohne geprüftes Anwendungsgebiet (Feld „indikation“).",
+      "7. Quellen mit Zugang „dokument“: nach einer frei zugänglichen Online-Fassung suchen (z. B. auf den Websites der Fachgesellschaften); falls gefunden, Link eintragen und Zugang auf „frei“ setzen, sonst das Datum im Feld „online_suche“ aktualisieren.",
       "Antworte zuerst NUR mit „Stand aktuell“ oder mit einer Liste der Neuerungen (je: Wirkstoff, Befund, Art der Änderung, Quelle mit Link, Datum). Frage mich dann, welche Neuerungen übernommen werden sollen.",
       "",
       "SCHRITT 2 – ERST NACH MEINER FREIGABE: Erstelle vollständige neue Dateien daten.js und synonyme.js mit identischem Aufbau. Prüfe jeden neuen oder geänderten Beleg (Quelle aufrufen, Aussage wörtlich finden, Abschnitt, Stand, Link, Prüfdatum). Für das Anwendungsgebiet gilt dieselbe Prüfregel: Kurzfassung (höchstens rund 120 Zeichen) aus Abschnitt 4.1 der geprüften DE/EU-Fachinformation, sonst aus Indications and Usage des US-Labels (dann „(USA)“ anhängen), mit wörtlichem Zitat. Erhöhe die Version in beiden Dateien auf dieselbe neue Nummer, setze den Recherchestand auf das heutige Datum, ergänze das Änderungsprotokoll und nenne mir ehrlich die Zahl geprüfter und offener Einträge und Belege. Liefere die beiden Dateien vollständig zum Herunterladen; index.html bleibt unverändert."
@@ -622,7 +626,7 @@ var MNW = (function () {
     REGION_REIHENFOLGE: REGION_REIHENFOLGE, ART_REIHENFOLGE: ART_REIHENFOLGE, EINORDNUNG: EINORDNUNG, ART_NAME: ART_NAME, RELATION_TEXT: RELATION_TEXT,
     norm: norm, distanz: distanz, suche: suche, entscheide: entscheide, zerlegeListe: zerlegeListe,
     nachfahren: nachfahren, vorfahren: vorfahren, relation: relation, relationRang: relationRang,
-    belegeGeprueft: belegeGeprueft, besteArt: besteArt, artenVon: artenVon, eintraegeFuerWirkstoff: eintraegeFuerWirkstoff,
+    belegeGeprueft: belegeGeprueft, zugangGeprueft: zugangGeprueft, besteArt: besteArt, artenVon: artenVon, eintraegeFuerWirkstoff: eintraegeFuerWirkstoff,
     passtZuFilter: passtZuFilter, sortiereEintraege: sortiereEintraege, wirkstoffeInGruppe: wirkstoffeInGruppe, nachName: nachName, alphabetisch: alphabetisch, unterschiede: unterschiede,
     vergleicheNamen: vergleicheNamen, vergleicheTexte: vergleicheTexte, namenSortiert: namenSortiert, texteSortiert: texteSortiert,
     hauptRegion: hauptRegion, belegTitel: belegTitel, hatWarnung: hatWarnung, pubmedLink: pubmedLink, adrreportsLink: adrreportsLink, zaehlung: zaehlung, tageSeit: tageSeit, datumDE: datumDE, updatePrompt: updatePrompt
@@ -649,7 +653,10 @@ var MNW = (function () {
 
   /* ---------- Hilfsfunktionen ---------- */
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function link(url, text) { return '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(text) + "</a>"; }
+  function link(url, text) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(text) + "</a>" : '<span class="ohne-link">' + esc(text) + "</span>"; }
+  /* Quelle mit Zugang „dokument“: kein Link, stattdessen Hinweis mit Datum der letzten Suche nach einer Online-Fassung */
+  function dokumentHinweis(q) { return "Dokument – keine Online-Fassung gefunden" + (q.online_suche ? " (Suche am " + MNW.datumDE(q.online_suche) + ")" : ""); }
+  function quellenOrt(q, text) { return q.url ? link(q.url, text) : '<span class="dokument-hinweis">' + esc(dokumentHinweis(q)) + "</span>"; }
   function $(id) { return document.getElementById(id); }
   function raumLabel(r) { return { DE: "DE", EU: "EU", USA: "USA", INT: "international" }[r] || r; }
   function istEU(q) { return q.raum === "DE" || q.raum === "EU"; }
@@ -888,7 +895,7 @@ var MNW = (function () {
     var q = QUE[b.quelle];
     var kopf = badgeArt(q.art) + " " + esc(MNW.belegTitel(b)) + " · " + esc(raumLabel(q.raum));
     var herkunft = esc(q.titel) + (q.hersteller ? " · " + esc(q.hersteller) : "") + (q.dokumentstand ? " · " + esc(q.dokumentstand) : "") +
-      (q.studientyp ? " · Studientyp: " + esc(q.studientyp) : "") + (q.pmid ? " · PMID " + esc(q.pmid) : "") + " · " + link(q.url, "Quelle öffnen");
+      (q.studientyp ? " · Studientyp: " + esc(q.studientyp) : "") + (q.pmid ? " · PMID " + esc(q.pmid) : "") + " · " + quellenOrt(q, "Quelle öffnen");
     return '<div class="beleg art-' + q.art + '"><div class="kopfzeile">' + kopf + "</div>" +
       "<div>" + esc(b.aussage) + "</div>" +
       (b.zitat ? '<div class="zitat">' + esc(b.zitat) + ' <span class="herkunft">(wörtlich laut Abruf)</span></div>' : "") +
@@ -1090,16 +1097,22 @@ var MNW = (function () {
       var bt = befundText();
       var passende = geprueft.map(function (w) { return { w: w, t: treffer(w, filter) }; }).filter(function (x) { return x.t.eintraege.length; });
       sortiereTreffer(passende);
-      if (passende.length) {
-        html += '<div class="aussage ja"><p><strong>Ja</strong> – im Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ beschrieben bei: " + esc(passende.map(function (x) { return kurzname(x.w); }).join(", ")) + ".</p>" +
+      /* „Ja“ nur für den gesuchten oder einen spezifischeren Befund; ist nur ein verwandter oder allgemeinerer Befund beschrieben (z. B. „Uveitis“ bei der Suche nach „Panuveitis“), wird das getrennt genannt (seit 1.6.0) */
+      var genau = passende.filter(function (x) { return !istVerwandt(x); }), verwandt = passende.filter(istVerwandt);
+      var verwandtSatz = verwandt.length ? "<p>Mit verwandtem Befund (nicht derselbe Befund): " + esc(verwandt.map(function (x) { return kurzname(x.w); }).join(", ")) + ".</p>" : "";
+      var karten = function () { html += trefferKarten(passende, function (x) { gezeigt.push(x.w.id); return wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen, unsicher: true, treffer: true, offen: true }); }); };
+      if (genau.length) {
+        html += '<div class="aussage ja"><p><strong>Ja</strong> – im Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ beschrieben bei: " + esc(genau.map(function (x) { return kurzname(x.w); }).join(", ")) + ".</p>" + verwandtSatz +
           "<p>" + abgeleitet + " – <strong>unsicher, welcher Wirkstoff gemeint ist</strong> (Handelsnamen in den Karten).</p>" + abdeckung + "</div>";
-        html += trefferKarten(passende, function (x) { gezeigt.push(x.w.id); return wirkstoffKarte(x.w, { eintraege: x.t.eintraege, relationen: x.t.relationen, unsicher: true, treffer: true, offen: true }); });
+        karten();
       } else if (geplant.length) {
         html += '<div class="aussage nein"><p><strong>Noch keine Aussage möglich</strong> – ' + (geprueft.length ? "bei den geprüften Wirkstoffen aus „" + esc(g.label) + "“ ist „" + esc(bt) + "“ nicht beschrieben, aber " : "") +
-          esc(geplant.map(function (w) { return w.inn_de; }).join(", ")) + " " + (geplant.length > 1 ? "sind" : "ist") + " noch nicht geprüft. <strong>Nicht ausgeschlossen.</strong></p>" + abdeckung +
+          esc(geplant.map(function (w) { return w.inn_de; }).join(", ")) + " " + (geplant.length > 1 ? "sind" : "ist") + " noch nicht geprüft. <strong>Nicht ausgeschlossen.</strong></p>" + verwandtSatz + abdeckung +
           "<p>" + geplant.map(function (w) { return link(MNW.pubmedLink(w.inn_en, filter.befunde[0] || null), "PubMed: " + w.inn_en + (filter.befunde[0] ? " + " + befEn(filter.befunde[0]) : "")); }).join(" · ") + "</p></div>";
+        if (verwandt.length) karten();
       } else {
-        html += '<div class="aussage nein"><p><strong>Nein</strong> – bei keinem Wirkstoff aus dem Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ in der Datenbank beschrieben. <strong>Nicht ausgeschlossen.</strong></p>" + abdeckung + "</div>";
+        html += '<div class="aussage nein"><p><strong>Nein</strong> – bei keinem Wirkstoff aus dem Bereich „' + esc(g.label) + "“ ist „" + esc(bt) + "“ in der Datenbank beschrieben. <strong>Nicht ausgeschlossen.</strong></p>" + verwandtSatz + abdeckung + "</div>";
+        if (verwandt.length) karten();
       }
     } else {
       html += '<div class="aussage info"><p>' + abgeleitet + " – <strong>unsicher, welcher Wirkstoff gemeint ist</strong>. Handelsnamen stehen in den Karten.</p>" + abdeckung + "</div>";
@@ -1137,7 +1150,7 @@ var MNW = (function () {
       "<li><strong>Nur Befund</strong> → alle Wirkstoffe, bei denen er beschrieben ist</li>" +
       "<li><strong>Anwendungsgebiet + Befund</strong> (z. B. „MS-Medikament“ + „Makulaödem“) → ausdrückliche Ja/Nein-Aussage</li></ul>" +
       "<p><strong>Geprüfte Wirkstoffe (antippen zum Anzeigen):</strong></p><div class=\"befundliste\">" + gepr.map(function (w) { return '<button type="button" class="knopf klein" data-schnell-med="' + esc(w.id) + '">' + esc(w.inn_de) + "</button>"; }).join("") + "</div>" +
-      '<p class="kurz">Weitere ' + MNW.zaehlung().wirkstoffeGeplant + " Wirkstoffe werden erkannt, sind aber noch nicht geprüft (Etappe " + esc(geplanteEtappen().join("/")) + ") – sie erscheinen mit dem Hinweis „nicht ausgeschlossen“.</p></div>";
+      (MNW.zaehlung().wirkstoffeGeplant ? '<p class="kurz">Weitere ' + MNW.zaehlung().wirkstoffeGeplant + " Wirkstoffe werden erkannt, sind aber noch nicht geprüft (Etappe " + esc(geplanteEtappen().join("/")) + ") – sie erscheinen mit dem Hinweis „nicht ausgeschlossen“.</p>" : "") + "</div>";
   }
 
   /* ---------- Ergebnis ---------- */
@@ -1237,10 +1250,10 @@ var MNW = (function () {
       "<tr><th>Quellen, Begriffe</th><td>" + z.quellen + " Quellen · " + z.befunde + " Befunde in der Begriffsliste</td></tr></tbody></table>" +
       "<h3>Quellenart</h3><ul>" + MNW.ART_REIHENFOLGE.map(function (a) { return "<li>" + badgeArt(a) + " " + esc(MNW.ART_NAME[a]) + "</li>"; }).join("") + "</ul>" +
       "<h3>Einordnung</h3><ul><li><strong>Nebenwirkung</strong> – der Befund wird als Wirkung des Medikaments beschrieben; wie gut das belegt ist, zeigen Quellenart und Studientyp.</li><li><strong>Grunderkrankung</strong> – der Befund ist Folge der behandelten Erkrankung.</li><li><strong>Wechselwirkung</strong> – der Befund entsteht durch eine Kombination; der Partner wird genannt.</li><li><strong>PV-Signal</strong> – eine Behörde führt oder bewertet ein Signal, das (noch) nicht in der Fachinformation steht.</li><li><strong>Hypothese</strong> – ein Zusammenhang wird in der Literatur nur vermutet oder ist widersprüchlich belegt.</li></ul>" +
-      "<h3>Wie geprüft wurde</h3><ul><li>" + esc(M.pruefregel) + "</li><li>Angezeigt werden nur geprüfte Belege. Medizinische Angaben (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) stammen ausschließlich aus den Quellen; fehlt eine Angabe, steht dort „nicht angegeben“.</li><li>Redaktionell zugeordnet (nicht aus der Quelle): Region, englische Bezeichnung, Synonyme und Alltagsbegriffe.</li><li>Zitate sind kurze Belegstellen „wörtlich laut Abruf“ (Abruf über ein Textwerkzeug) – über „Quelle öffnen“ gegenprüfbar.</li><li>„In der geprüften Fassung nicht gefunden“ heißt: Die Aussage stand in dieser Fassung nicht; das ist schwächer als ein positiver Fund.</li><li>Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) werden nur aufgenommen, wenn sie als Warnhinweis in der Fachinformation stehen; die übrigen stehen bei „Geprüfte Fachinformationen“ des Wirkstoffs.</li><li>Quellen, die nur mit Login lesbar sind (z. B. DocCheck-geschützte Fachinformationen), zählen nicht als geprüft. Fachinformationen, die auf fachinfo.de als PDF ohne Login abrufbar sind, werden genutzt.</li><li>Filter „systemisch“: umfasst alle nicht am Auge angewendeten Präparate (oral, Injektion, inhalativ, nasal, auf der Haut); die Anwendungsarten stehen auf der Wirkstoffkarte.</li><li>Anwendungsgebiet: Kurzfassung aus Abschnitt 4.1 der Fachinformation bzw. dem US-Label (dann mit „(USA)“), keine vollständige Indikationsliste. Die Quelle steht im Tooltip der Zeile, das wörtliche Zitat unter „Geprüfte Fachinformationen“. Die Alltagsbegriffe für die Suche (z. B. „Abnehmspritze“) sind davon unabhängig redaktionell zugeordnet.</li></ul>" +
+      "<h3>Wie geprüft wurde</h3><ul><li>" + esc(M.pruefregel) + "</li><li>Angezeigt werden nur geprüfte Belege. Medizinische Angaben (Häufigkeit, Latenz, Dosisabhängigkeit, Reversibilität, Dringlichkeit, Kontrollen) stammen ausschließlich aus den Quellen; fehlt eine Angabe, steht dort „nicht angegeben“.</li><li>Redaktionell zugeordnet (nicht aus der Quelle): Region, englische Bezeichnung, Synonyme und Alltagsbegriffe.</li><li>Zitate sind kurze Belegstellen „wörtlich laut Abruf“ (Abruf über ein Textwerkzeug) – über „Quelle öffnen“ gegenprüfbar.</li><li>„In der geprüften Fassung nicht gefunden“ heißt: Die Aussage stand in dieser Fassung nicht; das ist schwächer als ein positiver Fund.</li><li>Unspezifische Angaben ohne Befund (z. B. nur „Verschwommensehen“) werden nur aufgenommen, wenn sie als Warnhinweis in der Fachinformation stehen; die übrigen stehen bei „Geprüfte Fachinformationen“ des Wirkstoffs.</li><li>Quellen, die nur mit Login lesbar sind (z. B. DocCheck-geschützte Fachinformationen), zählen nicht als geprüft. Fachinformationen, die auf fachinfo.de als PDF ohne Login abrufbar sind, werden genutzt.</li><li>Von der Nutzerin bereitgestellte Dokumente ohne Online-Fassung (derzeit die Stellungnahme von DOG und BVA zu okulären Toxizitäten neuer onkologischer Therapien) gelten als geprüfte Quelle, wenn der Wortlaut zweifach abgeglichen wurde (Textebene und Seitenbild). Sie haben keinen Link; dort steht „Dokument – keine Online-Fassung gefunden“ mit dem Datum der letzten Suche. Ihre Angaben stehen getrennt von denen der Fachinformationen.</li><li>Filter „systemisch“: umfasst alle nicht am Auge angewendeten Präparate (oral, Injektion, inhalativ, nasal, auf der Haut); die Anwendungsarten stehen auf der Wirkstoffkarte.</li><li>Anwendungsgebiet: Kurzfassung aus Abschnitt 4.1 der Fachinformation bzw. dem US-Label (dann mit „(USA)“), keine vollständige Indikationsliste. Die Quelle steht im Tooltip der Zeile, das wörtliche Zitat unter „Geprüfte Fachinformationen“. Die Alltagsbegriffe für die Suche (z. B. „Abnehmspritze“) sind davon unabhängig redaktionell zugeordnet.</li></ul>" +
       "<h3>Offene Punkte</h3><ul>" + MNW.texteSortiert(M.offene_punkte).map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" +
       "<h3>Geprüfte Wirkstoffe</h3><p>" + esc(gepr.join(", ")) + "</p>" +
-      "<h3>Erkannt, noch nicht geprüft</h3><p>" + esc(gepl.join(", ")) + "</p>" +
+      "<h3>Erkannt, noch nicht geprüft</h3><p>" + (gepl.length ? esc(gepl.join(", ")) : "keine") + "</p>" +
       "<h3>Datenschutz und Haftung</h3><p>Die Seite speichert keine Eingaben, setzt keine Cookies, lädt keine externen Inhalte und ist für Suchmaschinen gesperrt (noindex). Links zu PubMed, ADRreports und den Quellen öffnen sich in einem neuen Tab; dabei wird nur der jeweilige Suchbegriff übertragen. Die App ist nicht für die Eingabe von Patientendaten bestimmt.</p>";
   }
   function quellenInhalt() {
@@ -1251,7 +1264,8 @@ var MNW = (function () {
       html += "<h3>" + badgeArt(a) + " " + esc(MNW.ART_NAME[a]) + '</h3><div class="tabelle-huelle"><table class="tabelle"><thead><tr><th>Quelle</th><th>Stand</th><th>Abruf</th></tr></thead><tbody>' + qs.map(function (k) {
         var q = QUE[k];
         return "<tr><td>" + link(q.url, q.titel) + (q.hersteller ? '<br><span class="kurz">' + esc(q.hersteller) + "</span>" : "") +
-          (q.zugang !== "frei" ? '<br><span class="unsicher">' + esc(q.zugang) + " – nicht als geprüft gezählt</span>" + (q.hinweis ? ' <span class="kurz">' + esc(q.hinweis) + "</span>" : "") : "") +
+          (q.zugang === "dokument" ? '<br><span class="kurz dokument-hinweis">' + esc(dokumentHinweis(q)) + "</span>" + (q.hinweis ? ' <span class="kurz">' + esc(q.hinweis) + "</span>" : "")
+            : q.zugang !== "frei" ? '<br><span class="unsicher">' + esc(q.zugang) + " – nicht als geprüft gezählt</span>" + (q.hinweis ? ' <span class="kurz">' + esc(q.hinweis) + "</span>" : "") : "") +
           "</td><td>" + esc(q.dokumentstand || "nicht angegeben") + "</td><td>" + esc(MNW.datumDE(q.abgerufen)) + "</td></tr>";
       }).join("") + "</tbody></table></div>";
     });

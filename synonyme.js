@@ -5,8 +5,8 @@
    Felder BEFUNDE: id, region[] (erste = Hauptregion), ober (Oberbegriff-ID oder null), de, en,
    syn_de[], syn_en[] (inkl. US-/UK-Schreibweise), patient[] (Patientensprache), abk[], siehe[] (verwandte Befunde). */
 window.MNW_SYNONYME = {
-  version: "1.5.0",
-  stand: "2026-10-11",
+  version: "1.6.0",
+  stand: "2026-10-16",
 
   REGIONEN: [
     { id: "lider_orbita_traenenwege", de: "Lider / Orbita / Tränenwege", en: "Eyelids / orbit / lacrimal system",
@@ -79,7 +79,7 @@ window.MNW_SYNONYME = {
       syn_de: ["Thyreoidale Orbitopathie", "Basedow-Orbitopathie", "endokrine Ophthalmopathie"], syn_en: ["Graves orbitopathy", "Graves ophthalmopathy", "thyroid-associated orbitopathy", "thyroid associated ophthalmopathy"],
       patient: [], abk: ["EO", "TED", "TAO"], siehe: ["exophthalmus", "lidretraktion"] },
     { id: "orbitale_entzuendung", region: ["lider_orbita_traenenwege"], ober: null, de: "Orbitale Entzündung / Myositis", en: "orbital inflammation",
-      syn_de: ["orbitale Myositis", "Myositis der Augenmuskeln", "Pseudotumor orbitae"], syn_en: ["orbital myositis", "orbital inflammatory disease", "idiopathic orbital inflammation"],
+      syn_de: ["orbitale Myositis", "Myositis der Augenmuskeln", "Pseudotumor orbitae", "okuläre Myositis", "okulare Myositis"], syn_en: ["orbital myositis", "orbital inflammatory disease", "idiopathic orbital inflammation", "ocular myositis"],
       patient: [], abk: [], siehe: [] },
     { id: "traenenwegsstenose", region: ["lider_orbita_traenenwege"], ober: null, de: "Tränenwegsstenose", en: "lacrimal drainage obstruction",
       syn_de: ["Tränenwegsverschluss", "Kanalikulusstenose", "Tränenpünktchenstenose", "Punctumstenose", "Kanalikulusverschluss", "Verschluss der Tränenkanälchen"], syn_en: ["canalicular stenosis", "punctal stenosis", "nasolacrimal duct obstruction", "lacrimal duct stenosis", "dacryostenosis", "canalicular obstruction", "punctal occlusion"],
@@ -188,6 +188,9 @@ window.MNW_SYNONYME = {
     { id: "augeninfektion", region: ["traenenfilm_bindehaut_sklera", "hornhaut"], ober: null, de: "Augeninfektion (bakteriell, viral, mykotisch)", en: "ocular infection",
       syn_de: ["Augeninfektionen", "Infektion am Auge", "okuläre Infektion", "sekundäre Augeninfektion", "sekundäre Augeninfektionen"], syn_en: ["eye infection", "ocular infections", "secondary ocular infection", "secondary ocular infections"],
       patient: [], abk: [], siehe: ["infektioese_keratitis", "herpes_keratitis", "endophthalmitis"] },
+    { id: "hornhauttransplantat_abstossung", region: ["hornhaut"], ober: null, de: "Abstoßung eines Hornhauttransplantats", en: "corneal graft rejection",
+      syn_de: ["Hornhauttransplantat-Abstoßung", "Abstoßung nach Keratoplastik", "Transplantatabstoßung nach Keratoplastik", "Keratoplastik-Abstoßung"], syn_en: ["corneal transplant rejection", "corneal allograft rejection", "keratoplasty rejection"],
+      patient: [], abk: [], siehe: [] },
 
     /* ---------- Vorderkammer / Kammerwinkel / IOD / Refraktion ---------- */
     { id: "iod_anstieg", region: ["vorderkammer_iod_refraktion"], ober: null, de: "Augeninnendruckanstieg", en: "increased intraocular pressure",
@@ -228,7 +231,7 @@ window.MNW_SYNONYME = {
     { id: "panuveitis", region: ["uvea_iris_pupille"], ober: "uveitis", de: "Panuveitis", en: "panuveitis",
       syn_de: [], syn_en: [], patient: [], abk: [], siehe: ["vkh_aehnliche_uveitis"] },
     { id: "vkh_aehnliche_uveitis", region: ["uvea_iris_pupille"], ober: "uveitis", de: "Vogt-Koyanagi-Harada-ähnliche Uveitis", en: "Vogt-Koyanagi-Harada-like uveitis",
-      syn_de: ["VKH-ähnliche Uveitis", "Vogt-Koyanagi-Harada-Syndrom", "VKH-ähnliches Syndrom"], syn_en: ["VKH-like uveitis", "Vogt-Koyanagi-Harada-like syndrome", "VKH-like syndrome"],
+      syn_de: ["VKH-ähnliche Uveitis", "Vogt-Koyanagi-Harada-Syndrom", "VKH-ähnliches Syndrom", "VKH-Syndrom"], syn_en: ["VKH-like uveitis", "Vogt-Koyanagi-Harada-like syndrome", "VKH-like syndrome", "Vogt-Koyanagi-Harada syndrome", "VKH syndrome"],
       patient: [], abk: ["VKH"], siehe: ["panuveitis"] },
     { id: "endophthalmitis", region: ["uvea_iris_pupille", "glaskoerper"], ober: null, de: "Endophthalmitis", en: "endophthalmitis",
       syn_de: ["intraokulare Infektion"], syn_en: ["intraocular infection"], patient: [], abk: [], siehe: [] },
@@ -283,7 +286,7 @@ window.MNW_SYNONYME = {
     { id: "makulaere_teleangiektasie_aehnlich", region: ["netzhaut_makula_aderhaut"], ober: "makulopathie", de: "Makuläre Teleangiektasie-ähnliche Veränderungen", en: "macular telangiectasia-like changes",
       syn_de: ["MacTel-ähnlich"], syn_en: ["MacTel-like", "macular telangiectasia type 2-like"], patient: [], abk: [], siehe: ["kristalline_retinopathie"] },
     { id: "pigmentretinopathie", region: ["netzhaut_makula_aderhaut"], ober: "retinopathie", de: "Pigmentretinopathie / Pigmentveränderungen der Netzhaut", en: "pigmentary retinopathy",
-      syn_de: ["Netzhautpigmentveränderungen", "RPE-Veränderungen", "Pigmentepithelveränderungen", "Retinitis-pigmentosa-ähnliche Veränderungen"], syn_en: ["retinal pigment changes", "retinal pigmentation changes", "retinal pigment epithelium changes", "RPE changes", "retinitis pigmentosa-like"],
+      syn_de: ["Netzhautpigmentveränderungen", "RPE-Veränderungen", "Pigmentepithelveränderungen", "Retinitis-pigmentosa-ähnliche Veränderungen", "Retinopathia pigmentosa"], syn_en: ["retinal pigment changes", "retinal pigmentation changes", "retinal pigment epithelium changes", "RPE changes", "retinitis pigmentosa-like"],
       patient: [], abk: [], siehe: ["bulls_eye_makulopathie", "pigmentaere_makulopathie"] },
     { id: "kristalline_retinopathie", region: ["netzhaut_makula_aderhaut"], ober: "retinopathie", de: "Kristalline Retinopathie", en: "crystalline retinopathy",
       syn_de: ["Netzhautkristalle", "intraretinale Kristalle", "refraktile Netzhautablagerungen"], syn_en: ["crystalline maculopathy", "intraretinal crystals", "refractile retinal deposits", "retinal crystals"],
@@ -369,9 +372,9 @@ window.MNW_SYNONYME = {
     { id: "augenbewegungsstoerung", region: ["motilitaet"], ober: null, de: "Störung der Augenbewegung", en: "eye movement disorder",
       syn_de: ["Augenbewegungsstörung", "Okulomotorikstörung", "Störung der Okulomotorik"], syn_en: ["eye movement disorders", "ocular motility disorder", "abnormal eye movements"], patient: [], abk: [], siehe: ["augenmuskelparese", "nystagmus", "diplopie"] },
     { id: "okulogyre_krise", region: ["motilitaet"], ober: null, de: "Okulogyre Krise", en: "oculogyric crisis",
-      syn_de: ["Blickkrampf"], syn_en: ["oculogyration"], patient: ["Augen verdrehen sich nach oben"], abk: [], siehe: [] },
+      syn_de: ["Blickkrampf"], syn_en: ["oculogyration", "oculogyric crises"], patient: ["Augen verdrehen sich nach oben"], abk: [], siehe: [] },
     { id: "myasthenie_okulaer", region: ["motilitaet"], ober: null, de: "Okuläre Myasthenie / myasthenes Syndrom", en: "ocular myasthenia",
-      syn_de: ["Myasthenia gravis", "myasthenes Syndrom"], syn_en: ["myasthenia gravis", "myasthenic syndrome", "ocular myasthenia gravis"], patient: [], abk: [], siehe: ["ptosis", "diplopie"] },
+      syn_de: ["Myasthenia gravis", "myasthenes Syndrom", "Myastheniesyndrom", "Myasthenie-Syndrom"], syn_en: ["myasthenia gravis", "myasthenic syndrome", "ocular myasthenia gravis"], patient: [], abk: [], siehe: ["ptosis", "diplopie"] },
     { id: "strabismus", region: ["motilitaet"], ober: null, de: "Strabismus", en: "strabismus",
       syn_de: ["Schielen"], syn_en: ["squint"], patient: ["Schielen"], abk: [], siehe: [] },
 
@@ -391,8 +394,8 @@ window.MNW_SYNONYME = {
     { id: "amaurosis_fugax", region: ["sehfunktion"], ober: "sehverlust", de: "Vorübergehender Sehverlust", en: "transient visual loss",
       syn_de: ["Amaurosis fugax", "vorübergehende Erblindung", "transiente Blindheit", "vorübergehende Blindheit"], syn_en: ["amaurosis fugax", "transient vision loss", "transient blindness", "temporary vision loss"], patient: [], abk: [], siehe: [] },
     { id: "farbsehstoerung", region: ["sehfunktion"], ober: null, de: "Farbsehstörung", en: "colour vision disturbance",
-      syn_de: ["Farbsehen", "Farbsinnstörung", "Dyschromatopsie", "gestörtes Farbsehen", "Beeinträchtigung des Farbsehens", "veränderte Farbwahrnehmung", "Chromatopsie", "Rot-Grün-Schwäche", "Verlust der Rot-Grün-Diskrimination", "Erythropsie", "Chloropsie", "Rotsehen", "Grünsehen", "Farbenblindheit", "Farbtönung des Sehens", "Veränderungen des Farbsehens", "Störungen des Farbensehens", "Störung des Farbensehens", "eingeschränktes Farbsehen", "eingeschränktes Farbensehen"],
-      syn_en: ["color vision", "colour vision", "color vision disturbance", "color vision deficiency", "colour vision deficiency", "dyschromatopsia", "abnormal color vision", "decrement in color vision perception", "chromatopsia", "erythropsia", "chloropsia", "red-green color deficiency", "red-green colour deficiency", "color blindness", "colour blindness", "color tinge to vision", "visual color distortions", "colour vision distortions", "changes in color vision", "aberration in color vision", "color vision disorder", "colour vision disorder"],
+      syn_de: ["Farbsehen", "Farbsinnstörung", "Dyschromatopsie", "gestörtes Farbsehen", "Beeinträchtigung des Farbsehens", "veränderte Farbwahrnehmung", "Chromatopsie", "Rot-Grün-Schwäche", "Verlust der Rot-Grün-Diskrimination", "Erythropsie", "Chloropsie", "Rotsehen", "Grünsehen", "Farbenblindheit", "Farbtönung des Sehens", "Veränderungen des Farbsehens", "Störungen des Farbensehens", "Störung des Farbensehens", "eingeschränktes Farbsehen", "eingeschränktes Farbensehen", "Braunsehen", "bräunliche Färbung des Sehens"],
+      syn_en: ["color vision", "colour vision", "color vision disturbance", "color vision deficiency", "colour vision deficiency", "dyschromatopsia", "abnormal color vision", "decrement in color vision perception", "chromatopsia", "erythropsia", "chloropsia", "red-green color deficiency", "red-green colour deficiency", "color blindness", "colour blindness", "color tinge to vision", "visual color distortions", "colour vision distortions", "changes in color vision", "aberration in color vision", "color vision disorder", "colour vision disorder", "brownish coloring of vision", "brownish colouring of vision"],
       patient: ["Farben wirken blass", "Farben anders"], abk: [], siehe: [] },
     { id: "xanthopsie", region: ["sehfunktion"], ober: "farbsehstoerung", de: "Xanthopsie (Gelbsehen)", en: "xanthopsia",
       syn_de: ["Gelbsehen", "Gelbstich", "Gelb-Grün-Sehen", "Grün-Gelb-Sehen"], syn_en: ["yellow vision", "yellow-green vision", "green-yellow color disturbances"], patient: ["alles gelb"], abk: [], siehe: [] },
@@ -405,7 +408,7 @@ window.MNW_SYNONYME = {
       syn_de: ["gestörte Dunkeladaptation", "langsame Hell-Dunkel-Anpassung", "langsame Anpassung an Dunkelheit"], syn_en: ["decreased dark adaptation", "delayed dark adaptation", "slow adjustment to low light"],
       patient: ["Augen gewöhnen sich langsam an Dunkelheit"], abk: [], siehe: [] },
     { id: "gesichtsfeldausfall", region: ["sehfunktion"], ober: null, de: "Gesichtsfeldausfall", en: "visual field defect",
-      syn_de: ["Gesichtsfeld", "Gesichtsfelddefekt", "Gesichtsfeldeinschränkung", "Gesichtsfeldverlust", "Gesichtsfeldveränderung", "Gesichtsfeldausfälle", "Einschränkung der Gesichtsfeldaußengrenzen", "periphere Gesichtsfeldeinschränkung", "Verzerrung des Gesichtsfelds"], syn_en: ["visual field", "visual field loss", "visual field defects", "visual field constriction", "field loss", "peripheral visual field constriction", "decreases in peripheral vision"],
+      syn_de: ["Gesichtsfeld", "Gesichtsfelddefekt", "Gesichtsfeldeinschränkung", "Gesichtsfeldverlust", "Gesichtsfeldveränderung", "Gesichtsfeldausfälle", "Einschränkung der Gesichtsfeldaußengrenzen", "periphere Gesichtsfeldeinschränkung", "Verzerrung des Gesichtsfelds"], syn_en: ["visual field", "visual field loss", "visual field defects", "visual field constriction", "field loss", "peripheral visual field constriction", "decreases in peripheral vision", "visual field cuts"],
       patient: ["sieht seitlich nichts", "Teile fehlen im Bild"], abk: [], siehe: [] },
     { id: "konzentrische_gf_einschraenkung", region: ["sehfunktion"], ober: "gesichtsfeldausfall", de: "Konzentrische Gesichtsfeldeinschränkung", en: "concentric visual field constriction",
       syn_de: ["konzentrische Gesichtsfeldeinengung", "Röhrengesichtsfeld", "konzentrische Einengung des Gesichtsfeldes", "Tunnelsehen"], syn_en: ["bilateral concentric visual field constriction", "concentric field loss", "tunnel vision"], patient: ["Tunnelblick"], abk: [], siehe: [] },
@@ -450,11 +453,19 @@ window.MNW_SYNONYME = {
     { id: "alpha1_blocker", de: "Alpha-1-Rezeptorenblocker", en: "alpha-1 blockers", syn: ["Alphablocker", "Alpha-Blocker", "α1-Blocker", "alpha blockers", "Alpha1-Rezeptorenblocker", "Alpha-1-Blocker", "Alpha1-Blocker", "alpha1 blockers", "alpha-adrenergic antagonists"] },
     { id: "retinoide", de: "Retinoide (systemisch)", en: "systemic retinoids", syn: ["Vitamin-A-Säure-Derivate", "Retinoide", "Retinoid", "systemische Retinoide", "orale Retinoide", "oral retinoids"] },
     { id: "il4_il13_antikoerper", de: "IL-4/IL-13-Antikörper", en: "IL-4/IL-13 antibodies", syn: ["Interleukin-4/13-Hemmer", "Biologika bei Neurodermitis", "IL-13-Antikörper", "Interleukin-13-Antikörper", "IL-4-Rezeptor-Antikörper", "IL-13 antibodies", "anti-IL-13"] },
-    { id: "checkpoint_inhibitoren", de: "Immun-Checkpoint-Inhibitoren", en: "immune checkpoint inhibitors", syn: ["Checkpoint-Inhibitoren", "PD-1-Inhibitoren", "PD-L1-Inhibitoren", "CTLA-4-Inhibitoren", "Immuntherapie", "Krebsimmuntherapie", "ICI", "Checkpoint-Hemmer"] },
+    { id: "checkpoint_inhibitoren", de: "Immun-Checkpoint-Inhibitoren", en: "immune checkpoint inhibitors", syn: ["Checkpoint-Inhibitoren", "Immuntherapie", "Krebsimmuntherapie", "ICI", "Checkpoint-Hemmer", "Immuncheckpoint-Inhibitoren"] },
+    { id: "pd1_inhibitoren", de: "PD-1-Inhibitoren", en: "PD-1 inhibitors", syn: ["PD-1-Antikörper", "Anti-PD-1-Antikörper", "PD-1-Hemmer", "PD1-Inhibitoren", "anti-PD-1 antibodies"] },
+    { id: "pdl1_inhibitoren", de: "PD-L1-Inhibitoren", en: "PD-L1 inhibitors", syn: ["PD-L1-Antikörper", "Anti-PD-L1-Antikörper", "PD-L1-Hemmer", "anti-PD-L1 antibodies"] },
+    { id: "ctla4_inhibitoren", de: "CTLA-4-Inhibitoren", en: "CTLA-4 inhibitors", syn: ["CTLA-4-Antikörper", "Anti-CTLA-4-Antikörper", "CTLA-4-Hemmer", "anti-CTLA-4 antibodies"] },
+    { id: "lag3_inhibitoren", de: "LAG-3-Inhibitoren", en: "LAG-3 inhibitors", syn: ["LAG-3-Antikörper", "Anti-LAG-3-Antikörper", "LAG-3-Hemmer"] },
+    { id: "adc", de: "Antikörper-Wirkstoff-Konjugate (ADC)", en: "antibody-drug conjugates", syn: ["ADC", "ADCs", "Antikörper-Wirkstoff-Konjugat", "Immunkonjugate", "antibody-drug conjugate"] },
+    { id: "bispezifische_antikoerper", de: "Bispezifische Antikörper", en: "bispecific antibodies", syn: ["bispezifischer Antikörper", "T-Zell-Engager", "bispecific antibody", "bispecific T-cell engager"] },
     { id: "antikoagulanzien", de: "Antikoagulanzien", en: "anticoagulants", syn: ["DOAK", "NOAK", "Vitamin-K-Antagonisten", "Cumarine", "anticoagulant"] },
     { id: "thrombozytenaggregationshemmer", de: "Thrombozytenaggregationshemmer", en: "antiplatelet agents", syn: ["Plättchenhemmer", "antiplatelets"] },
     { id: "schilddruesenhormone", de: "Schilddrüsenhormone", en: "thyroid hormones", syn: ["Schilddrüsentabletten"] },
-    { id: "thyreostatika", de: "Thyreostatika", en: "antithyroid drugs", syn: ["Schilddrüsenblocker"] }
+    { id: "thyreostatika", de: "Thyreostatika", en: "antithyroid drugs", syn: ["Schilddrüsenblocker"] },
+    { id: "antipsychotika", de: "Antipsychotika (Neuroleptika)", en: "antipsychotics", syn: ["Neuroleptika", "Neuroleptikum", "Antipsychotikum", "neuroleptics"] },
+    { id: "phenothiazine", de: "Phenothiazine", en: "phenothiazines", syn: ["Phenothiazin-Derivate", "Phenothiazin-Neuroleptika", "phenothiazine derivatives"] }
   ],
 
   ANWENDUNGSGEBIETE: [
@@ -465,7 +476,7 @@ window.MNW_SYNONYME = {
     { id: "brustkrebs", de: "Brustkrebs (Hormontherapie)", en: "breast cancer (endocrine therapy)", alltag: ["Brustkrebs", "Mammakarzinom", "Antihormontherapie", "Hormontherapie nach Brustkrebs", "Antihormontablette"] },
     { id: "krebs", de: "Krebstherapie (allgemein)", en: "cancer therapy", alltag: ["Krebs", "Chemo", "Chemotherapie", "Krebsmedikament", "Krebstablette", "Tumortherapie"] },
     { id: "melanom", de: "Melanom", en: "melanoma", alltag: ["Melanom", "schwarzer Hautkrebs", "Hautkrebs", "malignes Melanom"] },
-    { id: "lungenkrebs", de: "Lungenkrebs", en: "lung cancer", alltag: ["Lungenkrebs", "Bronchialkarzinom", "NSCLC"] },
+    { id: "lungenkrebs", de: "Lungenkrebs", en: "lung cancer", alltag: ["Lungenkrebs", "Bronchialkarzinom", "NSCLC", "kleinzelliges Lungenkarzinom", "SCLC", "Lungenkarzinom"] },
     { id: "darmkrebs", de: "Darmkrebs", en: "colorectal cancer", alltag: ["Darmkrebs", "kolorektales Karzinom"] },
     { id: "neurofibromatose", de: "Neurofibromatose Typ 1 (plexiforme Neurofibrome)", en: "neurofibromatosis type 1", alltag: ["Neurofibromatose", "NF1", "plexiforme Neurofibrome", "Recklinghausen"] },
     { id: "ms", de: "Multiple Sklerose", en: "multiple sclerosis", alltag: ["MS", "Multiple Sklerose", "MS-Medikament", "MS-Tablette", "MS-Therapie"] },
@@ -498,6 +509,21 @@ window.MNW_SYNONYME = {
     { id: "heuschnupfen", de: "Allergischer Schnupfen / Heuschnupfen", en: "allergic rhinitis", alltag: ["Heuschnupfen", "allergischer Schnupfen", "allergische Rhinitis", "Pollenallergie", "Kortison-Nasenspray", "Allergie-Nasenspray"] },
     { id: "copd", de: "COPD (chronisch obstruktive Lungenerkrankung)", en: "COPD", alltag: ["COPD", "chronische Bronchitis", "Raucherlunge", "Lungenemphysem"] },
     { id: "nebenniereninsuffizienz", de: "Nebenniereninsuffizienz (Hormonersatz)", en: "adrenal insufficiency", alltag: ["Nebenniereninsuffizienz", "Morbus Addison", "Cortisolmangel", "Kortisonersatz"] },
-    { id: "glaukomtherapie", de: "Glaukomtherapie (Augentropfen)", en: "glaucoma therapy (eye drops)", alltag: ["Glaukomtropfen", "Augendrucktropfen", "Tropfen gegen grünen Star"] }
+    { id: "glaukomtherapie", de: "Glaukomtherapie (Augentropfen)", en: "glaucoma therapy (eye drops)", alltag: ["Glaukomtropfen", "Augendrucktropfen", "Tropfen gegen grünen Star"] },
+    { id: "blasenkrebs", de: "Blasenkrebs / Urothelkarzinom", en: "bladder cancer / urothelial carcinoma", alltag: ["Blasenkrebs", "Harnblasenkrebs", "Urothelkarzinom", "Blasenkarzinom", "bladder cancer"] },
+    { id: "nierenkrebs", de: "Nierenkrebs (Nierenzellkarzinom)", en: "renal cell carcinoma", alltag: ["Nierenkrebs", "Nierenzellkarzinom", "Nierenkarzinom", "kidney cancer"] },
+    { id: "leberkrebs", de: "Leberkrebs (hepatozelluläres Karzinom)", en: "hepatocellular carcinoma", alltag: ["Leberkrebs", "Leberzellkarzinom", "hepatozelluläres Karzinom", "HCC", "liver cancer"] },
+    { id: "gallenwegskrebs", de: "Gallenwegskrebs (biliäres Karzinom)", en: "biliary tract cancer", alltag: ["Gallenwegskrebs", "Gallengangskrebs", "Gallenblasenkrebs", "Cholangiokarzinom", "biliäres Karzinom"] },
+    { id: "speiseroehren_magenkrebs", de: "Speiseröhren- und Magenkrebs", en: "oesophageal and gastric cancer", alltag: ["Speiseröhrenkrebs", "Ösophaguskarzinom", "Magenkrebs", "Magenkarzinom", "esophageal cancer", "oesophageal cancer", "gastric cancer"] },
+    { id: "kopf_hals_krebs", de: "Kopf-Hals-Tumoren", en: "head and neck cancer", alltag: ["Kopf-Hals-Tumor", "Kopf-Hals-Krebs", "Kehlkopfkrebs", "Rachenkrebs", "Nasopharynxkarzinom", "head and neck cancer"] },
+    { id: "gebaermutterkrebs", de: "Gebärmutterkrebs (Endometriumkarzinom)", en: "endometrial cancer", alltag: ["Gebärmutterkrebs", "Endometriumkarzinom", "Gebärmutterschleimhautkrebs", "endometrial cancer"] },
+    { id: "gebaermutterhalskrebs", de: "Gebärmutterhalskrebs (Zervixkarzinom)", en: "cervical cancer", alltag: ["Gebärmutterhalskrebs", "Zervixkarzinom", "Cervixkarzinom", "cervical cancer"] },
+    { id: "eierstockkrebs", de: "Eierstockkrebs (Ovarialkarzinom)", en: "ovarian cancer", alltag: ["Eierstockkrebs", "Ovarialkarzinom", "ovarian cancer"] },
+    { id: "mesotheliom", de: "Pleuramesotheliom", en: "pleural mesothelioma", alltag: ["Mesotheliom", "Pleuramesotheliom", "Rippenfellkrebs", "mesothelioma"] },
+    { id: "hodgkin_lymphom", de: "Hodgkin-Lymphom", en: "Hodgkin lymphoma", alltag: ["Hodgkin-Lymphom", "Morbus Hodgkin", "Hodgkin lymphoma"] },
+    { id: "weisser_hautkrebs", de: "Weißer Hautkrebs (Plattenepithel-, Basalzell-, Merkelzellkarzinom)", en: "non-melanoma skin cancer", alltag: ["weißer Hautkrebs", "heller Hautkrebs", "Basaliom", "Basalzellkarzinom", "Plattenepithelkarzinom der Haut", "Stachelzellkrebs", "Merkelzellkarzinom"] },
+    { id: "brustkrebs_tnbc", de: "Triple-negativer Brustkrebs", en: "triple-negative breast cancer", alltag: ["triple-negativer Brustkrebs", "TNBC", "triple-negatives Mammakarzinom"] },
+    { id: "multiples_myelom", de: "Multiples Myelom", en: "multiple myeloma", alltag: ["Multiples Myelom", "Plasmozytom", "Myelom", "multiple myeloma"] },
+    { id: "psychose", de: "Schizophrenie und andere Psychosen", en: "schizophrenia and other psychoses", alltag: ["Schizophrenie", "Psychose", "Psychosen", "psychotische Störung", "schizophrenia", "psychosis"] }
   ]
 };

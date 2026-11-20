@@ -24,9 +24,9 @@ window.MNW_DATEN = {
 
   META: {
     app: "Medi-NW-Check",
-    version: "1.6.0",
-    recherchestand: "2026-10-16",
-    etappe: "1a–1f – Netzhaut/Makula (Etappe 1a), Sehnerv/Sehfunktion (Etappe 1b), Vorderabschnitt/Linse (Etappe 1c), Retinoide, IL-4/IL-13-Antikörper und Rifabutin (Etappe 1d-1), Checkpoint-Inhibitoren und Thioridazin (Etappe 1d-2), Kortikosteroide zur Anwendung auf der Haut (Etappe 1e) und Lückenschluss mit fachinfo.de-PDFs (Etappe 1f)",
+    version: "1.9.0",
+    recherchestand: "2026-11-19",
+    etappe: "1a–1f und 1g – Netzhaut/Makula (Etappe 1a), Sehnerv/Sehfunktion (Etappe 1b), Vorderabschnitt/Linse (Etappe 1c), Retinoide, IL-4/IL-13-Antikörper und Rifabutin (Etappe 1d-1), Checkpoint-Inhibitoren und Thioridazin (Etappe 1d-2), Kortikosteroide zur Anwendung auf der Haut (Etappe 1e), Lückenschluss mit fachinfo.de-PDFs (Etappe 1f) Antikörper-Wirkstoff-Konjugate und bispezifische Antikörper (Etappen 1g-1 und 1g-2) und aus der systematischen Kandidatensuche Statine, Thiazide und thiazidartige Diuretika und Acetazolamid sowie die FDA-Mitteilung zu GLP-1-Rezeptoragonisten (Etappe 2)",
     pruefregel: "Ein Beleg gilt als geprüft, wenn die frei zugängliche Quelle aufgerufen und die Aussage in zwei Abfragen übereinstimmend gefunden wurde. Bei einem von der Nutzerin bereitgestellten Dokument ohne Online-Fassung (Zugang „dokument“) gilt: Wortlaut zweifach abgeglichen (Textebene und Seitenbild).",
     aenderungsprotokoll: [
       { version: "1.0.0", datum: "2026-10-04", aenderungen: [
@@ -95,7 +95,21 @@ window.MNW_DATEN = {
         "Erfasst für Etappe 1g (noch ohne Prüfung, Hinweis „nicht ausgeschlossen“): Belantamab mafodotin, Mirvetuximab soravtansin, Tisotumab vedotin und Teclistamab.",
         "Anzeige (index.html): Zugangswert „dokument“ – geprüfte Belege aus einem bereitgestellten Dokument werden angezeigt; statt eines Links steht „Dokument – keine Online-Fassung gefunden (Suche am …)“. Bei Anwendungsgebiet bzw. Wirkstoffklasse + Befund steht „Ja“ nur noch, wenn der gesuchte oder ein spezifischerer Befund beschrieben ist; Wirkstoffe mit nur verwandtem bzw. allgemeinerem Befund werden getrennt genannt (z. B. PD-L1-Inhibitoren + Panuveitis: „Nein“, verwandter Befund Uveitis). Belegtitel ohne doppelte Klammern; Info-Bereich und Update-Prompt erklären den Zugangswert; die Startansicht nennt geplante Wirkstoffe nur, wenn es welche gibt.",
         "Unabhängige Stichprobe vor der Übergabe (17.10.2026): Aus 24 der 25 neuen Quellen wurde je mindestens eine Belegstelle erneut abgerufen und wörtlich abgeglichen – alle bestätigt (11 EMA-Produktinformationen, 11 US-Labels – Imjudo in der FDA-Fassung von 2024 –, Thioridazin DE und US); die Zitate der Stellungnahme von DOG und BVA wurden mit dem geprüften Auszug abgeglichen. Für Opdivo liegt die Gegenprobe jetzt auch in der aktuellen FDA-Fassung (Revised 8/2026) vor. Außerdem wurden alle 275 Zitate der neuen Belege automatisch mit den Abruftexten vom 15./16.10.2026 abgeglichen: 272 wörtlich gefunden, 3 als Teilzitate (jeder Teil gefunden). Die 16 offenen Belege (Yervoy 4.8; Studienangaben in den US-Labels von Keytruda und Opdivo) ließen sich nicht ein zweites Mal abrufen, weil das Abrufwerkzeug diese Dokumente vor den betreffenden Abschnitten abschneidet; sie bleiben „offen“ und werden nicht angezeigt."
-      ] }
+      ] },
+      { version: "1.7.0", datum: "2026-11-11", aenderungen: [
+        "Etappe 1g-1: 4 Wirkstoffe geprüft – die Antikörper-Wirkstoff-Konjugate Belantamab mafodotin (Blenrep), Mirvetuximab soravtansin (Elahere) und Tisotumab vedotin (Tivdak) sowie der bispezifische Antikörper Teclistamab (Tecvayli), jeweils mit EU-Produktinformation, US-Label und der Zeile „Anwendungsgebiet“.",
+        "Neu: 92 Einträge – 85 für die 4 Wirkstoffe (Belantamab mafodotin 19, Mirvetuximab soravtansin 28, Tisotumab vedotin 29, Teclistamab 9) und 7 aus dem Fußnoten-Nachtrag bei Atezolizumab und Tislelizumab – mit 216 geprüften Belegen aus 8 neuen Quellen (4 EMA-Produktinformationen, 4 US-Labels) und der Stellungnahme von DOG und BVA.",
+        "Antikörper-Wirkstoff-Konjugate laut Fachinformationen: Hornhautbefunde (Keratopathie) mit mikrozystenähnlichen epithelialen Veränderungen (Belantamab mafodotin, Mirvetuximab soravtansin), Hornhautulkus bzw. ulzerative Keratitis, Visusminderung, verschwommenes Sehen, trockenes Auge, Photophobie und Katarakt; bei Belantamab mafodotin außerdem Hypästhesie der Hornhaut nach Veränderungen im subbasalen Nervenplexus; bei Mirvetuximab soravtansin Uveitis (US-Label) sowie Hornhautperforation und Hypopyon als Kriterien der Dosisanpassung; bei Tisotumab vedotin vor allem Bindehaut- und Lidbefunde (Konjunktivitis, Bindehautulkus, Symblepharon, Blepharitis, Entropium, Trichiasis, Madarosis), Keratitis, ulzerative Keratitis mit Perforation (US-Label) und schwerer Sehverlust (Boxed Warning). Die Untersuchungs- und Pflegevorgaben der Fachinformationen (Augenuntersuchungen, Tränenersatzmittel, Verzicht auf Kontaktlinsen, Augenpflege bzw. Prämedikation) stehen jeweils im Eintrag Keratopathie.",
+        "Teclistamab: Die EU-Fachinformation hat keine Systemorganklasse „Augenerkrankungen“; Augenbegriffe stehen nur in Fußnoten zu Sammelbegriffen (konjunktivale, okuläre und Augenlid-Blutung, Glaskörperblutung, Augenlid- und Periorbitalödem), im US-Label die Abduzenslähmung im Sammelbegriff „Motor dysfunction“. Die anteriore Uveitis mit Pseudohypopyon stammt aus der Stellungnahme von DOG und BVA (Einzelberichte).",
+        "Stellungnahme von DOG und BVA (Projektstand 2a): Untersuchungsempfehlung bei den drei Antikörper-Wirkstoff-Konjugaten (Eintrag Keratopathie) und – Entscheidung der Nutzerin vom 17.10.2026 – bei Teclistamab (Eintrag Uveitis anterior); Klassenaussage zu Pseudomikrozysten (MECs) bei Belantamab mafodotin und Mirvetuximab soravtansin, deren Fachinformationen Mikrozysten nennen, und daraus Hyperopisierung bzw. Myopisierung als Klassenaussage, soweit die Fachinformationen diese Refraktionsänderung nicht selbst nennen.",
+        "Neue Regel für alle Etappen (Entscheidung der Nutzerin vom 17.10.2026): Augenbegriffe, die in den Fachinformationen nur in Fußnoten zu Sammelbegriffen stehen, werden eigene Einträge mit dem Kontext „Teil des Sammelbegriffs …“; als Häufigkeit steht nur die des Sammelbegriffs, ausdrücklich so gekennzeichnet. Nachtrag für die Checkpoint-Inhibitoren: Atezolizumab (Erythem und Ausschlag am Augenlid, endokrine Ophthalmopathie, Exophthalmus, hypertonische Retinopathie, Madarosis; Photophobie zusätzlich aus der EU-Fachinformation) und Tislelizumab (Chorioretinitis, Hornhautödem). Bei Durvalumab, Tremelimumab, Avelumab, Relatlimab, Cemiplimab und Dostarlimab enthalten die Fußnoten keine weiteren Augenbegriffe; Pembrolizumab, Nivolumab und Ipilimumab folgen in Etappe 1g-2.",
+        "Begriffsliste: neue Befunde Erythem des Augenlids, Entropium, Lidhämatom, Bindehautulkus, Konjunktivochalasis, Hornhautverdünnung, hypertensive Retinopathie und Hypopyon/Pseudohypopyon; Synonyme ergänzt (u. a. Pseudomikrozysten, MECs, Befunde der Hornhautuntersuchung, Hypästhesie der Hornhaut, Kornealopazität, Hypermetropie, Akkommodationsfehler, Lähmung des VI. Hirnnervs); Anwendungsgebiete „Brustkrebs“ (jetzt allgemein), „Hormontherapie bei Brustkrebs“ und „Uveales Melanom (Aderhautmelanom)“.",
+        "Erfasst für Etappe 1g-2 (noch ohne Prüfung, Hinweis „nicht ausgeschlossen“): Amivantamab, Datopotamab deruxtecan, Enfortumab vedotin, Tebentafusp, Telisotuzumab vedotin, Trastuzumab deruxtecan und Trastuzumab emtansin, jeweils mit Handelsnamen.",
+        "Anzeige (index.html): Eine Notiz unter „Unterschiede“, die mit dem Namen des fehlenden Raums beginnt (z. B. „USA: …“), ersetzt die automatisch erzeugten Sätze für diesen Raum. „Wie geprüft wurde“ und der Update-Prompt erklären die Fußnoten-Regel. Datenschutzhinweis präzisiert: Die App setzt selbst keine Cookies; ein vorgeschalteter Zugangsschutz kann ein technisch notwendiges Anmelde-Cookie setzen.",
+        "Unabhängige Stichprobe vor der Übergabe (11.11.2026): Aus allen 8 neuen Quellen sowie aus den Fußnoten von Tecentriq und Tevimbra wurden die Belegstellen erneut abgerufen und abgeglichen – alle bestätigt; präzisiert wurde, dass sich bei Blenrep (USA) die 43 Tage auf die ersten Augenbefunde insgesamt beziehen. Dabei wurden bisher nur einmal gelesene Angaben ein zweites Mal gefunden und übernommen: bei Blenrep (EU) Fremdkörpergefühl im Auge und Augenjucken mit Häufigkeit, bei Elahere (USA) das periorbitale Ödem unter den Infusionsreaktionen, bei Tivdak (USA) die Gesamtangaben in 5.1 (55 %, Zeit bis zum Auftreten, Rückbildung, Abbruch)."
+      ] },
+      {version: "1.8.0", datum: "2026-11-19", aenderungen: ["Etappe 1g-2: 7 Wirkstoffe geprüft – die Antikörper-Wirkstoff-Konjugate Trastuzumab deruxtecan (Enhertu), Trastuzumab emtansin (Kadcyla), Datopotamab deruxtecan (Datroway), Enfortumab vedotin (Padcev) und Telisotuzumab vedotin (Emrelis, nur USA) sowie die bispezifischen Wirkstoffe Amivantamab (Rybrevant) und Tebentafusp (Kimmtrak), jeweils mit EU-Produktinformation (außer Telisotuzumab vedotin: in der EU nicht zugelassen), US-Label und der Zeile „Anwendungsgebiet“.","Neu: 55 Einträge – 51 für die 7 Wirkstoffe und 4 aus dem Fußnoten-Nachtrag bei Pembrolizumab – mit 112 geprüften Belegen (davon 1 Zusatzbeleg im bestehenden Eintrag Uveitis anterior bei Pembrolizumab) aus 13 neuen Quellen (6 EMA-Produktinformationen, 7 US-Labels) und der Stellungnahme von DOG und BVA.","Inhalt laut Fachinformationen: Datopotamab deruxtecan mit Keratitis (sehr häufig; Warnhinweis, Dosisanpassung, Augentropfen, keine Kontaktlinsen), trockenem Auge, Konjunktivitis, Blepharitis, Meibomdrüsen-Dysfunktion, Photophobie, verstärkter Tränensekretion sowie im US-Label Madarosis, Hornhautepitheldefekt, Bindehautblutung (Grad 4) und Hornhautperforation als Absetzkriterium; Enfortumab vedotin mit trockenem Auge (sehr häufig, Warnhinweis) und im US-Label Keratitis, Keratopathie, Limbusstammzellinsuffizienz und verschwommenem Sehen (10 %); Telisotuzumab vedotin mit Keratitis (11 %; Fußnotenbegriffe u. a. Hornhautödem und -trübung) und verschwommenem Sehen (15 %); Trastuzumab deruxtecan und Trastuzumab emtansin ohne Warnhinweis zu Augen (trockenes Auge, bei Trastuzumab emtansin auch Konjunktivitis und verstärkte Tränensekretion); Amivantamab mit Keratitis, Uveitis und Wimpernwachstum sowie im US-Warnhinweis Blepharitis, trockenem Auge, Bindehautrötung, Augenjucken und verschwommenem Sehen; Tebentafusp nur mit Fußnotenbegriffen der EU-Fachinformation (Verfärbung und Hypopigmentierung der Wimpern, Netzhautdepigmentierung, Lid- und Periorbitalödem), das US-Label ohne Augenbegriffe.","Stellungnahme von DOG und BVA: Untersuchungsempfehlung bei allen 5 neuen Antikörper-Wirkstoff-Konjugaten (Eintrag Keratitis bzw. Trockenes Auge, da keine Keratopathie in der Fachinformation bzw. keine Hornhautbefunde) und – Entscheidung der Nutzerin vom 19.11.2026 – bei Amivantamab (Eintrag Uveitis) und Tebentafusp (Eintrag Pigmentveränderungen der Netzhaut), obwohl die Stellungnahme beide nicht namentlich nennt. Keine Klassenaussage zu Pseudomikrozysten: Keine der neuen Fachinformationen nennt Mikrozysten.","Fußnoten-Nachtrag Checkpoint-Inhibitoren (ohne Browser-Bereich, mit abschnittsweisem Abruf): Keytruda – Chorioretinitis (Sammelbegriff „Uveitis“), Hypopigmentierung des Augenlids („Vitiligo“), Augenlidödeme und periorbitale Ödeme („Ödeme“) als neue Einträge, Iritis und Iridozyklitis als EU-Beleg im Eintrag Uveitis anterior; Opdivo und Yervoy – keine Augenbegriffe in den Fußnoten. Die Tabellenspalten wurden dabei nicht positionsgenau geprüft.","Ipilimumab (Yervoy): Die 12 bisher offenen Belege aus den 4.8-Tabellen der EU-Produktinformation (u. a. Uveitis, Iritis, Vogt-Koyanagi-Harada-Syndrom, seröse Netzhautablösung, Episkleritis, Skleritis, Blepharitis, okulare Myositis, Konjunktivitis, Myasthenia gravis, Glaskörperblutung, trockene Augen) wurden in einer zweiten Abfrage bestätigt und werden jetzt angezeigt; dadurch sind auch die Einträge Glaskörperblutung und Trockenes Auge bei Ipilimumab sichtbar.","Begriffsliste: neue Befunde „Hypopigmentierung des Augenlids“ und „Poliosis (Depigmentierung der Wimpern)“; Synonyme ergänzt (u. a. Netzhautdepigmentierung, Hornhautläsion, Hornhautepitheldefekt, Exfoliation der Hornhaut, Bindehautrötung, Augenlidödeme, periorbitale Ödeme, Schwellung um die Augenhöhle, dry eye symptoms, ocular itching).","Stellungnahme von DOG und BVA: Online-Fassung am 18.11. und 19.11.2026 erneut nicht gefunden (Datum der letzten Suche aktualisiert).","Unabhängige Stichprobe vor der Übergabe (19.11.2026): Aus allen 13 neuen Quellen sowie aus den Fußnoten von Keytruda wurde je mindestens eine Belegstelle in einer eigenen Abfrage erneut abgerufen und wörtlich abgeglichen – alle bestätigt. Version 1.8.0 wurde ohne Browser-Bereich erstellt (Mac nicht erreichbar); lange Produktinformationen wurden mit dem abschnittsweisen Abruf des Abrufwerkzeugs gelesen."]},
+      {version: "1.9.0", datum: "2026-11-19", aenderungen: ["Etappe 2: Systematische Kandidatensuche (PRAC-Signale und -Empfehlungen, Rote-Hand-Briefe, FDA Drug Safety Communications, US-Labels, Übersichtsarbeiten); die Kandidatenliste wurde am 19.11.2026 von der Nutzerin vollständig freigegeben („Hauptsache du prüfst alle“), in der vorgeschlagenen Reihenfolge. In dieser Etappe umgesetzt: Gruppe 1.","Neu: 9 Wirkstoffe – die Statine Atorvastatin, Fluvastatin, Pravastatin, Rosuvastatin und Simvastatin (okuläre Myasthenie, PRAC-Empfehlung 2023; bei Pravastatin zusätzlich Doppeltsehen als Teil von „Sehstörungen“), die Diuretika Chlortalidon, Hydrochlorothiazid und Indapamid (Aderhauterguss, akute Myopie, Winkelblock; bei Hydrochlorothiazid zusätzlich Xanthopsie und verminderte Tränenbildung, bei Chlortalidon verminderte Tränenbildung) und Acetazolamid (Aderhauterguss/-abhebung, vorübergehende Myopie).","Neu: 20 Einträge mit zusammen 52 geprüften Belegen (davon 4 Zusatzbelege aus der FDA Drug Safety Communication vom 09.11.2026 in den bestehenden NAION-Einträgen von Semaglutid, Tirzepatid, Liraglutid und Dulaglutid).","GLP-1-Rezeptoragonisten: Die FDA verlangt seit dem 09.11.2026 für die gesamte Klasse einen NAION-Warnhinweis. In den EU-Fachinformationen von Mounjaro, Victoza und Trulicity war NAION am 19.11.2026 nicht enthalten; dort bleibt der Eintrag ein PV-Signal mit aktualisiertem Kontext. Exenatid, Lixisenatid und Orforglipron sind als neue Wirkstoffe für die nächste Etappe vorgesehen.","Anwendungsgebiet nachgetragen für alle 33 Wirkstoffe der Etappen 1b und 1c (Abschnitt 4.1, bei Topiramat zusätzlich das US-Label; zwei Abfragen je Angabe). Neu in index.html: optionales Feld „quelle2“ für ein zweites geprüftes Präparat (Sildenafil/Revatio, Semaglutid/Wegovy, Liraglutid/Saxenda, Topiramat/Topamax).","Begriffsliste: neue Wirkstoffklassen Statine, Thiazid- und thiazidartige Diuretika, Carboanhydrasehemmer; neue Anwendungsgebiete „Erhöhte Blutfette / Cholesterin“ und „Erhöhter Augeninnendruck (Tabletten/Infusion)“.","Stellungnahme von DOG und BVA: Online-Fassung am 19.11.2026 erneut nicht gefunden.","Unabhängige Stichprobe vor der Übergabe (19.11.2026): 12 Belegstellen in eigenen Abfragen erneut abgerufen (Simvastatin dura 4.8, Natrilix 4.4 und Stand, Diamox Precautions, Locol 4.4, Crestor USA 6.2, Hygroton 4.4, BASG-Mustertext Thiazide, FDA Drug Safety Communication sowie die Anwendungsgebiete von Kigabeq, Volon A 40, Saxenda und Doxazosin STADA) – alle unverändert bestätigt. Korrigiert: Die Prüfnotiz der FDA-Belege nannte den MedWatch-Alert als zweite Fundstelle des Satzes zu den NAION-Fällen; der Satz steht nur in der Drug Safety Communication (dort in 3 Abfragen bestätigt)."]}
     ],
     offene_punkte: [
       "Hydroxychloroquin: Die Originator-Fachinformation Quensyl ist seit Version 1.4.0 als fachinfo.de-PDF geprüft; die Häufigkeitsangaben stammen von dort.",
@@ -133,10 +147,10 @@ window.MNW_DATEN = {
       "Etappe 1d-1 – ADRreports: Direktlink für Dupilumab fehlt (Wirkstoffliste im Abruf abgeschnitten) – dort Link auf die Buchstabenliste.",
       "Etappe 1d-1 – Literatur: PubMed/PMC am 11.10.2026 weiterhin per CAPTCHA gesperrt; Literatur u. a. zur Dupilumab-assoziierten Augenoberflächenerkrankung und zur Rifabutin-Uveitis folgt in Etappe 5.",
       "Etappe 1d-1 – nicht übernommen: bei Tralokinumab die Angabe zu Jugendlichen (Konjunktivitis 1,0 % in ECZTRA 6) und die US-Angaben zu Abbrüchen wegen Konjunktivitis (jeweils nur in einer Abfrage gefunden); bei Lebrikizumab der Satz zur Besserung bei 72 % (Bezug im Text nicht eindeutig).",
-      "Anwendungsgebiet (Zeile auf der Wirkstoffkarte): geprüft für die Wirkstoffe der Etappen 1a, 1d-1, 1d-2 und 1e; Nachtrag für 1b und 1c in Etappe 2. Bei Tafinlar und Mekinist wurde Abschnitt 4.1 der Hartkapseln bzw. Filmtabletten geprüft; weitere Darreichungsformen in derselben Produktinformation lagen hinter der Abrufgrenze (Text nach rund 76.000 Zeichen abgeschnitten).",
+      "Anwendungsgebiet (Zeile auf der Wirkstoffkarte): geprüft für die Wirkstoffe der Etappen 1a bis 1g (Nachtrag 1b und 1c am 19.11.2026); für die 9 neuen Wirkstoffe der Etappe 2 noch nicht erfasst. Bei Tafinlar und Mekinist wurde Abschnitt 4.1 der Hartkapseln bzw. Filmtabletten geprüft; weitere Darreichungsformen in derselben Produktinformation lagen hinter der Abrufgrenze (Text nach rund 76.000 Zeichen abgeschnitten).",
       "Anwendungsgebiete für die Alltagssuche: Schilddrüsenkarzinom (Dabrafenib, Trametinib), extraintestinale Amöbiasis (Chloroquin) sowie Nasenpolypen, Prurigo nodularis, eosinophile Ösophagitis und chronische spontane Urtikaria (Dupilumab) stehen in Abschnitt 4.1, haben aber noch kein eigenes Anwendungsgebiet in der Begriffsliste.",
-      "Etappe 1d-2 – Stellungnahme von DOG und BVA: keine Online-Fassung gefunden (Suche am 11.10. und 16.10.2026); die Quelle hat deshalb den Zugang „dokument“ und keinen Link. Erscheint eine veröffentlichte Fassung, Link nachtragen und den Zugang auf „frei“ setzen.",
-      "Etappe 1d-2 – Frage an die Nutzerin: Augenbegriffe, die in den EMA-Tabellen nur in Fußnoten zu Sammelbegriffen stehen, wurden nicht als eigene Einträge übernommen – z. B. Chorioretinitis unter „Uveitis“ (Tevimbra; bei Keytruda nur in einer Abfrage gelesen), Photophobie unter „Meningoenzephalitis“, endokrine Ophthalmopathie und Exophthalmus unter „Hyperthyreose“, Erythem und Ausschlag am Augenlid unter „Ausschlag“ (Tecentriq), Augenlid- und periorbitale Ödeme unter „Ödeme“, Hypopigmentierung des Augenlids unter „Vitiligo“ (Keytruda), Hornhautödem unter „Reaktionen im Zusammenhang mit einer Infusion“ (Tevimbra). Iritis und Iridozyklitis aus den Uveitis-Fußnoten sind dagegen im Eintrag „Uveitis anterior“ belegt. Sollen die übrigen Fußnoten-Begriffe mit dem Kontext „Teil des Sammelbegriffs …“ aufgenommen werden?",
+      "Etappe 1d-2 – Stellungnahme von DOG und BVA: keine Online-Fassung gefunden (Suche am 11.10., 16.10., 04.11., 11.11., 18.11. und 19.11.2026); die Quelle hat deshalb den Zugang „dokument“ und keinen Link. Erscheint eine veröffentlichte Fassung, Link nachtragen und den Zugang auf „frei“ setzen.",
+      "Etappe 1d-2/1g-1 – Fußnoten zu Sammelbegriffen (Entscheidung der Nutzerin vom 17.10.2026): Augenbegriffe, die in den Fachinformationen nur in Fußnoten zu Sammelbegriffen stehen, werden eigene Einträge mit dem Kontext „Teil des Sammelbegriffs …“. Nachgetragen für Atezolizumab (Tecentriq) und Tislelizumab (Tevimbra); bei Imfinzi, Imjudo, Bavencio, Opdualag, Libtayo und Jemperli enthalten die Fußnoten keine weiteren Augenbegriffe. In Etappe 1g-2 (19.11.2026) nachgetragen für Keytruda (Chorioretinitis, Iritis und Iridozyklitis unter „Uveitis“, Hypopigmentierung des Augenlids unter „Vitiligo“, Augenlidödeme und periorbitale Ödeme unter „Ödeme“); bei Opdivo und Yervoy enthalten die Fußnoten keine Augenbegriffe. Die Spalten wurden dafür nicht positionsgenau geprüft; die US-Labels wurden für den Nachtrag nicht eigens geprüft. Fußnoten-Begriffe der Etappen 1a–1f folgen in Etappe 5.",
       "Etappe 1d-2 – ADRreports: Direktlinks für die 11 Checkpoint-Inhibitoren und Thioridazin fehlen (adrreports.eu war für das Abrufwerkzeug nicht erreichbar) – dort Link auf die Buchstabenliste.",
       "Etappe 1d-2 – EMA-Produktinformationen mit mehreren Fachinformationen (Keytruda, Opdivo, Tecentriq): geprüft wurde jeweils die erste (Konzentrat zur Herstellung einer Infusionslösung); weitere Darreichungsformen derselben Produktinformation wurden nicht separat geprüft.",
       "Etappe 1d-2 – Imjudo (Tremelimumab): Die Gegenprobe des US-Labels erfolgte mit der FDA-Fassung von 2024 (eine aktuellere FDA-Fassung war nicht auffindbar); die geprüften Aussagen stehen in der DailyMed-Fassung 2026 gleich.",
@@ -144,9 +158,23 @@ window.MNW_DATEN = {
       "Etappe 1d-2 – Avelumab: Das dritte Anwendungsgebiet (Nierenzellkarzinom mit Axitinib) wurde nur in einer Abfrage gelesen; die Zeile „Anwendungsgebiet“ endet deshalb mit „u. a.“.",
       "Etappe 1d-2 – Literatur: In dieser Etappe nicht abgefragt; Literatur zu okulären Nebenwirkungen der Checkpoint-Inhibitoren, die Literaturstellen der Stellungnahme von DOG und BVA sowie die Literatur zu Sildenafil und ZSCR bzw. seröser Netzhautabhebung (Entscheidung der Nutzerin) folgen in Etappe 5.",
       "Etappe 1e – Anwendungsgebiete der Alltagssuche: Neurodermitis wird in Abschnitt 4.1 der geprüften Fachinformationen von Clobetasol, Prednicarbat, Diflucortolon, Fluocinolonacetonid und Desoximetason nicht ausdrücklich genannt (Prednitop: „Ekzem“); die Zuordnung bleibt redaktionell und wird als „abgeleitet – unsicher“ angezeigt.",
-      "Etappe 1d-2 – Ipilimumab (Yervoy): Die 4.8-Tabellen der EU-Produktinformation wurden nur in einer Abfrage gelesen (Volltext im Browser-Bereich); eine zweite Abfrage war am 17.10.2026 nicht möglich, weil das Abrufwerkzeug das PDF nur bis Abschnitt 4.4 liest. Die Angaben daraus – Häufigkeiten u. a. von Uveitis, Iritis, Vogt-Koyanagi-Harada-Syndrom, seröser Netzhautablösung, Episkleritis, Skleritis, Blepharitis, okularer Myositis, Konjunktivitis und Myasthenia gravis sowie Glaskörperblutung und trockene Augen – sind als „offen“ hinterlegt und werden nicht angezeigt. Geprüft und angezeigt sind die Angaben aus 4.2, 4.4 und dem US-Label. Nachholen in Etappe 5 (Browser-Bereich).",
+      "Etappe 1d-2 – Ipilimumab (Yervoy): Die 4.8-Tabellen der EU-Produktinformation wurden am 17.10.2026 im Browser-Bereich und am 19.11.2026 mit dem abschnittsweisen Abruf gelesen; die Angaben daraus sind seit Version 1.8.0 geprüft. Die Spalten der Tabellen wurden mit dem Abrufwerkzeug nicht positionsgenau zugeordnet; die Häufigkeiten stimmen in beiden Abfragen überein.",
       "Etappe 1d-2 – US-Labels, nur in einer Abfrage gefunden („offen“, nicht angezeigt): Pembrolizumab 6.1 (Uveitis 1 % in KEYNOTE-087; trockenes Auge 21–25 % mit Enfortumab vedotin), Nivolumab 6.1 (Uveitis in CHECKMATE-227, 0,8 % in CHECKMATE-142) und 6.2 (Vogt-Koyanagi-Harada-Syndrom nach Markteinführung). Die FDA-PDFs werden vom Abrufwerkzeug vor diesen Stellen abgeschnitten; nachholen in Etappe 5.",
-      "Etappe 1d-2 – Keytruda: Die Fußnote, nach der der Tabellenbegriff „Uveitis“ Chorioretinitis, Iritis und Iridozyklitis einschließt, wurde nur in einer Abfrage gelesen und nicht übernommen; Iritis ist über das US-Label belegt."
+      "Etappe 1g-1 – Fußnoten-Nachtrag Tecentriq und Tevimbra: Die Häufigkeiten der Sammelbegriffe stammen aus dem Abruf; die Tabellenspalten wurden dafür nicht positionsgenau geprüft. Die US-Labels wurden für den Nachtrag nicht eigens geprüft.",
+      "Etappe 1g-1 – nicht übernommen (nur in einer Abfrage gefunden): bei Tivdak (USA) „corneal bleeding“ in der Fußnote zu „Corneal adverse reactions“ (innovaTV 204) und bei Tivdak (EU) die Dosisanpassung bei Bindehautulzeration (4.2, Tabelle 2).",
+      "Etappe 1g-1 – Teclistamab: Die geprüfte EU-Fachinformation hat keine Systemorganklasse „Augenerkrankungen“; die anteriore Uveitis mit Pseudohypopyon stammt allein aus der Stellungnahme von DOG und BVA (Einzelberichte). Die dort zitierte Arbeit (Castilho Barbosa et al., EJHaem 2025) folgt in Etappe 5.",
+      "Etappe 1g-1 – ADRreports: Direktlinks für Belantamab mafodotin, Mirvetuximab soravtansin, Tisotumab vedotin und Teclistamab fehlen – dort Link auf die Buchstabenliste.",
+      "Etappe 1g-1 – Literatur: Die in der Stellungnahme von DOG und BVA zitierten Arbeiten zu Antikörper-Wirkstoff-Konjugaten (Lindgren 2024 zu Pseudomikrozysten, Canestraro 2022 zu Refraktionsänderungen, Mateos 2025 und Arazi 2025 zu Belantamab mafodotin) folgen in Etappe 5.",
+      "Etappe 1g-2 – US-Studienangaben von Keytruda (6.1: Uveitis 1 % in KEYNOTE-087; trockenes Auge 21–25 % mit Enfortumab vedotin) und Opdivo (6.1/6.2: Uveitis in CHECKMATE-227 und 0,8 % in CHECKMATE-142; VKH nach Markteinführung) weiterhin nur in einer Abfrage gelesen und nicht angezeigt; die DailyMed-Seiten sind sehr lang (Keytruda rund 1,2 Mio. Zeichen). Nachholen in Etappe 5.",
+      "Etappe 1g-2 – Tabellenspalten: Bei Enhertu (EU, Tabelle 3) ließ sich die Häufigkeitskategorie von „Trockenes Auge“ den Spalten (Dosis 5,4 bzw. 6,4 mg/kg, Kombination mit Pertuzumab) nicht sicher zuordnen. Bei Rybrevant (EU) stehen die Kategorien von Uveitis und Wimpernwachstum im Abruf nicht neben dem Begriff; angegeben sind die Prozentwerte der Monotherapie. Die Augenzeilen der Kombinationstabellen von Rybrevant wurden nur einmal gelesen (i. v. und s. c. mit unterschiedlichen Werten) und nicht übernommen.",
+      "Etappe 1g-2 – Quellen ohne Datumsangabe: Bei den EMA-Produktinformationen von Enhertu, Kadcyla, Datroway, Padcev, Rybrevant und Kimmtrak enthielt der abgerufene Text kein Datum der Überarbeitung; angegeben sind Zulassungsdatum bzw. Abrufdatum. Die Herstellerangabe fehlt bei Enhertu und Kadcyla (Abschnitt 7 nicht im Abruf).",
+      "Etappe 1g-2 – Padcev und Datroway (USA): Die Absätze zu den Arten okulärer Ereignisse sind nur sinngemäß wiedergegeben (das Abrufwerkzeug zitiert höchstens rund 125 Zeichen am Stück); die Einzelbegriffe stimmen in beiden Abfragen überein.",
+      "Etappe 1g-2 – ADRreports: Direktlinks für Amivantamab, Datopotamab deruxtecan, Enfortumab vedotin, Tebentafusp, Telisotuzumab vedotin, Trastuzumab deruxtecan und Trastuzumab emtansin fehlen – dort Link auf die Buchstabenliste.",
+      "Etappe 2 – Kandidatenliste (freigegeben am 19.11.2026, alle Gruppen): offen sind Gruppe 2 (EGFR-Inhibitoren Cetuximab, Panitumumab, Erlotinib, Gefitinib, ggf. Afatinib und Osimertinib; FGFR-Inhibitoren Erdafitinib, Pemigatinib, Futibatinib; Docetaxel), Gruppe 3 (Chlorpromazin und weitere Phenothiazine), Gruppe 4 (Bisphosphonate, Tetracycline, TNF-Inhibitoren, Pioglitazon, Cidofovir), Gruppe 5 (Kandidaten nur aus Literatur oder Signalen bzw. aus Fachwissen, Quellen noch zu suchen) sowie die GLP-1-Rezeptoragonisten Exenatid, Lixisenatid und Orforglipron; lokal/intravitreal (Brolucizumab, Aflibercept-Fertigspritze, Chlorhexidin) in Etappe 4.",
+      "Etappe 2 – Statine: Lovastatin und Pitavastatin (in der PRAC-Empfehlung genannt) nicht aufgenommen, da keine frei zugängliche deutsche Fachinformation gefunden wurde; US-Labels von Pravastatin (Pravachol) und Fluvastatin (Lescol) nicht geprüft. Fixkombinationen (z. B. mit Ezetimib oder Fenofibrat) nicht separat geprüft.",
+      "Etappe 2 – Thiazide: US-Labels von Chlortalidon und Indapamid nicht geprüft; Xipamid, Metolazon und weitere Wirkstoffe, für die der PRAC den Aderhauterguss als Klasseneffekt ansieht (noch nicht berichtet), nicht aufgenommen. Bei Hygroton ließen sich die Häufigkeitsspalten der 4.8-Tabelle nicht sicher zuordnen. Das US-Label Microzide (08/2020) nennt den Aderhauterguss nicht.",
+      "Etappe 2 – Acetazolamid: keine frei zugängliche deutsche Fachinformation (Glaupax, Acemit) gefunden; Belege aus dem BASG-Mustertext zur PRAC-Empfehlung 2023 (gleichlautend AkdÄ Drug Safety Mail 2023-45) und dem US-Label Diamox.",
+      "Etappe 2 – Anwendungsgebiet Digitoxin: die als Q_DIGI_DE_AWD erfasste Fassung 3 war am 19.11.2026 nicht lesbar; das Anwendungsgebiet stammt aus der älteren fachinfo.de-Fassung (Version 2, Februar 2018)."
     ]
   },
 
@@ -723,11 +751,77 @@ window.MNW_DATEN = {
       hersteller: "Mylan Pharmaceuticals Inc.", dokumentstand: "Revised 1/2025 (SPL-Version 15)",
       url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56b3f4c2-52af-4947-b225-6808ae9f26f5", abgerufen: "2026-10-15", zugang: "frei",
       hinweis: "SPL über die DailyMed-Schnittstelle gelesen; Gegenprobe über FDALabel (nctr-crs.fda.gov), gleiche Fassung." },
+    /* --- Etappe 1g-1: Antikörper-Wirkstoff-Konjugate und bispezifischer Antikörper --- */
+    Q_BELA_EU: { art: "A", raum: "EU", titel: "Blenrep (Belantamab-Mafodotin) – EU-Produktinformation, deutsche Fassung",
+      hersteller: "GlaxoSmithKline Trading Services Limited", dokumentstand: "EPAR-Produktinformation, zuletzt aktualisiert 26.08.2026 (laut EPAR-Seite); Zulassung vom 23.07.2025 (die frühere bedingte Zulassung von 2020 ist ausgelaufen)",
+      url: "https://www.ema.europa.eu/de/documents/product-information/blenrep-epar-product-information_de.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 mit dem Abrufwerkzeug gelesen; Stichprobe am 11.11.2026." },
+    Q_BELA_US: { art: "A", raum: "USA", titel: "Blenrep (belantamab mafodotin-blmf) – US Prescribing Information",
+      hersteller: "GlaxoSmithKline LLC", dokumentstand: "Revised 10/2025",
+      url: "https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Blenrep/pdf/BLENREP-PI-MG.PDF", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Hersteller-PDF (gskpro.com): Boxed Warning, Dosage and Administration, 5.1 und 6.1 gelesen; Stichprobe am 11.11.2026." },
+    Q_MIRV_EU: { art: "A", raum: "EU", titel: "Elahere (Mirvetuximab-Soravtansin) – EU-Produktinformation, deutsche Fassung",
+      hersteller: "AbbVie Deutschland GmbH & Co. KG", dokumentstand: "EPAR-Produktinformation, zuletzt aktualisiert 23.01.2026 (laut EPAR-Seite)",
+      url: "https://www.ema.europa.eu/de/documents/product-information/elahere-epar-product-information_de.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 mit dem Abrufwerkzeug gelesen; Stichprobe am 11.11.2026." },
+    Q_MIRV_US: { art: "A", raum: "USA", titel: "Elahere (mirvetuximab soravtansine-gynx) – US Prescribing Information",
+      hersteller: "ImmunoGen, Inc., an AbbVie company", dokumentstand: "Revised 07/2025",
+      url: "https://www.rxabbvie.com/pdf/elahere_pi.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Hersteller-PDF (rxabbvie.com): Boxed Warning, 2.3, 5.1, 6.1 und Immunogenität gelesen; Stichprobe am 11.11.2026." },
+    Q_TISO_EU: { art: "A", raum: "EU", titel: "Tivdak (Tisotumab vedotin) – EU-Produktinformation, deutsche Fassung",
+      hersteller: "Genmab A/S", dokumentstand: "EPAR-Produktinformation, zuletzt aktualisiert 05.06.2026 (laut EPAR-Seite); Zulassung 28.03.2025",
+      url: "https://www.ema.europa.eu/de/documents/product-information/tivdak-epar-product-information_de.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 mit dem Abrufwerkzeug gelesen; Stichprobe am 11.11.2026." },
+    Q_TISO_US: { art: "A", raum: "USA", titel: "Tivdak (tisotumab vedotin-tftv) – US Prescribing Information",
+      hersteller: "Seagen Inc. (Pfizer)", dokumentstand: "Revised 11/2025",
+      url: "https://labeling.pfizer.com/ShowLabeling.aspx?id=20632", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Pfizer-Labelingseite (labeling.pfizer.com): Boxed Warning, 2.2, 5.1 und 6.1 gelesen; Stichprobe am 11.11.2026." },
+    Q_TECL_EU: { art: "A", raum: "EU", titel: "Tecvayli (Teclistamab) – EU-Produktinformation, deutsche Fassung",
+      hersteller: "Janssen-Cilag International NV", dokumentstand: "EPAR-Produktinformation, zuletzt aktualisiert 07.08.2026 (laut EPAR-Seite)",
+      url: "https://www.ema.europa.eu/de/documents/product-information/tecvayli-epar-product-information_de.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "Abschnitte 4.1, 4.4 und 4.8 (Tabelle 7 mit Fußnoten) mit dem Abrufwerkzeug gelesen; Stichprobe am 11.11.2026." },
+    Q_TECL_US: { art: "A", raum: "USA", titel: "Tecvayli (teclistamab-cqyv) – US Prescribing Information",
+      hersteller: "Janssen Biotech, Inc.", dokumentstand: "Revised 3/2026 (FDA-Label 761291s018)",
+      url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761291s018lbl.pdf", abgerufen: "2026-11-04", zugang: "frei",
+      hinweis: "FDA-Label-PDF: Boxed Warning, 2.5, Warnings and Precautions, 6.1 (Tabelle 14 mit Fußnoten) und Medication Guide gelesen; Stichprobe am 11.11.2026." },
+    /* --- Etappe 1g-2 (19.11.2026) --- */
+    Q_TDXD_EU: {art: "A", raum: "EU", titel: "Enhertu (Trastuzumab deruxtecan) – EU-Produktinformation, deutsche Fassung", hersteller: null, dokumentstand: "aktuelle EMA-Fassung (Datum im abgerufenen Text nicht angegeben)", url: "https://www.ema.europa.eu/de/documents/product-information/enhertu-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 (Tabelle 3 mit Fußnoten) mit dem Abrufwerkzeug gelesen (abschnittsweiser Abruf)."},
+    Q_TDXD_US: {art: "A", raum: "USA", titel: "Enhertu (fam-trastuzumab deruxtecan-nxki) – US Prescribing Information", hersteller: null, dokumentstand: "Revised 05/2026 (FDA-Label 761139s041s043)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761139s041s043lbl.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "FDA-Label-PDF: Abschnitte 1, 5 und 6 (alle Studien) sowie Patient Counseling und Medication Guide gelesen (abschnittsweiser Abruf)."},
+    Q_TDM1_EU: {art: "A", raum: "EU", titel: "Kadcyla (Trastuzumab emtansin) – EU-Produktinformation, deutsche Fassung", hersteller: null, dokumentstand: "Zulassung 15.11.2013, letzte Verlängerung 17.09.2018 (Abschnitt 9); Datum der Überarbeitung im abgerufenen Text nicht angegeben", url: "https://www.ema.europa.eu/de/documents/product-information/kadcyla-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 (Tabelle 3) gelesen. Die Adresse ohne Sprachkürzel im Pfad lieferte am 19.11.2026 die englische Fassung."},
+    Q_TDM1_US: {art: "A", raum: "USA", titel: "Kadcyla (ado-trastuzumab emtansine) – US Prescribing Information", hersteller: null, dokumentstand: "Revised 03/2026 (FDA-Label 125427s125)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125427s125lbl.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "FDA-Label-PDF: Abschnitte 1, 5, 6 (EMILIA, KATHERINE, 6.2) und 17 gelesen."},
+    Q_DATO_EU: {art: "A", raum: "EU", titel: "Datroway (Datopotamab deruxtecan) – EU-Produktinformation, deutsche Fassung", hersteller: "Daiichi Sankyo Europe GmbH", dokumentstand: "Zulassung 04.04.2025 (Abschnitt 9); Datum der Überarbeitung im abgerufenen Text nicht angegeben", url: "https://www.ema.europa.eu/de/documents/product-information/datroway-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Abschnitte 4.1, 4.2 (Tabelle 2), 4.4, 4.7 und 4.8 (Tabelle 3 mit Fußnoten, Beschreibung ausgewählter Nebenwirkungen) gelesen."},
+    Q_DATO_US: {art: "A", raum: "USA", titel: "Datroway (datopotamab deruxtecan-dlnk) – US Prescribing Information", hersteller: null, dokumentstand: "Revised 05/2026 (FDA-Label 761394s003)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761394s003lbl.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "FDA-Label-PDF: Abschnitte 1, 2 (Tabellen 1 und 3, 2.3), 5.2 und 6 (Tabellen 4, 6, 8 mit Fußnoten) gelesen; laut Abruf ein Auszug, Tabellen 6 und 8 teilweise zerstückelt."},
+    Q_ENFV_EU: {art: "A", raum: "EU", titel: "Padcev (Enfortumab vedotin) – EU-Produktinformation, deutsche Fassung", hersteller: "Astellas Pharma Europe B.V.", dokumentstand: "Zulassung 13.04.2022 (Abschnitt 9); Datum der Überarbeitung im abgerufenen Text nicht angegeben", url: "https://www.ema.europa.eu/de/documents/product-information/padcev-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 (Tabelle 5, Beschreibung ausgewählter Nebenwirkungen) gelesen."},
+    Q_ENFV_US: {art: "A", raum: "USA", titel: "Padcev (enfortumab vedotin-ejfv) – US Prescribing Information", hersteller: null, dokumentstand: "Revised 07/2026 (FDA-Label 761137s037)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761137s037lbl.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "FDA-Label-PDF: Abschnitte 1, 2, 5.5 und 6 (alle Studientabellen, 6.2) gelesen."},
+    Q_TELV_US: {art: "A", raum: "USA", titel: "Emrelis (telisotuzumab vedotin-tllv) – US Prescribing Information", hersteller: "AbbVie Inc.", dokumentstand: "Revised 5/2025", url: "https://www.rxabbvie.com/pdf/emrelis_pi.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Hersteller-PDF (rxabbvie.com): Abschnitte 1, 2 (Tabellen 2 und 3), 5.3 und 6 (Tabelle 5 mit Fußnoten) gelesen. In der EU nicht zugelassen."},
+    Q_AMIV_EU: {art: "A", raum: "EU", titel: "Rybrevant (Amivantamab) – EU-Produktinformation, deutsche Fassung", hersteller: "Janssen-Cilag International NV", dokumentstand: "Zulassung 09.12.2021, letzte Verlängerung 11.09.2023 (Abschnitt 9); Datum der Überarbeitung im abgerufenen Text nicht angegeben", url: "https://www.ema.europa.eu/de/documents/product-information/rybrevant-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Fachinformation der intravenösen Darreichungsform (4.1, 4.2, 4.4, 4.7, 4.8 mit Tabelle 7 zur Monotherapie) und der subkutanen Darreichungsform (4.4, 4.8) gelesen."},
+    Q_AMIV_US: {art: "A", raum: "USA", titel: "Rybrevant (amivantamab-vmjw) – US Prescribing Information", hersteller: null, dokumentstand: "Revised 08/2025 (FDA-Label 761210s008)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761210s008lbl.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "FDA-Label-PDF: Abschnitte 1, 2, 5.5 und 6 (Tabellen 10 und 12, 6.2) gelesen."},
+    Q_TEBE_EU: {art: "A", raum: "EU", titel: "KIMMTRAK (Tebentafusp) – EU-Produktinformation, deutsche Fassung", hersteller: "Immunocore Ireland Limited", dokumentstand: "Zulassung 01.04.2022 (Abschnitt 9); Datum der Überarbeitung im Dokument nicht angegeben", url: "https://www.ema.europa.eu/de/documents/product-information/kimmtrak-epar-product-information_de.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Abschnitte 4.1, 4.2, 4.4, 4.7 und 4.8 (Tabelle 3 mit Fußnoten) gelesen."},
+    Q_TEBE_US: {art: "A", raum: "USA", titel: "KIMMTRAK (tebentafusp-tebn) – US Prescribing Information", hersteller: "Immunocore", dokumentstand: "Revised 06/2024", url: "https://www.immunocore.com/download_file/309/0", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Hersteller-PDF (Link auf immunocore.com leitet auf eine Download-Adresse des Herstellers weiter): Abschnitte 1, 2, 5, 6 (Tabelle 4 mit Fußnoten) und 17 gelesen – keine Augenbegriffe."},
+    /* --- Etappe 2 (19.11.2026) --- */
+    Q_DIGI_DE_AWD_V2: {art: "A", raum: "DE", titel: "Fachinformation Digitoxin AWD 0,07 (Digitoxin), fachinfo.de-Fassung", hersteller: "TEVA GmbH", dokumentstand: "Stand Februar 2018, Version 2", url: "https://fachinfo.de/pdf/002799", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Nur für das Anwendungsgebiet verwendet; die als Q_DIGI_DE_AWD erfasste Fassung 3 war am 19.11.2026 für das Abrufwerkzeug nicht lesbar."},
+    Q_GLP1_B_FDA_DSC2026: {art: "B", raum: "USA", titel: "FDA Drug Safety Communication: FDA requires safety labeling changes for glucagon-like peptide-1 receptor agonists (GLP-1 RAs) due to potential risk of NAION", hersteller: null, dokumentstand: "09.11.2026 (Content current as of 11/09/2026)", url: "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Zusätzlich gelesen: MedWatch-Alert der FDA vom selben Tag (https://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras). Tabelle der betroffenen Produkte: Exenatid, Liraglutid (Victoza, Saxenda, Xultophy), Dulaglutid, Lixisenatid (Soliqua), Semaglutid (Ozempic, Rybelsus, Wegovy), Tirzepatid (Mounjaro, Zepbound), Orforglipron (Foundayo)."},
+    Q_STAT_B_PRAC2023: {art: "B", raum: "EU", titel: "EMA/PRAC: New product information wording – Extracts from PRAC recommendations on signals adopted at the 9-12 January 2023 PRAC (Statine – Myasthenia gravis, EPITT 19822)", hersteller: null, dokumentstand: "PRAC-Sitzung 9.–12. Januar 2023", url: "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-9-12-january-2023-prac_en.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Die deutsche Fassung (…_de.pdf) war am 19.11.2026 nicht abrufbar. Ergänzend: AkdÄ Drug Safety Mail 2023-51 vom 19.10.2023 (https://www.akdae.de/arzneimittelsicherheit/drug-safety-mail/newsdetail/drug-safety-mail-2023-51)."},
+    Q_ATOR_DE_SORTIS: {art: "A", raum: "DE", titel: "Fachinformation Sortis Filmtabletten (Atorvastatin)", hersteller: "Viatris Pharma GmbH", dokumentstand: "Stand Oktober 2024", url: "https://www.fachinfo.de/pdf/000291", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_ATOR_US_LIPITOR: {art: "A", raum: "USA", titel: "Lipitor (atorvastatin calcium) Tablets – US Prescribing Information", hersteller: "Viatris Specialty LLC", dokumentstand: "Revised 4/2024 (FDA-Label 020702s081)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020702s081lbl.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_SIMV_DE_DURA: {art: "A", raum: "DE", titel: "Fachinformation Simvastatin dura Filmtabletten (Simvastatin)", hersteller: "Viatris Germany GmbH", dokumentstand: "Stand April 2026", url: "https://www.fachinfo.de/fi/pdf/024425/simvastatin-dura-filmtabletten", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_SIMV_US_ZOCOR: {art: "A", raum: "USA", titel: "Zocor (simvastatin) Tablets – US Prescribing Information", hersteller: "Organon LLC", dokumentstand: "Revised 8/2023 (FDA-Label 019766s104)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/019766s104lbl.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_ROSU_DE_CRESTOR: {art: "A", raum: "DE", titel: "Fachinformation Crestor 5 mg/10 mg/20 mg Filmtabletten (Rosuvastatin)", hersteller: "Grünenthal GmbH", dokumentstand: "Stand Oktober 2025", url: "https://www.fachinfo.de/pdf/011530", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_ROSU_US_CRESTOR: {art: "A", raum: "USA", titel: "Crestor (rosuvastatin) Tablets – US Prescribing Information", hersteller: null, dokumentstand: "Revised 04/2026 (FDA-Label 021366s047)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021366s047lbl.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_PRAV_DE_STADA: {art: "A", raum: "DE", titel: "Fachinformation Pravastatin STADA 20 mg/40 mg Filmtabletten (Pravastatin)", hersteller: "STADAPHARM GmbH", dokumentstand: "Stand der Information September 2024", url: "https://stada.de/media/aiphlgyd/pravastatin-stada_202409_vero-ff20250121.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_FLUV_DE_LOCOL: {art: "A", raum: "DE", titel: "Fachinformation Locol 80 mg Retardtabletten (Fluvastatin)", hersteller: "Ethypharm (Zulassungsinhaber laut Abruf: Ethyx Pharmaceuticals, Lyon)", dokumentstand: "Stand August 2023 (V012)", url: "https://fachinfo.de/pdf/013047", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_THIA_B_BASG2020: {art: "B", raum: "EU", titel: "BASG: Thiazide, Thiazid-ähnliche Diuretika und Kombinationen – Aderhauterguss (Mustertext nach PRAC-Empfehlung vom 9.–12. März 2020)", hersteller: null, dokumentstand: "Schreiben vom 07.04.2020 (PHV-13009909-A-200406)", url: "https://www.basg.gv.at/fileadmin/redakteure/07_Unternehmen/PV-Mustertexte/200407_Mustertext_Thiazide__Thiazid-%C3%A4hnliche_Diuretika_und_Kombinationen.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Österreichische Arzneimittelbehörde; gibt den PRAC-Wortlaut auf Deutsch wieder. Hydrochlorothiazid, Chlortalidon und Indapamid mit Aderhauterguss (Häufigkeit nicht bekannt); für Bendroflumethiazid, Cicletanin, Clopamid, Cyclopenthiazid, Hydroflumethiazid, Metipamid, Metolazon und Xipamid als Klasseneffekt angesehen (noch nicht berichtet)."},
+    Q_HCT_DE_STADA: {art: "A", raum: "DE", titel: "Fachinformation HCT STADA 12,5 mg/25 mg Tabletten (Hydrochlorothiazid)", hersteller: "STADAPHARM GmbH", dokumentstand: "Stand der Information Juli 2020", url: "https://www.stada.de/media/0ymmgj1x/hct_stada_12_5_mg-25_mg_tabletten_202007_vero-ff20201022.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_HCT_US_MICROZIDE: {art: "A", raum: "USA", titel: "Microzide (hydrochlorothiazide) Capsules 12.5 mg – US Prescribing Information", hersteller: null, dokumentstand: "Revised August 2020 (FDA-Label 020504s026)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/020504s026lbl.pdf", abgerufen: "2026-11-19", zugang: "frei"},
+    Q_CHLT_DE_HYGROTON: {art: "A", raum: "DE", titel: "Fachinformation Hygroton 25 mg/50 mg Tabletten (Chlortalidon)", hersteller: "Trommsdorff GmbH & Co. KG", dokumentstand: "Stand September 2024", url: "https://www.fachinfo.de/fi/pdf/005243", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_INDA_DE_NATRILIX: {art: "A", raum: "DE", titel: "Fachinformation Natrilix 2,5 mg Filmtabletten (Indapamid)", hersteller: "Les Laboratoires Servier (Mitvertrieb Servier Deutschland GmbH)", dokumentstand: "Stand der Information April 2026 (laut Abruf)", url: "https://www.fachinfo.de/pdf/001428", abgerufen: "2026-11-19", zugang: "frei", hinweis: "fachinfo.de, ohne Login abrufbares PDF der Fachinformation."},
+    Q_ACET_B_BASG2023: {art: "B", raum: "EU", titel: "BASG: Acetazolamid – Aderhauterguss (choroidaler Erguss) und Aderhautabhebung (Mustertext nach PRAC-Empfehlung vom 28.–31. August 2023, EPITT 19924)", hersteller: null, dokumentstand: "Schreiben vom 26.09.2023 (PHV-102357261-A-230926)", url: "https://www.basg.gv.at/fileadmin/redakteure/07_Unternehmen/PV-Mustertexte/ab_2023/230926_Mustertext_Acetazolamid.pdf", abgerufen: "2026-11-19", zugang: "frei", hinweis: "Ergänzend gleichlautend: AkdÄ Drug Safety Mail 2023-45 vom 06.10.2023 (https://www.akdae.de/arzneimittelsicherheit/drug-safety-mail/newsdetail/drug-safety-mail-2023-45)."},
+    Q_ACET_US_DIAMOX: {art: "A", raum: "USA", titel: "Diamox (acetazolamide) Tablets USP – US Prescribing Information", hersteller: null, dokumentstand: "Rev. 10/2025 (FDA-Label 008943s054)", url: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/008943s054lbl.pdf", abgerufen: "2026-11-19", zugang: "frei"},
     /* --- Stellungnahme der Fachgesellschaften (als Dokument bereitgestellt, keine Online-Fassung) --- */
     Q_DOG_BVA_ONKO_2026: { art: "D", raum: "DE", titel: "Stellungnahme von DOG und BVA: Okuläre Toxizitäten durch neue onkologische Therapien",
       hersteller: "Deutsche Ophthalmologische Gesellschaft (DOG) und Berufsverband der Augenärztinnen und Augenärzte Deutschlands (BVA)", dokumentstand: "Stand Oktober 2026", studientyp: "Stellungnahme der Fachgesellschaften",
-      url: null, abgerufen: "2026-10-11", zugang: "dokument", online_suche: "2026-10-16",
-      hinweis: "Von der Nutzerin am 11.10.2026 als PDF bereitgestellt; Wortlaut zweifach abgeglichen (Textebene und Seitenbild). Eine Online-Fassung wurde am 11.10. und 16.10.2026 nicht gefunden." }
+      url: null, abgerufen: "2026-10-11", zugang: "dokument", online_suche: "2026-11-19",
+      hinweis: "Von der Nutzerin am 11.10.2026 als PDF bereitgestellt; Wortlaut zweifach abgeglichen (Textebene und Seitenbild). Eine Online-Fassung wurde am 11.10., 16.10., 04.11., 11.11., 18.11. und 19.11.2026 nicht gefunden (am 19.11.2026 zweimal gesucht, auch nach der DOG-Pressemitteilung vom September 2025 und Übersichtsarbeiten im Deutschen Ärzteblatt)." }
   },
 
   /* ===================== WIRKSTOFFE ===================== */
@@ -780,7 +874,7 @@ window.MNW_DATEN = {
       hinweis: null },
 
     { id: "tamoxifen", inn_de: "Tamoxifen", inn_en: "tamoxifen", synonyme: ["Tamoxifencitrat", "tamoxifen citrate"],
-      kategorie: "systemisch", applikation: ["oral"], klassen: ["serm"], anwendungsgebiete: ["brustkrebs", "krebs"],
+      kategorie: "systemisch", applikation: ["oral"], klassen: ["serm"], anwendungsgebiete: ["brustkrebs", "brustkrebs_hormon", "krebs"],
       handelsnamen_de: ["Tamoxifen Heumann", "Tamoxifen AbZ", "Tamoxifen-ratiopharm", "Tamoxifen AL"], handelsnamen_us: ["Soltamox"],
       zulassung_eu: "national", etappe: "1a", status: "geprueft",
       indikation: { text: "Mammakarzinom: adjuvante Therapie nach Primärbehandlung; metastasierendes Mammakarzinom", quelle: "Q_TAM_DE_HEUMANN", abschnitt: "4.1",
@@ -974,6 +1068,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["tuberkulostatika"], anwendungsgebiete: ["tuberkulose"],
       handelsnamen_de: ["EMB-Fatol"], handelsnamen_us: ["Myambutol"],
       zulassung_eu: "national", etappe: "1b", status: "geprueft",
+      indikation: {text: "Tuberkulose aller Formen und Stadien (pulmonal und extrapulmonal), immer in Kombination mit weiteren Antituberkulotika", quelle: "Q_ETH_DE_EMBFATOL", abschnitt: "4.1", zitat: "„Zur Behandlung aller Formen und Stadien der pulmonalen und extrapulmonalen Tuberkulose“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_ETH_DE_EMBFATOL", raum: "DE", umfang: "Fachinformation 4.2, 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_ETH_US_LUPIN", raum: "USA", umfang: "Contraindications, Warnings, Precautions, Adverse Reactions, Dosage and Administration", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -986,6 +1081,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["oxazolidinone"], anwendungsgebiete: ["infektion"],
       handelsnamen_de: ["Zyvoxid", "Linezolid-ratiopharm", "Linezolid-1A Pharma"], handelsnamen_us: ["Zyvox"],
       zulassung_eu: "national", etappe: "1b", status: "geprueft",
+      indikation: {text: "Ambulant erworbene und nosokomiale Pneumonie sowie schwere Haut- und Weichteilinfektionen durch grampositive Erreger (Erwachsene)", quelle: "Q_LIN_DE_ZYVOXID", abschnitt: "4.1", zitat: "„Zyvoxid ist bei Erwachsenen zur Behandlung von ambulant erworbener Pneumonie und nosokomialer Pneumonie angezeigt, wenn …“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_LIN_DE_ZYVOXID", raum: "DE", umfang: "Fachinformation 4.2, 4.4, 4.7, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_LIN_US_ZYVOX", raum: "USA", umfang: "Dosage and Administration, Warnings and Precautions 5.2, Adverse Reactions 6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -998,6 +1094,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["oxazolidinone"], anwendungsgebiete: ["infektion"],
       handelsnamen_de: ["Sivextro"], handelsnamen_us: ["Sivextro"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Akute bakterielle Haut- und Weichgewebeinfektionen (Erwachsene sowie Jugendliche und Kinder ab 35 kg)", quelle: "Q_TEDI_EU", abschnitt: "4.1 (Filmtabletten)", zitat: "„Sivextro Tabletten sind indiziert zur Behandlung von akuten bakteriellen Haut- und Weichgewebeinfektionen“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TEDI_EU", raum: "EU", umfang: "Fachinformation 4.2, 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TEDI_US", raum: "USA", umfang: "Warnings and Precautions 5.1–5.4, Adverse Reactions 6.1/6.2, Drug Interactions", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1012,6 +1109,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["antiarrhythmika"], anwendungsgebiete: ["herzrhythmus"],
       handelsnamen_de: ["Cordarex", "Amiodaron Heumann", "Amiodaron-ratiopharm", "Amiodaron STADA", "Amiodaron-CT", "amiodura"], handelsnamen_us: ["Pacerone", "Nexterone"],
       zulassung_eu: "national", etappe: "1b", status: "geprueft",
+      indikation: {text: "Tachykarde supraventrikuläre (wenn andere Antiarrhythmika ungeeignet) und schwerwiegende ventrikuläre Herzrhythmusstörungen", quelle: "Q_AMIO_DE_HEUMANN", abschnitt: "4.1", zitat: "„Schwerwiegende, symptomatische, tachykarde ventrikuläre Herzrhythmusstörungen.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_AMIO_DE_HEUMANN", raum: "DE", umfang: "Fachinformation 4.4, 4.7, 4.8; Volltextsuche nach Hornhaut, Optikus, Photophobie, trocken, Linse, Netzhaut, Papille, Pigmentierung, Lid", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_AMIO_US_PACERONE", raum: "USA", umfang: "Boxed Warning, Warnings and Precautions 5.5, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1026,6 +1124,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["antiarrhythmika"], anwendungsgebiete: ["herzrhythmus"],
       handelsnamen_de: ["Multaq"], handelsnamen_us: ["Multaq"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Erhalt des Sinusrhythmus nach erfolgreicher Kardioversion bei paroxysmalem oder persistierendem Vorhofflimmern (Erwachsene)", quelle: "Q_DRON_EU", abschnitt: "4.1", zitat: "„MULTAQ ist angezeigt zum Erhalt des Sinusrhythmus nach einer erfolgreichen Kardioversion“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DRON_EU", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8 (keine Systemorganklasse Augenerkrankungen)", geprueft_am: "2026-10-05", ergebnis: "keine okulären Angaben gefunden" },
         { quelle: "Q_DRON_US", raum: "USA", umfang: "Warnings and Precautions 5.1–5.10, Adverse Reactions 6.1/6.2; Suche nach eye, ocular, vision, visual, optic, cornea, photophobia, blurred, ophthalm", geprueft_am: "2026-10-05", ergebnis: "keine okulären Angaben gefunden" }
@@ -1038,6 +1137,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["antiepileptika"], anwendungsgebiete: ["epilepsie"],
       handelsnamen_de: ["Sabril", "Kigabeq"], handelsnamen_us: ["Sabril"],
       zulassung_eu: "national (Sabril) und zentral (Kigabeq)", etappe: "1b", status: "geprueft",
+      indikation: {text: "Infantile Spasmen (West-Syndrom) und therapieresistente fokale Epilepsie bei Kindern von 1 Monat bis unter 7 Jahren (Kigabeq)", quelle: "Q_VIGA_EU_KIGABEQ", abschnitt: "4.1", zitat: "„zur Behandlung als Monotherapie bei infantilen Spasmen (West-Syndrom).“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_VIGA_EU_KIGABEQ", raum: "EU", umfang: "Fachinformation 4.2, 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_VIGA_US_SABRIL", raum: "USA", umfang: "Boxed Warning, Warnings and Precautions 5.1, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1052,6 +1152,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["pde5_hemmer"], anwendungsgebiete: ["erektionsstoerung", "lungenhochdruck"],
       handelsnamen_de: ["Viagra", "Revatio"], handelsnamen_us: ["Viagra", "Revatio"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Erektile Dysfunktion (Viagra); pulmonale arterielle Hypertonie bei Erwachsenen und Kindern ab 1 Jahr (Revatio)", quelle: "Q_SILD_EU_VIAGRA", abschnitt: "4.1", zitat: "„VIAGRA wird zur Behandlung von erwachsenen Männern mit erektiler Dysfunktion angewendet.“", status: "geprueft", geprueft_am: "2026-11-19", quelle2: "Q_SILD_EU_REVATIO"},
       pruefstand: [
         { quelle: "Q_SILD_EU_VIAGRA", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_SILD_EU_REVATIO", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.8 (Filmtabletten)", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
@@ -1073,6 +1174,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["pde5_hemmer"], anwendungsgebiete: ["erektionsstoerung", "lungenhochdruck", "prostata"],
       handelsnamen_de: ["Cialis", "Adcirca"], handelsnamen_us: ["Cialis", "Adcirca"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Erektile Dysfunktion bei erwachsenen Männern; benignes Prostatasyndrom (nur 5 mg) (Cialis)", quelle: "Q_TADA_EU_CIALIS", abschnitt: "4.1", zitat: "„Zur Behandlung des benignen Prostatasyndroms bei erwachsenen Männern.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TADA_EU_CIALIS", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TADA_US_CIALIS", raum: "USA", umfang: "Contraindications, Warnings and Precautions 5.4, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1089,6 +1191,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["pde5_hemmer"], anwendungsgebiete: ["erektionsstoerung"],
       handelsnamen_de: ["Levitra", "Vivanza"], handelsnamen_us: ["Levitra", "Staxyn"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Erektile Dysfunktion bei erwachsenen Männern", quelle: "Q_VARD_EU_LEVITRA", abschnitt: "4.1", zitat: "„Behandlung der erektilen Dysfunktion bei erwachsenen Männern.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_VARD_EU_LEVITRA", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_VARD_US_LANNETT", raum: "USA", umfang: "Warnings and Precautions 5.4, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1105,6 +1208,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["pde5_hemmer"], anwendungsgebiete: ["erektionsstoerung"],
       handelsnamen_de: ["Spedra"], handelsnamen_us: ["Stendra"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Erektile Dysfunktion bei erwachsenen Männern", quelle: "Q_AVAN_EU_SPEDRA", abschnitt: "4.1", zitat: "„Zur Behandlung der erektilen Dysfunktion bei erwachsenen Männern.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_AVAN_EU_SPEDRA", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_AVAN_US_STENDRA", raum: "USA", umfang: "Warnings and Precautions 5.4, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1121,6 +1225,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["s. c.", "oral"], klassen: ["glp1_ra"], anwendungsgebiete: ["diabetes", "adipositas"],
       handelsnamen_de: ["Ozempic", "Wegovy", "Rybelsus"], handelsnamen_us: ["Ozempic", "Wegovy", "Rybelsus"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Typ-2-Diabetes bei Erwachsenen (Ozempic); Gewichtsregulierung ab BMI 30 bzw. ab 27 mit Begleiterkrankung (Wegovy)", quelle: "Q_SEMA_EU_OZEMPIC", abschnitt: "4.1", zitat: "„Ozempic wird zur Behandlung des unzureichend kontrollierten Diabetes mellitus Typ 2 bei Erwachsenen …“", status: "geprueft", geprueft_am: "2026-11-19", quelle2: "Q_SEMA_EU_WEGOVY"},
       pruefstand: [
         { quelle: "Q_SEMA_EU_OZEMPIC", raum: "EU", umfang: "Fachinformation 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_SEMA_EU_WEGOVY", raum: "EU", umfang: "Fachinformation 4.4, 4.8", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
@@ -1135,6 +1240,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["s. c."], klassen: ["gip_glp1_ra"], anwendungsgebiete: ["diabetes", "adipositas"],
       handelsnamen_de: ["Mounjaro"], handelsnamen_us: ["Mounjaro", "Zepbound"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Typ-2-Diabetes (ab 10 Jahren); Gewichtsmanagement bei Erwachsenen ab BMI 30 bzw. ab 27 mit Begleiterkrankung", quelle: "Q_TIRZ_EU_MOUNJARO", abschnitt: "4.1", zitat: "„Mounjaro ist angezeigt zur Behandlung von Erwachsenen, Jugendlichen und Kindern ab 10 Jahren …“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TIRZ_EU_MOUNJARO", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8 (keine Systemorganklasse Augenerkrankungen; NAION nicht erwähnt)", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TIRZ_US_MOUNJARO", raum: "USA", umfang: "Warnings and Precautions 5.7, Adverse Reactions; NAION nicht erwähnt", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1147,6 +1253,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["s. c."], klassen: ["glp1_ra"], anwendungsgebiete: ["diabetes", "adipositas"],
       handelsnamen_de: ["Victoza", "Saxenda"], handelsnamen_us: ["Victoza", "Saxenda"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Typ-2-Diabetes ab 10 Jahren (Victoza); Gewichtsregulierung (Erwachsene) ab BMI 30 bzw. ab 27 mit Begleiterkrankung (Saxenda)", quelle: "Q_LIRA_EU_VICTOZA", abschnitt: "4.1", zitat: "„Victoza wird zur Behandlung des unzureichend kontrollierten Diabetes mellitus Typ 2 bei Erwachsenen, Jugendlichen …“", status: "geprueft", geprueft_am: "2026-11-19", quelle2: "Q_LIRA_EU_SAXENDA"},
       pruefstand: [
         { quelle: "Q_LIRA_EU_VICTOZA", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-05", ergebnis: "keine okulären Angaben gefunden" },
         { quelle: "Q_LIRA_EU_SAXENDA", raum: "EU", umfang: "Fachinformation (Anhang I), Suche nach Retinopathie, Auge, Sehverlust, Optikus, NAION", geprueft_am: "2026-10-05", ergebnis: "keine okulären Angaben gefunden" },
@@ -1163,6 +1270,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["s. c."], klassen: ["glp1_ra"], anwendungsgebiete: ["diabetes"],
       handelsnamen_de: ["Trulicity"], handelsnamen_us: ["Trulicity"],
       zulassung_eu: "zentral", etappe: "1b", status: "geprueft",
+      indikation: {text: "Unzureichend kontrollierter Typ-2-Diabetes (ab 10 Jahren)", quelle: "Q_DULA_EU_TRULICITY", abschnitt: "4.1", zitat: "„Trulicity ist angezeigt zur Behandlung von Patienten ab 10 Jahren mit unzureichend kontrolliertem Typ 2-Diabetes mellitus“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DULA_EU_TRULICITY", raum: "EU", umfang: "Fachinformation (Anhang I), Suche nach Retinopathie, Auge, Seh-, Optikus, NAION, Netzhaut", geprueft_am: "2026-10-05", ergebnis: "keine okulären Angaben gefunden" },
         { quelle: "Q_DULA_US_TRULICITY", raum: "USA", umfang: "Warnings and Precautions 5.7, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1175,6 +1283,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["herzglykoside"], anwendungsgebiete: ["herzschwaeche", "herzrhythmus"],
       handelsnamen_de: ["Lanicor", "Lenoxin", "Digacin"], handelsnamen_us: ["Lanoxin", "Digox"],
       zulassung_eu: "national", etappe: "1b", status: "geprueft",
+      indikation: {text: "Manifeste chronische Herzinsuffizienz (systolische Dysfunktion); Tachyarrhythmia absoluta bei chronischem Vorhofflimmern/-flattern", quelle: "Q_DIGO_DE_LENOXIN", abschnitt: "4.1", zitat: "„Tachyarrhythmia absoluta bei chronischem Vorhofflimmern/Vorhofflattern.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DIGO_DE_LENOXIN", raum: "DE", umfang: "Fachinformation 4.4, 4.8, 4.9", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_DIGO_US_LANOXIN", raum: "USA", umfang: "Warnings and Precautions 5.3, Adverse Reactions 6, Overdosage 10.1, Patient Counseling 17", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" }
@@ -1189,8 +1298,10 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["herzglykoside"], anwendungsgebiete: ["herzschwaeche", "herzrhythmus"],
       handelsnamen_de: ["Digimerck", "Digitoxin AWD"], handelsnamen_us: [],
       zulassung_eu: "national", etappe: "1b", status: "geprueft",
+      indikation: {text: "Chronische Herzinsuffizienz (systolische Dysfunktion); Tachyarrhythmia absoluta bzw. paroxysmales Vorhofflimmern/-flattern", quelle: "Q_DIGI_DE_AWD_V2", abschnitt: "4.1", zitat: "„manifeste chronische Herzinsuffizienz (auf Grund systolischer Dysfunktion)“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DIGI_DE_AWD", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8, 4.9; Volltextsuche nach Farbsehen, Gelb, Grün, Sehstörung, Flimmer, Skotom, Halo, verschwommen, Auge", geprueft_am: "2026-10-05", ergebnis: "okuläre Angaben gefunden" },
+        { quelle: "Q_DIGI_DE_AWD_V2", raum: "DE", umfang: "nur Abschnitt 4.1 (Anwendungsgebiet), fachinfo.de-Fassung Version 2", geprueft_am: "2026-11-19", ergebnis: "nur Anwendungsgebiet geprüft" },
         { quelle: null, raum: "USA", umfang: "DailyMed-Suche nach Digitoxin", geprueft_am: "2026-10-05", ergebnis: "kein Label in DailyMed gefunden" }
       ],
       nicht_aufgenommen: [],
@@ -1202,6 +1313,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["antiepileptika"], anwendungsgebiete: ["epilepsie", "migraene"],
       handelsnamen_de: ["Topamax", "Topiramat STADA", "Topiramat Migräne STADA"], handelsnamen_us: ["Topamax", "Trokendi XR", "Qudexy XR", "Eprontia"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Migräneprophylaxe bei Erwachsenen (Topiramat Migräne STADA); USA: Epilepsie ab 2 Jahren, Migräneprophylaxe ab 12 Jahren (Topamax)", quelle: "Q_TOPI_DE_STADA", abschnitt: "4.1", zitat: "„Topiramat ist indiziert bei Erwachsenen zur Prophylaxe von Migräne-Kopfschmerzen“", status: "geprueft", geprueft_am: "2026-11-19", quelle2: "Q_TOPI_US_TOPAMAX"},
       pruefstand: [
         { quelle: "Q_TOPI_DE_STADA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TOPI_US_TOPAMAX", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.1/5.2, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1218,6 +1330,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["alpha1_blocker"], anwendungsgebiete: ["prostata"],
       handelsnamen_de: ["Alna Ocas", "Omnic Ocas", "Tamsulosin STADA", "Duodart"], handelsnamen_us: ["Flomax", "Jalyn"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Symptome des unteren Harntrakts bei benigner Prostatahyperplasie (BPH)", quelle: "Q_TAMS_DE_STADA", abschnitt: "4.1", zitat: "„Behandlung von Symptomen des unteren Harntrakts bei der benignen Prostatahyperplasie (BPH).“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TAMS_DE_STADA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.7, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TAMS_US_FLOMAX", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.5, Adverse Reactions 6.1/6.2, Patient Counseling", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1233,6 +1346,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["alpha1_blocker"], anwendungsgebiete: ["prostata"],
       handelsnamen_de: ["Urion", "Uroxatral", "Alfuzosin STADA"], handelsnamen_us: ["Uroxatral"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Funktionelle Symptome der benignen Prostatahyperplasie (BPH)", quelle: "Q_ALFU_DE_STADA", abschnitt: "4.1", zitat: "„Behandlung der funktionellen Symptome der benignen Prostatahyperplasie (BPH).“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_ALFU_DE_STADA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8, 4.9", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_ALFU_US_UROXATRAL", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.6, Adverse Reactions 6.1/6.2, Patient Counseling 17.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1247,6 +1361,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["alpha1_blocker"], anwendungsgebiete: ["prostata"],
       handelsnamen_de: ["Urorec", "Silodyx"], handelsnamen_us: ["Rapaflo"],
       zulassung_eu: "zentral", etappe: "1c", status: "geprueft",
+      indikation: {text: "Anzeichen und Symptome einer benignen Prostatahyperplasie (BPH) bei erwachsenen Männern", quelle: "Q_SILO_EU_UROREC", abschnitt: "4.1", zitat: "„Behandlung der Anzeichen und Symptome einer benignen Prostatahyperplasie (BPH) bei erwachsenen Männern.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_SILO_EU_UROREC", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_SILO_US_AJANTA", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.7, Adverse Reactions 6.1/6.2, Patient Counseling 17", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1259,6 +1374,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["alpha1_blocker"], anwendungsgebiete: ["prostata", "bluthochdruck"],
       handelsnamen_de: ["Cardular PP", "Doxazosin STADA"], handelsnamen_us: ["Cardura", "Cardura XL"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Essenzielle Hypertonie; symptomatische Behandlung der benignen Prostatahyperplasie", quelle: "Q_DOXA_DE_STADA", abschnitt: "4.1", zitat: "„Essenzielle Hypertonie.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DOXA_DE_STADA", raum: "DE", umfang: "Fachinformation 4.4, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_DOXA_US_CARDURA", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.2, Adverse Reactions 6.1/6.2, Patient Counseling", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1273,6 +1389,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral"], klassen: ["alpha1_blocker"], anwendungsgebiete: ["prostata", "bluthochdruck"],
       handelsnamen_de: ["Terazosin STADA"], handelsnamen_us: ["Tezruly"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Leichte bis mittelschwere Hypertonie; Blasenentleerungsstörungen bei benigner Prostatahyperplasie (BPH)", quelle: "Q_TERA_DE_STADA", abschnitt: "4.1", zitat: "„Symptomatische Behandlung von Blasenentleerungsstörungen infolge einer benignen Prostatahyperplasie (BPH).“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TERA_DE_STADA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.7, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TERA_US_JUBILANT", raum: "USA", umfang: "Warnings/Precautions (IFIS), Adverse Reactions inkl. weitere Nebenwirkungen", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1288,6 +1405,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v.", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "rheuma", "asthma", "hautentzuendung"],
       handelsnamen_de: ["Decortin H", "Solu-Decortin H", "Prednisolut", "Prednisolon STADA", "Prednisolon Abanta"], handelsnamen_us: ["Orapred ODT"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Erkrankungen mit Bedarf an systemischen Glukokortikoiden (u. a. Rheumatologie, Lunge, Haut, Augenkrankheiten); Substitution", quelle: "Q_PRDL_DE_STADA", abschnitt: "4.1", zitat: "„Prednisolon STADA® ist angezeigt zur Behandlung von Erkrankungen, die einer systemischen Therapie mit Glukokortikoiden …“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_PRDL_DE_STADA", raum: "DE", umfang: "Fachinformation 4.2, 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_PRDL_US_ORAPRED", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.7, Adverse Reactions 6", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1301,6 +1419,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "rektal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "rheuma"],
       handelsnamen_de: ["Decortin", "Rectodelt", "Prednison acis"], handelsnamen_us: ["Rayos"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Erkrankungen mit Bedarf an systemischen Glucocorticoiden (u. a. Rheumatologie, Lunge, Haut, Augenkrankheiten); Substitution", quelle: "Q_PRDN_DE_ACIS", abschnitt: "4.1", zitat: "„Prednison acis ist angezeigt zur Behandlung von Erkrankungen, die einer systemischen Therapie mit Glucocorticoiden bedürfen.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_PRDN_DE_ACIS", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_PRDN_US_PAR", raum: "USA", umfang: "Warnings (Ophthalmic, Neurologic), Precautions, Adverse Reactions (Ophthalmic, Neurologic/Psychiatric)", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1313,6 +1432,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v.", "i. m.", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "ms", "hautentzuendung"],
       handelsnamen_de: ["Urbason", "Medrate", "Methylprednisolut", "Advantan"], handelsnamen_us: ["Medrol", "Solu-Medrol", "Depo-Medrol"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Erkrankungen mit Bedarf an systemischen Glukokortikoiden (u. a. rheumatisch, Lunge, Haut, Blut/Tumoren, Darm); Substitution", quelle: "Q_MPRD_DE_URBASON", abschnitt: "4.1", zitat: "„Erkrankungen, die einer systemischen Therapie mit Glukokortikoiden bedürfen.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_MPRD_DE_URBASON", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8 (Tabletten)", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_MPRD_US_MEDROL", raum: "USA", umfang: "Warnings (Ophthalmic, Neurologic), Precautions, Adverse Reactions (Ophthalmic, Neurologic/Psychiatric)", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1326,6 +1446,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v."], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "krebs"],
       handelsnamen_de: ["Fortecortin", "Neofordex"], handelsnamen_us: ["Hemady"],
       zulassung_eu: "national (Neofordex: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "U. a. Hirnödem, schwerer Asthmaanfall, Autoimmun- und schwere Hauterkrankungen, COVID-19 mit Sauerstoffbedarf, Antiemese", quelle: "Q_DEXA_DE_FORTECORTIN", abschnitt: "4.1", zitat: "„Hirnödem, ausgelöst durch Hirntumor, neurochirurgische Eingriffe, bakterielle Meningitis, Hirnabszess.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_DEXA_DE_FORTECORTIN", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8 (Tabletten)", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_DEXA_EU_NEOFORDEX", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1339,6 +1460,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["oral", "i. v.", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "nebenniereninsuffizienz", "hautentzuendung"],
       handelsnamen_de: ["Plenadren", "Alkindi", "Efmody", "Soventol HydroCort"], handelsnamen_us: ["Cortef", "Solu-Cortef", "Locoid"],
       zulassung_eu: "national (Plenadren, Alkindi, Efmody: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "Nebenniereninsuffizienz bei Erwachsenen (Plenadren, Tabletten mit veränderter Wirkstofffreisetzung)", quelle: "Q_HYDR_EU_PLENADREN", abschnitt: "4.1", zitat: "„Behandlung der Nebenniereninsuffizienz bei Erwachsenen.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_HYDR_EU_PLENADREN", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_HYDR_US_CORTEF", raum: "USA", umfang: "Warnings (Ophthalmic, Neurologic), Precautions, Adverse Reactions (Ophthalmic, Neurologic/Psychiatric)", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1353,6 +1475,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["i. m.", "intraartikulär", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "hautentzuendung"],
       handelsnamen_de: ["Celestan", "Celestamine N", "Diprosone", "Betnesol-V", "Betagalen", "Daivobet", "Enstilar"], handelsnamen_us: ["Celestone Soluspan", "Diprolene", "Enstilar"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "U. a. Insektengiftallergie (Akutbehandlung), Autoimmun- und rheumatische Erkrankungen (orale Anfangsbehandlung) (CELESTAMINE N)", quelle: "Q_BETA_DE_CELESTAMINE", abschnitt: "4.1", zitat: "„Akutbehandlung nach Bienen- bzw. Wespenstichen bei Insektengiftallergie.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_BETA_DE_CELESTAMINE", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8 (Lösung zum Einnehmen)", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_BETA_US_CELESTONE", raum: "USA", umfang: "Warnings (Ophthalmic, Neurologic), Precautions, Adverse Reactions (Ophthalmic, Neurologic/Psychiatric)", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1367,6 +1490,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["i. m.", "intraartikulär", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["kortisontherapie", "hautentzuendung"],
       handelsnamen_de: ["Volon A", "Triamgalen"], handelsnamen_us: ["Kenalog-40", "Kenalog-80"],
       zulassung_eu: "national", etappe: "1c", status: "geprueft",
+      indikation: {text: "Schwere allergische Rhinitis (i. m.); intraartikulär, intrafokal, subläsional bei Gelenk-, Weichteil-, Hauterkrankungen (Volon A 40)", quelle: "Q_TRIA_DE_VOLONA40", abschnitt: "4.1", zitat: "„Allergische Rhinitis, bei schweren Verlaufsformen und Versagen einer Lokaltherapie“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_TRIA_DE_VOLONA40", raum: "DE", umfang: "Fachinformation 4.2, 4.3, 4.4, 4.5, 4.8 (Kristallsuspension)", geprueft_am: "2026-10-10", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_TRIA_US_KENALOG", raum: "USA", umfang: "Warnings (Ophthalmic, Neurologic), Precautions, Adverse Reactions (Ophthalmic, Neurologic/Psychiatric)", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1380,6 +1504,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["inhalativ", "nasal", "oral", "rektal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["asthma", "copd", "heuschnupfen", "colitis"],
       handelsnamen_de: ["Pulmicort", "Novopulmon", "Budenofalk", "Entocort", "Cortiment", "Jorveza", "Kinpeygo", "Symbicort"], handelsnamen_us: ["Pulmicort Flexhaler", "Pulmicort Respules", "Entocort EC", "Uceris", "Tarpeyo", "Eohilia", "Symbicort", "Rhinocort"],
       zulassung_eu: "national (Jorveza, Kinpeygo: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "Eosinophile Ösophagitis bei Erwachsenen (Jorveza Schmelztabletten)", quelle: "Q_BUDE_EU_JORVEZA", abschnitt: "4.1", zitat: "„Jorveza wird angewendet bei Erwachsenen (über 18 Jahre) zur Behandlung der eosinophilen Ösophagitis.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_BUDE_EU_JORVEZA", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_BUDE_US_PULMICORT", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.10, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1392,6 +1517,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["inhalativ", "nasal", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["asthma", "copd", "heuschnupfen", "hautentzuendung"],
       handelsnamen_de: ["Avamys", "Flutide", "Flutide Nasal", "Flutiform", "Relvar Ellipta", "Trelegy Ellipta", "Dymista", "Flutivate"], handelsnamen_us: ["Flonase", "Flovent HFA", "Flovent Diskus", "Arnuity Ellipta", "Advair", "Breo Ellipta", "Trelegy Ellipta", "Xhance", "Dymista", "Cutivate"],
       zulassung_eu: "national (Avamys, Relvar Ellipta, Trelegy Ellipta: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "Symptome der allergischen Rhinitis, ab 6 Jahren (Avamys Nasenspray)", quelle: "Q_FLUT_EU_AVAMYS", abschnitt: "4.1", zitat: "„Avamys ist angezeigt zur Behandlung der Symptome allergischer Rhinitis.“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_FLUT_EU_AVAMYS", raum: "EU", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_FLUT_US_NASAL", raum: "USA", umfang: "Warnings and Precautions 5.2, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1408,6 +1534,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["inhalativ", "nasal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["asthma", "copd", "heuschnupfen"],
       handelsnamen_de: ["Junik", "Ventolair", "Sanasthmax", "Foster", "Trimbow", "Beclometason/Formoterol STADA"], handelsnamen_us: ["QVAR RediHaler", "Beconase AQ", "Qnasl"],
       zulassung_eu: "national (Trimbow: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "Asthma (regelmäßige Behandlung) und schwere COPD bei Erwachsenen (Kombination mit Formoterol)", quelle: "Q_BECL_DE_STADA", abschnitt: "4.1", zitat: "„Symptomatische Behandlung von Patienten mit schwerer COPD (FEV1 <50% des Normwerts)“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_BECL_DE_STADA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_BECL_US_QVAR", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.10, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" }
@@ -1420,6 +1547,7 @@ window.MNW_DATEN = {
       kategorie: "systemisch", applikation: ["nasal", "inhalativ", "dermal"], klassen: ["kortikosteroide"], anwendungsgebiete: ["heuschnupfen", "asthma", "hautentzuendung"],
       handelsnamen_de: ["Nasonex", "Mometason ADGC", "Asmanex", "Atectura Breezhaler", "Bemrist Breezhaler", "Enerzair Breezhaler", "Ecural", "Monovo"], handelsnamen_us: ["Nasonex 24HR", "Asmanex HFA", "Asmanex Twisthaler", "Dulera", "Elocon"],
       zulassung_eu: "national (Atectura, Bemrist, Enerzair: zentral)", etappe: "1c", status: "geprueft",
+      indikation: {text: "Saisonale allergische Rhinitis bei Erwachsenen (Nasenspray, nach ärztlicher Erstdiagnose)", quelle: "Q_MOME_DE_ZENTIVA", abschnitt: "4.1", zitat: "„zur symptomatischen Behandlung einer saisonalen allergischen Rhinitis bestimmt,“", status: "geprueft", geprueft_am: "2026-11-19"},
       pruefstand: [
         { quelle: "Q_MOME_DE_ZENTIVA", raum: "DE", umfang: "Fachinformation 4.3, 4.4, 4.5, 4.8", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
         { quelle: "Q_MOME_US_NASAL", raum: "USA", umfang: "Highlights, Warnings and Precautions 5.2, Adverse Reactions 6.1/6.2", geprueft_am: "2026-10-06", ergebnis: "okuläre Angaben gefunden" },
@@ -1618,7 +1746,7 @@ window.MNW_DATEN = {
     /* ---------- Etappe 1d-2: geprüft (Checkpoint-Inhibitoren und Thioridazin) ---------- */
     /* PD-1-Inhibitoren */
     { id: "pembrolizumab", inn_de: "Pembrolizumab", inn_en: "pembrolizumab", synonyme: [],
-      kategorie: "systemisch", applikation: ["i. v."], klassen: ["checkpoint_inhibitoren", "pd1_inhibitoren"], anwendungsgebiete: ["immuntherapie", "krebs", "melanom", "lungenkrebs", "mesotheliom", "hodgkin_lymphom", "blasenkrebs", "kopf_hals_krebs", "nierenkrebs", "darmkrebs", "speiseroehren_magenkrebs", "brustkrebs_tnbc", "gebaermutterkrebs", "gebaermutterhalskrebs", "gallenwegskrebs", "eierstockkrebs"],
+      kategorie: "systemisch", applikation: ["i. v."], klassen: ["checkpoint_inhibitoren", "pd1_inhibitoren"], anwendungsgebiete: ["immuntherapie", "krebs", "melanom", "lungenkrebs", "mesotheliom", "hodgkin_lymphom", "blasenkrebs", "kopf_hals_krebs", "nierenkrebs", "darmkrebs", "speiseroehren_magenkrebs", "brustkrebs", "brustkrebs_tnbc", "gebaermutterkrebs", "gebaermutterhalskrebs", "gallenwegskrebs", "eierstockkrebs"],
       handelsnamen_de: ["Keytruda"], handelsnamen_us: ["Keytruda"],
       zulassung_eu: "zentral", etappe: "1d-2", status: "geprueft",
       indikation: { text: "Melanom, NSCLC, Pleuramesotheliom, Hodgkin-Lymphom, Urothel-, Kopf-Hals-, Nierenzell-, Endometrium-, Zervixkarzinom u. a.", quelle: "Q_PEMBRO_EU", abschnitt: "4.1",
@@ -1722,7 +1850,7 @@ window.MNW_DATEN = {
 
     /* PD-L1-Inhibitoren */
     { id: "atezolizumab", inn_de: "Atezolizumab", inn_en: "atezolizumab", synonyme: [],
-      kategorie: "systemisch", applikation: ["i. v."], klassen: ["checkpoint_inhibitoren", "pdl1_inhibitoren"], anwendungsgebiete: ["immuntherapie", "krebs", "blasenkrebs", "lungenkrebs", "brustkrebs_tnbc", "leberkrebs"],
+      kategorie: "systemisch", applikation: ["i. v."], klassen: ["checkpoint_inhibitoren", "pdl1_inhibitoren"], anwendungsgebiete: ["immuntherapie", "krebs", "blasenkrebs", "lungenkrebs", "brustkrebs", "brustkrebs_tnbc", "leberkrebs"],
       handelsnamen_de: ["Tecentriq"], handelsnamen_us: ["Tecentriq"],
       zulassung_eu: "zentral", etappe: "1d-2", status: "geprueft",
       indikation: { text: "Urothelkarzinom, NSCLC, kleinzelliges Lungenkarzinom, triple-negatives Mammakarzinom, hepatozelluläres Karzinom", quelle: "Q_ATEZO_EU", abschnitt: "4.1",
@@ -1802,11 +1930,113 @@ window.MNW_DATEN = {
       adrreports: { buchstabe: "t" },
       hinweis: "US: Generikum-Label (Mylan). Mehrere Augenangaben stehen dort in der Liste der Reaktionen, die bei einem oder mehreren Phenothiazinen aufgetreten sind (Klassenangabe)." },
 
-    /* ---------- Geplant (Etappe 1g) – erfasst für die Suche, noch ohne Prüfung ---------- */
-    { id: "belantamab_mafodotin", inn_de: "Belantamab mafodotin", inn_en: "belantamab mafodotin", synonyme: [], kategorie: "systemisch", klassen: ["adc"], anwendungsgebiete: ["krebs", "multiples_myelom"], etappe: "1g", status: "geplant" },
-    { id: "mirvetuximab_soravtansin", inn_de: "Mirvetuximab soravtansin", inn_en: "mirvetuximab soravtansine", synonyme: [], kategorie: "systemisch", klassen: ["adc"], anwendungsgebiete: ["krebs", "eierstockkrebs"], etappe: "1g", status: "geplant" },
-    { id: "tisotumab_vedotin", inn_de: "Tisotumab vedotin", inn_en: "tisotumab vedotin", synonyme: [], kategorie: "systemisch", klassen: ["adc"], anwendungsgebiete: ["krebs", "gebaermutterhalskrebs"], etappe: "1g", status: "geplant" },
-    { id: "teclistamab", inn_de: "Teclistamab", inn_en: "teclistamab", synonyme: [], kategorie: "systemisch", klassen: ["bispezifische_antikoerper"], anwendungsgebiete: ["krebs", "multiples_myelom"], etappe: "1g", status: "geplant" }
+    /* ---------- Etappe 1g-1: Antikörper-Wirkstoff-Konjugate und bispezifischer Antikörper ---------- */
+    { id: "belantamab_mafodotin", inn_de: "Belantamab mafodotin", inn_en: "belantamab mafodotin", synonyme: ["Belantamab-Mafodotin", "belantamab mafodotin-blmf"],
+      kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs", "multiples_myelom"],
+      handelsnamen_de: ["Blenrep"], handelsnamen_us: ["Blenrep"],
+      zulassung_eu: "zentral", etappe: "1g-1", status: "geprueft",
+      indikation: { text: "Rezidiviertes/refraktäres Multiples Myelom nach ≥ 1 Vortherapie (mit Bortezomib bzw. Pomalidomid und Dexamethason)", quelle: "Q_BELA_EU", abschnitt: "4.1",
+        zitat: "„Blenrep ist bei Erwachsenen zur Behandlung von rezidiviertem oder refraktärem Multiplen Myelom indiziert:“", status: "geprueft", geprueft_am: "2026-11-04" },
+      pruefstand: [
+        { quelle: "Q_BELA_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 4 mit Fußnoten, Tabelle 5)", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" },
+        { quelle: "Q_BELA_US", raum: "USA", umfang: "Boxed Warning, Dosage and Administration (Tabelle 2), Warnings and Precautions 5.1, Adverse Reactions 6.1 (Tabelle 4)", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" }
+      ],
+      nicht_aufgenommen: [
+        { text: "„Augenschmerzen“ (4.8, Tabelle 4: sehr häufig, alle Grade 21 %, Grad 3–4 < 1 %)", quelle: "Q_BELA_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„Augenbeschwerden“ (4.8, Tabelle 4: häufig, alle Grade 1 %, Grad 3–4 < 1 %)", quelle: "Q_BELA_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„Eye pain“ (6.1, Tabelle 4: 33 %, Grad 3–4: 0,8 %)", quelle: "Q_BELA_US", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" }
+      ],
+      adrreports: { buchstabe: "b" },
+      hinweis: "USA: zugelassen nur in Kombination mit Bortezomib und Dexamethason nach mindestens 2 Vortherapien, Abgabe im Rahmen eines REMS-Programms. Die frühere bedingte EU-Zulassung (2020, Monotherapie) ist ausgelaufen; geprüft wurde die Produktinformation der Zulassung vom 23.07.2025." },
+
+    { id: "mirvetuximab_soravtansin", inn_de: "Mirvetuximab soravtansin", inn_en: "mirvetuximab soravtansine", synonyme: ["Mirvetuximab-Soravtansin", "mirvetuximab soravtansine-gynx"],
+      kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs", "eierstockkrebs"],
+      handelsnamen_de: ["Elahere"], handelsnamen_us: ["Elahere"],
+      zulassung_eu: "zentral", etappe: "1g-1", status: "geprueft",
+      indikation: { text: "FRα-positives, platinresistentes high-grade seröses Ovarial-, Tuben- oder primäres Peritonealkarzinom nach 1–3 Vortherapien", quelle: "Q_MIRV_EU", abschnitt: "4.1",
+        zitat: "„ELAHERE als Monotherapie ist indiziert zur Behandlung von erwachsenen Patientinnen mit […]“", status: "geprueft", geprueft_am: "2026-11-04" },
+      pruefstand: [
+        { quelle: "Q_MIRV_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 4 mit Fußnoten)", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" },
+        { quelle: "Q_MIRV_US", raum: "USA", umfang: "Boxed Warning, Dosage and Administration 2.3 und Tabelle 3, Warnings and Precautions 5.1, Adverse Reactions 6.1, Immunogenicity", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" }
+      ],
+      nicht_aufgenommen: [
+        { text: "„Augenbeschwerden“ (4.8, Tabelle 4: häufig; Sammelbegriff aus Augenreizung, Augenjucken, Fremdkörpergefühl im Auge und Augenbeschwerden)", quelle: "Q_MIRV_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" }
+      ],
+      adrreports: { buchstabe: "m" },
+      hinweis: "Die Augenbegriffe aus den Fußnoten zu den Sammelbegriffen „Keratopathie“ und „verschwommenes Sehen“ sind als eigene Einträge mit dem Kontext „Teil des Sammelbegriffs …“ aufgenommen; eine eigene Häufigkeit ist dafür nicht angegeben." },
+
+    { id: "tisotumab_vedotin", inn_de: "Tisotumab vedotin", inn_en: "tisotumab vedotin", synonyme: ["tisotumab vedotin-tftv"],
+      kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs", "gebaermutterhalskrebs"],
+      handelsnamen_de: ["Tivdak"], handelsnamen_us: ["Tivdak"],
+      zulassung_eu: "zentral", etappe: "1g-1", status: "geprueft",
+      indikation: { text: "Rezidiviertes oder metastasiertes Zervixkarzinom mit Progression unter oder nach systemischer Therapie (Monotherapie)", quelle: "Q_TISO_EU", abschnitt: "4.1",
+        zitat: "„Tivdak wird als Monotherapie für die Behandlung von erwachsenen Patientinnen mit rezidiviertem oder metastasiertem Zervixkarzinom […]“", status: "geprueft", geprueft_am: "2026-11-04" },
+      pruefstand: [
+        { quelle: "Q_TISO_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2 (Augenpflege, Tabelle 2), 4.4, 4.7, 4.8 (Tabelle 3 mit Fußnoten)", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" },
+        { quelle: "Q_TISO_US", raum: "USA", umfang: "Boxed Warning, Dosage and Administration 2.2 (Tabelle 2), Warnings and Precautions 5.1, Adverse Reactions 6.1", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" }
+      ],
+      nicht_aufgenommen: [
+        { text: "„Augenreizung“ (4.8, Tabelle 3: häufig; umfasst laut Fußnote 3 Augenfluss, Augenschmerzen, Augenreizung und Augenödem)", quelle: "Q_TISO_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„Augenjucken“ (4.8, Tabelle 3: häufig)", quelle: "Q_TISO_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„Hornhautreizung“ und „Erkrankung der Bindehaut“ (4.8, Tabelle 3: gelegentlich)", quelle: "Q_TISO_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„eye discharge“, „eye pruritus“, „eye pain“ und „eye irritation“ (6.1, Teil des Sammelbegriffs „Dry eye“)", quelle: "Q_TISO_US", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„… Augenprobleme und periphere Neuropathie“ (4.7, Verkehrstüchtigkeit)", quelle: "Q_TISO_EU", grund: "Hinweis zur Verkehrstüchtigkeit, keine eigene Nebenwirkungsangabe" }
+      ],
+      adrreports: { buchstabe: "t" },
+      hinweis: "Die vorgeschriebene Augenpflege (EU 4.2, US 2.2) und die Augenuntersuchungen stehen im Eintrag Keratopathie. Die Angaben beziehen sich auf Patientinnen mit Zervixkarzinom." },
+
+    { id: "teclistamab", inn_de: "Teclistamab", inn_en: "teclistamab", synonyme: ["teclistamab-cqyv"],
+      kategorie: "systemisch", applikation: ["s. c."], klassen: ["bispezifische_antikoerper"], anwendungsgebiete: ["krebs", "multiples_myelom"],
+      handelsnamen_de: ["Tecvayli"], handelsnamen_us: ["Tecvayli"],
+      zulassung_eu: "zentral", etappe: "1g-1", status: "geprueft",
+      indikation: { text: "Rezidiviertes/refraktäres Multiples Myelom (mit Daratumumab bzw. als Monotherapie nach ≥ 3 Vortherapien)", quelle: "Q_TECL_EU", abschnitt: "4.1",
+        zitat: "„[…] als Monotherapie zur Behandlung erwachsener Patienten mit rezidiviertem und refraktärem multiplen Myelom […]“", status: "geprueft", geprueft_am: "2026-11-04" },
+      pruefstand: [
+        { quelle: "Q_TECL_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.4 (Tabelle 6), 4.8 (Tabelle 7 mit Fußnoten)", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" },
+        { quelle: "Q_TECL_US", raum: "USA", umfang: "Boxed Warning, Dosage and Administration 2.5 (Tabelle 6), Warnings and Precautions, Adverse Reactions 6.1 (Tabelle 14 mit Fußnoten), Medication Guide", geprueft_am: "2026-11-04", ergebnis: "okuläre Angaben gefunden" }
+      ],
+      nicht_aufgenommen: [
+        { text: "„Augenschmerzen“ und „Schmerz um die Augenhöhle“ (4.8, Teil des Sammelbegriffs „Schmerz“)", quelle: "Q_TECL_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)" },
+        { text: "„Papillenödem“ und „Lähmung des VI. Hirnnervs“ (4.4, Tabelle 6)", quelle: "Q_TECL_EU", grund: "nur Kriterien der ICANS-Schweregradeinteilung, keine Nebenwirkungsangabe (die Lähmung des VI. Hirnnervs ist über das US-Label belegt)" },
+        { text: "„Papilledema“ (2.5, Tabelle 6)", quelle: "Q_TECL_US", grund: "nur Kriterium der ICANS-Schweregradeinteilung, keine Nebenwirkungsangabe" },
+        { text: "„double vision“ (Medication Guide)", quelle: "Q_TECL_US", grund: "nur in der Patienteninformation (Medication Guide), nicht in den Fachabschnitten des Labels" }
+      ],
+      adrreports: { buchstabe: "t" },
+      hinweis: "Die geprüfte EU-Fachinformation hat keine Systemorganklasse „Augenerkrankungen“; Augenbegriffe stehen nur in Fußnoten zu Sammelbegriffen. Teclistamab wird nur subkutan injiziert." },
+
+    /* ---------- Etappe 1g-2: Antikörper-Wirkstoff-Konjugate und bispezifische Antikörper, Teil 2 ---------- */
+    {id: "amivantamab", inn_de: "Amivantamab", inn_en: "amivantamab", synonyme: ["amivantamab-vmjw"], kategorie: "systemisch", applikation: ["i. v.","s. c."], klassen: ["bispezifische_antikoerper"], anwendungsgebiete: ["krebs","lungenkrebs"], handelsnamen_de: ["Rybrevant"], handelsnamen_us: ["Rybrevant"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "Fortgeschrittenes NSCLC mit aktivierenden EGFR-Mutationen (Exon-19-Deletion/L858R bzw. Exon-20-Insertion)", quelle: "Q_AMIV_EU", abschnitt: "4.1", zitat: "„in Kombination mit Lazertinib zur Erstlinienbehandlung erwachsener Patienten mit fortgeschrittenem nicht-kleinzelligem […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_AMIV_EU", raum: "EU", umfang: "Fachinformation i. v. 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 7, Monotherapie, N = 380); Fachinformation s. c. 4.4 und 4.8", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_AMIV_US", raum: "USA", umfang: "Indications and Usage, Dosage and Administration, Warnings and Precautions 5.5, Adverse Reactions 6.1 (Tabellen 10 und 12) und 6.2", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„sonstige Augenerkrankungen“ (4.8, Tabelle 7: zusammengefasster Begriff, 6 % unter Monotherapie)", quelle: "Q_AMIV_EU", grund: "Sammelbegriff ohne Liste der Einzelbegriffe, kein konkreter Befund"},{text: "„Ocular toxicity“ (6.1, Tabellen 10 und 12: zusammengefasster Begriff, 16–17 %)", quelle: "Q_AMIV_US", grund: "Sammelbegriff ohne Liste der Einzelbegriffe; die Einzelbefunde aus 5.5 sind eigene Einträge"},{text: "Häufigkeiten der Augenbegriffe in den Tabellen zur Kombination mit Lazertinib bzw. mit Carboplatin und Pemetrexed (4.8)", quelle: "Q_AMIV_EU", grund: "nur in einer Abfrage gelesen; die Fachinformationen der i. v.- und der s. c.-Darreichungsform nennen unterschiedliche Werte"}], adrreports: {buchstabe: "a"}, hinweis: "Bispezifischer Antikörper gegen EGFR und MET. Die EU-Produktinformation enthält eine intravenöse und eine subkutane Darreichungsform; die Häufigkeiten stammen aus der Tabelle zur intravenösen Monotherapie. Die Untersuchungsempfehlung der Stellungnahme von DOG und BVA steht im Eintrag Uveitis (Entscheidung der Nutzerin vom 19.11.2026)."},
+
+    {id: "datopotamab_deruxtecan", inn_de: "Datopotamab deruxtecan", inn_en: "datopotamab deruxtecan", synonyme: ["datopotamab deruxtecan-dlnk","Dato-DXd"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs","brustkrebs","brustkrebs_tnbc","lungenkrebs"], handelsnamen_de: ["Datroway"], handelsnamen_us: ["Datroway"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "Inoperabler oder metastasierter HR-positiver, HER2-negativer Brustkrebs nach endokriner Therapie und Chemotherapie", quelle: "Q_DATO_EU", abschnitt: "4.1", zitat: "„Datroway wird angewendet als Monotherapie zur Behandlung von erwachsenen Patienten mit inoperablem oder metastasiertem […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_DATO_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2 (Tabelle 2), 4.4, 4.7, 4.8 (Tabelle 3 mit Fußnoten, Beschreibung ausgewählter Nebenwirkungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_DATO_US", raum: "USA", umfang: "Indications and Usage, Dosage and Administration (Tabellen 1 und 3, 2.3), Warnings and Precautions 5.2, Adverse Reactions 6.1 (Tabellen 4, 6, 8 mit Fußnoten)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„verschwommenes Sehen“ (4.8, Tabelle 3: häufig)", quelle: "Q_DATO_EU", grund: "unspezifisch; der Warnhinweis in 4.4 nennt nur allgemein „Sehstörungen“ (Eintrag Sehstörung)"},{text: "„Erkrankung der Bindehaut“ und „Bindehautreizung“ (4.8, Fußnote e zu „Konjunktivitis“)", quelle: "Q_DATO_EU", grund: "unspezifisch, kein eigener Warnhinweis (Aufnahmeregel)"},{text: "„blurred vision“ (6.1, Nebenwirkungen bei < 10 %)", quelle: "Q_DATO_US", grund: "unspezifisch, im Warnhinweis 5.2 nicht genannt"},{text: "„injury corneal“ (6.1, Fußnoten zu „Keratitis“)", quelle: "Q_DATO_US", grund: "Verletzung, kein eigener Befund der Begriffsliste"}], adrreports: {buchstabe: "d"}, hinweis: "USA zusätzlich zugelassen für EGFR-mutiertes NSCLC (beschleunigte Zulassung) und triple-negativen Brustkrebs. Patienten mit klinisch signifikanter Hornhauterkrankung waren von den Studien ausgeschlossen (EU 4.4, US 5.2). Untersuchungs- und Pflegevorgaben stehen im Eintrag Keratitis."},
+
+    {id: "enfortumab_vedotin", inn_de: "Enfortumab vedotin", inn_en: "enfortumab vedotin", synonyme: ["enfortumab vedotin-ejfv"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs","blasenkrebs"], handelsnamen_de: ["Padcev"], handelsnamen_us: ["Padcev"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "Urothelkarzinom (Monotherapie bzw. mit Pembrolizumab) und resezierbares muskelinvasives Blasenkarzinom (mit Pembrolizumab)", quelle: "Q_ENFV_EU", abschnitt: "4.1", zitat: "„Padcev ist als Monotherapie angezeigt zur Behandlung von erwachsenen Patienten mit lokal fortgeschrittenem oder […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_ENFV_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 5, Beschreibung ausgewählter Nebenwirkungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_ENFV_US", raum: "USA", umfang: "Indications and Usage, Dosage and Administration, Warnings and Precautions 5.5, Adverse Reactions 6.1 (alle Studientabellen) und 6.2", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [], adrreports: {buchstabe: "e"}, hinweis: "Die EU-Fachinformation nennt keine augenbezogene Dosisanpassung (4.2) und Hornhautbefunde nicht; Keratitis, Keratopathie und Limbusstammzellinsuffizienz stammen aus dem US-Label (5.5). Die Untersuchungsempfehlung der Stellungnahme von DOG und BVA steht im Eintrag Trockenes Auge."},
+
+    {id: "tebentafusp", inn_de: "Tebentafusp", inn_en: "tebentafusp", synonyme: ["tebentafusp-tebn"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["bispezifische_antikoerper"], anwendungsgebiete: ["krebs","uveales_melanom"], handelsnamen_de: ["Kimmtrak"], handelsnamen_us: ["Kimmtrak"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "HLA-A*02:01-positives inoperables oder metastasiertes uveales Melanom (Monotherapie)", quelle: "Q_TEBE_EU", abschnitt: "4.1", zitat: "„KIMMTRAK wird angewendet als Monotherapie bei der Behandlung von HLA(humanes Leukozyten-Antigen)-A*02:01-positiven […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_TEBE_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 3 mit Fußnoten)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden (nur in Fußnoten zu Sammelbegriffen)"},{quelle: "Q_TEBE_US", raum: "USA", umfang: "Indications and Usage, Dosage and Administration, Warnings and Precautions, Adverse Reactions 6.1 (Tabelle 4 mit Fußnoten), Patient Counseling", geprueft_am: "2026-11-19", ergebnis: "keine okulären Angaben gefunden"}], nicht_aufgenommen: [{text: "„Augenödem“ und „Schwellung des Auges“ (4.8, Fußnote 5 zu „Ödem“)", quelle: "Q_TEBE_EU", grund: "ohne Angabe der Struktur, kein konkreter Befund der Begriffsliste (Lid- und Periorbitalödem sind eigene Einträge)"}], adrreports: {buchstabe: "t"}, hinweis: "Bispezifisches Fusionsprotein (gp100-HLA-A*02:01 und CD3). Die EU-Fachinformation hat keine Systemorganklasse „Augenerkrankungen“; Augenbegriffe stehen nur in Fußnoten zu Sammelbegriffen. Das US-Label nennt keine Augenbegriffe. Die Untersuchungsempfehlung der Stellungnahme von DOG und BVA steht im Eintrag Pigmentveränderungen der Netzhaut (Entscheidung der Nutzerin vom 19.11.2026)."},
+
+    {id: "telisotuzumab_vedotin", inn_de: "Telisotuzumab vedotin", inn_en: "telisotuzumab vedotin", synonyme: ["telisotuzumab vedotin-tllv","Teliso-V"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs","lungenkrebs"], handelsnamen_de: [], handelsnamen_us: ["Emrelis"], zulassung_eu: "keine EU-Zulassung", etappe: "1g-2", status: "geprueft", indikation: {text: "Lokal fortgeschrittenes oder metastasiertes nicht-plattenepitheliales NSCLC mit hoher c-Met-Überexpression nach Vortherapie (USA)", quelle: "Q_TELV_US", abschnitt: "Indications and Usage (1)", zitat: "“EMRELIS is indicated for the treatment of adult patients with locally advanced or metastatic, […]”", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: null, raum: "EU", umfang: "Suche nach EU-Zulassung", geprueft_am: "2026-11-19", ergebnis: "in der EU nicht zugelassen – keine EU-Fachinformation"},{quelle: "Q_TELV_US", raum: "USA", umfang: "Indications and Usage, Dosage and Administration (Tabellen 2 und 3), Warnings and Precautions 5.3, Adverse Reactions 6.1 (Tabelle 5 mit Fußnoten)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„visual acuity reduced“ (6.1, Fußnote zu „Blurred vision“)", quelle: "Q_TELV_US", grund: "unspezifisch, im Warnhinweis 5.3 nicht eigens genannt"}], adrreports: {buchstabe: "t"}, hinweis: "Nur in den USA zugelassen (beschleunigte Zulassung). Die Untersuchungsvorgaben und die Empfehlung der Stellungnahme von DOG und BVA stehen im Eintrag Keratitis."},
+
+    {id: "trastuzumab_deruxtecan", inn_de: "Trastuzumab deruxtecan", inn_en: "trastuzumab deruxtecan", synonyme: ["fam-trastuzumab deruxtecan-nxki","T-DXd"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs","brustkrebs","lungenkrebs","speiseroehren_magenkrebs"], handelsnamen_de: ["Enhertu"], handelsnamen_us: ["Enhertu"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "HER2-positiver bzw. HER2-low/-ultralow Brustkrebs, HER2-mutiertes NSCLC, HER2-positiver Magenkrebs, andere solide Tumoren", quelle: "Q_TDXD_EU", abschnitt: "4.1", zitat: "„Enhertu in Kombination mit Pertuzumab wird angewendet zur Erstlinientherapie […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_TDXD_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 3 mit Fußnoten, Beschreibung ausgewählter Nebenwirkungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_TDXD_US", raum: "USA", umfang: "Indications and Usage, Warnings and Precautions, Adverse Reactions 6.1 (alle Studien) und 6.2, Patient Counseling", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„verschwommenes Sehen“ (4.8, Tabelle 3: häufig; umfasst laut Fußnote j verschwommenes Sehen und Visusbeeinträchtigung)", quelle: "Q_TDXD_EU", grund: "unspezifisch, kein Warnhinweis (Aufnahmeregel)"},{text: "„blurred vision“ (6.1, je nach Studie 2,7–6 %; teils einschließlich „visual impairment“)", quelle: "Q_TDXD_US", grund: "unspezifisch, kein Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "t"}, hinweis: "Weder die EU-Fachinformation (4.4) noch das US-Label (Warnings and Precautions) enthalten einen Warnhinweis zu Augen. Die Empfehlung der Stellungnahme von DOG und BVA steht im Eintrag Trockenes Auge."},
+
+    {id: "trastuzumab_emtansin", inn_de: "Trastuzumab emtansin", inn_en: "trastuzumab emtansine", synonyme: ["ado-trastuzumab emtansine","T-DM1"], kategorie: "systemisch", applikation: ["i. v."], klassen: ["adc"], anwendungsgebiete: ["krebs","brustkrebs"], handelsnamen_de: ["Kadcyla"], handelsnamen_us: ["Kadcyla"], zulassung_eu: "zentral", etappe: "1g-2", status: "geprueft", indikation: {text: "HER2-positiver Brustkrebs: adjuvant bei invasivem Resttumor und metastasiert nach Trastuzumab und Taxan", quelle: "Q_TDM1_EU", abschnitt: "4.1", zitat: "„Kadcyla wird als Einzelsubstanz zur adjuvanten Behandlung bei erwachsenen Patienten mit HER2-positivem Brustkrebs […]“", status: "geprueft", geprueft_am: "2026-11-19"}, pruefstand: [{quelle: "Q_TDM1_EU", raum: "EU", umfang: "Fachinformation 4.1, 4.2, 4.4, 4.7, 4.8 (Tabelle 3, Beschreibung ausgewählter Nebenwirkungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_TDM1_US", raum: "USA", umfang: "Indications and Usage, Warnings and Precautions, Adverse Reactions 6.1 (EMILIA, KATHERINE) und 6.2, Patient Counseling", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„verschwommenes Sehen“ (4.8, Tabelle 3: häufig; in 4.7 als mögliche Beeinträchtigung der Verkehrstüchtigkeit genannt)", quelle: "Q_TDM1_EU", grund: "unspezifisch, kein Warnhinweis in 4.4 (Aufnahmeregel)"},{text: "„vision blurred“ (6.1: EMILIA 4,5 %, KATHERINE 3,9 %)", quelle: "Q_TDM1_US", grund: "unspezifisch, kein Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "t"}, hinweis: "Weder die EU-Fachinformation (4.4) noch das US-Label (Warnings and Precautions) enthalten einen Warnhinweis zu Augen. Die Empfehlung der Stellungnahme von DOG und BVA steht im Eintrag Trockenes Auge."},
+
+    /* ---------- Etappe 2: Statine, Thiazide und thiazidartige Diuretika, Acetazolamid ---------- */
+    {id: "atorvastatin", inn_de: "Atorvastatin", inn_en: "atorvastatin", synonyme: ["Atorvastatin-Hemicalcium","atorvastatin calcium"], kategorie: "systemisch", applikation: ["oral"], klassen: ["statine"], anwendungsgebiete: ["cholesterin"], handelsnamen_de: ["Sortis"], handelsnamen_us: ["Lipitor"], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_ATOR_DE_SORTIS", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Augenerkrankungen, Erkrankungen des Nervensystems)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_ATOR_US_LIPITOR", raum: "USA", umfang: "Adverse Reactions 6.2 (Postmarketing Experience)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„verschwommenes Sehen“ (gelegentlich) und „Sehstörungen“ (selten), 4.8", quelle: "Q_ATOR_DE_SORTIS", grund: "unspezifisch ohne Befund und nicht als Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "a"}, hinweis: "Klassenaussage der PRAC-Empfehlung vom Januar 2023 (alle Statine einschließlich Fixkombinationen). Unspezifische Angaben in 4.8 (z. B. verschwommenes Sehen, Sehstörungen ohne Befund) wurden nach der Aufnahmeregel nicht als eigene Einträge aufgenommen."},
+
+    {id: "simvastatin", inn_de: "Simvastatin", inn_en: "simvastatin", synonyme: [], kategorie: "systemisch", applikation: ["oral"], klassen: ["statine"], anwendungsgebiete: ["cholesterin"], handelsnamen_de: ["Simvastatin dura"], handelsnamen_us: ["Zocor"], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_SIMV_DE_DURA", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Augenerkrankungen, Erkrankungen des Nervensystems)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_SIMV_US_ZOCOR", raum: "USA", umfang: "Adverse Reactions 6.2 (Postmarketing Experience), Patient Information", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„Verschwommenes Sehen“ und „Sehverschlechterung“ (selten), 4.8", quelle: "Q_SIMV_DE_DURA", grund: "unspezifisch ohne Befund und nicht als Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "s"}, hinweis: "Klassenaussage der PRAC-Empfehlung vom Januar 2023 (alle Statine einschließlich Fixkombinationen). Unspezifische Angaben in 4.8 (z. B. verschwommenes Sehen, Sehstörungen ohne Befund) wurden nach der Aufnahmeregel nicht als eigene Einträge aufgenommen."},
+
+    {id: "rosuvastatin", inn_de: "Rosuvastatin", inn_en: "rosuvastatin", synonyme: ["Rosuvastatin-Hemicalcium","rosuvastatin calcium"], kategorie: "systemisch", applikation: ["oral"], klassen: ["statine"], anwendungsgebiete: ["cholesterin"], handelsnamen_de: ["Crestor"], handelsnamen_us: ["Crestor"], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_ROSU_DE_CRESTOR", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Tabelle 2)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_ROSU_US_CRESTOR", raum: "USA", umfang: "Adverse Reactions 6.2 (Postmarketing Experience)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [], adrreports: {buchstabe: "r"}, hinweis: "Klassenaussage der PRAC-Empfehlung vom Januar 2023 (alle Statine einschließlich Fixkombinationen). Unspezifische Angaben in 4.8 (z. B. verschwommenes Sehen, Sehstörungen ohne Befund) wurden nach der Aufnahmeregel nicht als eigene Einträge aufgenommen. Die Häufigkeitsspalte der okulären Myasthenie in Tabelle 2 der deutschen Fachinformation ließ sich im Abruf nicht sicher zuordnen."},
+
+    {id: "pravastatin", inn_de: "Pravastatin", inn_en: "pravastatin", synonyme: ["Pravastatin-Natrium","pravastatin sodium"], kategorie: "systemisch", applikation: ["oral"], klassen: ["statine"], anwendungsgebiete: ["cholesterin"], handelsnamen_de: ["Pravastatin STADA"], handelsnamen_us: [], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_PRAV_DE_STADA", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Augenerkrankungen, Erkrankungen des Nervensystems)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: null, raum: "USA", umfang: "nicht geprüft (US-Label Pravachol in dieser Etappe nicht abgerufen)", geprueft_am: null, ergebnis: "nicht geprüft"}], nicht_aufgenommen: [], adrreports: {buchstabe: "p"}, hinweis: "Klassenaussage der PRAC-Empfehlung vom Januar 2023 (alle Statine einschließlich Fixkombinationen). Unspezifische Angaben in 4.8 (z. B. verschwommenes Sehen, Sehstörungen ohne Befund) wurden nach der Aufnahmeregel nicht als eigene Einträge aufgenommen."},
+
+    {id: "fluvastatin", inn_de: "Fluvastatin", inn_en: "fluvastatin", synonyme: ["Fluvastatin-Natrium","fluvastatin sodium"], kategorie: "systemisch", applikation: ["oral"], klassen: ["statine"], anwendungsgebiete: ["cholesterin"], handelsnamen_de: ["Locol"], handelsnamen_us: [], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_FLUV_DE_LOCOL", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Tabelle 1)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: null, raum: "USA", umfang: "nicht geprüft (US-Label Lescol in dieser Etappe nicht abgerufen)", geprueft_am: null, ergebnis: "nicht geprüft"}], nicht_aufgenommen: [], adrreports: {buchstabe: "f"}, hinweis: "Klassenaussage der PRAC-Empfehlung vom Januar 2023 (alle Statine einschließlich Fixkombinationen). Unspezifische Angaben in 4.8 (z. B. verschwommenes Sehen, Sehstörungen ohne Befund) wurden nach der Aufnahmeregel nicht als eigene Einträge aufgenommen."},
+
+    {id: "hydrochlorothiazid", inn_de: "Hydrochlorothiazid", inn_en: "hydrochlorothiazide", synonyme: ["HCT","HCTZ","Hydrochlorothiazide"], kategorie: "systemisch", applikation: ["oral"], klassen: ["thiazide"], anwendungsgebiete: ["bluthochdruck","entwaesserung"], handelsnamen_de: ["HCT STADA"], handelsnamen_us: ["Microzide"], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_HCT_DE_STADA", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Augenerkrankungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: "Q_HCT_US_MICROZIDE", raum: "USA", umfang: "Warnings (Acute Myopia and Secondary Angle-Closure Glaucoma), Adverse Reactions (Special Senses)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [{text: "„Sehstörungen (z. B. verschwommenes Sehen …)“ (gelegentlich), 4.8 – aufgenommen ist nur die dort genannte Xanthopsie", quelle: "Q_HCT_DE_STADA", grund: "unspezifisch ohne Befund und nicht als Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "h"}, hinweis: "Sulfonamid. Auch Bestandteil zahlreicher Fixkombinationen mit ACE-Hemmern, Sartanen und Betablockern (nicht separat geprüft)."},
+
+    {id: "chlortalidon", inn_de: "Chlortalidon", inn_en: "chlortalidone", synonyme: ["Chlorthalidon","chlorthalidone"], kategorie: "systemisch", applikation: ["oral"], klassen: ["thiazide"], anwendungsgebiete: ["bluthochdruck","entwaesserung"], handelsnamen_de: ["Hygroton"], handelsnamen_us: [], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_CHLT_DE_HYGROTON", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Tabelle)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: null, raum: "USA", umfang: "nicht geprüft (US-Label in dieser Etappe nicht abgerufen)", geprueft_am: null, ergebnis: "nicht geprüft"}], nicht_aufgenommen: [{text: "„Sehstörungen“, 4.8", quelle: "Q_CHLT_DE_HYGROTON", grund: "unspezifisch ohne Befund und nicht als Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "c"}, hinweis: "Thiazidartiges Diuretikum (Sulfonamid). Die Häufigkeitsspalten der Tabelle in 4.8 ließen sich im Abruf nicht sicher zuordnen."},
+
+    {id: "indapamid", inn_de: "Indapamid", inn_en: "indapamide", synonyme: [], kategorie: "systemisch", applikation: ["oral"], klassen: ["thiazide"], anwendungsgebiete: ["bluthochdruck"], handelsnamen_de: ["Natrilix"], handelsnamen_us: [], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: "Q_INDA_DE_NATRILIX", raum: "DE", umfang: "Fachinformation 4.4, 4.8 (Augenerkrankungen)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"},{quelle: null, raum: "USA", umfang: "nicht geprüft (US-Label in dieser Etappe nicht abgerufen)", geprueft_am: null, ergebnis: "nicht geprüft"}], nicht_aufgenommen: [{text: "„Verschwommenes Sehen“ und „Sehstörungen“ (nicht bekannt), 4.8", quelle: "Q_INDA_DE_NATRILIX", grund: "unspezifisch ohne Befund und nicht als Warnhinweis (Aufnahmeregel)"}], adrreports: {buchstabe: "i"}, hinweis: "Thiazidartiges Diuretikum (Sulfonamid-Derivat)."},
+
+    {id: "acetazolamid", inn_de: "Acetazolamid", inn_en: "acetazolamide", synonyme: [], kategorie: "systemisch", applikation: ["oral","i. v."], klassen: ["carboanhydrasehemmer"], anwendungsgebiete: ["glaukom_systemisch"], handelsnamen_de: ["Glaupax","Acemit"], handelsnamen_us: ["Diamox"], zulassung_eu: "national", etappe: "2", status: "geprueft", pruefstand: [{quelle: null, raum: "DE", umfang: "keine frei zugängliche deutsche Fachinformation gefunden (Glaupax, Acemit); Angaben aus der PRAC-Empfehlung (BASG-Mustertext, AkdÄ)", geprueft_am: "2026-11-19", ergebnis: "nicht geprüft"},{quelle: "Q_ACET_US_DIAMOX", raum: "USA", umfang: "Precautions (General, Information for Patients), Adverse Reactions (Eye Disorders)", geprueft_am: "2026-11-19", ergebnis: "okuläre Angaben gefunden"}], nicht_aufgenommen: [], adrreports: {buchstabe: "a"}, hinweis: "Carboanhydrasehemmer (Sulfonamid-Derivat), u. a. zur Senkung des Augeninnendrucks. Die PRAC-Empfehlung von 2023 verlangt die Aufnahme von Aderhauterguss und Aderhautabhebung in 4.4 und 4.8; eine frei zugängliche deutsche Fachinformation mit diesem Wortlaut wurde nicht gefunden."}
   ],
 
   /* ===================== EINTRÄGE ===================== */
@@ -4573,7 +4803,8 @@ window.MNW_DATEN = {
           zitat: null,
           haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "PubMed am 05.10.2026 für das Abrufwerkzeug nicht lesbar (leere Seite)." }
+          status: "offen", geprueft_am: null, pruefnotiz: "PubMed am 05.10.2026 für das Abrufwerkzeug nicht lesbar (leere Seite)." },
+        {quelle: "Q_GLP1_B_FDA_DSC2026", typ: "Drug Safety Communication – Warnhinweis gefordert (FDA)", abschnitt: "DSC 09.11.2026", aussage: "FDA Drug Safety Communication vom 09.11.2026: Die FDA verlangt für alle GLP-1-Rezeptoragonisten (einschließlich Tirzepatid) Angaben zum möglichen erhöhten NAION-Risiko im Abschnitt Warnings and Precautions; NAION-Fälle wurden für alle derzeit vermarkteten GLP-1-RA berichtet. Empfehlung: bei Verdacht umgehend augenärztlich abklären lassen; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar.", zitat: "“NAION cases have been reported for all currently marketed GLP-1 RA products.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht auf NAION umgehend augenärztliche Abklärung; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Drug Safety Communication in 3 Abfragen übereinstimmend (19.11.2026); Anforderung und Empfehlungen zusätzlich im MedWatch-Alert der FDA bestätigt"}
       ], unterschied_notiz: null },
 
     { id: "sema-dr", wirkstoff: "semaglutid", befund: "diabetische_retinopathie_verschlechterung", einordnung: "nebenwirkung", kontext: null,
@@ -4634,26 +4865,28 @@ window.MNW_DATEN = {
           status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed)" }
       ], unterschied_notiz: null },
 
-    { id: "tirz-naion", wirkstoff: "tirzepatid", befund: "naion", einordnung: "pv_signal", kontext: "Behördliches Signal (FDA), nicht in den geprüften Fachinformationen",
+    { id: "tirz-naion", wirkstoff: "tirzepatid", befund: "naion", einordnung: "pv_signal", kontext: "FDA verlangt einen Warnhinweis für die gesamte Klasse (Drug Safety Communication 09.11.2026); in der geprüften EU-Fachinformation (19.11.2026) nicht enthalten",
       belege: [
         { quelle: "Q_GLP1_B_FDA_SIGNAL", typ: "FDA – potenzielles Signal (Quartalsliste)", abschnitt: "Okt.–Dez. 2024",
           aussage: "FDA-Quartalsliste potenzieller Signale aus dem Meldesystem (Okt.–Dez. 2024): NAION bei GLP-1-Rezeptoragonisten, aufgeführt u. a. Mounjaro und Zepbound (Tirzepatid); „FDA is evaluating the need for regulatory action.“ Laut FDA bedeutet die Aufnahme in die Liste nicht, dass ein Risiko oder ursächlicher Zusammenhang festgestellt wurde. In den geprüften US-Labels (Mounjaro) ist NAION nicht enthalten.",
           zitat: "“FDA is evaluating the need for regulatory action.”",
           haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" }
+          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" },
+        {quelle: "Q_GLP1_B_FDA_DSC2026", typ: "Drug Safety Communication – Warnhinweis gefordert (FDA)", abschnitt: "DSC 09.11.2026", aussage: "FDA Drug Safety Communication vom 09.11.2026: Die FDA verlangt für alle GLP-1-Rezeptoragonisten (einschließlich Tirzepatid) Angaben zum möglichen erhöhten NAION-Risiko im Abschnitt Warnings and Precautions; NAION-Fälle wurden für alle derzeit vermarkteten GLP-1-RA berichtet. Empfehlung: bei Verdacht umgehend augenärztlich abklären lassen; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar.", zitat: "“NAION cases have been reported for all currently marketed GLP-1 RA products.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht auf NAION umgehend augenärztliche Abklärung; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Drug Safety Communication in 3 Abfragen übereinstimmend (19.11.2026); Anforderung und Empfehlungen zusätzlich im MedWatch-Alert der FDA bestätigt"}
       ], unterschied_notiz: null },
 
     /* ================= Liraglutid ================= */
 
-    { id: "lira-naion", wirkstoff: "liraglutid", befund: "naion", einordnung: "pv_signal", kontext: "Behördliches Signal (FDA), nicht in den geprüften Fachinformationen",
+    { id: "lira-naion", wirkstoff: "liraglutid", befund: "naion", einordnung: "pv_signal", kontext: "FDA verlangt einen Warnhinweis für die gesamte Klasse (Drug Safety Communication 09.11.2026); in der geprüften EU-Fachinformation (19.11.2026) nicht enthalten",
       belege: [
         { quelle: "Q_GLP1_B_FDA_SIGNAL", typ: "FDA – potenzielles Signal (Quartalsliste)", abschnitt: "Okt.–Dez. 2024",
           aussage: "FDA-Quartalsliste potenzieller Signale aus dem Meldesystem (Okt.–Dez. 2024): NAION bei GLP-1-Rezeptoragonisten, aufgeführt u. a. Saxenda und Victoza (Liraglutid); „FDA is evaluating the need for regulatory action.“ Laut FDA bedeutet die Aufnahme in die Liste nicht, dass ein Risiko oder ursächlicher Zusammenhang festgestellt wurde. In den geprüften US-Labels (Victoza, Saxenda) ist NAION nicht enthalten.",
           zitat: "“FDA is evaluating the need for regulatory action.”",
           haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" }
+          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" },
+        {quelle: "Q_GLP1_B_FDA_DSC2026", typ: "Drug Safety Communication – Warnhinweis gefordert (FDA)", abschnitt: "DSC 09.11.2026", aussage: "FDA Drug Safety Communication vom 09.11.2026: Die FDA verlangt für alle GLP-1-Rezeptoragonisten (einschließlich Tirzepatid) Angaben zum möglichen erhöhten NAION-Risiko im Abschnitt Warnings and Precautions; NAION-Fälle wurden für alle derzeit vermarkteten GLP-1-RA berichtet. Empfehlung: bei Verdacht umgehend augenärztlich abklären lassen; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar.", zitat: "“NAION cases have been reported for all currently marketed GLP-1 RA products.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht auf NAION umgehend augenärztliche Abklärung; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Drug Safety Communication in 3 Abfragen übereinstimmend (19.11.2026); Anforderung und Empfehlungen zusätzlich im MedWatch-Alert der FDA bestätigt"}
       ], unterschied_notiz: null },
 
     /* ================= Dulaglutid ================= */
@@ -4668,14 +4901,15 @@ window.MNW_DATEN = {
           status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed)" }
       ], unterschied_notiz: null },
 
-    { id: "dula-naion", wirkstoff: "dulaglutid", befund: "naion", einordnung: "pv_signal", kontext: "Behördliches Signal (FDA), nicht in den geprüften Fachinformationen",
+    { id: "dula-naion", wirkstoff: "dulaglutid", befund: "naion", einordnung: "pv_signal", kontext: "FDA verlangt einen Warnhinweis für die gesamte Klasse (Drug Safety Communication 09.11.2026); in der geprüften EU-Fachinformation (19.11.2026) nicht enthalten",
       belege: [
         { quelle: "Q_GLP1_B_FDA_SIGNAL", typ: "FDA – potenzielles Signal (Quartalsliste)", abschnitt: "Okt.–Dez. 2024",
           aussage: "FDA-Quartalsliste potenzieller Signale aus dem Meldesystem (Okt.–Dez. 2024): NAION bei GLP-1-Rezeptoragonisten, aufgeführt u. a. Trulicity (Dulaglutid); „FDA is evaluating the need for regulatory action.“ Laut FDA bedeutet die Aufnahme in die Liste nicht, dass ein Risiko oder ursächlicher Zusammenhang festgestellt wurde. In den geprüften US-Labels (Trulicity) ist NAION nicht enthalten.",
           zitat: "“FDA is evaluating the need for regulatory action.”",
           haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" }
+          status: "geprueft", geprueft_am: "2026-10-05", pruefnotiz: "2 Abfragen übereinstimmend (Produktliste und Zusatzinformation); Hinweis zur Bedeutung der Liste auf der Übersichtsseite der FDA in 2 Abfragen gefunden" },
+        {quelle: "Q_GLP1_B_FDA_DSC2026", typ: "Drug Safety Communication – Warnhinweis gefordert (FDA)", abschnitt: "DSC 09.11.2026", aussage: "FDA Drug Safety Communication vom 09.11.2026: Die FDA verlangt für alle GLP-1-Rezeptoragonisten (einschließlich Tirzepatid) Angaben zum möglichen erhöhten NAION-Risiko im Abschnitt Warnings and Precautions; NAION-Fälle wurden für alle derzeit vermarkteten GLP-1-RA berichtet. Empfehlung: bei Verdacht umgehend augenärztlich abklären lassen; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar.", zitat: "“NAION cases have been reported for all currently marketed GLP-1 RA products.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht auf NAION umgehend augenärztliche Abklärung; Absetzen erwägen, außer der Nutzen überwiegt das Risiko klar", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Drug Safety Communication in 3 Abfragen übereinstimmend (19.11.2026); Anforderung und Empfehlungen zusätzlich im MedWatch-Alert der FDA bestätigt"}
       ], unterschied_notiz: null },
 
     /* ================= Digoxin ================= */
@@ -9663,14 +9897,15 @@ window.MNW_DATEN = {
           dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion",
           status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
       ], unterschied_notiz: null },
-    { id: "pembro-uveitis-anterior", wirkstoff: "pembrolizumab", befund: "uveitis_anterior", einordnung: "nebenwirkung", kontext: "Iritis",
+    { id: "pembro-uveitis-anterior", wirkstoff: "pembrolizumab", befund: "uveitis_anterior", einordnung: "nebenwirkung", kontext: "Iritis (USA); Iritis und Iridozyklitis als Teil des Sammelbegriffs „Uveitis“ (EU)",
       belege: [
         { quelle: "Q_PEMBRO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Iritis wird unter den okulären immunvermittelten Nebenwirkungen ausdrücklich genannt (neben Uveitis und anderen entzündlichen okulären Toxizitäten).",
           zitat: "“Ocular: Uveitis, iritis and other ocular inflammatory toxicities can occur.”",
           haeufigkeit: "< 1 % (sofern nicht anders angegeben) oder unter anderen PD-1/PD-L1-Antikörpern berichtet – Sammelangabe in 5.1", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDA-Label-PDF)" }
+          status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDA-Label-PDF)" },
+        {quelle: "Q_PEMBRO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ⁎ zu Tabelle 2)", aussage: "Iritis und Iridozyklitis sind laut Fußnote im Sammelbegriff „Uveitis“ (Augenerkrankungen, gelegentlich in allen drei Spalten) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Uveitis (Chorioretinitis, Iritis und Iridozyklitis)“ (Fußnote zu Tabelle 2)", haeufigkeit: "nur für den Sammelbegriff „Uveitis“ angegeben (gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, abschnittsweiser Abruf, 19.11.2026); Spaltenzuordnung nicht positionsgenau geprüft"}
       ], unterschied_notiz: null },
     { id: "pembro-vkh", wirkstoff: "pembrolizumab", befund: "vkh_aehnliche_uveitis", einordnung: "nebenwirkung", kontext: null,
       belege: [
@@ -10580,6 +10815,24 @@ window.MNW_DATEN = {
           dringlichkeit: null, kontrollen: null,
           status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDALabel)" }
       ], unterschied_notiz: null },
+    { id: "tisle-uveitis-posterior", wirkstoff: "tislelizumab", befund: "uveitis_posterior", einordnung: "nebenwirkung", kontext: "Chorioretinitis; Teil des Sammelbegriffs „Uveitis“ (EU)",
+      belege: [
+        { quelle: "Q_TISLE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 16 zu Tabelle 2)",
+          aussage: "„Chorioretinitis“ ist laut Fußnote 16 im Sammelbegriff „Uveitis“ enthalten.",
+          zitat: "„Uveitis umfasst die PTs Chorioretinitis, Iridozyklitis, Uveitis und Iritis.“ (Fußnote 16)",
+          haeufigkeit: "nur für den Sammelbegriff „Uveitis“ angegeben (gelegentlich; Monotherapie und plus Chemotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    { id: "tisle-hornhautoedem", wirkstoff: "tislelizumab", befund: "hornhautoedem", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Reaktionen im Zusammenhang mit einer Infusion“ (EU)",
+      belege: [
+        { quelle: "Q_TISLE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 35 zu Tabelle 2)",
+          aussage: "„Hornhautödem“ ist laut Fußnote 35 im Sammelbegriff „Reaktionen im Zusammenhang mit einer Infusion“ enthalten.",
+          zitat: "„Reaktionen im Zusammenhang mit einer Infusion umfasst PTs für anaphylaktische Reaktion, Schüttelfrost, Hornhautödem […]“ (Fußnote 35)",
+          haeufigkeit: "nur für den Sammelbegriff angegeben: häufig (laut Abruf in beiden Spalten: Monotherapie und plus Chemotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
 
     /* ================= Ipilimumab ================= */
     { id: "ipi-uveitis", wirkstoff: "ipilimumab", befund: "uveitis", einordnung: "nebenwirkung", kontext: null,
@@ -10607,7 +10860,7 @@ window.MNW_DATEN = {
           zitat: "„Uveitis“ (Tabelle 6 und 7: gelegentlich)",
           haeufigkeit: "gelegentlich (Monotherapie; Kombination mit Nivolumab)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" },
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" },
         { quelle: "Q_IPI_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Blepharitis, Episkleritis, Iritis, orbitale Myositis, Skleritis und Uveitis unter den weiteren klinisch bedeutsamen immunvermittelten Nebenwirkungen (Studien mit YERVOY allein oder mit Nivolumab); einige Fälle gehen mit einer Netzhautablösung einher.",
           zitat: "“Ocular: Blepharitis, episcleritis, iritis, orbital myositis, scleritis, uveitis.”",
@@ -10646,7 +10899,7 @@ window.MNW_DATEN = {
           zitat: "„Iritis“ (Tabelle 6: gelegentlich)",
           haeufigkeit: "gelegentlich (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" },
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" },
         { quelle: "Q_IPI_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Iritis wird unter den okulären immunvermittelten Nebenwirkungen ausdrücklich genannt (neben Blepharitis, Episkleritis, orbitaler Myositis, Skleritis und Uveitis).",
           zitat: "“Ocular: Blepharitis, episcleritis, iritis, orbital myositis, scleritis, uveitis.”",
@@ -10667,7 +10920,7 @@ window.MNW_DATEN = {
           zitat: "„Vogt-Koyanagi-Harada-Syndrom“ (Tabelle 6 und 7: selten)",
           haeufigkeit: "selten", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" },
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" },
         { quelle: "Q_IPI_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Tritt eine Uveitis zusammen mit anderen immunvermittelten Nebenwirkungen auf, ist an ein Vogt-Koyanagi-Harada-ähnliches Syndrom zu denken, das unter YERVOY beobachtet wurde; es kann eine systemische Kortikosteroidbehandlung erfordern, um das Risiko eines dauerhaften Sehverlusts zu senken.",
           zitat: "“… consider a Vogt-Koyanagi-Harada-like syndrome, which has been observed in patients receiving YERVOY and may require treatment with systemic corticosteroids …”",
@@ -10694,7 +10947,7 @@ window.MNW_DATEN = {
           zitat: "„seröse Netzhautablösung“ (Tabelle 6 und 7: selten)",
           haeufigkeit: "selten", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-panuveitis", wirkstoff: "ipilimumab", befund: "panuveitis", einordnung: "nebenwirkung", kontext: "Teil des VKH-ähnlichen Bildes (Klassenaussage der Stellungnahme von DOG und BVA)",
       belege: [
@@ -10727,7 +10980,7 @@ window.MNW_DATEN = {
           zitat: "„Uveitis, Episkleritis“ (Tabelle 7: gelegentlich)",
           haeufigkeit: "gelegentlich (Kombination mit Nivolumab)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" },
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" },
         { quelle: "Q_IPI_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Episkleritis unter den weiteren klinisch bedeutsamen immunvermittelten okulären Nebenwirkungen.",
           zitat: "“Ocular: Blepharitis, episcleritis, iritis, orbital myositis, scleritis, uveitis.”",
@@ -10748,7 +11001,7 @@ window.MNW_DATEN = {
           zitat: "„… Episkleritis, Skleritis, […]“ (weitere Nebenwirkungen bei anderen Dosen)",
           haeufigkeit: "< 1 % (andere Dosen)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-blepharitis", wirkstoff: "ipilimumab", befund: "blepharitis", einordnung: "nebenwirkung", kontext: null,
       belege: [
@@ -10763,7 +11016,7 @@ window.MNW_DATEN = {
           zitat: "„Blepharitis“ (Tabelle 6: gelegentlich)",
           haeufigkeit: "gelegentlich (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-orbitale-myositis", wirkstoff: "ipilimumab", befund: "orbitale_entzuendung", einordnung: "nebenwirkung", kontext: "orbitale (okuläre) Myositis",
       belege: [
@@ -10778,7 +11031,7 @@ window.MNW_DATEN = {
           zitat: "„okulare Myositis“ (weitere Nebenwirkungen bei anderen Dosen)",
           haeufigkeit: "< 1 % (andere Dosen)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-konjunktivitis", wirkstoff: "ipilimumab", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: null,
       belege: [
@@ -10793,7 +11046,7 @@ window.MNW_DATEN = {
           zitat: "„Konjunktivitis“ (Tabelle 6: gelegentlich)",
           haeufigkeit: "gelegentlich (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-sehverlust-voruebergehend", wirkstoff: "ipilimumab", befund: "amaurosis_fugax", einordnung: "nebenwirkung", kontext: "bei Ipilimumab-bedingten Augenentzündungen",
       belege: [
@@ -10859,7 +11112,7 @@ window.MNW_DATEN = {
           zitat: "„Myasthenia gravis“ (Tabelle 6: selten)",
           haeufigkeit: "selten (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" },
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" },
         { quelle: "Q_IPI_US", typ: "Warnings and Precautions", abschnitt: "5.1",
           aussage: "Myasthenes Syndrom/Myasthenia gravis unter den weiteren immunvermittelten Nebenwirkungen des Nervensystems (Studien mit YERVOY allein oder mit Nivolumab).",
           zitat: "“… myasthenic syndrome/myasthenia gravis, Guillain-Barré syndrome, nerve paresis, motor dysfunction”",
@@ -10883,7 +11136,7 @@ window.MNW_DATEN = {
           zitat: "„Glaskörperblutung“ (Tabelle 6: gelegentlich)",
           haeufigkeit: "gelegentlich (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
     { id: "ipi-trockenes-auge", wirkstoff: "ipilimumab", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
       belege: [
@@ -10892,7 +11145,7 @@ window.MNW_DATEN = {
           zitat: "„trockene Augen“ (Tabelle 7: häufig)",
           haeufigkeit: "häufig (Kombination mit Nivolumab)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
-          status: "offen", geprueft_am: null, pruefnotiz: "4.8 bisher nur in einer Abfrage gelesen (Volltext im Browser-Bereich); zweite Abfrage steht aus" }
+          status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Volltext im Browser-Bereich am 17.10.2026; Abrufwerkzeug mit abschnittsweisem Abruf am 19.11.2026)" }
       ], unterschied_notiz: null },
 
     /* ================= Tremelimumab ================= */
@@ -11156,8 +11409,14 @@ window.MNW_DATEN = {
           dringlichkeit: null, kontrollen: null,
           status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDA-Label-PDF)" }
       ], unterschied_notiz: null },
-    { id: "atezo-photophobie", wirkstoff: "atezolizumab", befund: "photophobie", einordnung: "nebenwirkung", kontext: "Symptom einer immunvermittelten Hypophysitis (Raumforderung)",
+    { id: "atezo-photophobie", wirkstoff: "atezolizumab", befund: "photophobie", einordnung: "nebenwirkung", kontext: "Symptom einer immunvermittelten Hypophysitis (Raumforderung; US-Label); Teil des Sammelbegriffs „Meningoenzephalitis“ (EU-Fachinformation)",
       belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote q zu Tabelle 3)",
+          aussage: "„Photophobie“ ist laut Fußnote q im Sammelbegriff „Meningoenzephalitis“ enthalten.",
+          zitat: "„Schließt Berichte von Enzephalitis, autoimmuner Enzephalitis, Meningitis, aseptischer Meningitis, Photophobie ein.“ (Fußnote q)",
+          haeufigkeit: "nur für den Sammelbegriff „Meningoenzephalitis“ angegeben: laut Abruf gelegentlich unter Monotherapie; Kombinationstherapie nicht sicher zuordenbar – siehe Fachinformation (Spalten nicht positionsgenau geprüft)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" },
         { quelle: "Q_ATEZO_US", typ: "Warnings and Precautions", abschnitt: "5.1 (Hypophysitis)",
           aussage: "Eine immunvermittelte Hypophysitis kann akut mit Symptomen einer Raumforderung auftreten, etwa Kopfschmerzen, Photophobie oder Gesichtsfeldausfällen.",
           zitat: "“Hypophysitis can present with acute symptoms associated with mass effect such as headache, photophobia, or visual field cuts.”",
@@ -11174,6 +11433,51 @@ window.MNW_DATEN = {
           dringlichkeit: null, kontrollen: null,
           status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDA-Label-PDF)" }
       ], unterschied_notiz: null },
+    { id: "atezo-liderythem", wirkstoff: "atezolizumab", befund: "liderythem", einordnung: "nebenwirkung", kontext: "Erythem des Augenlids, Ausschlag am Augenlid; Teil des Sammelbegriffs „Ausschlag“ (EU)",
+      belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote z zu Tabelle 3)",
+          aussage: "„Erythem des Augenlids“ und „Ausschlag am Augenlid“ sind laut Fußnote z im Sammelbegriff „Ausschlag“ enthalten.",
+          zitat: "„Erythem des Augenlids, Ausschlag am Augenlid“ (Fußnote z, Auszug)",
+          haeufigkeit: "nur für den Sammelbegriff „Ausschlag“ angegeben: laut Abruf sehr häufig (Monotherapie und Kombinationstherapie; Spalten nicht positionsgenau geprüft)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    { id: "atezo-endokrine-orbitopathie", wirkstoff: "atezolizumab", befund: "endokrine_orbitopathie", einordnung: "nebenwirkung", kontext: "endokrine Ophthalmopathie; Teil des Sammelbegriffs „Hyperthyreose“ (EU)",
+      belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote j zu Tabelle 3)",
+          aussage: "„Endokrine Ophthalmopathie“ ist laut Fußnote j im Sammelbegriff „Hyperthyreose“ enthalten.",
+          zitat: "„Schließt Berichte von Hyperthyreose, Basedow-Krankheit, endokriner Ophthalmopathie, Exophthalmus ein.“ (Fußnote j)",
+          haeufigkeit: "nur für den Sammelbegriff „Hyperthyreose“ angegeben: laut Abruf häufig (Spalten nicht positionsgenau geprüft)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    { id: "atezo-exophthalmus", wirkstoff: "atezolizumab", befund: "exophthalmus", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Hyperthyreose“ (EU)",
+      belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote j zu Tabelle 3)",
+          aussage: "„Exophthalmus“ ist laut Fußnote j im Sammelbegriff „Hyperthyreose“ enthalten.",
+          zitat: "„Schließt Berichte von Hyperthyreose, Basedow-Krankheit, endokriner Ophthalmopathie, Exophthalmus ein.“ (Fußnote j)",
+          haeufigkeit: "nur für den Sammelbegriff „Hyperthyreose“ angegeben: laut Abruf häufig (Spalten nicht positionsgenau geprüft)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    { id: "atezo-hypertensive-retinopathie", wirkstoff: "atezolizumab", befund: "hypertensive_retinopathie", einordnung: "nebenwirkung", kontext: "hypertonische Retinopathie; Teil des Sammelbegriffs „Hypertonie“ (EU)",
+      belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ai zu Tabelle 3)",
+          aussage: "„Hypertonische Retinopathie“ ist laut Fußnote ai im Sammelbegriff „Hypertonie“ enthalten.",
+          zitat: "„hypertonischer Retinopathie“ (Fußnote ai, Auszug)",
+          haeufigkeit: "nur für den Sammelbegriff „Hypertonie“ angegeben; Spalte nicht sicher zuordenbar – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    { id: "atezo-madarosis", wirkstoff: "atezolizumab", befund: "madarosis", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Alopezie“ (EU)",
+      belege: [
+        { quelle: "Q_ATEZO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ah zu Tabelle 3)",
+          aussage: "„Madarosis“ ist laut Fußnote ah im Sammelbegriff „Alopezie“ enthalten.",
+          zitat: "„Schließt Berichte von Alopezie, Madarosis, Alopecia areata, Alopecia totalis, Hypotrichose ein.“ (Fußnote ah)",
+          haeufigkeit: "nur für den Sammelbegriff „Alopezie“ angegeben; Spalte nicht sicher zuordenbar – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); Wortlaut der Fußnote in der Stichprobe am 11.11.2026 bestätigt; Tabellenspalten nicht positionsgenau geprüft" }
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
 
     /* ================= Durvalumab ================= */
     { id: "durva-uveitis", wirkstoff: "durvalumab", befund: "uveitis", einordnung: "nebenwirkung", kontext: null,
@@ -11727,6 +12031,1905 @@ window.MNW_DATEN = {
           haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
           dringlichkeit: null, kontrollen: null,
           status: "geprueft", geprueft_am: "2026-10-16", pruefnotiz: "2 Abfragen übereinstimmend (DailyMed-SPL und FDALabel)" }
+      ], unterschied_notiz: null },
+
+    /* ================= Belantamab mafodotin (Etappe 1g-1) ================= */
+    { id: "bela-keratopathie", wirkstoff: "belantamab_mafodotin", befund: "keratopathie", einordnung: "nebenwirkung", kontext: "„Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ (EU) bzw. „Corneal exam findings“ (USA); Befunde der Augenuntersuchung",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "„Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ in Tabelle 4 sehr häufig (alle Grade 84 %, Grad 3–4 62 %); der Begriff basiert laut Fußnote f auf Befunden der Augenuntersuchungen und umfasst laut Fußnote g oberflächliche Keratitis punctata, mikrozystenähnliche epitheliale Veränderungen, wirbelförmige Fleckenbildung, subepitheliale Trübung, epitheliale Hornhautdefekte und Trübung des Hornhautstromas mit oder ohne Veränderung der Sehschärfe.",
+          zitat: "„Befunde der Hornhautuntersuchung (einschließlich Keratopathie) f, g Sehr häufig 84 62“ (Tabelle 4, Augenerkrankungen)",
+          haeufigkeit: "sehr häufig (alle Grade 84 %, Grad 3–4 62 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen, Tabelle 5)",
+          aussage: "Befunde der Hornhautuntersuchung wurden bei 86 % der Patienten berichtet; Zeit bis zum ersten Hornhautbefund im Median 43 Tage; das erste Ereignis bildete sich bei 84 % zurück (im Median nach 106 Tagen). Okuläre Nebenwirkungen waren mit 7 % der häufigste Grund für einen Therapieabbruch.",
+          zitat: "„wurde bei 86 % der Patienten berichtet“",
+          haeufigkeit: "bei 86 % der Patienten berichtet (Beschreibung in 4.8)", latenz: "erster Hornhautbefund im Median nach 43 Tagen", dosisabhaengigkeit: null, reversibilitaet: "erstes Ereignis bei 84 % zurückgebildet (im Median nach 106 Tagen)",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 3)",
+          aussage: "Augenuntersuchungen vor jeder der ersten 4 Dosen und im weiteren Verlauf, sofern klinisch angezeigt; der Schweregrad richtet sich nach dem am stärksten betroffenen Auge. Bei Grad 1 Fortsetzung mit unveränderter Dosis, bei Grad 3 Unterbrechung und Wiederaufnahme mit reduzierter Dosis; keine erneute Dosissteigerung.",
+          zitat: "„vor jeder der ersten 4 Dosen … sowie im weiteren Behandlungsverlauf, sofern klinisch angezeigt“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 3: Behandlung unterbrechen, Wiederaufnahme mit reduzierter Dosis (Tabelle 3)", kontrollen: "Augenuntersuchung vor jeder der ersten 4 Dosen, danach wenn klinisch angezeigt (4.2)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Tränenersatzmittel mindestens 4-mal täglich während der Behandlung; bis zum Ende der Behandlung keine Kontaktlinsen (Verbandkontaktlinsen nur unter augenärztlicher Anleitung).",
+          zitat: "„Patienten sollten bis zum Ende der Behandlung keine Kontaktlinsen tragen.“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Tränenersatzmittel mindestens 4-mal täglich; keine Kontaktlinsen bis zum Ende der Behandlung (Verbandkontaktlinsen nur unter augenärztlicher Anleitung)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "BLENREP verursacht Veränderungen des Hornhautepithels mit Sehveränderungen bis zur schweren Sehbeeinträchtigung.",
+          zitat: "“BLENREP causes changes in the corneal epithelium resulting in changes in vision, including severe visual impairment, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Augenuntersuchung zu Beginn, vor jeder Dosis, umgehend bei neuen oder zunehmenden Symptomen und wenn klinisch angezeigt",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Zeit bis zu den ersten Augenbefunden Grad 2–4 (Hornhautbefunde oder Visusänderungen) im Median 43 Tage (15–611 Tage); Besserung auf höchstens Grad 1 bei 42 %, Rückbildung bei 22 %. Tränenersatzmittel ab der ersten Infusion; keine Kontaktlinsen während der Behandlung.",
+          zitat: "“The median time to onset of the first Grade 2 to 4 ophthalmic exam findings was 43 days (range: 15 to 611 days).”",
+          haeufigkeit: null, latenz: "erste Augenbefunde Grad 2–4 im Median nach 43 Tagen (15–611 Tage)", dosisabhaengigkeit: null, reversibilitaet: "Besserung auf höchstens Grad 1 bei 42 %, Rückbildung bei 22 % (5.1)",
+          dringlichkeit: null, kontrollen: "Tränenersatzmittel ab der ersten Infusion; keine Kontaktlinsen während der Behandlung",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Corneal exam findings“ bei 86 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 72 %).",
+          zitat: "“Corneal exam findings” (Tabelle 4)",
+          haeufigkeit: "86 % (Grad 3–4: 72 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7",
+          aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Untersuchungsvorgaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.",
+          zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion",
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: null },
+    { id: "bela-mikrozysten", wirkstoff: "belantamab_mafodotin", befund: "mikrozystische_keratopathie", einordnung: "nebenwirkung", kontext: "mikrozystenähnliche epitheliale Veränderungen (MECs, Pseudomikrozysten); Teil des Sammelbegriffs „Befunde der Hornhautuntersuchung“ (EU)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote g zu Tabelle 4)",
+          aussage: "„Mikrozystenähnliche epitheliale Veränderungen“ sind laut Fußnote g im Sammelbegriff „Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ enthalten; eine eigene Häufigkeit ist nicht angegeben.",
+          zitat: "„Umfasst: oberflächliche Keratitis punctata, mikrozystenähnliche epitheliale Veränderungen, wirbelförmige Fleckenbildung, […]“ (Fußnote g)",
+          haeufigkeit: "nur für den Sammelbegriff „Befunde der Hornhautuntersuchung“ angegeben (sehr häufig, 84 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Dosage and Administration (Schweregradeinteilung)", abschnitt: "Dosage and Administration (Tabelle 2)",
+          aussage: "In der Schweregradeinteilung der Augenbefunde (Tabelle 2) gehören fleckige mikrozystenähnliche Ablagerungen zu Grad 2 (zusammen mit mäßiger oberflächlicher punktförmiger Keratopathie, peripherer subepithelialer Trübung oder neuer peripherer Stromatrübung); Grad 3 umfasst u. a. diffuse mikrozystenähnliche Ablagerungen mit Beteiligung des Zentrums.",
+          zitat: "“Moderate superficial punctate keratopathy, patchy microcyst-like deposits … peripheral sub-epithelial haze, or a new peripheral stromal opacity” (Grad 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Klassenaussage (Stellungnahme)", abschnitt: "Abschnitt 2c (Antikörper-Wirkstoff-Konjugate), S. 3–4",
+          aussage: "Klassenaussage der Stellungnahme von DOG und BVA zu Antikörper-Wirkstoff-Konjugaten: Häufig entwickeln sich in der Hornhaut sogenannte Pseudomikrozysten (microcyst-like epithelial changes, MECs), nach aktuellem Verständnis durch eine Apoptose limbusnaher Epithelzellen; Anzahl und Ausprägung korrelieren mit einer Verschlechterung des bestkorrigierten Visus. Dauerhafte Visus- und andere Funktionseinschränkungen sind insgesamt nur sehr selten, da die Veränderungen nach Absetzen reversibel sind.",
+          zitat: "„Häufig ist die Entwicklung sogenannter Pseudomikrozysten (engl. pseudomicrocysts oder auch microcyst-like epithelial changes, MECs) in der Hornhaut […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: "Klassenaussage der Stellungnahme: dauerhafte Visus- und andere Funktionseinschränkungen nur sehr selten, nach Absetzen reversibel",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: null },
+    { id: "bela-keratitis-punctata", wirkstoff: "belantamab_mafodotin", befund: "keratitis_punctata", einordnung: "nebenwirkung", kontext: "oberflächliche Keratitis punctata; Teil des Sammelbegriffs „Befunde der Hornhautuntersuchung“ (EU)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote g zu Tabelle 4)",
+          aussage: "„Oberflächliche Keratitis punctata“ ist laut Fußnote g im Sammelbegriff „Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ enthalten.",
+          zitat: "„Umfasst: oberflächliche Keratitis punctata, mikrozystenähnliche epitheliale Veränderungen, wirbelförmige Fleckenbildung, […]“ (Fußnote g)",
+          haeufigkeit: "nur für den Sammelbegriff „Befunde der Hornhautuntersuchung“ angegeben (sehr häufig, 84 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Dosage and Administration (Schweregradeinteilung)", abschnitt: "Dosage and Administration (Tabelle 2)",
+          aussage: "Leichte oberflächliche punktförmige Keratopathie gehört zu Grad 1, mäßige zu Grad 2 der Schweregradeinteilung (Tabelle 2).",
+          zitat: "“Mild superficial punctate keratopathy” (Grad 1)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" }
+      ], unterschied_notiz: null },
+    { id: "bela-hornhauttruebung", wirkstoff: "belantamab_mafodotin", befund: "hornhauttruebung", einordnung: "nebenwirkung", kontext: "subepitheliale Trübung, Trübung des Hornhautstromas; Teil des Sammelbegriffs „Befunde der Hornhautuntersuchung“ (EU)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote g zu Tabelle 4)",
+          aussage: "„Subepitheliale Trübung“ und „Trübung des Hornhautstromas“ sind laut Fußnote g im Sammelbegriff „Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ enthalten.",
+          zitat: "„[…] subepitheliale Trübung, epitheliale Hornhautdefekte und Trübung des Hornhautstromas mit oder ohne Veränderung der Sehschärfe.“ (Fußnote g)",
+          haeufigkeit: "nur für den Sammelbegriff „Befunde der Hornhautuntersuchung“ angegeben (sehr häufig, 84 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Dosage and Administration (Schweregradeinteilung)", abschnitt: "Dosage and Administration (Tabelle 2)",
+          aussage: "Periphere subepitheliale Trübung oder eine neue periphere Stromatrübung gehören zu Grad 2 der Schweregradeinteilung (Tabelle 2).",
+          zitat: "“Moderate superficial punctate keratopathy, patchy microcyst-like deposits … peripheral sub-epithelial haze, or a new peripheral stromal opacity” (Grad 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" }
+      ], unterschied_notiz: null },
+    { id: "bela-epitheldefekt", wirkstoff: "belantamab_mafodotin", befund: "epitheldefekt", einordnung: "nebenwirkung", kontext: "epitheliale Hornhautdefekte; Teil des Sammelbegriffs „Befunde der Hornhautuntersuchung“ (EU)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote g zu Tabelle 4)",
+          aussage: "„Epitheliale Hornhautdefekte“ sind laut Fußnote g im Sammelbegriff „Befunde der Hornhautuntersuchung (einschließlich Keratopathie)“ enthalten.",
+          zitat: "„[…] subepitheliale Trübung, epitheliale Hornhautdefekte und Trübung des Hornhautstromas mit oder ohne Veränderung der Sehschärfe.“ (Fußnote g)",
+          haeufigkeit: "nur für den Sammelbegriff „Befunde der Hornhautuntersuchung“ angegeben (sehr häufig, 84 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Dosage and Administration (Schweregradeinteilung)", abschnitt: "Dosage and Administration (Tabelle 2)",
+          aussage: "Ein Hornhautepitheldefekt oder Hornhautulkus (mit oder ohne Infektion) entspricht Grad 4 der Schweregradeinteilung (Tabelle 2).",
+          zitat: "“Corneal epithelial defect or corneal ulcer, with or without infection” (Grad 4)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 4: dauerhaftes Absetzen erwägen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" }
+      ], unterschied_notiz: null },
+    { id: "bela-hornhautulkus", wirkstoff: "belantamab_mafodotin", befund: "hornhautulkus", einordnung: "nebenwirkung", kontext: "ulzerative und infektiöse Keratitis",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Hornhautulkus in Tabelle 4 häufig (alle Grade 1 %, Grad 3–4 < 1 %); umfasst laut Fußnote h infektiöse und ulzerative Keratitis.",
+          zitat: "„Hornhautulkus h Häufig 1 < 1“ (Tabelle 4); h: „Umfasst: infektiöse Keratitis und ulzerative Keratitis.“",
+          haeufigkeit: "häufig (alle Grade 1 %, Grad 3–4 < 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Bei Hornhautulkus ist die Behandlung mit Blenrep bis zur Abheilung zu unterbrechen (siehe Tabelle 3).",
+          zitat: "„Die Behandlung mit Blenrep sollte unterbrochen werden, bis das Hornhautulkus abgeheilt ist (siehe Tabelle 3).“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Behandlung bis zur Abheilung des Hornhautulkus unterbrechen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (klinisch relevante Nebenwirkungen < 10 %)",
+          aussage: "Hornhautulkus (einschließlich Fällen mit Infektion) unter den klinisch relevanten Nebenwirkungen bei weniger als 10 % unter BLENREP mit Bortezomib und Dexamethason.",
+          zitat: "“… diplopia, albuminuria, sepsis, eye pruritus, infusion-related reactions, corneal ulcer (including cases with infection), …”",
+          haeufigkeit: "< 10 % (DREAMM-7)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Dosage and Administration (Schweregradeinteilung)", abschnitt: "Dosage and Administration (Tabelle 2)",
+          aussage: "Ein Hornhautulkus oder Hornhautepitheldefekt (mit oder ohne Infektion) entspricht Grad 4 der Schweregradeinteilung (Tabelle 2).",
+          zitat: "“Corneal epithelial defect or corneal ulcer, with or without infection” (Grad 4)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 4: dauerhaftes Absetzen erwägen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" }
+      ], unterschied_notiz: null },
+    { id: "bela-infektioese-keratitis", wirkstoff: "belantamab_mafodotin", befund: "infektioese_keratitis", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Hornhautulkus“ (EU) bzw. „corneal ulcer (including cases with infection)“ (USA)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote h zu Tabelle 4)",
+          aussage: "„Infektiöse Keratitis“ ist laut Fußnote h im Sammelbegriff „Hornhautulkus“ enthalten.",
+          zitat: "„Umfasst: infektiöse Keratitis und ulzerative Keratitis.“ (Fußnote h)",
+          haeufigkeit: "nur für den Sammelbegriff „Hornhautulkus“ angegeben (häufig; alle Grade 1 %, Grad 3–4 < 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (klinisch relevante Nebenwirkungen < 10 %)",
+          aussage: "„Corneal ulcer (including cases with infection)“ unter den klinisch relevanten Nebenwirkungen bei weniger als 10 %.",
+          zitat: "“… diplopia, albuminuria, sepsis, eye pruritus, infusion-related reactions, corneal ulcer (including cases with infection), …”",
+          haeufigkeit: "< 10 % (Sammelangabe mit Hornhautulkus; DREAMM-7)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-neurotroph", wirkstoff: "belantamab_mafodotin", befund: "neurotrophe_keratopathie", einordnung: "nebenwirkung", kontext: "Hypästhesie der Hornhaut nach Veränderungen im subbasalen Nervenplexus",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Hypästhesie der Hornhaut in Tabelle 4 mit Häufigkeit „Unbekannt“.",
+          zitat: "„Hypästhesie der Hornhaut Unbekannt - -“ (Tabelle 4)",
+          haeufigkeit: "nicht bekannt (Tabelle 4: „Unbekannt“)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Es wurden Fälle von Veränderungen im subbasalen Nervenplexus der Hornhaut (z. B. Nervenfaserfragmentierung und Verlust von Nervenfasern) berichtet, die zu einer Hypästhesie der Hornhaut führen.",
+          zitat: "„[…] Veränderungen im subbasalen Nervenplexus der Hornhaut (z. B. Nervenfaserfragmentierung und Verlust von Nervenfasern), die zu einer Hypästhesie der Hornhaut führen […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-visusminderung", wirkstoff: "belantamab_mafodotin", befund: "visusminderung", einordnung: "nebenwirkung", kontext: "„Sehschärfe vermindert“ (EU) bzw. „Reduction in BCVA“ (USA), basierend auf Augenuntersuchungen",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Sehschärfe vermindert in Tabelle 4 sehr häufig (alle Grade 81 %, Grad 3–4 50 %); basiert laut Fußnote f auf Befunden der Augenuntersuchungen.",
+          zitat: "„Sehschärfe vermindert“ (Tabelle 4); f: „Basiert auf Befunden der Augenuntersuchungen.“",
+          haeufigkeit: "sehr häufig (alle Grade 81 %, Grad 3–4 50 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Abnahme des bestkorrigierten Visus auf 20/50 oder schlechter an mindestens einem Auge bei 69 %, darunter 29 % mit 20/100 oder schlechter und 12 % mit 20/200 oder schlechter.",
+          zitat: "“A reduction in BCVA to 20/50 or worse in at least one eye occurred in 69% of patients, …”",
+          haeufigkeit: "≤ 20/50 bei 69 %, ≤ 20/100 bei 29 %, ≤ 20/200 bei 12 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Reduction in BCVA“ bei 89 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 57 %).",
+          zitat: "“Reduction in BCVA” (Tabelle 4)",
+          haeufigkeit: "89 % (Grad 3–4: 57 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-verschwommensehen", wirkstoff: "belantamab_mafodotin", befund: "verschwommensehen", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Verschwommenes Sehen in Tabelle 4 sehr häufig (alle Grade 52 %, Grad 3–4 13 %).",
+          zitat: "„Verschwommenes Sehen“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 52 %, Grad 3–4 13 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; genannt werden u. a. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie.",
+          zitat: "„Okuläre Nebenwirkungen (z. B. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie)“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Blurred vision“ bei 66 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 22 %).",
+          zitat: "“Blurred vision” (Tabelle 4)",
+          haeufigkeit: "66 % (Grad 3–4: 22 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-trockenes-auge", wirkstoff: "belantamab_mafodotin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Trockenes Auge in Tabelle 4 sehr häufig (alle Grade 36 %, Grad 3–4 5 %).",
+          zitat: "„Trockenes Auge“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 36 %, Grad 3–4 5 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; genannt werden u. a. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie.",
+          zitat: "„Okuläre Nebenwirkungen (z. B. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie)“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Dry eye“ bei 51 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 7 %).",
+          zitat: "“Dry eye” (Tabelle 4)",
+          haeufigkeit: "51 % (Grad 3–4: 7 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-photophobie", wirkstoff: "belantamab_mafodotin", befund: "photophobie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Photophobie in Tabelle 4 sehr häufig (alle Grade 30 %, Grad 3–4 1 %).",
+          zitat: "„Photophobie“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 30 %, Grad 3–4 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; genannt werden u. a. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie.",
+          zitat: "„Okuläre Nebenwirkungen (z. B. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie)“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Photophobia“ bei 47 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 2 %).",
+          zitat: "“Photophobia” (Tabelle 4)",
+          haeufigkeit: "47 % (Grad 3–4: 2 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-augenreizung", wirkstoff: "belantamab_mafodotin", befund: "augenreizung", einordnung: "nebenwirkung", kontext: "Augenreizung, Fremdkörpergefühl im Auge, Augenjucken",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Augenreizung in Tabelle 4 sehr häufig (alle Grade 28 %, Grad 3–4 3 %).",
+          zitat: "„Augenreizung“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 28 %, Grad 3–4 3 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Fremdkörpergefühl im Auge in Tabelle 4 sehr häufig (alle Grade 32 %, Grad 3–4 2 %).",
+          zitat: "„Fremdkörpergefühl im Auge“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 32 %, Grad 3–4 2 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-11", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 11.11.2026)" },
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Augenjucken in Tabelle 4 häufig (alle Grade 2 %, Grad 3–4 < 1 %).",
+          zitat: "„Augenjucken“ (Tabelle 4)",
+          haeufigkeit: "häufig (alle Grade 2 %, Grad 3–4 < 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-11", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 11.11.2026)" },
+        { quelle: "Q_BELA_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; genannt werden u. a. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie.",
+          zitat: "„Okuläre Nebenwirkungen (z. B. verschwommenes Sehen, trockenes Auge, Augenreizungen und Photophobie)“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Eye irritation“ bei 43 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 5 %).",
+          zitat: "“Eye irritation” (Tabelle 4)",
+          haeufigkeit: "43 % (Grad 3–4: 5 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Foreign body sensation in eyes“ bei 44 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 3 %).",
+          zitat: "“Foreign body sensation in eyes” (Tabelle 4)",
+          haeufigkeit: "44 % (Grad 3–4: 3 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (klinisch relevante Nebenwirkungen < 10 %)",
+          aussage: "Augenjucken (eye pruritus) unter den klinisch relevanten Nebenwirkungen bei weniger als 10 %.",
+          zitat: "“… diplopia, albuminuria, sepsis, eye pruritus, infusion-related reactions, corneal ulcer (including cases with infection), …”",
+          haeufigkeit: "< 10 % (DREAMM-7)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-katarakt", wirkstoff: "belantamab_mafodotin", befund: "katarakt", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Katarakt in Tabelle 4 sehr häufig (alle Grade 13 %, Grad 3–4 4 %).",
+          zitat: "„Katarakt“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig (alle Grade 13 %, Grad 3–4 4 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Cataract“ bei 24 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 8 %).",
+          zitat: "“Cataract” (Tabelle 4)",
+          haeufigkeit: "24 % (Grad 3–4: 8 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-sehstoerung", wirkstoff: "belantamab_mafodotin", befund: "sehstoerung", einordnung: "nebenwirkung", kontext: "„Sehverschlechterung“ (EU) bzw. „Visual impairment“ (USA)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Sehverschlechterung in Tabelle 4 häufig (alle Grade 8 %, Grad 3–4 5 %).",
+          zitat: "„Sehverschlechterung“ (Tabelle 4)",
+          haeufigkeit: "häufig (alle Grade 8 %, Grad 3–4 5 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Die Veränderungen des Hornhautepithels führen zu Sehveränderungen bis zur schweren Sehbeeinträchtigung (severe visual impairment).",
+          zitat: "“BLENREP causes changes in the corneal epithelium resulting in changes in vision, including severe visual impairment, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 4, DREAMM-7)",
+          aussage: "„Visual impairment“ bei 11 % unter BLENREP mit Bortezomib und Dexamethason (Grad 3–4: 5 %).",
+          zitat: "“Visual impairment” (Tabelle 4)",
+          haeufigkeit: "11 % (Grad 3–4: 5 %; DREAMM-7, N = 242)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-epiphora", wirkstoff: "belantamab_mafodotin", befund: "epiphora", einordnung: "nebenwirkung", kontext: "„Tränensekretion verstärkt“ (EU) bzw. „increased lacrimation“ (USA)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Tränensekretion verstärkt in Tabelle 4 häufig (alle Grade 5 %, Grad 3–4 < 1 %).",
+          zitat: "„Tränensekretion verstärkt“ (Tabelle 4)",
+          haeufigkeit: "häufig (alle Grade 5 %, Grad 3–4 < 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (klinisch relevante Nebenwirkungen < 10 %)",
+          aussage: "Vermehrte Tränensekretion (increased lacrimation) unter den klinisch relevanten Nebenwirkungen bei weniger als 10 %.",
+          zitat: "“Clinically relevant adverse reactions in <10% of patients who received BVd included: increased lacrimation, …”",
+          haeufigkeit: "< 10 % (DREAMM-7)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-diplopie", wirkstoff: "belantamab_mafodotin", befund: "diplopie", einordnung: "nebenwirkung", kontext: "„Doppeltsehen“ (EU) bzw. „diplopia“ (USA)",
+      belege: [
+        { quelle: "Q_BELA_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Doppeltsehen in Tabelle 4 häufig (alle Grade 3 %, Grad 3–4 < 1 %).",
+          zitat: "„Doppeltsehen“ (Tabelle 4)",
+          haeufigkeit: "häufig (alle Grade 3 %, Grad 3–4 < 1 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_BELA_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (klinisch relevante Nebenwirkungen < 10 %)",
+          aussage: "Diplopie unter den klinisch relevanten Nebenwirkungen bei weniger als 10 %.",
+          zitat: "“… diplopia, albuminuria, sepsis, eye pruritus, infusion-related reactions, corneal ulcer (including cases with infection), …”",
+          haeufigkeit: "< 10 % (DREAMM-7)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "bela-hyperopisierung", wirkstoff: "belantamab_mafodotin", befund: "hyperopisierung", einordnung: "nebenwirkung", kontext: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten (zunächst hyperoper, bei Zentralisierung myoper Shift)",
+      belege: [
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Klassenaussage (Stellungnahme)", abschnitt: "Abschnitt 2c (Antikörper-Wirkstoff-Konjugate), S. 3–4",
+          aussage: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten bei Antikörper-Wirkstoff-Konjugaten: Die Pseudomikrozysten erzeugen zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion (hier: Hyperopisierung).",
+          zitat: "„Die Pseudomikrozysten erzeugen hierbei […] zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion [10].“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "In den geprüften Fachinformationen (EU und USA) nicht genannt; Angabe aus der Stellungnahme von DOG und BVA (Klassenaussage zu Pseudomikrozysten bei ADCs)." },
+    { id: "bela-myopisierung", wirkstoff: "belantamab_mafodotin", befund: "myopisierung", einordnung: "nebenwirkung", kontext: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten (zunächst hyperoper, bei Zentralisierung myoper Shift)",
+      belege: [
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Klassenaussage (Stellungnahme)", abschnitt: "Abschnitt 2c (Antikörper-Wirkstoff-Konjugate), S. 3–4",
+          aussage: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten bei Antikörper-Wirkstoff-Konjugaten: Die Pseudomikrozysten erzeugen zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion (hier: Myopisierung).",
+          zitat: "„Die Pseudomikrozysten erzeugen hierbei […] zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion [10].“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "In den geprüften Fachinformationen (EU und USA) nicht genannt; Angabe aus der Stellungnahme von DOG und BVA (Klassenaussage zu Pseudomikrozysten bei ADCs)." },
+
+    /* ================= Mirvetuximab soravtansin (Etappe 1g-1) ================= */
+    { id: "mirv-keratopathie", wirkstoff: "mirvetuximab_soravtansin", befund: "keratopathie", einordnung: "nebenwirkung", kontext: "Sammelbegriff „Keratopathie“ (EU) bzw. „Keratopathy“ (USA); Hornhauterkrankungen",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Keratopathie in Tabelle 4 sehr häufig; der Sammelbegriff umfasst laut Fußnote 2 Hornhautzyste, Hornhautablagerungen, Hornhauterkrankung, Mikrozysten des Kornealepithels, Defekt des Hornhautepithels, Hornhauterosion, Kornealopazität, Hornhautpigmentierung, Keratitis, interstitielle Keratitis, Keratopathie, Mangel an limbalen Stammzellen und Keratitis punctata.",
+          zitat: "„Der Sammelbegriff Keratopathie umfasst Hornhautzyste, Hornhautablagerungen, Hornhauterkrankung, Mikrozysten des Kornealepithels, […]“ (Fußnote 2)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis: Mirvetuximab-Soravtansin kann schwere Nebenwirkungen am Auge hervorrufen, darunter Sehverschlechterung (vorwiegend verschwommenes Sehen) und Keratopathie (Hornhauterkrankungen); Kontaktlinsen sollen während der Behandlung vermieden werden, außer auf ärztliche Anordnung.",
+          zitat: "„[…] kann schwere Nebenwirkungen am Auge hervorrufen, darunter Sehverschlechterung (vorwiegend verschwommenes Sehen), Keratopathie (Hornhauterkrankungen), […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "keine Kontaktlinsen während der Behandlung, außer auf ärztliche Anordnung (4.4)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)",
+          aussage: "Okuläre Nebenwirkungen bei 59 % der Patientinnen (Grad 3: 11 %); Zeit bis zum Auftreten im Median 5,1 Wochen; vollständige Rückbildung bei 53 %, teilweise Besserung bei 38 %; Dosisverschiebung bei 24 %, Dosisreduktion bei 15 %, Therapieabbruch bei 1 %.",
+          zitat: null,
+          haeufigkeit: "okuläre Nebenwirkungen insgesamt 59 % (Grad 3: 11 %)", latenz: "im Median 5,1 Wochen", dosisabhaengigkeit: null, reversibilitaet: "vollständige Rückbildung bei 53 %, teilweise Besserung bei 38 %",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_MIRV_EU", typ: "Dosierung (Untersuchungen und Prophylaxe)", abschnitt: "4.2",
+          aussage: "Augenuntersuchungen vor Behandlungsbeginn und während der Behandlung; benetzende Augentropfen; nach okulären Nebenwirkungen vom Grad 2 Sekundärprophylaxe mit kortikosteroidhaltigen Augentropfen, unter Steroidtropfen Kontrollen von Augeninnendruck und Spaltlampenbefund.",
+          zitat: null,
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Augenuntersuchungen vor Beginn und während der Behandlung; unter kortikosteroidhaltigen Augentropfen Kontrollen von Augeninnendruck und Spaltlampenbefund (4.2)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_MIRV_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "ELAHERE kann schwere okuläre Toxizitäten verursachen, u. a. Sehbeeinträchtigung, Keratopathie, trockenes Auge, Photophobie und Augenschmerzen.",
+          zitat: "“ELAHERE can cause severe ocular toxicities, including visual impairment, keratopathy, dry eye, photophobia, eye pain, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Dosage and Administration", abschnitt: "2.3",
+          aussage: "Augenuntersuchung (Visus und Spaltlampe) vor Beginn, in den ersten 8 Zyklen jeden zweiten Zyklus und wenn klinisch angezeigt; Prämedikation mit kortikosteroidhaltigen Augentropfen und benetzende Augentropfen.",
+          zitat: "“every other cycle for the first 8 cycles, and as clinically indicated.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Augenuntersuchung (Visus, Spaltlampe) vor Beginn, in den ersten 8 Zyklen jeden zweiten Zyklus und wenn klinisch angezeigt; Prämedikation mit kortikosteroidhaltigen und benetzenden Augentropfen",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Okuläre Nebenwirkungen bei 59 % (Grad 3: 11 %, Grad 4: 0,3 %); am häufigsten verschwommenes Sehen 48 %, Keratopathie 36 %, trockenes Auge 27 %, Katarakt 16 %, Photophobie 14 %, Augenschmerzen 10 %; Zeit bis zum Auftreten im Median 5,1 Wochen (0,1–68,6); vollständige Rückbildung bei 53 %, teilweise Besserung bei 38 %; dauerhafter Abbruch bei 1 %.",
+          zitat: "“Ocular adverse reactions occurred in 59% of patients with ovarian cancer treated with ELAHERE.”",
+          haeufigkeit: "okuläre Nebenwirkungen insgesamt 59 % (Grad 3: 11 %, Grad 4: 0,3 %); Keratopathie 36 %", latenz: "im Median 5,1 Wochen (0,1–68,6 Wochen)", dosisabhaengigkeit: null, reversibilitaet: "vollständige Rückbildung bei 53 %, teilweise Besserung bei 38 % (letzte Nachbeobachtung)",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "Der Tabellenbegriff Keratopathy umfasst corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis und corneal opacity (in Studie 0417 zusätzlich corneal epithelial defect).",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7",
+          aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Untersuchungsvorgaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.",
+          zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion",
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "Prophylaxe unterschiedlich beschrieben: EU-Fachinformation 4.2 – kortikosteroidhaltige Augentropfen als Sekundärprophylaxe nach okulären Nebenwirkungen vom Grad 2; US-Label 2.3 – Prämedikation mit kortikosteroidhaltigen Augentropfen." },
+    { id: "mirv-mikrozysten", wirkstoff: "mirvetuximab_soravtansin", befund: "mikrozystische_keratopathie", einordnung: "nebenwirkung", kontext: "Mikrozysten des Kornealepithels; Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Mikrozysten des Kornealepithels“ sind laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„Der Sammelbegriff Keratopathie umfasst Hornhautzyste, Hornhautablagerungen, Hornhauterkrankung, Mikrozysten des Kornealepithels, […]“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Corneal epithelial microcysts“ sind im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Klassenaussage (Stellungnahme)", abschnitt: "Abschnitt 2c (Antikörper-Wirkstoff-Konjugate), S. 3–4",
+          aussage: "Klassenaussage der Stellungnahme von DOG und BVA zu Antikörper-Wirkstoff-Konjugaten: Häufig entwickeln sich in der Hornhaut sogenannte Pseudomikrozysten (microcyst-like epithelial changes, MECs), nach aktuellem Verständnis durch eine Apoptose limbusnaher Epithelzellen; Anzahl und Ausprägung korrelieren mit einer Verschlechterung des bestkorrigierten Visus. Dauerhafte Visus- und andere Funktionseinschränkungen sind insgesamt nur sehr selten, da die Veränderungen nach Absetzen reversibel sind.",
+          zitat: "„Häufig ist die Entwicklung sogenannter Pseudomikrozysten (engl. pseudomicrocysts oder auch microcyst-like epithelial changes, MECs) in der Hornhaut […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: "Klassenaussage der Stellungnahme: dauerhafte Visus- und andere Funktionseinschränkungen nur sehr selten, nach Absetzen reversibel",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hornhautablagerungen", wirkstoff: "mirvetuximab_soravtansin", befund: "hornhautablagerungen", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Hornhautablagerungen“ sind laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„Der Sammelbegriff Keratopathie umfasst Hornhautzyste, Hornhautablagerungen, Hornhauterkrankung, Mikrozysten des Kornealepithels, […]“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Corneal deposits“ sind im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-epitheldefekt", wirkstoff: "mirvetuximab_soravtansin", befund: "epitheldefekt", einordnung: "nebenwirkung", kontext: "Defekt des Hornhautepithels, Hornhauterosion; Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Defekt des Hornhautepithels“ und „Hornhauterosion“ sind laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Mikrozysten des Kornealepithels, Defekt des Hornhautepithels, Hornhauterosion, Kornealopazität, Hornhautpigmentierung, […]“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, Studie 0417)",
+          aussage: "„Corneal epithelial defect“ ist im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, corneal epithelial defect, keratitis, keratopathy, corneal deposits, and punctate keratitis.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hornhauttruebung", wirkstoff: "mirvetuximab_soravtansin", befund: "hornhauttruebung", einordnung: "nebenwirkung", kontext: "Kornealopazität; Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Kornealopazität“ ist laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Mikrozysten des Kornealepithels, Defekt des Hornhautepithels, Hornhauterosion, Kornealopazität, Hornhautpigmentierung, […]“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Corneal opacity“ ist im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hornhautpigmentierung", wirkstoff: "mirvetuximab_soravtansin", befund: "hornhautpigmentierung", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Hornhautpigmentierung“ ist laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Mikrozysten des Kornealepithels, Defekt des Hornhautepithels, Hornhauterosion, Kornealopazität, Hornhautpigmentierung, […]“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-keratitis", wirkstoff: "mirvetuximab_soravtansin", befund: "keratitis", einordnung: "nebenwirkung", kontext: "Keratitis, interstitielle Keratitis; Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Keratitis“ und „interstitielle Keratitis“ sind laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Hornhautpigmentierung, Keratitis, interstitielle Keratitis, Keratopathie, Mangel an limbalen Stammzellen und Keratitis punctata“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Keratitis“ ist im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-limbus", wirkstoff: "mirvetuximab_soravtansin", befund: "limbusstammzellinsuffizienz", einordnung: "nebenwirkung", kontext: "Mangel an limbalen Stammzellen; Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Mangel an limbalen Stammzellen“ ist laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Hornhautpigmentierung, Keratitis, interstitielle Keratitis, Keratopathie, Mangel an limbalen Stammzellen und Keratitis punctata“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-keratitis-punctata", wirkstoff: "mirvetuximab_soravtansin", befund: "keratitis_punctata", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratopathie“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 4)",
+          aussage: "„Keratitis punctata“ ist laut Fußnote 2 im Sammelbegriff „Keratopathie“ enthalten.",
+          zitat: "„[…] Hornhautpigmentierung, Keratitis, interstitielle Keratitis, Keratopathie, Mangel an limbalen Stammzellen und Keratitis punctata“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathie“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Punctate keratitis“ ist im Tabellenbegriff „Keratopathy“ enthalten.",
+          zitat: "“Keratopathy includes corneal disorder, corneal epithelial microcysts, keratitis, keratopathy, corneal deposits, punctate keratitis, and corneal opacity.”",
+          haeufigkeit: "nur für den Sammelbegriff „Keratopathy“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hornhautperforation", wirkstoff: "mirvetuximab_soravtansin", befund: "hornhautperforation", einordnung: "nebenwirkung", kontext: "nur als Kriterium der Dosisanpassung genannt (dauerhaft absetzen); in den Nebenwirkungstabellen nicht aufgeführt",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 3)",
+          aussage: "In der Tabelle zur Dosisanpassung bei okulären Nebenwirkungen: bei Hornhautperforation Mirvetuximab-Soravtansin dauerhaft absetzen.",
+          zitat: "„Hornhautperforation Dauerhaft absetzen.“ (Tabelle 3)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_MIRV_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "Dosage and Administration (Tabelle 3)",
+          aussage: "In der Tabelle zur Dosisanpassung bei okulären Nebenwirkungen: bei Hornhautperforation ELAHERE dauerhaft absetzen.",
+          zitat: "“Corneal perforation” – “Permanently discontinue.” (Tabelle 3)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-katarakt", wirkstoff: "mirvetuximab_soravtansin", befund: "katarakt", einordnung: "nebenwirkung", kontext: "Katarakt, kortikaler und nukleärer Katarakt (Sammelbegriff, EU)",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4 mit Fußnote 3)",
+          aussage: "Katarakt in Tabelle 4 sehr häufig; der Sammelbegriff umfasst laut Fußnote 3 Katarakt, kortikalen und nukleären Katarakt.",
+          zitat: "„Der Sammelbegriff Katarakt umfasst Katarakt, kortikaler Katarakt und nukleärer Katarakt“ (Fußnote 3)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Katarakt bei 16 % (unter den häufigsten okulären Nebenwirkungen); Grad-4-Ereignisse bei 2 Patientinnen (0,3 %): Keratopathie und Katarakt.",
+          zitat: "“The most common (≥5%) ocular adverse reactions were blurred vision (48%), keratopathy (36%), dry eye (27%), cataract (16%), …”",
+          haeufigkeit: "16 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-verschwommensehen", wirkstoff: "mirvetuximab_soravtansin", befund: "verschwommensehen", einordnung: "nebenwirkung", kontext: "Sammelbegriff „verschwommenes Sehen“ (EU) bzw. „Blurred vision“ (USA)",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Verschwommenes Sehen in Tabelle 4 sehr häufig; der Sammelbegriff umfasst laut Fußnote 4 Akkommodationsfehler, Doppeltsehen, Hypermetropie, Presbyopie, Refraktionsstörung, verschwommenes Sehen, Sehverschlechterung, verminderte Sehschärfe und Mouches volantes.",
+          zitat: "„Der Sammelbegriff verschwommenes Sehen umfasst Akkommodationsfehler, Doppeltsehen, Hypermetropie, Presbyopie, […]“ (Fußnote 4)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis: schwere Nebenwirkungen am Auge, darunter Sehverschlechterung (vorwiegend verschwommenes Sehen).",
+          zitat: "„[…] kann schwere Nebenwirkungen am Auge hervorrufen, darunter Sehverschlechterung (vorwiegend verschwommenes Sehen), Keratopathie (Hornhauterkrankungen), […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Verschwommenes Sehen bei 48 % (häufigste okuläre Nebenwirkung).",
+          zitat: "“The most common (≥5%) ocular adverse reactions were blurred vision (48%), keratopathy (36%), dry eye (27%), cataract (16%), …”",
+          haeufigkeit: "48 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "Der Tabellenbegriff Blurred vision umfasst vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder und visual impairment (in Studie 0417 zusätzlich presbyopia und refraction disorder).",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder, and visual impairment.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-akkommodation", wirkstoff: "mirvetuximab_soravtansin", befund: "akkommodationsstoerung", einordnung: "nebenwirkung", kontext: "Akkommodationsfehler, Presbyopie; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Akkommodationsfehler“ und „Presbyopie“ sind laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„Der Sammelbegriff verschwommenes Sehen umfasst Akkommodationsfehler, Doppeltsehen, Hypermetropie, Presbyopie, […]“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, Studie 0417)",
+          aussage: "„Accommodation disorder“ und „presbyopia“ (Studie 0417; accommodation disorder auch in Studie 0416) sind im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, presbyopia, accommodation disorder, visual impairment, and refraction disorder.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-diplopie", wirkstoff: "mirvetuximab_soravtansin", befund: "diplopie", einordnung: "nebenwirkung", kontext: "Doppeltsehen; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Doppeltsehen“ ist laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„Der Sammelbegriff verschwommenes Sehen umfasst Akkommodationsfehler, Doppeltsehen, Hypermetropie, Presbyopie, […]“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Diplopia“ ist im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder, and visual impairment.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hyperopisierung", wirkstoff: "mirvetuximab_soravtansin", befund: "hyperopisierung", einordnung: "nebenwirkung", kontext: "Hypermetropie; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Hypermetropie“ ist laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„Der Sammelbegriff verschwommenes Sehen umfasst Akkommodationsfehler, Doppeltsehen, Hypermetropie, Presbyopie, […]“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-refraktion", wirkstoff: "mirvetuximab_soravtansin", befund: "refraktionsaenderung", einordnung: "nebenwirkung", kontext: "Refraktionsstörung; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Refraktionsstörung“ ist laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„[…] Refraktionsstörung, verschwommenes Sehen, Sehverschlechterung, verminderte Sehschärfe und Mouches volantes“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, Studie 0417)",
+          aussage: "„Refraction disorder“ (Studie 0417) ist im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, presbyopia, accommodation disorder, visual impairment, and refraction disorder.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-sehstoerung", wirkstoff: "mirvetuximab_soravtansin", befund: "sehstoerung", einordnung: "nebenwirkung", kontext: "Sehverschlechterung (EU, Teil des Sammelbegriffs „verschwommenes Sehen“) bzw. „visual impairment“ (USA)",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Sehverschlechterung“ ist laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„[…] Refraktionsstörung, verschwommenes Sehen, Sehverschlechterung, verminderte Sehschärfe und Mouches volantes“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten, u. a. Sehbeeinträchtigung (visual impairment).",
+          zitat: "“ELAHERE can cause severe ocular toxicities, including visual impairment, keratopathy, dry eye, photophobia, eye pain, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Visual impairment“ ist im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder, and visual impairment.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-visusminderung", wirkstoff: "mirvetuximab_soravtansin", befund: "visusminderung", einordnung: "nebenwirkung", kontext: "verminderte Sehschärfe; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Verminderte Sehschärfe“ ist laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„[…] Refraktionsstörung, verschwommenes Sehen, Sehverschlechterung, verminderte Sehschärfe und Mouches volantes“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Visual acuity reduced“ ist im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder, and visual impairment.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-glaskoerper", wirkstoff: "mirvetuximab_soravtansin", befund: "glaskoerpertruebungen", einordnung: "nebenwirkung", kontext: "Mouches volantes; Teil des Sammelbegriffs „verschwommenes Sehen“",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 4)",
+          aussage: "„Mouches volantes“ sind laut Fußnote 4 im Sammelbegriff „verschwommenes Sehen“ enthalten.",
+          zitat: "„[…] Refraktionsstörung, verschwommenes Sehen, Sehverschlechterung, verminderte Sehschärfe und Mouches volantes“ (Fußnote 4)",
+          haeufigkeit: "nur für den Sammelbegriff „verschwommenes Sehen“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Vitreous floaters“ sind im Tabellenbegriff „Blurred vision“ enthalten.",
+          zitat: "“Blurred vision includes vision blurred, vitreous floaters, visual acuity reduced, diplopia, accommodation disorder, and visual impairment.”",
+          haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-photophobie", wirkstoff: "mirvetuximab_soravtansin", befund: "photophobie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Photophobie in Tabelle 4 sehr häufig.",
+          zitat: "„Photophobie“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten, u. a. Photophobie.",
+          zitat: "“ELAHERE can cause severe ocular toxicities, including visual impairment, keratopathy, dry eye, photophobia, eye pain, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Photophobie bei 14 % (unter den häufigsten okulären Nebenwirkungen).",
+          zitat: "“… cataract (16%), photophobia (14%), and eye pain (10%).”",
+          haeufigkeit: "14 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-augenschmerz", wirkstoff: "mirvetuximab_soravtansin", befund: "augenschmerz", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4)",
+          aussage: "Augenschmerzen in Tabelle 4 sehr häufig.",
+          zitat: "„Augenschmerzen“ (Tabelle 4)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten, u. a. Augenschmerzen.",
+          zitat: "“ELAHERE can cause severe ocular toxicities, including visual impairment, keratopathy, dry eye, photophobia, eye pain, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Augenschmerzen bei 10 % (unter den häufigsten okulären Nebenwirkungen).",
+          zitat: "“… cataract (16%), photophobia (14%), and eye pain (10%).”",
+          haeufigkeit: "10 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-trockenes-auge", wirkstoff: "mirvetuximab_soravtansin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: "trockenes Auge und verminderte Tränensekretion (Sammelbegriff, EU)",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 4 mit Fußnote 5)",
+          aussage: "Trockenes Auge in Tabelle 4 sehr häufig; der Sammelbegriff umfasst laut Fußnote 5 trockenes Auge und verminderte Tränensekretion.",
+          zitat: "„Der Sammelbegriff trockenes Auge umfasst trockenes Auge und verminderte Tränensekretion“ (Fußnote 5)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten, u. a. trockenes Auge.",
+          zitat: "“ELAHERE can cause severe ocular toxicities, including visual impairment, keratopathy, dry eye, photophobia, eye pain, …”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Trockenes Auge bei 27 % (unter den häufigsten okulären Nebenwirkungen).",
+          zitat: "“The most common (≥5%) ocular adverse reactions were blurred vision (48%), keratopathy (36%), dry eye (27%), cataract (16%), …”",
+          haeufigkeit: "27 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "Der Tabellenbegriff Dry eye umfasst dry eye und lacrimation increased.",
+          zitat: "“Dry eye includes dry eye and lacrimation increased.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-epiphora", wirkstoff: "mirvetuximab_soravtansin", befund: "epiphora", einordnung: "nebenwirkung", kontext: "„lacrimation increased“; Teil des Sammelbegriffs „Dry eye“ (USA)",
+      belege: [
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, Studie 0416)",
+          aussage: "„Lacrimation increased“ ist im Tabellenbegriff „Dry eye“ enthalten.",
+          zitat: "“Dry eye includes dry eye and lacrimation increased.”",
+          haeufigkeit: "nur für den Sammelbegriff „Dry eye“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-uveitis", wirkstoff: "mirvetuximab_soravtansin", befund: "uveitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_MIRV_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Warnings and Precautions 5.1 nennt Uveitis unter den schweren okulären Nebenwirkungen.",
+          zitat: "“ELAHERE can cause severe ocular adverse reactions, including visual impairment, keratopathy (corneal disorders), dry eye, photophobia, eye pain, and uveitis.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Studie 0417)",
+          aussage: "Uveitis bei 1 % unter den klinisch relevanten Nebenwirkungen mit einer Häufigkeit unter 10 % (Studie 0417).",
+          zitat: "“[…] infusion related reactions/hypersensitivity (9%), pneumonitis (8%), and uveitis (1%).”",
+          haeufigkeit: "1 % (Studie 0417)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "Dosage and Administration (Tabelle 3)",
+          aussage: "Dosisanpassung bei Uveitis: Grad 1 (vereinzelte Zellen in der Vorderkammer) beobachten; Grad 2 (1–2+ Zellen oder Tyndall) pausieren bis Grad ≤ 1, dann gleiche Dosis; Grad 3 (3+ Zellen oder Tyndall) pausieren bis Grad ≤ 1, dann um eine Dosisstufe reduzieren; Grad 4 bzw. Hypopyon dauerhaft absetzen.",
+          zitat: "“Grade 4/ Hypopyon” – “Permanently discontinue.” (Tabelle 3)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 3: pausieren, danach Dosisreduktion; Grad 4 bzw. Hypopyon: dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-hypopyon", wirkstoff: "mirvetuximab_soravtansin", befund: "hypopyon", einordnung: "nebenwirkung", kontext: "nur als Kriterium der Dosisanpassung bei Uveitis genannt (Grad 4 bzw. Hypopyon: dauerhaft absetzen)",
+      belege: [
+        { quelle: "Q_MIRV_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "Dosage and Administration (Tabelle 3)",
+          aussage: "In der Tabelle zur Dosisanpassung entspricht ein Hypopyon dem Grad 4 der Uveitis: ELAHERE dauerhaft absetzen.",
+          zitat: "“Grade 4/ Hypopyon” – “Permanently discontinue.” (Tabelle 3)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-liderythem", wirkstoff: "mirvetuximab_soravtansin", befund: "liderythem", einordnung: "nebenwirkung", kontext: "Erythem des Augenlids; Teil des Sammelbegriffs „Reaktion/Überempfindlichkeit im Zusammenhang mit einer Infusion“ (EU) bzw. der Infusionsreaktionen (USA)",
+      belege: [
+        { quelle: "Q_MIRV_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 9 zu Tabelle 4)",
+          aussage: "„Erythem des Augenlids“ ist laut Fußnote 9 im Sammelbegriff „Reaktion/Überempfindlichkeit im Zusammenhang mit einer Infusion“ enthalten.",
+          zitat: "„[…] umfasst SMQ Hypersensibilität (eng) und Flush, Erythem, Erythem des Augenlids“ (Fußnote 9)",
+          haeufigkeit: "nur für den Sammelbegriff angegeben (häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Immunogenität)", abschnitt: "6 (Immunogenicity)",
+          aussage: "Im Abschnitt zur Immunogenität werden unter den Infusionsreaktionen bei Patientinnen mit Anti-Drug-Antikörpern u. a. Erythem des Augenlids genannt.",
+          zitat: "“Infusion reactions (including bronchospasm, erythema, eyelid erythema, flushing, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Infusion reactions“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "mirv-periorbital", wirkstoff: "mirvetuximab_soravtansin", befund: "periorbitales_oedem", einordnung: "nebenwirkung", kontext: "Teil der Infusionsreaktionen bei Patientinnen mit Anti-Drug-Antikörpern (US-Label, Abschnitt Immunogenität)",
+      belege: [
+        { quelle: "Q_MIRV_US", typ: "Adverse Reactions (Immunogenität)", abschnitt: "6 (Immunogenicity)",
+          aussage: "Im Abschnitt zur Immunogenität werden unter den Infusionsreaktionen bei Patientinnen mit Anti-Drug-Antikörpern u. a. periorbitales Ödem genannt.",
+          zitat: "“Infusion reactions (including bronchospasm, erythema, eyelid erythema, flushing, hypersensitivity, periorbital edema […]”",
+          haeufigkeit: "nur für den Sammelbegriff „Infusion reactions“ angegeben – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-11", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11. und 11.11.2026)" }
+      ], unterschied_notiz: null },
+    { id: "mirv-myopisierung", wirkstoff: "mirvetuximab_soravtansin", befund: "myopisierung", einordnung: "nebenwirkung", kontext: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten (zunächst hyperoper, bei Zentralisierung myoper Shift)",
+      belege: [
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Klassenaussage (Stellungnahme)", abschnitt: "Abschnitt 2c (Antikörper-Wirkstoff-Konjugate), S. 3–4",
+          aussage: "Klassenaussage der Stellungnahme von DOG und BVA zu Pseudomikrozysten bei Antikörper-Wirkstoff-Konjugaten: Die Pseudomikrozysten erzeugen zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion (hier: Myopisierung).",
+          zitat: "„Die Pseudomikrozysten erzeugen hierbei […] zunächst einen hyperopen, bei Zentralisierung dann einen myopen Shift der Refraktion [10].“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "In den geprüften Fachinformationen (EU und USA) nicht genannt; Angabe aus der Stellungnahme von DOG und BVA (Klassenaussage zu Pseudomikrozysten bei ADCs). Die Fachinformationen nennen Hypermetropie (EU) bzw. Refraktionsstörung (EU und USA) im Sammelbegriff „verschwommenes Sehen“ (siehe Einträge Hyperopisierung und Refraktionsänderung)." },
+
+    /* ================= Tisotumab vedotin (Etappe 1g-1) ================= */
+    { id: "tiso-keratopathie", wirkstoff: "tisotumab_vedotin", befund: "keratopathie", einordnung: "nebenwirkung", kontext: "Keratopathie, Hornhautdegeneration, Färbung der Hornhaut mit Lebendfarbstoff (EU); „Corneal adverse reactions“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Keratopathie“, „Hornhautdegeneration“ und „Färbung der Hornhaut mit Lebendfarbstoff nachweisbar“ in Tabelle 3 jeweils gelegentlich.",
+          zitat: "„Keratopathie“, „Hornhautdegeneration“ und „Färbung der Hornhaut mit Lebendfarbstoff nachweisbar“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)",
+          aussage: "Okuläre Nebenwirkungen bei 55 % der 425 Patientinnen mit Zervixkarzinom in klinischen Studien; am häufigsten Konjunktivitis (32 %), trockenes Auge (17 %), Keratitis (12 %) und Blepharitis (5 %); Zeit bis zum Auftreten im Median 1,2 Monate; dauerhafter Abbruch bei 6 %, Unterbrechung bei 13 %, Dosisreduktion bei 12 %; vollständige Rückbildung bei 59 %, teilweise Besserung bei 31 %.",
+          zitat: "„Bei 55 % der 425 Patientinnen mit Zervixkarzinom, die in klinischen Studien mit Tisotumab vedotin behandelt wurden, […]“",
+          haeufigkeit: "okuläre Nebenwirkungen insgesamt 55 % (425 Patientinnen)", latenz: "im Median 1,2 Monate", dosisabhaengigkeit: null, reversibilitaet: "vollständige Rückbildung bei 59 %, teilweise Besserung bei 31 %",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Vor jeder Infusion sind die Augen durch den behandelnden Arzt zu begutachten (Warnhinweis zu okulären Nebenwirkungen).",
+          zitat: "„Vor jeder Infusion muss der behandelnde Arzt die Augen der Patientin begutachten, einschließlich einer Kontrolle […]“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Begutachtung der Augen vor jeder Infusion (4.4)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Dosierung (Augenpflege)", abschnitt: "4.2 (Augenpflege)",
+          aussage: "Vorgeschriebene Augenpflege zur Verminderung okulärer Nebenwirkungen, u. a. Augentropfen beginnend einen Tag vor der Infusion und fortfahrend für drei Tage danach; Dosisanpassungen bei okulären Nebenwirkungen in Tabelle 2.",
+          zitat: "„beginnend einen Tag vor der Infusion und fortfahrend für drei Tage danach“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "vorgeschriebene Augenpflege vor, während und nach jeder Infusion (4.2)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_TISO_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten mit Sehveränderungen bis zum schweren Sehverlust und Hornhautulzeration.",
+          zitat: "“TIVDAK can cause severe ocular toxicities resulting in changes in vision, including severe vision loss and corneal ulceration.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 über einen Suchtreffer der Herstellerseite bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration", abschnitt: "2.2",
+          aussage: "Augenuntersuchung (Visus und Spaltlampe des vorderen Augenabschnitts) vor Beginn, vor jedem der ersten neun Zyklen und wenn klinisch angezeigt; vorgeschriebene Prämedikation und Augenpflege.",
+          zitat: "“prior to initiation of TIVDAK, prior to every cycle for the first nine cycles”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Augenuntersuchung (Visus, Spaltlampe des vorderen Augenabschnitts) vor Beginn, vor jedem der ersten neun Zyklen und wenn klinisch angezeigt; vorgeschriebene Prämedikation und Augenpflege (2.2)",
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Häufigste okuläre Nebenwirkungen: Konjunktivitis 32 %, trockenes Auge 24 %, Keratopathie 17 %, Blepharitis 5 %. In innovaTV 301 traten bei 8 Patientinnen (3,2 %) verzögerte okuläre Nebenwirkungen mehr als 30 Tage nach der letzten Dosis auf.",
+          zitat: "“The most common ocular adverse reactions were conjunctivitis (32%), dry eye (24%), keratopathy (17%), and blepharitis (5%).”",
+          haeufigkeit: "Keratopathie 17 %", latenz: "verzögerte okuläre Nebenwirkungen mehr als 30 Tage nach der letzten Dosis bei 3,2 % (innovaTV 301)", dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Okuläre Nebenwirkungen bei 55 % der Patientinnen mit Zervixkarzinom in klinischen Studien; Grad 3 bei 3,3 % (darunter schwere ulzerative Keratitis bei 1,2 %); Zeit bis zum Auftreten im Median 1,2 Monate (0–17,1); vollständige Rückbildung bei 59 %, teilweise Besserung bei 31 %; dauerhafter Abbruch bei 6 %.",
+          zitat: "“Ocular adverse reactions occurred in 55% of patients with cervical cancer treated with TIVDAK across clinical trials.”",
+          haeufigkeit: "okuläre Nebenwirkungen insgesamt 55 % (Grad 3: 3,3 %)", latenz: "im Median 1,2 Monate (0–17,1 Monate)", dosisabhaengigkeit: null, reversibilitaet: "vollständige Rückbildung bei 59 %, teilweise Besserung bei 31 %",
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-11", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 11.11.2026)" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Corneal adverse reactions“ bei 21 % (Grad 3–4: 3,2 %); der Sammelbegriff umfasst keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, corneal degeneration, corneal opacity und keratopathy.",
+          zitat: "“Corneal adverse reactions includes keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, …”",
+          haeufigkeit: "Sammelbegriff „Corneal adverse reactions“: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7",
+          aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Untersuchungsvorgaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.",
+          zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion",
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: null },
+    { id: "tiso-konjunktivitis", wirkstoff: "tisotumab_vedotin", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: "Konjunktivitis, nichtinfektiöse Konjunktivitis (EU); „Conjunctival adverse reactions“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Konjunktivitis“ in Tabelle 3 sehr häufig; nichtinfektiöse Konjunktivitis gelegentlich.",
+          zitat: "„Konjunktivitis“ (Tabelle 3, sehr häufig); „nichtinfektiöse Konjunktivitis“ (gelegentlich)",
+          haeufigkeit: "sehr häufig (nichtinfektiöse Konjunktivitis: gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; am häufigsten Konjunktivitis, trockene Augen, Keratitis und Blepharitis.",
+          zitat: "„Die häufigsten Nebenwirkungen bezüglich der Augen waren Konjunktivitis, trockene Augen, Keratitis und Blepharitis.“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 2)",
+          aussage: "Bei Konjunktivitis Grad 3 oder 4 ist Tivdak laut Tabelle 2 endgültig abzusetzen.",
+          zitat: null,
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 3 oder 4: endgültig absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Konjunktivitis bei 32 % (häufigste okuläre Nebenwirkung).",
+          zitat: "“The most common ocular adverse reactions were conjunctivitis (32%), dry eye (24%), keratopathy (17%), and blepharitis (5%).”",
+          haeufigkeit: "32 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctival adverse reactions“ bei 37 % (Grad 3–4: 0 %); der Sammelbegriff umfasst conjunctivitis (auch bakteriell und viral), episcleritis, ocular hyperemia, conjunctival hemorrhage, conjunctival hyperemia, conjunctival ulcer, conjunctivitis allergic, conjunctival disorder, symblepharon, conjunctival erosion, conjunctival oedema, conjunctivochalasis und conjunctival scar.",
+          zitat: "“Conjunctival adverse reactions includes conjunctivitis, conjunctivitis bacterial, conjunctivitis viral, episcleritis, …”",
+          haeufigkeit: "Sammelbegriff „Conjunctival adverse reactions“: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-trockenes-auge", wirkstoff: "tisotumab_vedotin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: "trockenes Auge und verstärkte Tränensekretion (Sammelbegriff, EU)",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3 mit Fußnote 2)",
+          aussage: "Trockenes Auge in Tabelle 3 sehr häufig; der Sammelbegriff umfasst laut Fußnote 2 auch eine verstärkte Tränensekretion.",
+          zitat: "„Trockenes Auge umfasst auch trockenes Auge und eine verstärkte Tränensekretion“ (Fußnote 2)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; am häufigsten Konjunktivitis, trockene Augen, Keratitis und Blepharitis.",
+          zitat: "„Die häufigsten Nebenwirkungen bezüglich der Augen waren Konjunktivitis, trockene Augen, Keratitis und Blepharitis.“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Trockenes Auge bei 24 % (unter den häufigsten okulären Nebenwirkungen).",
+          zitat: "“The most common ocular adverse reactions were conjunctivitis (32%), dry eye (24%), keratopathy (17%), and blepharitis (5%).”",
+          haeufigkeit: "24 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Dry eye“ bei 21 % (Grad 3–4: 0 %); der Sammelbegriff umfasst dry eye, eye discharge, eye pruritus, eye pain, eye irritation und lacrimation increased.",
+          zitat: "“Dry eye includes dry eye, eye discharge, eye pruritus, eye pain, eye irritation, and lacrimation increased”",
+          haeufigkeit: "Sammelbegriff „Dry eye“: 21 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-epiphora", wirkstoff: "tisotumab_vedotin", befund: "epiphora", einordnung: "nebenwirkung", kontext: "verstärkte Tränensekretion; Teil des Sammelbegriffs „trockenes Auge“ (EU) bzw. „Dry eye“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 2 zu Tabelle 3)",
+          aussage: "„Verstärkte Tränensekretion“ ist laut Fußnote 2 im Sammelbegriff „trockenes Auge“ enthalten.",
+          zitat: "„Trockenes Auge umfasst auch trockenes Auge und eine verstärkte Tränensekretion“ (Fußnote 2)",
+          haeufigkeit: "nur für den Sammelbegriff „trockenes Auge“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Lacrimation increased“ ist im Sammelbegriff „Dry eye“ enthalten.",
+          zitat: "“Dry eye includes dry eye, eye discharge, eye pruritus, eye pain, eye irritation, and lacrimation increased”",
+          haeufigkeit: "nur für den Sammelbegriff „Dry eye“ angegeben: 21 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-keratitis", wirkstoff: "tisotumab_vedotin", befund: "keratitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Keratitis“ in Tabelle 3 sehr häufig.",
+          zitat: "„Keratitis“ (Tabelle 3, sehr häufig)",
+          haeufigkeit: "sehr häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; am häufigsten Konjunktivitis, trockene Augen, Keratitis und Blepharitis.",
+          zitat: "„Die häufigsten Nebenwirkungen bezüglich der Augen waren Konjunktivitis, trockene Augen, Keratitis und Blepharitis.“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 2)",
+          aussage: "Bei Keratitis Grad 3 oder 4 ist Tivdak laut Tabelle 2 endgültig abzusetzen.",
+          zitat: null,
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "Grad 3 oder 4: endgültig absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026)" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Keratitis“ ist im Sammelbegriff „Corneal adverse reactions“ enthalten.",
+          zitat: "“Corneal adverse reactions includes keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Corneal adverse reactions“ angegeben: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-keratitis-punctata", wirkstoff: "tisotumab_vedotin", befund: "keratitis_punctata", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Keratitis punctata“ in Tabelle 3 häufig.",
+          zitat: "„Keratitis punctata“ (Tabelle 3, häufig)",
+          haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Punctate keratitis“ ist im Sammelbegriff „Corneal adverse reactions“ enthalten.",
+          zitat: "“Corneal adverse reactions includes keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Corneal adverse reactions“ angegeben: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-hornhautulkus", wirkstoff: "tisotumab_vedotin", befund: "hornhautulkus", einordnung: "nebenwirkung", kontext: "ulzerative Keratitis",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„ulzerative Keratitis“ in Tabelle 3 häufig.",
+          zitat: "„ulzerative Keratitis“ (Tabelle 3, häufig)",
+          haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)",
+          aussage: "Ulzerative Keratitis vom Grad 3 bei 1,2 % der Patientinnen.",
+          zitat: "„Fälle von ulzerativer Keratitis des Grads 3 wurden bei 1,2 % der Patienten gemeldet.“",
+          haeufigkeit: "Grad 3: 1,2 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten, u. a. Hornhautulzeration.",
+          zitat: "“TIVDAK can cause severe ocular toxicities resulting in changes in vision, including severe vision loss and corneal ulceration.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 über einen Suchtreffer der Herstellerseite bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Ulzerative Keratitis bei 9 Patientinnen (2,1 %), darunter eine mit Perforation, die eine Hornhauttransplantation erforderte; schwere ulzerative Keratitis (Grad 3) bei 1,2 %.",
+          zitat: "“Nine patients (2.1%) experienced ulcerative keratitis (including one with perforation requiring corneal transplantation), …”",
+          haeufigkeit: "2,1 % (Grad 3: 1,2 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.2 (Tabelle 2)",
+          aussage: "Ulzerative Keratitis oder Perforation: TIVDAK dauerhaft absetzen (Tabelle 2).",
+          zitat: "“Ulcerative keratitis or perforation” – “Permanently discontinue.” (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Ulcerative keratitis“ ist im Sammelbegriff „Corneal adverse reactions“ enthalten.",
+          zitat: "“Corneal adverse reactions includes keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Corneal adverse reactions“ angegeben: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-hornhautperforation", wirkstoff: "tisotumab_vedotin", befund: "hornhautperforation", einordnung: "nebenwirkung", kontext: "Perforation bei ulzerativer Keratitis (eine Patientin; Hornhauttransplantation erforderlich)",
+      belege: [
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Unter den 9 Patientinnen mit ulzerativer Keratitis eine mit Perforation, die eine Hornhauttransplantation erforderte.",
+          zitat: "“Nine patients (2.1%) experienced ulcerative keratitis (including one with perforation requiring corneal transplantation), …”",
+          haeufigkeit: "1 Patientin (klinische Studien beim Zervixkarzinom)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.2 (Tabelle 2)",
+          aussage: "Ulzerative Keratitis oder Perforation: TIVDAK dauerhaft absetzen (Tabelle 2).",
+          zitat: "“Ulcerative keratitis or perforation” – “Permanently discontinue.” (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-blepharitis", wirkstoff: "tisotumab_vedotin", befund: "blepharitis", einordnung: "nebenwirkung", kontext: "Blepharitis; Augenlidrandverkrustung",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Blepharitis“ in Tabelle 3 häufig; Augenlidrandverkrustung gelegentlich.",
+          zitat: "„Blepharitis“ (Tabelle 3, häufig); „Augenlidrandverkrustung“ (gelegentlich)",
+          haeufigkeit: "häufig (Augenlidrandverkrustung: gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Warnhinweis", abschnitt: "4.4",
+          aussage: "Warnhinweis zu okulären Nebenwirkungen; am häufigsten Konjunktivitis, trockene Augen, Keratitis und Blepharitis.",
+          zitat: "„Die häufigsten Nebenwirkungen bezüglich der Augen waren Konjunktivitis, trockene Augen, Keratitis und Blepharitis.“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Blepharitis bei 5 % (unter den häufigsten okulären Nebenwirkungen).",
+          zitat: "“The most common ocular adverse reactions were conjunctivitis (32%), dry eye (24%), keratopathy (17%), and blepharitis (5%).”",
+          haeufigkeit: "5 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, innovaTV 204)",
+          aussage: "„Blepharitis“ ist im Sammelbegriff „Periorbital adverse reactions“ enthalten.",
+          zitat: "“Periorbital adverse reactions includes blepharitis, meibomianitis, eye pruritus, entropion, trichiasis, chalazion, and meibomian gland dysfunction”",
+          haeufigkeit: "nur für den Sammelbegriff „Periorbital adverse reactions“ angegeben: 16 % (Grad 3–4: 0 %; innovaTV 204, N = 101)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-bindehauthyperaemie", wirkstoff: "tisotumab_vedotin", befund: "bindehauthyperaemie", einordnung: "nebenwirkung", kontext: "Bindehauthyperämie, okuläre Hyperämie",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„okuläre Hyperämie“ und „Bindehauthyperämie“ in Tabelle 3 jeweils häufig.",
+          zitat: "„okuläre Hyperämie“ und „Bindehauthyperämie“ (Tabelle 3, häufig)",
+          haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Ocular hyperemia“ und „conjunctival hyperemia“ sind im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… ocular hyperemia, conjunctival hemorrhage, conjunctival hyperemia, conjunctival ulcer, conjunctivitis allergic, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-bindehautulkus", wirkstoff: "tisotumab_vedotin", befund: "bindehautulkus", einordnung: "nebenwirkung", kontext: "Bindehautulkus; Bindehauterosion, Bindehautabschürfung",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Bindehautulkus“ in Tabelle 3 häufig; Bindehauterosion und Bindehautabschürfung gelegentlich.",
+          zitat: "„Bindehautulkus“ (Tabelle 3, häufig); „Bindehauterosion“, „Bindehautabschürfung“ (gelegentlich)",
+          haeufigkeit: "häufig (Bindehauterosion, Bindehautabschürfung: gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Bindehautulkus bei 6 Patientinnen (1,4 %), Bindehauterosion bei 2 (0,5 %).",
+          zitat: "“… six (1.4%) conjunctival ulcer, four (0.9%) corneal erosion, two (0.5%) conjunctival erosion, and two (0.5%) symblepharon.”",
+          haeufigkeit: "Bindehautulkus 1,4 %; Bindehauterosion 0,5 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.2 (Tabelle 2)",
+          aussage: "Bindehautulkus, konjunktivale Neovaskularisation oder fibrovaskuläre Vernarbung: TIVDAK dauerhaft absetzen (Tabelle 2).",
+          zitat: "“Conjunctival ulcer, conjunctival neovascularization, or fibrovascular scarring” – “Permanently discontinue.” (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctival ulcer“ und „conjunctival erosion“ sind im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… ocular hyperemia, conjunctival hemorrhage, conjunctival hyperemia, conjunctival ulcer, conjunctivitis allergic, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-entropium", wirkstoff: "tisotumab_vedotin", befund: "entropium", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Entropium“ in Tabelle 3 häufig.",
+          zitat: "„Entropium“ (Tabelle 3, häufig)",
+          haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, innovaTV 204)",
+          aussage: "„Entropion“ ist im Sammelbegriff „Periorbital adverse reactions“ enthalten.",
+          zitat: "“Periorbital adverse reactions includes blepharitis, meibomianitis, eye pruritus, entropion, trichiasis, chalazion, and meibomian gland dysfunction”",
+          haeufigkeit: "nur für den Sammelbegriff „Periorbital adverse reactions“ angegeben: 16 % (Grad 3–4: 0 %; innovaTV 204, N = 101)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-episkleritis", wirkstoff: "tisotumab_vedotin", befund: "episkleritis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Episkleritis“ in Tabelle 3 häufig.",
+          zitat: "„Episkleritis“ (Tabelle 3, häufig)",
+          haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Episcleritis“ ist im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“Conjunctival adverse reactions includes conjunctivitis, conjunctivitis bacterial, conjunctivitis viral, episcleritis, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-meibom", wirkstoff: "tisotumab_vedotin", befund: "meibomdruesendysfunktion", einordnung: "nebenwirkung", kontext: "Entzündung der Meibomdrüsen, Dysfunktion der Meibomdrüse",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Entzündung der Meibomdrüsen“ in Tabelle 3 häufig; Dysfunktion der Meibomdrüse gelegentlich.",
+          zitat: "„Entzündung der Meibomdrüsen“ (Tabelle 3, häufig); „Dysfunktion der Meibomdrüse“ (gelegentlich)",
+          haeufigkeit: "häufig (Dysfunktion der Meibomdrüse: gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, innovaTV 204)",
+          aussage: "„Meibomianitis“ und „meibomian gland dysfunction“ sind im Sammelbegriff „Periorbital adverse reactions“ enthalten.",
+          zitat: "“Periorbital adverse reactions includes blepharitis, meibomianitis, eye pruritus, entropion, trichiasis, chalazion, and meibomian gland dysfunction”",
+          haeufigkeit: "nur für den Sammelbegriff „Periorbital adverse reactions“ angegeben: 16 % (Grad 3–4: 0 %; innovaTV 204, N = 101)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-epitheldefekt", wirkstoff: "tisotumab_vedotin", befund: "epitheldefekt", einordnung: "nebenwirkung", kontext: "Hornhauterosion",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Hornhauterosion“ in Tabelle 3 gelegentlich.",
+          zitat: "„Hornhauterosion“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Hornhauterosion bei 4 Patientinnen (0,9 %).",
+          zitat: "“… six (1.4%) conjunctival ulcer, four (0.9%) corneal erosion, two (0.5%) conjunctival erosion, and two (0.5%) symblepharon.”",
+          haeufigkeit: "0,9 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Corneal erosion“ ist im Sammelbegriff „Corneal adverse reactions“ enthalten.",
+          zitat: "“Corneal adverse reactions includes keratitis, punctate keratitis, corneal erosion, ulcerative keratitis, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Corneal adverse reactions“ angegeben: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-trichiasis", wirkstoff: "tisotumab_vedotin", befund: "trichiasis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Trichiasis“ in Tabelle 3 gelegentlich.",
+          zitat: "„Trichiasis“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, innovaTV 204)",
+          aussage: "„Trichiasis“ ist im Sammelbegriff „Periorbital adverse reactions“ enthalten.",
+          zitat: "“Periorbital adverse reactions includes blepharitis, meibomianitis, eye pruritus, entropion, trichiasis, chalazion, and meibomian gland dysfunction”",
+          haeufigkeit: "nur für den Sammelbegriff „Periorbital adverse reactions“ angegeben: 16 % (Grad 3–4: 0 %; innovaTV 204, N = 101)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-vernarbung", wirkstoff: "tisotumab_vedotin", befund: "vernarbende_konjunktivitis", einordnung: "nebenwirkung", kontext: "Bindehautnarbe, Symblepharon",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Bindehautnarbe“ und „Symblepharon“ in Tabelle 3 jeweils gelegentlich.",
+          zitat: "„Bindehautnarbe“ und „Symblepharon“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 2)",
+          aussage: "Vernarbung von Bindehaut oder Hornhaut oder Symblepharon (jeder Schweregrad): Tivdak endgültig absetzen (Tabelle 2).",
+          zitat: "„Vernarbung von Bindehaut oder Hornhaut oder Symblepharon“ (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "jeder Schweregrad: endgültig absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Warnings and Precautions", abschnitt: "5.1",
+          aussage: "Symblepharon bei 2 Patientinnen (0,5 %).",
+          zitat: "“… six (1.4%) conjunctival ulcer, four (0.9%) corneal erosion, two (0.5%) conjunctival erosion, and two (0.5%) symblepharon.”",
+          haeufigkeit: "0,5 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.2 (Tabelle 2)",
+          aussage: "Jede Vernarbung oder Symblepharon: TIVDAK dauerhaft absetzen (Tabelle 2).",
+          zitat: "“Any scarring or symblepharon” – “Permanently discontinue.” (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "jede Vernarbung oder Symblepharon: dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Symblepharon“ und „conjunctival scar“ sind im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… conjunctival disorder, symblepharon, conjunctival erosion, conjunctival oedema, conjunctivochalasis, and conjunctival scar”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-lidoedem", wirkstoff: "tisotumab_vedotin", befund: "lidoedem", einordnung: "nebenwirkung", kontext: "Augenlidödem, Schwellung des Augenlids",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Augenlidödem“ und „Schwellung des Augenlids“ in Tabelle 3 jeweils gelegentlich.",
+          zitat: "„Augenlidödem“ und „Schwellung des Augenlids“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-periorbital", wirkstoff: "tisotumab_vedotin", befund: "periorbitales_oedem", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Periorbitalödem“ in Tabelle 3 gelegentlich.",
+          zitat: "„Periorbitalödem“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-madarosis", wirkstoff: "tisotumab_vedotin", befund: "madarosis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Madarosis“ in Tabelle 3 gelegentlich.",
+          zitat: "„Madarosis“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-chalazion", wirkstoff: "tisotumab_vedotin", befund: "chalazion", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Chalazion“ in Tabelle 3 gelegentlich.",
+          zitat: "„Chalazion“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 6, innovaTV 204)",
+          aussage: "„Chalazion“ ist im Sammelbegriff „Periorbital adverse reactions“ enthalten.",
+          zitat: "“Periorbital adverse reactions includes blepharitis, meibomianitis, eye pruritus, entropion, trichiasis, chalazion, and meibomian gland dysfunction”",
+          haeufigkeit: "nur für den Sammelbegriff „Periorbital adverse reactions“ angegeben: 16 % (Grad 3–4: 0 %; innovaTV 204, N = 101)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-chemosis", wirkstoff: "tisotumab_vedotin", befund: "chemosis", einordnung: "nebenwirkung", kontext: "Bindehautödem",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Bindehautödem“ in Tabelle 3 gelegentlich.",
+          zitat: "„Bindehautödem“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctival oedema“ ist im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… conjunctival disorder, symblepharon, conjunctival erosion, conjunctival oedema, conjunctivochalasis, and conjunctival scar”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-hornhauttruebung", wirkstoff: "tisotumab_vedotin", befund: "hornhauttruebung", einordnung: "nebenwirkung", kontext: "Kornealopazität, Narbe der Hornhaut",
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Kornealopazität“ und „Narbe der Hornhaut“ in Tabelle 3 jeweils gelegentlich.",
+          zitat: "„Kornealopazität“ und „Narbe der Hornhaut“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 2)",
+          aussage: "Vernarbung von Bindehaut oder Hornhaut oder Symblepharon (jeder Schweregrad): Tivdak endgültig absetzen (Tabelle 2).",
+          zitat: "„Vernarbung von Bindehaut oder Hornhaut oder Symblepharon“ (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "jeder Schweregrad: endgültig absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.2 (Tabelle 2)",
+          aussage: "Jede Vernarbung oder Symblepharon: TIVDAK dauerhaft absetzen (Tabelle 2).",
+          zitat: "“Any scarring or symblepharon” – “Permanently discontinue.” (Tabelle 2)",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: "jede Vernarbung oder Symblepharon: dauerhaft absetzen", kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" },
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Corneal opacity“ ist im Sammelbegriff „Corneal adverse reactions“ enthalten.",
+          zitat: "“… corneal degeneration, corneal opacity, and keratopathy”",
+          haeufigkeit: "nur für den Sammelbegriff „Corneal adverse reactions“ angegeben: 21 % (Grad 3–4: 3,2 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-hornhautverduennung", wirkstoff: "tisotumab_vedotin", befund: "hornhautverduennung", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Verdünnung des Hornhautgewebes“ in Tabelle 3 gelegentlich.",
+          zitat: "„Verdünnung des Hornhautgewebes“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-liderythem", wirkstoff: "tisotumab_vedotin", befund: "liderythem", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        { quelle: "Q_TISO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)",
+          aussage: "„Erythem des Augenlids“ in Tabelle 3 gelegentlich.",
+          zitat: "„Erythem des Augenlids“ (Tabelle 3, gelegentlich)",
+          haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-hyposphagma", wirkstoff: "tisotumab_vedotin", befund: "hyposphagma", einordnung: "nebenwirkung", kontext: "„conjunctival hemorrhage“; Teil des Sammelbegriffs „Conjunctival adverse reactions“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctival hemorrhage“ ist im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… ocular hyperemia, conjunctival hemorrhage, conjunctival hyperemia, conjunctival ulcer, conjunctivitis allergic, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-allergische-konjunktivitis", wirkstoff: "tisotumab_vedotin", befund: "allergische_konjunktivitis", einordnung: "nebenwirkung", kontext: "„conjunctivitis allergic“; Teil des Sammelbegriffs „Conjunctival adverse reactions“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctivitis allergic“ ist im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… ocular hyperemia, conjunctival hemorrhage, conjunctival hyperemia, conjunctival ulcer, conjunctivitis allergic, …”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-konjunktivochalasis", wirkstoff: "tisotumab_vedotin", befund: "konjunktivochalasis", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Conjunctival adverse reactions“ (USA)",
+      belege: [
+        { quelle: "Q_TISO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote zu Tabelle 4, innovaTV 301)",
+          aussage: "„Conjunctivochalasis“ ist im Sammelbegriff „Conjunctival adverse reactions“ enthalten.",
+          zitat: "“… conjunctival disorder, symblepharon, conjunctival erosion, conjunctival oedema, conjunctivochalasis, and conjunctival scar”",
+          haeufigkeit: "nur für den Sammelbegriff „Conjunctival adverse reactions“ angegeben: 37 % (Grad 3–4: 0 %; innovaTV 301, N = 250)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tiso-sehverlust", wirkstoff: "tisotumab_vedotin", befund: "sehverlust", einordnung: "nebenwirkung", kontext: "schwerer Sehverlust (Boxed Warning)",
+      belege: [
+        { quelle: "Q_TISO_US", typ: "Boxed Warning", abschnitt: "Boxed Warning",
+          aussage: "Boxed Warning: schwere okuläre Toxizitäten mit Sehveränderungen bis zum schweren Sehverlust.",
+          zitat: "“TIVDAK can cause severe ocular toxicities resulting in changes in vision, including severe vision loss and corneal ulceration.”",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 über einen Suchtreffer der Herstellerseite bestätigt" }
+      ], unterschied_notiz: null },
+
+    /* ================= Teclistamab (Etappe 1g-1) ================= */
+    { id: "tecl-hyposphagma", wirkstoff: "teclistamab", befund: "hyposphagma", einordnung: "nebenwirkung", kontext: "konjunktivale Blutung; Teil des Sammelbegriffs „Hämorrhagie“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 10 zu Tabelle 7)",
+          aussage: "„Konjunktivale Blutung“ ist laut Fußnote 10 im Sammelbegriff „Hämorrhagie“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„konjunktivale Blutung, Epistaxis, okuläre Blutung, Blutung des Augenlids, Hämatom des Augenlids, gastrointestinale Blutung“ (Fußnote 10, Auszug)",
+          haeufigkeit: "nur für den Sammelbegriff „Hämorrhagie“ angegeben (sehr häufig; alle Grade 10 %, Grad 3–4 1,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-augenblutung", wirkstoff: "teclistamab", befund: "augenblutung", einordnung: "nebenwirkung", kontext: "okuläre Blutung; Teil des Sammelbegriffs „Hämorrhagie“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 10 zu Tabelle 7)",
+          aussage: "„Okuläre Blutung“ ist laut Fußnote 10 im Sammelbegriff „Hämorrhagie“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„konjunktivale Blutung, Epistaxis, okuläre Blutung, Blutung des Augenlids, Hämatom des Augenlids, gastrointestinale Blutung“ (Fußnote 10, Auszug)",
+          haeufigkeit: "nur für den Sammelbegriff „Hämorrhagie“ angegeben (sehr häufig; alle Grade 10 %, Grad 3–4 1,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-lidhaematom", wirkstoff: "teclistamab", befund: "lidhaematom", einordnung: "nebenwirkung", kontext: "Blutung und Hämatom des Augenlids; Teil des Sammelbegriffs „Hämorrhagie“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 10 zu Tabelle 7)",
+          aussage: "„Blutung des Augenlids“ und „Hämatom des Augenlids“ sind laut Fußnote 10 im Sammelbegriff „Hämorrhagie“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„konjunktivale Blutung, Epistaxis, okuläre Blutung, Blutung des Augenlids, Hämatom des Augenlids, gastrointestinale Blutung“ (Fußnote 10, Auszug)",
+          haeufigkeit: "nur für den Sammelbegriff „Hämorrhagie“ angegeben (sehr häufig; alle Grade 10 %, Grad 3–4 1,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-glaskoerperblutung", wirkstoff: "teclistamab", befund: "glaskoerperblutung", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Hämorrhagie“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 10 zu Tabelle 7)",
+          aussage: "„Glaskörperblutung“ ist laut Fußnote 10 im Sammelbegriff „Hämorrhagie“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„[…] obere gastrointestinale Blutung und Glaskörperblutung.“ (Fußnote 10)",
+          haeufigkeit: "nur für den Sammelbegriff „Hämorrhagie“ angegeben (sehr häufig; alle Grade 10 %, Grad 3–4 1,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-lidoedem", wirkstoff: "teclistamab", befund: "lidoedem", einordnung: "nebenwirkung", kontext: "Augenlidödem; Teil des Sammelbegriffs „Ödem“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 20 zu Tabelle 7)",
+          aussage: "„Augenlidödem“ ist laut Fußnote 20 im Sammelbegriff „Ödem“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„Ödem umfasst Augenlidödem, Gesichtsödem, lokalisiertes Ödem, Ödem, peripheres Ödem, Periorbitalödem, periphere Schwellung“ (Fußnote 20)",
+          haeufigkeit: "nur für den Sammelbegriff „Ödem“ angegeben (sehr häufig; alle Grade 12 %, Grad 3–4 0,3 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-periorbital", wirkstoff: "teclistamab", befund: "periorbitales_oedem", einordnung: "nebenwirkung", kontext: "Periorbitalödem; Teil des Sammelbegriffs „Ödem“ (EU)",
+      belege: [
+        { quelle: "Q_TECL_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 20 zu Tabelle 7)",
+          aussage: "„Periorbitalödem“ ist laut Fußnote 20 im Sammelbegriff „Ödem“ enthalten (Tabelle 7, N = 739).",
+          zitat: "„Ödem umfasst Augenlidödem, Gesichtsödem, lokalisiertes Ödem, Ödem, peripheres Ödem, Periorbitalödem, periphere Schwellung“ (Fußnote 20)",
+          haeufigkeit: "nur für den Sammelbegriff „Ödem“ angegeben (sehr häufig; alle Grade 12 %, Grad 3–4 0,3 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: null },
+    { id: "tecl-abduzens", wirkstoff: "teclistamab", befund: "augenmuskelparese", einordnung: "nebenwirkung", kontext: "VIth nerve paralysis (Abduzenslähmung); Teil des Sammelbegriffs „Motor dysfunction“ (USA)",
+      belege: [
+        { quelle: "Q_TECL_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Fußnote 4 zu Tabelle 14, MajesTEC-1)",
+          aussage: "„VIth nerve paralysis“ ist laut Fußnote im Sammelbegriff „Motor dysfunction“ enthalten (Tabelle 14, MajesTEC-1, N = 165).",
+          zitat: "“muscular weakness, peroneal nerve palsy, psychomotor hyperactivity, tremor and VIth nerve paralysis.”",
+          haeufigkeit: "nur für den Sammelbegriff „Motor dysfunction“ angegeben: 16 % (Grad 3–4: 0 %; MajesTEC-1, N = 165)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-11-04", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 04.11.2026); in der Stichprobe am 11.11.2026 bestätigt" }
+      ], unterschied_notiz: "Deutschland/EU: „Lähmung des VI. Hirnnervs“ steht in der geprüften Fachinformation nur als Kriterium der ICANS-Schweregradeinteilung (4.4, Tabelle 6), nicht unter den Nebenwirkungen." },
+    { id: "tecl-uveitis-anterior", wirkstoff: "teclistamab", befund: "uveitis_anterior", einordnung: "nebenwirkung", kontext: "anteriore Uveitis, teilweise mit Pseudohypopyon (Einzelberichte laut Stellungnahme von DOG und BVA)",
+      belege: [
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Einzelberichte (Stellungnahme)", abschnitt: "Abschnitt 2b (Bispezifische Antikörper), S. 3",
+          aussage: "Laut Stellungnahme von DOG und BVA wurden in Einzelberichten okuläre Entzündungen unter Teclistamab dokumentiert, dabei anteriore Uveitiden, teilweise mit Pseudohypopyon (Literaturstelle 5); insgesamt scheinen okuläre Nebenwirkungen in dieser Substanzklasse relativ selten zu sein.",
+          zitat: "„Dabei wurden anteriore Uveitiden beschrieben, teilweise mit Pseudohypopyon [5].“",
+          haeufigkeit: "Einzelberichte; laut Stellungnahme in dieser Substanzklasse relativ selten (keine Rate)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" },
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7",
+          aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; keine Angabe der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion. Die Stellungnahme spricht von Infusionen; Teclistamab wird laut Fachinformation nur subkutan injiziert.",
+          zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“",
+          haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion",
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "In den geprüften Fachinformationen (EU und USA) nicht genannt; Angabe aus der Stellungnahme von DOG und BVA (Einzelberichte; Literaturstelle 5 der Stellungnahme: Castilho Barbosa G et al., EJHaem 2025)." },
+    { id: "tecl-hypopyon", wirkstoff: "teclistamab", befund: "hypopyon", einordnung: "nebenwirkung", kontext: "Pseudohypopyon bei anteriorer Uveitis (Einzelberichte, Stellungnahme von DOG und BVA)",
+      belege: [
+        { quelle: "Q_DOG_BVA_ONKO_2026", typ: "Einzelberichte (Stellungnahme)", abschnitt: "Abschnitt 2b (Bispezifische Antikörper), S. 3",
+          aussage: "Laut Stellungnahme von DOG und BVA wurden in Einzelberichten okuläre Entzündungen unter Teclistamab dokumentiert, dabei anteriore Uveitiden, teilweise mit Pseudohypopyon (Literaturstelle 5) – hier: Pseudohypopyon; insgesamt scheinen okuläre Nebenwirkungen in dieser Substanzklasse relativ selten zu sein.",
+          zitat: "„Dabei wurden anteriore Uveitiden beschrieben, teilweise mit Pseudohypopyon [5].“",
+          haeufigkeit: "Einzelberichte; laut Stellungnahme in dieser Substanzklasse relativ selten (keine Rate)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null,
+          dringlichkeit: null, kontrollen: null,
+          status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)" }
+      ], unterschied_notiz: "In den geprüften Fachinformationen (EU und USA) nicht genannt; Angabe aus der Stellungnahme von DOG und BVA (Einzelberichte; Literaturstelle 5 der Stellungnahme: Castilho Barbosa G et al., EJHaem 2025)." },
+
+    /* ===== Etappe 1g-2 (19.11.2026) ===== */
+    {id: "tdxd-trockenes-auge", wirkstoff: "trastuzumab_deruxtecan", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_TDXD_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Trockenes Auge in Tabelle 3 (Augenerkrankungen) unter der Monotherapie mit 5,4 bzw. 6,4 mg/kg und in Kombination mit Pertuzumab aufgeführt – je nach Spalte sehr häufig bzw. häufig.", zitat: "„Trockenes Auge“ (Tabelle 3, Augenerkrankungen)", haeufigkeit: "nicht sicher zuordenbar – siehe Fachinformation (Tabelle 3: sehr häufig bzw. häufig je nach Dosis bzw. Kombination; Spaltenzuordnung im Abruf nicht eindeutig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TDXD_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (u. a. Tabelle 8, DESTINY-Breast09; Tabelle 14, DESTINY-Breast01/J101)", aussage: "„Dry eye“ je nach Studie bei 2,7–11 %: DESTINY-Breast09 (mit Pertuzumab) 11 % (Vergleichsarm 6 %), DESTINY-Breast01/DS8201-A-J101 11 % (Grad 3–4: 0,4 %), DESTINY-Breast11 8 %, DESTINY-Breast06 7 %, DESTINY-Breast02 6 %, DESTINY-Breast05 2,7 %.", zitat: "“Eye Disorders: dry eye (7%), and blurred vision (5%)” (DESTINY-Breast06)", haeufigkeit: "2,7–11 % je nach Studie (DESTINY-Breast09 und DESTINY-Breast01: 11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "tdm1-trockenes-auge", wirkstoff: "trastuzumab_emtansin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_TDM1_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Trockenes Auge in Tabelle 3 (gepoolte Daten von 2 611 Patienten aus klinischen Studien) häufig.", zitat: "„Augenerkrankungen Häufig Trockenes Auge, Konjunktivitis, verschwommenes Sehen, verstärkte Tränensekretion“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TDM1_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (EMILIA, KATHERINE)", aussage: "„Dry eye“ unter den klinisch relevanten Nebenwirkungen bei < 10 %: EMILIA 3,9 %, KATHERINE 4,5 %.", zitat: "“vision blurred (4.5%), conjunctivitis (3.9%), dry eye (3.9%), lacrimation increased (3.3%)” (EMILIA)", haeufigkeit: "3,9 % (EMILIA) bzw. 4,5 % (KATHERINE)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "tdm1-konjunktivitis", wirkstoff: "trastuzumab_emtansin", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_TDM1_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Konjunktivitis in Tabelle 3 häufig.", zitat: "„Augenerkrankungen Häufig Trockenes Auge, Konjunktivitis, verschwommenes Sehen, verstärkte Tränensekretion“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TDM1_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (EMILIA, KATHERINE)", aussage: "„Conjunctivitis“ unter den klinisch relevanten Nebenwirkungen bei < 10 %: EMILIA 3,9 %, KATHERINE 3,5 %.", zitat: "“vision blurred (4.5%), conjunctivitis (3.9%), dry eye (3.9%), lacrimation increased (3.3%)” (EMILIA)", haeufigkeit: "3,9 % (EMILIA) bzw. 3,5 % (KATHERINE)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "tdm1-epiphora", wirkstoff: "trastuzumab_emtansin", befund: "epiphora", einordnung: "nebenwirkung", kontext: "verstärkte Tränensekretion",
+      belege: [
+        {quelle: "Q_TDM1_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Verstärkte Tränensekretion in Tabelle 3 häufig.", zitat: "„Augenerkrankungen Häufig Trockenes Auge, Konjunktivitis, verschwommenes Sehen, verstärkte Tränensekretion“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TDM1_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (EMILIA, KATHERINE)", aussage: "„Lacrimation increased“ unter den klinisch relevanten Nebenwirkungen bei < 10 %: EMILIA 3,3 %, KATHERINE 6 %.", zitat: "“lacrimation increased (6%)” (KATHERINE)", haeufigkeit: "3,3 % (EMILIA) bzw. 6 % (KATHERINE)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-keratitis", wirkstoff: "datopotamab_deruxtecan", befund: "keratitis", einordnung: "nebenwirkung", kontext: "Sammelbegriff „Keratitis“ (EU: einschließlich Keratitis punctata und ulzerativer Keratitis; USA: zahlreiche Hornhautbegriffe)",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Keratitis in Tabelle 3 sehr häufig (17,8 %); der Begriff schließt laut Fußnote d Keratitis, Keratitis punctata und ulzerative Keratitis ein.", zitat: "„Sehr häufig: Keratitisd, trockenes Auge“ (Tabelle 3, Augenerkrankungen)", haeufigkeit: "sehr häufig (17,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)", aussage: "Unerwünschte Wirkungen auf der Augenoberfläche bei 49,0 % (Schweregrad 1: 35,0 %, 2: 12,2 %, 3: 1,8 %); Keratitis bei 17,8 % (Schweregrad 1: 13,3 %, 2: 3,6 %, 3: 0,9 %); mediane Zeit bis zum Auftreten 4,1 Monate (0 bis 23,2); Behandlungsabbruch wegen Keratitis bei 0,5 %.", zitat: "„Unerwünschte Wirkungen auf der Augenoberfläche traten bei 49,0 % der mit Datroway behandelten Patientengruppe auf“", haeufigkeit: "Augenoberfläche 49,0 %; Keratitis 17,8 %", latenz: "im Median 4,1 Monate (0 bis 23,2 Monate)", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Warnhinweis Keratitis: Anzeichen können trockenes Auge, verstärkte Tränensekretion, Photophobie und Sehstörungen sein; mehrmals täglich konservierungsmittelfreie befeuchtende Augentropfen; keine Kontaktlinsen, außer augenärztlich verordnet; bei neuen oder zunehmenden Augensymptomen umgehend augenärztliche Untersuchung; bei bestätigter Diagnose Dosis verzögern, reduzieren oder dauerhaft absetzen.", zitat: "„Den Patienten ist zu raten, keine Kontaktlinsen zu tragen, es sei denn, diese werden ihnen […]“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "konservierungsmittelfreie befeuchtende Augentropfen mehrmals täglich; keine Kontaktlinsen außer auf augenärztliche Verordnung; bei neuen oder zunehmenden Augensymptomen umgehend augenärztliche Untersuchung (4.4)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Dosierung (Dosisanpassung)", abschnitt: "4.2 (Tabelle 2)", aussage: "Keratitis Schweregrad 2: Dosis aussetzen bis Schweregrad ≤ 1, dann gleiche Dosis; Schweregrad 3: nach Aussetzen Dosisreduktion um eine Stufe; Schweregrad 4: dauerhaft absetzen.", zitat: "„Dosis aussetzen bis Schweregrad 1 oder niedriger erreicht ist, dann Dosis beibehalten“ (Keratitis Grad 2)", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schweregrad 4: Datroway dauerhaft absetzen; Schweregrad 3: aussetzen, dann Dosisreduktion (Tabelle 2)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabellen 4, 6 und 8 mit Fußnoten)", aussage: "„Keratitis“ (Sammelbegriff) bei 12 % (EGFR-mutiertes NSCLC; Grad 3–4: 2,4 %), 26 % (TROPION-Breast02; Grad 3–4: 6 %; Chemotherapie 2,8 %) und 24 % (TROPION-Breast01; Grad 3–4: 1,1 %; Chemotherapie 10 %).", zitat: "“Includes corneal disorder, corneal epithelium defect, corneal erosion, corneal exfoliation, corneal lesion,” (Tabelle 6, Fußnote d)", haeufigkeit: "12–26 % je nach Studie (Grad 3–4: 1,1–6 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Okuläre Nebenwirkungen bei 38 % (gepoolt); Grad 3 bei 3,1 % (u. a. Keratitis und trockenes Auge), Grad 4 bei 0,3 % (Keratitis, Hornhautepitheldefekt, Hornhautläsion, Bindehautblutung); häufigste: trockenes Auge 18 %, Keratitis 16 %, verstärkte Tränensekretion 6 %, Konjunktivitis 5 %. Mediane Zeit bis zum Auftreten 2,3 Monate; vollständige Rückbildung bei 39 %, teilweise Besserung bei 8 %; Unterbrechung 4,3 %, Dosisreduktion 2,8 %, dauerhafter Abbruch 0,9 %.", zitat: "“Of the patients who experienced ocular adverse reactions, 39% had complete resolution, and 8% had partial improvement”", haeufigkeit: "okuläre Nebenwirkungen 38 %; Keratitis 16 % (gepoolt)", latenz: "im Median 2,3 Monate", dosisabhaengigkeit: null, reversibilitaet: "vollständige Rückbildung bei 39 %, teilweise Besserung bei 8 % (5.2)", dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Dosage and Administration", abschnitt: "2.3 und Tabelle 1", aussage: "Augenuntersuchung mit Visus und Spaltlampe (mit Fluorescein) zu Beginn, bei Behandlungsende und wenn angezeigt; Visus und Spaltlampe während der Behandlung alle 3 Zyklen. Konservierungsmittelfreie Augentropfen mindestens 4-mal täglich und nach Bedarf; Kontaktlinsen nur nach Anweisung des Augenarztes.", zitat: "“Conduct an ophthalmic exam including visual acuity testing, slit lamp examination (with fluorescein staining)”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Augenuntersuchung (Visus, Spaltlampe mit Fluorescein) zu Beginn, bei Behandlungsende und wenn angezeigt; Visus und Spaltlampe alle 3 Zyklen; konservierungsmittelfreie Augentropfen ≥ 4-mal täglich; keine Kontaktlinsen außer nach augenärztlicher Anweisung (2.3, 5.2)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.4 (Tabelle 3)", aussage: "Nicht konfluierende oberflächliche Keratitis: beobachten, Dosis beibehalten. Konfluierende oberflächliche Keratitis, Epitheldefekt oder Verlust von ≥ 3 Zeilen bestkorrigierten Visus: aussetzen bis Besserung, dann gleiche oder reduzierte Dosis. Hornhautulkus, Stromatrübung oder Visus ≤ 20/200: aussetzen, dann reduzierte Dosis. Hornhautperforation: dauerhaft absetzen.", zitat: "“Corneal ulcer or stromal opacity or best corrected distance visual acuity 20/200 or worse”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Hornhautperforation: dauerhaft absetzen; Hornhautulkus, Stromatrübung oder Visus ≤ 20/200: aussetzen, dann reduzierte Dosis (Tabelle 3)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "dato-keratitis-punctata", wirkstoff: "datopotamab_deruxtecan", befund: "keratitis_punctata", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratitis“ (EU und USA)",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote d zu Tabelle 3)", aussage: "Keratitis punctata ist laut Fußnote d im Sammelbegriff „Keratitis“ enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Einschließlich Keratitis, Keratitis punctata und ulzerativer Keratitis.“ (Fußnote d)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (sehr häufig, 17,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Fußnoten zu „Keratitis“, Tabellen 4, 6 und 8)", aussage: "„Punctate keratitis“ ist in allen drei Studientabellen Teil des Sammelbegriffs „Keratitis“; eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal disorder, corneal erosion, keratitis, punctate keratitis, and ulcerative keratitis” (Tabelle 4, Fußnote c)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (12–26 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-hornhautulkus", wirkstoff: "datopotamab_deruxtecan", befund: "hornhautulkus", einordnung: "nebenwirkung", kontext: "ulzerative Keratitis; Teil des Sammelbegriffs „Keratitis“ (EU und USA)",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote d zu Tabelle 3)", aussage: "Ulzerative Keratitis ist laut Fußnote d im Sammelbegriff „Keratitis“ enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Einschließlich Keratitis, Keratitis punctata und ulzerativer Keratitis.“ (Fußnote d)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (sehr häufig, 17,8 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Fußnoten zu „Keratitis“, Tabellen 4, 6 und 8)", aussage: "„Ulcerative keratitis“ ist in allen drei Studientabellen Teil des Sammelbegriffs „Keratitis“; eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal disorder, corneal erosion, keratitis, punctate keratitis, and ulcerative keratitis” (Tabelle 4, Fußnote c)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (12–26 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.4 (Tabelle 3)", aussage: "Bei Hornhautulkus (ebenso Stromatrübung oder Visus ≤ 20/200) Behandlung aussetzen bis Besserung, dann mit reduzierter Dosis fortsetzen.", zitat: "“Corneal ulcer or stromal opacity or best corrected distance visual acuity 20/200 or worse”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "aussetzen bis Besserung, dann reduzierte Dosis (Tabelle 3)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-epitheldefekt", wirkstoff: "datopotamab_deruxtecan", befund: "epitheldefekt", einordnung: "nebenwirkung", kontext: "Hornhauterosion, Hornhautepitheldefekt und Exfoliation der Hornhaut; Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Fußnoten zu „Keratitis“, Tabellen 4, 6 und 8)", aussage: "„Corneal erosion“ (alle drei Tabellen), „corneal epithelium defect“ und „corneal exfoliation“ (Tabelle 6) sind Teil des Sammelbegriffs „Keratitis“; eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal disorder, corneal epithelium defect, corneal erosion, corneal exfoliation, corneal lesion,” (Tabelle 6, Fußnote d)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (12–26 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Hornhautepitheldefekt unter den okulären Nebenwirkungen Grad 4 (0,3 % der Patienten insgesamt, zusammen mit Keratitis, Hornhautläsion und Bindehautblutung).", zitat: "“four patients (0.3%) experienced a Grade 4 ocular adverse reaction of keratitis,” … “corneal epithelium defect, corneal lesion, and conjunctival hemorrhage.”", haeufigkeit: "Grad 4 bei 0,3 % (alle genannten Ereignisse zusammen)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.4 (Tabelle 3)", aussage: "Bei konfluierender oberflächlicher Keratitis, Hornhautepitheldefekt oder Verlust von ≥ 3 Zeilen bestkorrigierten Visus Behandlung aussetzen bis Besserung, dann gleiche oder reduzierte Dosis.", zitat: "“a cornea epithelial defect, or 3-line or more loss in best corrected visual acuity”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "aussetzen bis Besserung, dann gleiche oder reduzierte Dosis (Tabelle 3)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "Deutschland/EU: nicht eigens genannt; die Fußnote d zur Keratitis nennt Keratitis, Keratitis punctata und ulzerative Keratitis." },
+    {id: "dato-keratopathie", wirkstoff: "datopotamab_deruxtecan", befund: "keratopathie", einordnung: "nebenwirkung", kontext: "Hornhauterkrankung, Hornhautläsion, Hornhauttoxizität und Keratopathie; Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Fußnoten zu „Keratitis“, Tabellen 4, 6 und 8)", aussage: "„Corneal disorder“ (alle drei Tabellen), „corneal lesion“, „corneal toxicity“ und „keratopathy“ (Tabellen 6 und 8) sind Teil des Sammelbegriffs „Keratitis“; eine eigene Häufigkeit ist nicht angegeben.", zitat: "“corneal toxicity, injury corneal, keratitis, keratopathy, punctate keratitis, ulcerative keratitis” (Tabelle 6, Fußnote d)", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (12–26 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Hornhautläsion unter den okulären Nebenwirkungen Grad 4 (0,3 % der Patienten insgesamt).", zitat: "“corneal epithelium defect, corneal lesion, and conjunctival hemorrhage.”", haeufigkeit: "Grad 4 bei 0,3 % (alle genannten Ereignisse zusammen)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "Deutschland/EU: nicht eigens genannt; die Fußnote d zur Keratitis nennt Keratitis, Keratitis punctata und ulzerative Keratitis." },
+    {id: "dato-hornhautperforation", wirkstoff: "datopotamab_deruxtecan", befund: "hornhautperforation", einordnung: "nebenwirkung", kontext: "Kriterium der Dosisanpassung (USA, Tabelle 3)",
+      belege: [
+        {quelle: "Q_DATO_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.4 (Tabelle 3)", aussage: "Bei Hornhautperforation Datroway dauerhaft absetzen.", zitat: "“Permanently discontinue DATROWAY.” (Hornhautperforation)", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "dauerhaft absetzen (Tabelle 3)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "Deutschland/EU: nicht genannt; die EU-Fachinformation regelt die Dosisanpassung nach Schweregrad der Keratitis (4.2, Tabelle 2)." },
+    {id: "dato-trockenes-auge", wirkstoff: "datopotamab_deruxtecan", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Trockenes Auge in Tabelle 3 sehr häufig (25,5 %).", zitat: "„Sehr häufig: Keratitisd, trockenes Auge“ (Tabelle 3, Augenerkrankungen)", haeufigkeit: "sehr häufig (25,5 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Trockenes Auge wird im Warnhinweis als mögliches Anzeichen einer Keratitis genannt.", zitat: "„Die Anzeichen und Symptome einer Keratitis können trockenes Auge, verstärkte Tränensekretion, Photophobie […]“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabellen 4, 6 und 8)", aussage: "„Dry eye“ bei 13 % (EGFR-mutiertes NSCLC; Grad 3–4: 0 %), 26 % (TROPION-Breast02; Grad 3–4: 1,3 %; Chemotherapie 4,9 %) und 27 % (TROPION-Breast01; Grad 3–4: 0,8 %; Chemotherapie 13 %).", zitat: null, haeufigkeit: "13–27 % je nach Studie", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Trockenes Auge häufigste okuläre Nebenwirkung (18 %, gepoolt); Grad-3-Ereignisse (3,1 % insgesamt) umfassten Keratitis und trockenes Auge.", zitat: "“Forty-two patients (3.1%) experienced Grade 3 ocular adverse reactions, which included keratitis and dry eye”", haeufigkeit: "18 % (gepoolt)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-konjunktivitis", wirkstoff: "datopotamab_deruxtecan", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: "Sammelbegriff „Konjunktivitis“ (EU: einschließlich Erkrankung der Bindehaut, Bindehauthyperämie und Bindehautreizung)",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Konjunktivitis in Tabelle 3 häufig; der Begriff schließt laut Fußnote e Konjunktivitis, Erkrankung der Bindehaut, Bindehauthyperämie und Bindehautreizung ein.", zitat: "„Häufig: Konjunktivitise, verschwommenes Sehen, Tränensekretion verstärkt, Blepharitis, Dysfunktion der Meibomdrüse, Photophobie“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Konjunktivitis unter den häufigsten okulären Nebenwirkungen (5 %, gepoolt); in den Studientabellen unter den Nebenwirkungen bei < 10 %.", zitat: "“dry eye (18%), keratitis (16%), increased lacrimation (6%), and conjunctivitis (5%).”", haeufigkeit: "5 % (gepoolt)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-bindehauthyperaemie", wirkstoff: "datopotamab_deruxtecan", befund: "bindehauthyperaemie", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Konjunktivitis“ (EU)",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote e zu Tabelle 3)", aussage: "Bindehauthyperämie ist laut Fußnote e im Sammelbegriff „Konjunktivitis“ enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Einschließlich Konjunktivitis, Erkrankung der Bindehaut, Bindehauthyperämie und Bindehautreizung.“ (Fußnote e)", haeufigkeit: "nur für den Sammelbegriff „Konjunktivitis“ angegeben (häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-hyposphagma", wirkstoff: "datopotamab_deruxtecan", befund: "hyposphagma", einordnung: "nebenwirkung", kontext: "Bindehautblutung als okuläre Nebenwirkung Grad 4 (USA)",
+      belege: [
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Bindehautblutung unter den okulären Nebenwirkungen Grad 4 (0,3 % der Patienten insgesamt, zusammen mit Keratitis, Hornhautepitheldefekt und Hornhautläsion).", zitat: "“corneal epithelium defect, corneal lesion, and conjunctival hemorrhage.”", haeufigkeit: "Grad 4 bei 0,3 % (alle genannten Ereignisse zusammen)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-epiphora", wirkstoff: "datopotamab_deruxtecan", befund: "epiphora", einordnung: "nebenwirkung", kontext: "verstärkte Tränensekretion",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Tränensekretion verstärkt in Tabelle 3 häufig.", zitat: "„Häufig: Konjunktivitise, verschwommenes Sehen, Tränensekretion verstärkt, Blepharitis, Dysfunktion der Meibomdrüse, Photophobie“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Verstärkte Tränensekretion wird im Warnhinweis als mögliches Anzeichen einer Keratitis genannt.", zitat: "„Die Anzeichen und Symptome einer Keratitis können trockenes Auge, verstärkte Tränensekretion, Photophobie […]“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Warnings and Precautions", abschnitt: "5.2", aussage: "Verstärkte Tränensekretion unter den häufigsten okulären Nebenwirkungen (6 %, gepoolt); in den Studientabellen unter den Nebenwirkungen bei < 10 %.", zitat: "“dry eye (18%), keratitis (16%), increased lacrimation (6%), and conjunctivitis (5%).”", haeufigkeit: "6 % (gepoolt)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-blepharitis", wirkstoff: "datopotamab_deruxtecan", befund: "blepharitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Blepharitis in Tabelle 3 häufig.", zitat: "„Häufig: Konjunktivitise, verschwommenes Sehen, Tränensekretion verstärkt, Blepharitis, Dysfunktion der Meibomdrüse, Photophobie“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (TROPION-Breast02, TROPION-Breast01)", aussage: "Blepharitis unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“conjunctivitis, lacrimation increased, […], blepharitis, meibomian gland dysfunction, blurred vision, […], visual impairment, photophobia, and madarosis.”", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-mgd", wirkstoff: "datopotamab_deruxtecan", befund: "meibomdruesendysfunktion", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Dysfunktion der Meibomdrüse in Tabelle 3 häufig.", zitat: "„Häufig: Konjunktivitise, verschwommenes Sehen, Tränensekretion verstärkt, Blepharitis, Dysfunktion der Meibomdrüse, Photophobie“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (TROPION-Breast02, TROPION-Breast01)", aussage: "Meibomdrüsen-Dysfunktion unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“conjunctivitis, lacrimation increased, […], blepharitis, meibomian gland dysfunction, blurred vision, […], visual impairment, photophobia, and madarosis.”", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-photophobie", wirkstoff: "datopotamab_deruxtecan", befund: "photophobie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Photophobie in Tabelle 3 häufig.", zitat: "„Häufig: Konjunktivitise, verschwommenes Sehen, Tränensekretion verstärkt, Blepharitis, Dysfunktion der Meibomdrüse, Photophobie“", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Photophobie wird im Warnhinweis als mögliches Anzeichen einer Keratitis genannt.", zitat: "„Die Anzeichen und Symptome einer Keratitis können trockenes Auge, verstärkte Tränensekretion, Photophobie […]“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (TROPION-Breast02, TROPION-Breast01)", aussage: "Photophobie unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“conjunctivitis, lacrimation increased, […], blepharitis, meibomian gland dysfunction, blurred vision, […], visual impairment, photophobia, and madarosis.”", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-madarosis", wirkstoff: "datopotamab_deruxtecan", befund: "madarosis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (TROPION-Breast02, TROPION-Breast01)", aussage: "Madarosis unter den klinisch relevanten Nebenwirkungen bei < 10 % (beide Brustkrebsstudien).", zitat: "“photophobia, visual impairment, skin hyperpigmentation, and madarosis.” (TROPION-Breast01)", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "dato-sehstoerung", wirkstoff: "datopotamab_deruxtecan", befund: "sehstoerung", einordnung: "nebenwirkung", kontext: "Sehstörungen als Anzeichen einer Keratitis (EU-Warnhinweis); „Sehverschlechterung“ bzw. „visual impairment“",
+      belege: [
+        {quelle: "Q_DATO_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Sehstörungen werden im Warnhinweis als mögliches Anzeichen einer Keratitis genannt.", zitat: "„[…] und Sehstörungen umfassen“ (Satz über die Anzeichen und Symptome einer Keratitis)", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 3)", aussage: "Sehverschlechterung in Tabelle 3 gelegentlich.", zitat: "„Gelegentlich: Sehverschlechterung“ (Tabelle 3, Augenerkrankungen)", haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_EU", typ: "Verkehrstüchtigkeit", abschnitt: "4.7", aussage: "Vorsicht beim Fahren oder Bedienen von Maschinen bei Ermüdung oder Sehstörungen.", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DATO_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (TROPION-Breast02, TROPION-Breast01)", aussage: "„Visual impairment“ unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“conjunctivitis, lacrimation increased, […], blepharitis, meibomian gland dysfunction, blurred vision, […], visual impairment, photophobia, and madarosis.”", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-trockenes-auge", wirkstoff: "enfortumab_vedotin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 5)", aussage: "Trockenes Auge in Tabelle 5 sehr häufig – unter Monotherapie und in Kombination mit Pembrolizumab.", zitat: "„Augenerkrankungen / Sehr häufig Trockenes Auge Trockenes Auge“ (Tabelle 5)", haeufigkeit: "sehr häufig (Monotherapie und Kombination mit Pembrolizumab)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)", aussage: "Unter Monotherapie mit 1,25 mg/kg trat bei 30 % trockenes Auge auf; Unterbrechung bei 1,5 %, dauerhafter Abbruch bei 0,1 %, schweres trockenes Auge (Grad 3) bei 0,4 %; mediane Zeit bis zum Auftreten 1,7 Monate.", zitat: "„Die mediane Zeit bis zum Auftreten des trockenen Auges betrug 1,7 Monate“", haeufigkeit: "30 % (Monotherapie; Grad 3: 0,4 %)", latenz: "im Median 1,7 Monate", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Unter Enfortumab vedotin traten Augenerkrankungen auf, vorwiegend trockenes Auge; künstliche Tränenflüssigkeit zur Prophylaxe in Betracht ziehen, bei anhaltenden oder zunehmenden Symptomen augenärztliche Untersuchung.", zitat: "„Ziehen Sie künstliche Tränenflüssigkeit zur Prophylaxe des trockenen Auges […] in Betracht“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "künstliche Tränenflüssigkeit zur Prophylaxe erwägen; augenärztliche Untersuchung, wenn Symptome nicht abklingen oder sich verschlimmern (4.4)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Okuläre Ereignisse bei 40 % von 384 Patienten unter Monotherapie (Studien mit geplanten Augenuntersuchungen); Symptome eines trockenen Auges bei 30 %; mediane Zeit bis zum Auftreten symptomatischer okulärer Ereignisse 1,7 Monate (0 bis 30,6). Künstliche Tränen zur Prophylaxe, topische Steroide nach augenärztlicher Untersuchung, Dosisunterbrechung oder -reduktion bei symptomatischen Ereignissen erwägen.", zitat: "“Dry eye symptoms occurred in 30% of patients, and blurred vision occurred in 10% of patients”", haeufigkeit: "Symptome eines trockenen Auges 30 % (Monotherapie)", latenz: "im Median 1,7 Monate (0 bis 30,6 Monate)", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Dosisunterbrechung oder -reduktion bei symptomatischen okulären Ereignissen erwägen (5.5)", kontrollen: "künstliche Tränen zur Prophylaxe; augenärztliche Untersuchung bei Symptomen; topische Steroide nach augenärztlicher Untersuchung erwägen (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabellen 5, 7, 9, 11, 13, 15, 17)", aussage: "„Dry eye“ (Sammelbegriff aus mehreren Begriffen) je nach Studie bei 21–40 %: EV-304 25 %, EV-303 21 %, EV-302 24 %, EV-103 25 % (jeweils mit Pembrolizumab), EV-301 24 % (Grad 3–4: 0,7 %), EV-201 Kohorte 1 40 %, Kohorte 2 30 %.", zitat: null, haeufigkeit: "21–40 % je nach Studie", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-konjunktivitis", wirkstoff: "enfortumab_vedotin", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 5)", aussage: "Konjunktivitis in Tabelle 5 häufig (unter der Systemorganklasse „Erkrankungen der Haut und des Unterhautgewebes“, Monotherapie und Kombination mit Pembrolizumab).", zitat: "„Exfoliation der Haut, Konjunktivitis, bullöse Dermatitis, Blasen, Stomatitis“ (Tabelle 5, häufig)", haeufigkeit: "häufig", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Laut 5.5 betrafen die okulären Ereignisse überwiegend die Hornhaut, darunter Ereignisse im Zusammenhang mit trockenem Auge wie Keratitis, verschwommenes Sehen, verstärkte Tränensekretion, Konjunktivitis, Limbusstammzellinsuffizienz und Keratopathie (Einzelstudien mit geplanten Augenuntersuchungen, 384 Patienten unter Monotherapie; okuläre Ereignisse insgesamt 40 %).", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-keratitis", wirkstoff: "enfortumab_vedotin", befund: "keratitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Laut 5.5 betrafen die okulären Ereignisse überwiegend die Hornhaut, darunter Ereignisse im Zusammenhang mit trockenem Auge wie Keratitis, verschwommenes Sehen, verstärkte Tränensekretion, Konjunktivitis, Limbusstammzellinsuffizienz und Keratopathie (Einzelstudien mit geplanten Augenuntersuchungen, 384 Patienten unter Monotherapie; okuläre Ereignisse insgesamt 40 %).", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-keratopathie", wirkstoff: "enfortumab_vedotin", befund: "keratopathie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Laut 5.5 betrafen die okulären Ereignisse überwiegend die Hornhaut, darunter Ereignisse im Zusammenhang mit trockenem Auge wie Keratitis, verschwommenes Sehen, verstärkte Tränensekretion, Konjunktivitis, Limbusstammzellinsuffizienz und Keratopathie (Einzelstudien mit geplanten Augenuntersuchungen, 384 Patienten unter Monotherapie; okuläre Ereignisse insgesamt 40 %).", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-limbusstammzellinsuffizienz", wirkstoff: "enfortumab_vedotin", befund: "limbusstammzellinsuffizienz", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Laut 5.5 betrafen die okulären Ereignisse überwiegend die Hornhaut, darunter Ereignisse im Zusammenhang mit trockenem Auge wie Keratitis, verschwommenes Sehen, verstärkte Tränensekretion, Konjunktivitis, Limbusstammzellinsuffizienz und Keratopathie (Einzelstudien mit geplanten Augenuntersuchungen, 384 Patienten unter Monotherapie; okuläre Ereignisse insgesamt 40 %).", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-epiphora", wirkstoff: "enfortumab_vedotin", befund: "epiphora", einordnung: "nebenwirkung", kontext: "verstärkte Tränensekretion",
+      belege: [
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Laut 5.5 betrafen die okulären Ereignisse überwiegend die Hornhaut, darunter Ereignisse im Zusammenhang mit trockenem Auge wie Keratitis, verschwommenes Sehen, verstärkte Tränensekretion, Konjunktivitis, Limbusstammzellinsuffizienz und Keratopathie (Einzelstudien mit geplanten Augenuntersuchungen, 384 Patienten unter Monotherapie; okuläre Ereignisse insgesamt 40 %).", zitat: null, haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "enfv-verschwommensehen", wirkstoff: "enfortumab_vedotin", befund: "verschwommensehen", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ENFV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Verschwommenes Sehen bei 10 % der Patienten unter Monotherapie (Warnhinweis „Ocular Disorders“).", zitat: "“Dry eye symptoms occurred in 30% of patients, and blurred vision occurred in 10% of patients”", haeufigkeit: "10 % (Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ENFV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (nach Tabelle 9, EV-302)", aussage: "Verschwommenes Sehen bei 6 % unter den klinisch relevanten Nebenwirkungen (Kombination mit Pembrolizumab).", zitat: null, haeufigkeit: "6 % (EV-302, mit Pembrolizumab)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-keratitis", wirkstoff: "telisotuzumab_vedotin", befund: "keratitis", einordnung: "nebenwirkung", kontext: "Sammelbegriff „Keratitis“ (u. a. Hornhautzyste, -erosion, -ödem, -trübung, interstitielle und punktförmige Keratitis)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Warnings and Precautions", abschnitt: "5.3", aussage: "Okuläre Oberflächenerkrankungen bei 25 % (verschwommenes Sehen 15 %, Keratitis 11 %, trockenes Auge 5 %); Grad 3 bei 1,2 % (verschwommenes Sehen 1,2 %, Keratitis 0,6 %); mediane Zeit bis zum Auftreten 47 Tage (1 bis 319). Bei Grad ≥ 2 aussetzen und an den Augenarzt überweisen.", zitat: "“The most common ocular surface disorders were blurred vision (15%), keratitis (11%), and dry eye (5%).”", haeufigkeit: "11 % (Grad 3: 0,6 %)", latenz: "okuläre Oberflächenerkrankungen im Median nach 47 Tagen (1 bis 319 Tage)", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 5)", aussage: "„Keratitis“ (Sammelbegriff) bei 11 %, Grad 3–4: 0,6 %.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "11 % (Grad 3–4: 0,6 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TELV_US", typ: "Dosage and Administration (Dosisanpassung)", abschnitt: "2.3 (Tabelle 2)", aussage: "Keratitis Grad 2: aussetzen, Überweisung zur augenärztlichen Untersuchung und Behandlung (z. B. befeuchtende und/oder steroidhaltige Augentropfen), nach Ermessen mit gleicher Dosis fortsetzen; Grad 3 oder 4: Überweisung und dauerhaftes Absetzen.", zitat: "“Resume EMRELIS at the same dose at the discretion of the healthcare provider.” (Keratitis Grad 2)", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Grad 3 oder 4: dauerhaft absetzen; Grad 2: aussetzen (Tabelle 2)", kontrollen: "bei Keratitis ≥ Grad 2 Überweisung zur augenärztlichen Untersuchung und Behandlung (Tabelle 2)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "telv-keratitis-punctata", wirkstoff: "telisotuzumab_vedotin", befund: "keratitis_punctata", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Keratitis“)", aussage: "Punktförmige Keratitis (punctate keratitis) ist laut Fußnote Teil des Sammelbegriffs „Keratitis“ (11 %, Grad 3–4: 0,6 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-keratopathie", wirkstoff: "telisotuzumab_vedotin", befund: "keratopathie", einordnung: "nebenwirkung", kontext: "Hornhauterkrankung und Hornhautzyste; Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Keratitis“)", aussage: "Hornhauterkrankung (corneal disorder) und Hornhautzyste (corneal cyst) ist laut Fußnote Teil des Sammelbegriffs „Keratitis“ (11 %, Grad 3–4: 0,6 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-epitheldefekt", wirkstoff: "telisotuzumab_vedotin", befund: "epitheldefekt", einordnung: "nebenwirkung", kontext: "Hornhauterosion; Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Keratitis“)", aussage: "Hornhauterosion (corneal erosion) ist laut Fußnote Teil des Sammelbegriffs „Keratitis“ (11 %, Grad 3–4: 0,6 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-hornhautoedem", wirkstoff: "telisotuzumab_vedotin", befund: "hornhautoedem", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Keratitis“)", aussage: "Hornhautödem (corneal edema) ist laut Fußnote Teil des Sammelbegriffs „Keratitis“ (11 %, Grad 3–4: 0,6 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-hornhauttruebung", wirkstoff: "telisotuzumab_vedotin", befund: "hornhauttruebung", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Keratitis“ (USA)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Keratitis“)", aussage: "Hornhauttrübung (corneal opacity) ist laut Fußnote Teil des Sammelbegriffs „Keratitis“ (11 %, Grad 3–4: 0,6 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes corneal cyst, corneal disorder, corneal erosion, corneal edema, corneal opacity, keratitis,” … “keratitis interstitial, punctate keratitis.”", haeufigkeit: "nur für den Sammelbegriff „Keratitis“ angegeben (11 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-verschwommensehen", wirkstoff: "telisotuzumab_vedotin", befund: "verschwommensehen", einordnung: "nebenwirkung", kontext: "Sammelbegriff „Blurred vision“ (einschließlich verminderter Sehschärfe und Sehbeeinträchtigung)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Warnings and Precautions", abschnitt: "5.3", aussage: "Verschwommenes Sehen häufigste okuläre Oberflächenerkrankung (15 %; Grad 3: 1,2 %).", zitat: "“The most common ocular surface disorders were blurred vision (15%), keratitis (11%), and dry eye (5%).”", haeufigkeit: "15 % (Grad 3: 1,2 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 5)", aussage: "„Blurred vision“ (Sammelbegriff: vision blurred, visual acuity reduced, visual impairment) bei 15 %, Grad 3–4: 1,2 %.", zitat: "“Includes vision blurred, visual acuity reduced, visual impairment.” (Fußnote zu „Blurred vision“)", haeufigkeit: "15 % (Grad 3–4: 1,2 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-sehstoerung", wirkstoff: "telisotuzumab_vedotin", befund: "sehstoerung", einordnung: "nebenwirkung", kontext: "„visual impairment“ (Warnhinweis 5.3; Teil des Sammelbegriffs „Blurred vision“)",
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Warnings and Precautions", abschnitt: "5.3", aussage: "Sehbeeinträchtigung (visual impairment) wird im Warnhinweis unter den okulären Oberflächenerkrankungen genannt.", zitat: "“EMRELIS can cause ocular surface disorders including blurred vision, visual impairment, keratitis, and dry eye.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Fußnote)", abschnitt: "6.1 (Tabelle 5, Fußnote zu „Blurred vision“)", aussage: "„Visual impairment“ ist Teil des Sammelbegriffs „Blurred vision“ (15 %); eine eigene Häufigkeit ist nicht angegeben.", zitat: "“Includes vision blurred, visual acuity reduced, visual impairment.”", haeufigkeit: "nur für den Sammelbegriff „Blurred vision“ angegeben (15 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-trockenes-auge", wirkstoff: "telisotuzumab_vedotin", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Warnings and Precautions", abschnitt: "5.3", aussage: "Trockenes Auge unter den häufigsten okulären Oberflächenerkrankungen (5 %).", zitat: "“The most common ocular surface disorders were blurred vision (15%), keratitis (11%), and dry eye (5%).”", haeufigkeit: "5 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1", aussage: "Trockenes Auge unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“arthralgia, dizziness, dry eye, infusion-related reaction and photophobia.”", haeufigkeit: "< 10 %", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "telv-photophobie", wirkstoff: "telisotuzumab_vedotin", befund: "photophobie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_TELV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1", aussage: "Photophobie unter den klinisch relevanten Nebenwirkungen bei < 10 %.", zitat: "“arthralgia, dizziness, dry eye, infusion-related reaction and photophobia.”", haeufigkeit: "< 10 % (keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-keratitis", wirkstoff: "amivantamab", befund: "keratitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_AMIV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 7, Monotherapie, N = 380)", aussage: "Keratitis unter Monotherapie gelegentlich (0,5 %, Grad 3–4: 0 %).", zitat: "„Keratitis Gelegentlich 0,5 0“ (Tabelle 7, Monotherapie)", haeufigkeit: "gelegentlich (0,5 %, Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_EU", typ: "Nebenwirkung (Beschreibung ausgewählter Nebenwirkungen)", abschnitt: "4.8 (Beschreibung ausgewählter Nebenwirkungen)", aussage: "Augenerkrankungen einschließlich Keratitis (0,5 %) bei 9 % der Patienten unter Monotherapie, alle Grad 1–2; in Kombination mit Carboplatin und Pemetrexed bzw. mit Lazertinib ebenfalls Augenerkrankungen einschließlich Keratitis.", zitat: "„Augenerkrankungen, einschließlich Keratitis (0,5 %), traten bei 9 % der Patienten auf, die mit Amivantamab als Monotherapie […]“", haeufigkeit: "Augenerkrankungen insgesamt 9 % (Monotherapie, alle Grad 1–2)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_EU", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Augenerkrankungen einschließlich Keratitis traten unter Amivantamab auf; Patienten mit sich verschlechternder Augensymptomatik umgehend an einen Ophthalmologen überweisen und keine Kontaktlinsen tragen, bis die Symptome beurteilt wurden; Dosisanpassung bei Grad 3 oder 4 nach 4.2.", zitat: "„Augenerkrankungen, einschließlich Keratitis, traten bei Patienten, die mit Amivantamab behandelt wurden, auf“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei sich verschlechternder Augensymptomatik umgehend Überweisung zum Ophthalmologen; keine Kontaktlinsen, bis die Symptome beurteilt wurden (4.4)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Keratitis bei 0,7 % der Patienten unter Monotherapie, alle Ereignisse Grad 1–2; Keratitis wird im Warnhinweis „Ocular Toxicity“ zuerst genannt.", zitat: "“keratitis occurred in 0.7% and uveitis occurred in 0.3% of patients treated with RYBREVANT”", haeufigkeit: "0,7 % (Monotherapie, Grad 1–2)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (MARIPOSA-2)", aussage: "Keratitis unter den klinisch relevanten Nebenwirkungen bei < 10 % (mit Carboplatin und Pemetrexed).", zitat: "“visual impairment, trichomegaly, keratitis, and interstitial lung disease”", haeufigkeit: "< 10 % (MARIPOSA-2)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-uveitis", wirkstoff: "amivantamab", befund: "uveitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_AMIV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 7, Monotherapie, N = 380)", aussage: "Uveitis unter Monotherapie bei 0,3 % (Grad 3–4: 0 %); die Häufigkeitskategorie steht im Abruf nicht eindeutig neben dem Begriff.", zitat: "„Uveitis 0,3 0“ (Tabelle 7, Monotherapie)", haeufigkeit: "0,3 % (Monotherapie; Kategorie im Abruf nicht sicher zuordenbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Uveitis bei 0,3 % der Patienten unter Monotherapie, alle Ereignisse Grad 1–2; Uveitis wird im Warnhinweis „Ocular Toxicity“ genannt.", zitat: "“keratitis occurred in 0.7% and uveitis occurred in 0.3% of patients treated with RYBREVANT”", haeufigkeit: "0,3 % (Monotherapie, Grad 1–2)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion. Der Wirkstoff wird in der Stellungnahme nicht namentlich genannt; die Empfehlung erscheint hier auf Entscheidung der Nutzerin vom 19.11.2026.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-trichomegalie", wirkstoff: "amivantamab", befund: "trichomegalie", einordnung: "nebenwirkung", kontext: "Wimpernwachstum",
+      belege: [
+        {quelle: "Q_AMIV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 7, Monotherapie, N = 380)", aussage: "Wimpernwachstum (zusammengefasster Begriff) unter Monotherapie bei 1 % (Grad 3–4: 0 %); die Häufigkeitskategorie steht im Abruf nicht eindeutig neben dem Begriff.", zitat: "„Wimpernwachstum* 1 0“ (Tabelle 7, Monotherapie)", haeufigkeit: "1 % (Monotherapie; Kategorie im Abruf nicht sicher zuordenbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (MARIPOSA-2)", aussage: "Trichomegalie unter den klinisch relevanten Nebenwirkungen bei < 10 % (mit Carboplatin und Pemetrexed).", zitat: "“visual impairment, trichomegaly, keratitis, and interstitial lung disease”", haeufigkeit: "< 10 % (MARIPOSA-2)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-blepharitis", wirkstoff: "amivantamab", befund: "blepharitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Blepharitis wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“RYBREVANT can cause ocular toxicity including keratitis, blepharitis, dry eye symptoms, conjunctival redness, […]”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-trockenes-auge", wirkstoff: "amivantamab", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: "„dry eye symptoms“",
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Symptome eines trockenen Auges wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“RYBREVANT can cause ocular toxicity including keratitis, blepharitis, dry eye symptoms, conjunctival redness, […]”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-bindehauthyperaemie", wirkstoff: "amivantamab", befund: "bindehauthyperaemie", einordnung: "nebenwirkung", kontext: "„conjunctival redness“",
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Bindehautrötung (conjunctival redness) wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“RYBREVANT can cause ocular toxicity including keratitis, blepharitis, dry eye symptoms, conjunctival redness, […]”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-augenreizung", wirkstoff: "amivantamab", befund: "augenreizung", einordnung: "nebenwirkung", kontext: "„ocular itching“, „eye pruritus“",
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Augenjucken (ocular itching, eye pruritus) wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“[…] blurred vision, visual impairment, ocular itching, eye pruritus, and uveitis.”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-verschwommensehen", wirkstoff: "amivantamab", befund: "verschwommensehen", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Verschwommenes Sehen wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“[…] blurred vision, visual impairment, ocular itching, eye pruritus, and uveitis.”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-sehstoerung", wirkstoff: "amivantamab", befund: "sehstoerung", einordnung: "nebenwirkung", kontext: "„Sehverschlechterung“ (EU) bzw. „visual impairment“ (USA)",
+      belege: [
+        {quelle: "Q_AMIV_EU", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 7, Monotherapie, N = 380)", aussage: "Sehverschlechterung (zusammengefasster Begriff) unter Monotherapie häufig (3 %, Grad 3–4: 0 %).", zitat: "„Sehverschlechterung* Häufig 3 0“ (Tabelle 7, Monotherapie)", haeufigkeit: "häufig (3 %, Monotherapie)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_EU", typ: "Verkehrstüchtigkeit", abschnitt: "4.7", aussage: "Mäßiger Einfluss auf die Verkehrstüchtigkeit (z. B. Sehverschlechterung); bei Nebenwirkungen in Bezug auf die Sehkraft bis zum Abklingen nicht fahren oder Maschinen bedienen.", zitat: "„(z. B. Schwindelgefühl, Ermüdung/Fatigue, Sehverschlechterung).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_AMIV_US", typ: "Warnings and Precautions", abschnitt: "5.5", aussage: "Sehbeeinträchtigung (visual impairment) wird im Warnhinweis „Ocular Toxicity“ unter den okulären Nebenwirkungen genannt; okuläre Toxizität bei 16 % in Kombination mit Lazertinib (Grad 3–4: 0,7 %) und bei 16 % mit Carboplatin und Pemetrexed (nur Grad 1–2). Bei neuen oder zunehmenden Augensymptomen umgehend an einen Augenarzt überweisen.", zitat: "“[…] blurred vision, visual impairment, ocular itching, eye pruritus, and uveitis.”", haeufigkeit: "okuläre Toxizität insgesamt 16 % (Sammelangabe; keine Einzelangabe)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "bei neuen oder zunehmenden Augensymptomen umgehend Überweisung zum Augenarzt (5.5)", status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "amiv-konjunktivitis", wirkstoff: "amivantamab", befund: "konjunktivitis", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_AMIV_US", typ: "Adverse Reactions (Studien)", abschnitt: "6.1 (Tabelle 10, MARIPOSA)", aussage: "Konjunktivitis bei 11 % unter Amivantamab mit Lazertinib (Grad 3–4: 0,2 %; Osimertinib 1,6 %); in PAPILLON unter den Nebenwirkungen bei < 10 %.", zitat: "„Conjunctivitis 11 0.2 1.6 0“ (Tabelle 10, MARIPOSA)", haeufigkeit: "11 % (MARIPOSA, mit Lazertinib; Grad 3–4: 0,2 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "tebe-poliosis", wirkstoff: "tebentafusp", befund: "poliosis", einordnung: "nebenwirkung", kontext: "Verfärbung und Hypopigmentierung der Wimpern; Teil des Sammelbegriffs „Hypo-/Hyperpigmentierung“ (EU)",
+      belege: [
+        {quelle: "Q_TEBE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 3)", aussage: "Verfärbung von Wimpern und Hypopigmentierung der Wimpern sind laut Fußnote 4 im Sammelbegriff „Hypo-/Hyperpigmentierung“ (Erkrankungen der Haut, sehr häufig, 48 %) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Ephelides, Verfärbung von Wimpern, Hypopigmentierung der Wimpern, Änderungen der Haarfarbe“ (Fußnote 4)", haeufigkeit: "nur für den Sammelbegriff „Hypo-/Hyperpigmentierung“ angegeben (sehr häufig, 48 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "USA: nicht gefunden; das US-Label nennt die zusammengefassten Begriffe „Edema“ und „Skin hypopigmentation“ ohne Liste der Einzelbegriffe." },
+    {id: "tebe-pigmentretinopathie", wirkstoff: "tebentafusp", befund: "pigmentretinopathie", einordnung: "nebenwirkung", kontext: "Netzhautdepigmentierung; Teil des Sammelbegriffs „Hypo-/Hyperpigmentierung“ (EU)",
+      belege: [
+        {quelle: "Q_TEBE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 4 zu Tabelle 3)", aussage: "Netzhautdepigmentierung ist laut Fußnote 4 im Sammelbegriff „Hypo-/Hyperpigmentierung“ (Erkrankungen der Haut, sehr häufig, 48 %) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Pigmentierungsstörung, Netzhautdepigmentierung, Hautdepigmentierung“ (Fußnote 4)", haeufigkeit: "nur für den Sammelbegriff „Hypo-/Hyperpigmentierung“ angegeben (sehr häufig, 48 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_DOG_BVA_ONKO_2026", typ: "Empfehlung (Stellungnahme)", abschnitt: "Abschnitte 3/4b (Maßnahmen und Empfehlungen), S. 7", aussage: "Empfehlung der Stellungnahme von DOG und BVA (laut Text „bei allen Präparaten“ der neuen onkologischen Therapien; ergänzend zu den Angaben der Fachinformation): augenärztliche Basisuntersuchung vor der 1. oder spätestens 2. Dosis, Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei Beschwerden, bei objektivierten okulären Nebenwirkungen weitere Untersuchungen vor jeder Infusion. Der Wirkstoff wird in der Stellungnahme nicht namentlich genannt; die Empfehlung erscheint hier auf Entscheidung der Nutzerin vom 19.11.2026.", zitat: "„Es wird bei allen Präparaten eine augenärztliche Untersuchung vor der 1. oder zumindest vor der 2. Dosis empfohlen (Baseline).“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: "Empfehlung der Stellungnahme von DOG und BVA: Basisuntersuchung vor der 1. oder zumindest vor der 2. Dosis (mindestens bestkorrigierter Visus, Augeninnendruck, Spaltlampe der Augenoberfläche, zentrale Netzhaut); Folgeuntersuchung 2 Monate nach der 1. Infusion oder bei subjektiven Beschwerden; bei objektivierten okulären Nebenwirkungen vor jeder weiteren Infusion", status: "geprueft", geprueft_am: "2026-10-11", pruefnotiz: "Wortlaut am 11.10.2026 zweifach abgeglichen (Textebene und Seitenbild des bereitgestellten PDF)"}
+      ], unterschied_notiz: "USA: nicht gefunden; das US-Label nennt die zusammengefassten Begriffe „Edema“ und „Skin hypopigmentation“ ohne Liste der Einzelbegriffe." },
+    {id: "tebe-lidoedem", wirkstoff: "tebentafusp", befund: "lidoedem", einordnung: "nebenwirkung", kontext: "Augenlidödem und Schwellung des Augenlids; Teil des Sammelbegriffs „Ödem“ (EU)",
+      belege: [
+        {quelle: "Q_TEBE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 5 zu Tabelle 3)", aussage: "Augenlidödem und Schwellung des Augenlids sind laut Fußnote 5 im Sammelbegriff „Ödem“ (Allgemeine Erkrankungen, sehr häufig, 49 %) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Einschließlich Augenödem, Schwellung des Augenlids, Augenlidödem, Schwellung um die Augenhöhle,“ (Fußnote 5)", haeufigkeit: "nur für den Sammelbegriff „Ödem“ angegeben (sehr häufig, 49 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "USA: nicht gefunden; das US-Label nennt die zusammengefassten Begriffe „Edema“ und „Skin hypopigmentation“ ohne Liste der Einzelbegriffe." },
+    {id: "tebe-periorbitales-oedem", wirkstoff: "tebentafusp", befund: "periorbitales_oedem", einordnung: "nebenwirkung", kontext: "Periorbitalödem und Schwellung um die Augenhöhle; Teil des Sammelbegriffs „Ödem“ (EU)",
+      belege: [
+        {quelle: "Q_TEBE_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote 5 zu Tabelle 3)", aussage: "Periorbitalödem und Schwellung um die Augenhöhle sind laut Fußnote 5 im Sammelbegriff „Ödem“ (Allgemeine Erkrankungen, sehr häufig, 49 %) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Schwellung um die Augenhöhle, Periorbitalödem, Schwellung des Augenlids“ (Fußnote 5)", haeufigkeit: "nur für den Sammelbegriff „Ödem“ angegeben (sehr häufig, 49 %)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "USA: nicht gefunden; das US-Label nennt die zusammengefassten Begriffe „Edema“ und „Skin hypopigmentation“ ohne Liste der Einzelbegriffe." },
+    {id: "pembro-uveitis-posterior", wirkstoff: "pembrolizumab", befund: "uveitis_posterior", einordnung: "nebenwirkung", kontext: "Chorioretinitis; Teil des Sammelbegriffs „Uveitis“ (EU)",
+      belege: [
+        {quelle: "Q_PEMBRO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ⁎ zu Tabelle 2)", aussage: "Chorioretinitis ist laut Fußnote im Sammelbegriff „Uveitis“ (Augenerkrankungen, gelegentlich in allen drei Spalten) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Uveitis (Chorioretinitis, Iritis und Iridozyklitis)“ (Fußnote zu Tabelle 2)", haeufigkeit: "nur für den Sammelbegriff „Uveitis“ angegeben (gelegentlich)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, abschnittsweiser Abruf, 19.11.2026); Spaltenzuordnung nicht positionsgenau geprüft"}
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    {id: "pembro-lidhypopigmentierung", wirkstoff: "pembrolizumab", befund: "lidhypopigmentierung", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Vitiligo“ (EU)",
+      belege: [
+        {quelle: "Q_PEMBRO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ⁎ zu Tabelle 2)", aussage: "Hypopigmentierung des Augenlids ist laut Fußnote im Sammelbegriff „Vitiligo“ (Erkrankungen der Haut; unter Monotherapie häufig) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Vitiligo (Hautdepigmentierung, Hauthypopigmentierung sowie Hypopigmentierung des Augenlids)“", haeufigkeit: "nur für den Sammelbegriff „Vitiligo“ angegeben (Monotherapie: häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, abschnittsweiser Abruf, 19.11.2026); Spaltenzuordnung nicht positionsgenau geprüft"}
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    {id: "pembro-lidoedem", wirkstoff: "pembrolizumab", befund: "lidoedem", einordnung: "nebenwirkung", kontext: "Augenlidödeme; Teil des Sammelbegriffs „Ödeme“ (EU)",
+      belege: [
+        {quelle: "Q_PEMBRO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ⁎ zu Tabelle 2)", aussage: "Augenlidödeme sind laut Fußnote im Sammelbegriff „Ödeme“ (Allgemeine Erkrankungen, sehr häufig) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Ödeme (periphere Ödeme, generalisierte Ödeme, Überwässerung, Flüssigkeitsretention, Augenlidödeme“", haeufigkeit: "nur für den Sammelbegriff „Ödeme“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, abschnittsweiser Abruf, 19.11.2026); Spaltenzuordnung nicht positionsgenau geprüft"}
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+    {id: "pembro-periorbitales-oedem", wirkstoff: "pembrolizumab", befund: "periorbitales_oedem", einordnung: "nebenwirkung", kontext: "periorbitale Ödeme; Teil des Sammelbegriffs „Ödeme“ (EU)",
+      belege: [
+        {quelle: "Q_PEMBRO_EU", typ: "Nebenwirkung (Fußnote)", abschnitt: "4.8 (Fußnote ⁎ zu Tabelle 2)", aussage: "Periorbitale Ödeme sind laut Fußnote im Sammelbegriff „Ödeme“ (Allgemeine Erkrankungen, sehr häufig) enthalten; eine eigene Häufigkeit ist nicht angegeben.", zitat: "„Augenlidödeme, Lippenödeme, Gesichtsödeme, lokalisierte Ödeme sowie periorbitale Ödeme“", haeufigkeit: "nur für den Sammelbegriff „Ödeme“ angegeben (sehr häufig)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, abschnittsweiser Abruf, 19.11.2026); Spaltenzuordnung nicht positionsgenau geprüft"}
+      ], unterschied_notiz: "USA: für diesen Fußnoten-Nachtrag nicht eigens geprüft." },
+
+    /* ===== Etappe 2 (19.11.2026) ===== */
+    {id: "ator-myasthenie", wirkstoff: "atorvastatin", befund: "myasthenie_okulaer", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ATOR_DE_SORTIS", typ: "Warnhinweis", abschnitt: "4.4", aussage: "In wenigen Fällen haben Statine eine Myasthenia gravis oder eine okuläre Myasthenie ausgelöst bzw. eine bestehende verschlechtert; Sortis soll bei Verschlimmerung der Symptome abgesetzt werden.", zitat: "„Sortis sollte bei einer Verschlimmerung der Symptome abgesetzt werden.“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ATOR_DE_SORTIS", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: okuläre Myasthenie (Erkrankungen des Nervensystems: Myasthenia gravis).", zitat: "„okuläre Myasthenie“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ATOR_US_LIPITOR", typ: "Adverse Reactions (Postmarketing)", abschnitt: "6.2 (Nervous System Disorders)", aussage: "Seltene Berichte über neu aufgetretene oder verschlechterte Myasthenia gravis einschließlich okulärer Myasthenie sowie über Rezidive bei erneuter Gabe desselben oder eines anderen Statins.", zitat: "“There have been rare reports of new-onset or exacerbation of myasthenia gravis, including ocular myasthenia,”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_STAT_B_PRAC2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Wortlaut 4.4/4.8 (Januar 2023)", aussage: "PRAC-Empfehlung für alle Statine (einschließlich Fixkombinationen): 4.4 – in wenigen Fällen Auslösung oder Verschlechterung einer Myasthenia gravis oder okulären Myasthenie; bei Verschlimmerung absetzen; Rezidive bei erneuter Gabe desselben oder eines anderen Statins; 4.8 – Augenerkrankungen: okuläre Myasthenie, Häufigkeit nicht bekannt.", zitat: "“Recurrences when the same or a different statin was (re-) administered have been reported.”", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "simv-myasthenie", wirkstoff: "simvastatin", befund: "myasthenie_okulaer", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_SIMV_DE_DURA", typ: "Warnhinweis", abschnitt: "4.4", aussage: "In wenigen Fällen haben Statine eine Myasthenia gravis oder eine okuläre Myasthenie ausgelöst bzw. eine bestehende verschlechtert; Simvastatin dura soll bei Verschlimmerung der Symptome abgesetzt werden.", zitat: "„Simvastatin dura sollte bei einer Verschlimmerung der Symptome abgesetzt werden.“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_SIMV_DE_DURA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: okuläre Myasthenie (Erkrankungen des Nervensystems: Myasthenia gravis).", zitat: "„okuläre Myasthenie“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_SIMV_US_ZOCOR", typ: "Adverse Reactions (Postmarketing)", abschnitt: "6.2 (Nervous System Disorders)", aussage: "Seltene Berichte über neu aufgetretene oder verschlechterte Myasthenia gravis einschließlich okulärer Myasthenie sowie über Rezidive bei erneuter Gabe desselben oder eines anderen Statins.", zitat: "“There have been rare reports of new-onset or exacerbation of myasthenia gravis, including ocular myasthenia,”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_STAT_B_PRAC2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Wortlaut 4.4/4.8 (Januar 2023)", aussage: "PRAC-Empfehlung für alle Statine (einschließlich Fixkombinationen): 4.4 – in wenigen Fällen Auslösung oder Verschlechterung einer Myasthenia gravis oder okulären Myasthenie; bei Verschlimmerung absetzen; Rezidive bei erneuter Gabe desselben oder eines anderen Statins; 4.8 – Augenerkrankungen: okuläre Myasthenie, Häufigkeit nicht bekannt.", zitat: "“Recurrences when the same or a different statin was (re-) administered have been reported.”", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "rosu-myasthenie", wirkstoff: "rosuvastatin", befund: "myasthenie_okulaer", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ROSU_DE_CRESTOR", typ: "Warnhinweis", abschnitt: "4.4", aussage: "In wenigen Fällen haben Statine eine Myasthenia gravis oder eine okuläre Myasthenie ausgelöst bzw. eine bestehende verschlechtert; Crestor soll bei Verschlimmerung der Symptome abgesetzt werden.", zitat: "„Crestor sollte bei einer Verschlimmerung der Symptome abgesetzt werden.“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ROSU_DE_CRESTOR", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 2)", aussage: "Augenerkrankungen: okuläre Myasthenie (Erkrankungen des Nervensystems: Myasthenia gravis).", zitat: "„Okuläre Myasthenie“", haeufigkeit: "Kategorie im Abruf nicht sicher zuordenbar (Tabellenspalte) – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Begriff in 2 Abfragen übereinstimmend; Tabellenspalte in beiden Abfragen nicht sicher zuzuordnen"},
+        {quelle: "Q_ROSU_US_CRESTOR", typ: "Adverse Reactions (Postmarketing)", abschnitt: "6.2 (Nervous System Disorders)", aussage: "Seltene Berichte über neu aufgetretene oder verschlechterte Myasthenia gravis einschließlich okulärer Myasthenie sowie über Rezidive bei erneuter Gabe desselben oder eines anderen Statins.", zitat: "“There have been rare reports of new-onset or exacerbation of myasthenia gravis, including ocular myasthenia,”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_STAT_B_PRAC2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Wortlaut 4.4/4.8 (Januar 2023)", aussage: "PRAC-Empfehlung für alle Statine (einschließlich Fixkombinationen): 4.4 – in wenigen Fällen Auslösung oder Verschlechterung einer Myasthenia gravis oder okulären Myasthenie; bei Verschlimmerung absetzen; Rezidive bei erneuter Gabe desselben oder eines anderen Statins; 4.8 – Augenerkrankungen: okuläre Myasthenie, Häufigkeit nicht bekannt.", zitat: "“Recurrences when the same or a different statin was (re-) administered have been reported.”", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "prav-myasthenie", wirkstoff: "pravastatin", befund: "myasthenie_okulaer", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_PRAV_DE_STADA", typ: "Warnhinweis", abschnitt: "4.4", aussage: "In wenigen Fällen haben Statine eine Myasthenia gravis oder eine okuläre Myasthenie ausgelöst bzw. eine bestehende verschlechtert; Pravastatin STADA soll bei Verschlimmerung der Symptome abgesetzt werden.", zitat: "„Pravastatin STADA® sollte bei einer Verschlimmerung der Symptome abgesetzt werden.“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_PRAV_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: okuläre Myasthenie (Erkrankungen des Nervensystems: Myasthenia gravis).", zitat: "„okuläre Myasthenie“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_STAT_B_PRAC2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Wortlaut 4.4/4.8 (Januar 2023)", aussage: "PRAC-Empfehlung für alle Statine (einschließlich Fixkombinationen): 4.4 – in wenigen Fällen Auslösung oder Verschlechterung einer Myasthenia gravis oder okulären Myasthenie; bei Verschlimmerung absetzen; Rezidive bei erneuter Gabe desselben oder eines anderen Statins; 4.8 – Augenerkrankungen: okuläre Myasthenie, Häufigkeit nicht bekannt.", zitat: "“Recurrences when the same or a different statin was (re-) administered have been reported.”", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "prav-diplopie", wirkstoff: "pravastatin", befund: "diplopie", einordnung: "nebenwirkung", kontext: "Teil des Sammelbegriffs „Sehstörungen“",
+      belege: [
+        {quelle: "Q_PRAV_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Sehstörungen (einschließlich verschwommenes Sehen und Doppeltsehen).", zitat: "„Gelegentlich: Sehstörungen (einschließlich verschwommenes Sehen und Doppeltsehen).“", haeufigkeit: "gelegentlich (Sammelbegriff „Sehstörungen“)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "fluv-myasthenie", wirkstoff: "fluvastatin", befund: "myasthenie_okulaer", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_FLUV_DE_LOCOL", typ: "Warnhinweis", abschnitt: "4.4", aussage: "In wenigen Fällen haben Statine eine Myasthenia gravis oder eine okuläre Myasthenie ausgelöst bzw. eine bestehende verschlechtert; Locol soll bei Verschlimmerung der Symptome abgesetzt werden.", zitat: "„Locol sollte bei einer Verschlimmerung der Symptome abgesetzt werden.“", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_FLUV_DE_LOCOL", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle 1)", aussage: "Augenerkrankungen: okuläre Myasthenie (Erkrankungen des Nervensystems: Myasthenia gravis).", zitat: "„okuläre Myasthenie“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_STAT_B_PRAC2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Wortlaut 4.4/4.8 (Januar 2023)", aussage: "PRAC-Empfehlung für alle Statine (einschließlich Fixkombinationen): 4.4 – in wenigen Fällen Auslösung oder Verschlechterung einer Myasthenia gravis oder okulären Myasthenie; bei Verschlimmerung absetzen; Rezidive bei erneuter Gabe desselben oder eines anderen Statins; 4.8 – Augenerkrankungen: okuläre Myasthenie, Häufigkeit nicht bekannt.", zitat: "“Recurrences when the same or a different statin was (re-) administered have been reported.”", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verschlimmerung der Symptome absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "hct-aderhauteffusion", wirkstoff: "hydrochlorothiazid", befund: "aderhauteffusion", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_HCT_DE_STADA", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Hydrochlorothiazid (Sulfonamid) kann eine idiosynkratische Reaktion mit Aderhauterguss und Gesichtsfelddefekt, akuter vorübergehender Myopie und akutem Engwinkelglaukom auslösen; Symptome typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn; primäre Behandlung ist das schnellstmögliche Absetzen.", zitat: "„Die primäre Behandlung stellt das schnellstmögliche Absetzen der Hydrochlorothiazid-Gabe dar.“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Aderhauterguss, Engwinkelglaukom.", zitat: "„Aderhauterguss, Engwinkelglaukom.“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_THIA_B_BASG2020", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Mustertext 4.4/4.8 (PRAC März 2020)", aussage: "PRAC-Empfehlung für Thiazide und thiazidartige Diuretika (übernommen vom BASG): 4.4 – Aderhauterguss (choroidaler Erguss), akute Myopie und sekundäres Winkelverschlussglaukom als idiosynkratische Reaktion auf Sulfonamide; 4.8 – Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt) bei Hydrochlorothiazid, Chlortalidon und Indapamid.", zitat: "„Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt)“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "USA: Das geprüfte US-Label (Microzide, 08/2020) nennt den Aderhauterguss nicht; es beschreibt akute Myopie und Winkelblock (siehe dort)." },
+    {id: "hct-myopie", wirkstoff: "hydrochlorothiazid", befund: "myopisierung", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_HCT_DE_STADA", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Akute vorübergehende Myopie als Teil der idiosynkratischen Reaktion (mit Aderhauterguss und Engwinkelglaukom); außerdem ist die Behandlung bei Verschlimmerung einer bestehenden Kurzsichtigkeit abzubrechen.", zitat: "„Verschlimmerung einer bestehenden Kurzsichtigkeit“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Absetzen (Abbruchkriterium in 4.4)", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: eine bestehende Kurzsichtigkeit kann sich verschlechtern.", zitat: "„eine bestehende Kurzsichtigkeit kann sich verschlechtern.“", haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_US_MICROZIDE", typ: "Warnings", abschnitt: "Warnings (Acute Myopia and Secondary Angle-Closure Glaucoma)", aussage: "Hydrochlorothiazid kann eine idiosynkratische Reaktion mit akuter vorübergehender Myopie und akutem Winkelblockglaukom auslösen; Beginn typischerweise innerhalb von Stunden bis Wochen; primär so schnell wie möglich absetzen.", zitat: "“The primary treatment is to discontinue hydrochlorothiazide as rapidly as possible.”", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "So schnell wie möglich absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "hct-winkelblock", wirkstoff: "hydrochlorothiazid", befund: "winkelblock", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_HCT_DE_STADA", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Akutes Engwinkelglaukom als Teil der idiosynkratischen Reaktion; ein unbehandeltes Engwinkelglaukom kann zu dauerhaftem Sehverlust führen; Risikofaktoren können bekannte Sulfonamid- oder Penicillinallergien sein.", zitat: "„Ein unbehandeltes Engwinkelglaukom kann zu dauerhaftem Sehverlust führen.“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Aderhauterguss, Engwinkelglaukom.", zitat: "„Aderhauterguss, Engwinkelglaukom.“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_US_MICROZIDE", typ: "Warnings", abschnitt: "Warnings (Acute Myopia and Secondary Angle-Closure Glaucoma)", aussage: "Akutes Winkelblockglaukom als idiosynkratische Reaktion; unbehandelt kann es zu dauerhaftem Sehverlust führen; Risikofaktoren können Sulfonamid- oder Penicillinallergie in der Vorgeschichte sein.", zitat: "“Untreated acute angle-closure glaucoma can lead to permanent vision loss.”", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "So schnell wie möglich absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "hct-xanthopsie", wirkstoff: "hydrochlorothiazid", befund: "xanthopsie", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_HCT_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Sehstörungen (z. B. verschwommenes Sehen, Xanthopsie).", zitat: "„Sehstörungen (z.B. verschwommenes Sehen, Xanthopsie),“", haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_HCT_US_MICROZIDE", typ: "Adverse Reactions", abschnitt: "Adverse Reactions (Special Senses)", aussage: "Vorübergehendes verschwommenes Sehen, Xanthopsie.", zitat: "“Transient blurred vision, xanthopsia.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "hct-trockenes-auge", wirkstoff: "hydrochlorothiazid", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: "verminderte Tränenflüssigkeitsbildung",
+      belege: [
+        {quelle: "Q_HCT_DE_STADA", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Einschränkung der Bildung von Tränenflüssigkeit (Vorsicht beim Tragen von Kontaktlinsen).", zitat: "„Einschränkung der Bildung von Tränenflüssigkeit (Vorsicht beim Tragen von Kontaktlinsen),“", haeufigkeit: "gelegentlich", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Vorsicht beim Tragen von Kontaktlinsen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "chlt-aderhauteffusion", wirkstoff: "chlortalidon", befund: "aderhauteffusion", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_CHLT_DE_HYGROTON", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Sulfonamide und Sulfonamid-Derivate können eine idiosynkratische Reaktion mit Aderhauterguss und Gesichtsfelddefekt, transienter Myopie und akutem Winkelverschlussglaukom auslösen; Symptome typischerweise innerhalb von Stunden bis Wochen nach Therapiebeginn; Einnahme so schnell wie möglich beenden.", zitat: "„zu einem Aderhauterguss mit Gesichtsfelddefekt, transienter Myopie und zu einem akuten Winkelverschlussglaukom führen kann“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_CHLT_DE_HYGROTON", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle)", aussage: "Augenerkrankungen: Aderhauterguss.", zitat: "„Aderhauterguss“", haeufigkeit: "Kategorie im Abruf nicht sicher zuordenbar (Tabellenspalte) – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Begriff in 2 Abfragen übereinstimmend; Tabellenspalte in beiden Abfragen nicht sicher zuzuordnen"},
+        {quelle: "Q_THIA_B_BASG2020", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Mustertext 4.4/4.8 (PRAC März 2020)", aussage: "PRAC-Empfehlung für Thiazide und thiazidartige Diuretika (übernommen vom BASG): 4.4 – Aderhauterguss (choroidaler Erguss), akute Myopie und sekundäres Winkelverschlussglaukom als idiosynkratische Reaktion auf Sulfonamide; 4.8 – Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt) bei Hydrochlorothiazid, Chlortalidon und Indapamid.", zitat: "„Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt)“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "chlt-myopie", wirkstoff: "chlortalidon", befund: "myopisierung", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_CHLT_DE_HYGROTON", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Transiente Myopie als Teil der idiosynkratischen Reaktion (mit Aderhauterguss und akutem Winkelverschlussglaukom).", zitat: "„zu einem Aderhauterguss mit Gesichtsfelddefekt, transienter Myopie und zu einem akuten Winkelverschlussglaukom führen kann“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "chlt-winkelblock", wirkstoff: "chlortalidon", befund: "winkelblock", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_CHLT_DE_HYGROTON", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Akutes Winkelverschlussglaukom als Teil der idiosynkratischen Reaktion; unbehandelt kann es zu permanentem Sehverlust führen; Sulfonamid- oder Penicillinallergie zählt zu den Risikofaktoren.", zitat: "„Ein unbehandeltes akutes Winkelverschlussglaukom kann zu permanentem Sehverlust führen.“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "chlt-trockenes-auge", wirkstoff: "chlortalidon", befund: "trockenes_auge", einordnung: "nebenwirkung", kontext: "verminderte Tränenflüssigkeitsbildung",
+      belege: [
+        {quelle: "Q_CHLT_DE_HYGROTON", typ: "Nebenwirkung", abschnitt: "4.8 (Tabelle)", aussage: "Augenerkrankungen: Sehstörungen, Einschränkung der Bildung von Tränenflüssigkeit.", zitat: "„Sehstörungen, Einschränkung der Bildung von Tränenflüssigkeit“", haeufigkeit: "Kategorie im Abruf nicht sicher zuordenbar (Tabellenspalte) – siehe Fachinformation", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "Begriff in 2 Abfragen übereinstimmend; Tabellenspalte nicht sicher zuzuordnen"}
+      ], unterschied_notiz: null },
+    {id: "inda-aderhauteffusion", wirkstoff: "indapamid", befund: "aderhauteffusion", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Sulfonamide und Sulfonamid-Derivate können eine idiosynkratische Reaktion mit Aderhauterguss und Gesichtsfelddefekt, transienter Myopie und akutem Winkelverschlussglaukom auslösen; Symptome typischerweise innerhalb von Stunden bis Wochen nach Beginn der Medikation; primär so schnell wie möglich absetzen.", zitat: "„Die primäre Behandlung besteht darin, die Medikamenteneinnahme so schnell wie möglich zu beenden.“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: choroidaler Erguss.", zitat: "„Choroidaler Erguss“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_THIA_B_BASG2020", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Mustertext 4.4/4.8 (PRAC März 2020)", aussage: "PRAC-Empfehlung für Thiazide und thiazidartige Diuretika (übernommen vom BASG): 4.4 – Aderhauterguss (choroidaler Erguss), akute Myopie und sekundäres Winkelverschlussglaukom als idiosynkratische Reaktion auf Sulfonamide; 4.8 – Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt) bei Hydrochlorothiazid, Chlortalidon und Indapamid.", zitat: "„Augenerkrankungen: Aderhauterguss (Häufigkeit nicht bekannt)“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "inda-myopie", wirkstoff: "indapamid", befund: "myopisierung", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Transiente Myopie als Teil der idiosynkratischen Reaktion (mit Aderhauterguss und akutem Winkelverschlussglaukom).", zitat: "„…zu einem Aderhauterguss mit Gesichtsfelddefekt, transienter Myopie und zu einem akuten Winkelverschlussglaukom“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: Myopie.", zitat: "„Myopie“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "inda-winkelblock", wirkstoff: "indapamid", befund: "winkelblock", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Warnhinweis", abschnitt: "4.4", aussage: "Akutes Winkelverschlussglaukom als Teil der idiosynkratischen Reaktion; unbehandelt kann es zu dauerhaftem Sehverlust führen; Sulfonamid- oder Penicillinallergie in der Vorgeschichte als möglicher Risikofaktor.", zitat: "„Ein unbehandeltes akutes Winkelverschlussglaukom kann zu einem dauerhaften Sehverlust führen.“", haeufigkeit: null, latenz: "typischerweise innerhalb von Stunden bis Wochen nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Schnellstmöglich absetzen; bei unkontrolliertem Augeninnendruck rasche medikamentöse oder chirurgische Behandlung erwägen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_INDA_DE_NATRILIX", typ: "Nebenwirkung", abschnitt: "4.8", aussage: "Augenerkrankungen: akutes Winkelverschlussglaukom.", zitat: "„Akutes Winkelverschlussglaukom“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: null },
+    {id: "acet-aderhauteffusion", wirkstoff: "acetazolamid", befund: "aderhauteffusion", einordnung: "nebenwirkung", kontext: "Aderhauterguss und Aderhautabhebung",
+      belege: [
+        {quelle: "Q_ACET_B_BASG2023", typ: "PRAC-Empfehlung (Signal)", abschnitt: "Mustertext 4.4/4.8 (PRAC August 2023)", aussage: "PRAC-Empfehlung (übernommen vom BASG, gleichlautend AkdÄ): Nach Acetazolamid wurden Aderhauterguss (choroidaler Erguss) bzw. Aderhautabhebung gemeldet; Symptome sind akut verminderte Sehschärfe oder Augenschmerzen, typischerweise innerhalb von Stunden nach Behandlungsbeginn; bei Verdacht so schnell wie möglich absetzen. 4.8: Häufigkeit nicht bekannt.", zitat: "„Häufigkeit „nicht bekannt“: Aderhauterguss (choroidaler Erguss), Aderhautabhebung“", haeufigkeit: "nicht bekannt (auf Grundlage der verfügbaren Daten nicht abschätzbar)", latenz: "typischerweise innerhalb von Stunden nach Behandlungsbeginn", dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht so schnell wie möglich absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ACET_US_DIAMOX", typ: "Precautions", abschnitt: "Precautions (General)", aussage: "Aderhauterguss und Aderhautabhebung wurden nach Anwendung von Acetazolamid in der postoperativen Phase nach Augenoperationen berichtet; bei Verdacht Diamox absetzen.", zitat: "“Discontinue DIAMOX if choroidal effusion and/or choroidal detachment is suspected.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: "Bei Verdacht absetzen", kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"},
+        {quelle: "Q_ACET_US_DIAMOX", typ: "Adverse Reactions", abschnitt: "Adverse Reactions (Eye Disorders)", aussage: "Augenerkrankungen: Aderhauterguss, Aderhautabhebung, vorübergehende Myopie.", zitat: "“Eye Disorders: choroidal effusion, choroidal detachment, transient myopia.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
+      ], unterschied_notiz: "Hinweis: Das US-Label beschreibt die Fälle im Zusammenhang mit der postoperativen Phase nach Augenoperationen; die PRAC-Empfehlung nennt keinen solchen Zusammenhang." },
+    {id: "acet-myopie", wirkstoff: "acetazolamid", befund: "myopisierung", einordnung: "nebenwirkung", kontext: null,
+      belege: [
+        {quelle: "Q_ACET_US_DIAMOX", typ: "Adverse Reactions", abschnitt: "Adverse Reactions (Eye Disorders)", aussage: "Vorübergehende Myopie; sie entsteht laut Label durch Vorverlagerung des Ziliarkörpers mit Einengung des Kammerwinkels.", zitat: "“Transient myopia is the result of forward movement of the ciliary body leading to a narrowing of the angle.”", haeufigkeit: null, latenz: null, dosisabhaengigkeit: null, reversibilitaet: null, dringlichkeit: null, kontrollen: null, status: "geprueft", geprueft_am: "2026-11-19", pruefnotiz: "2 Abfragen übereinstimmend (Abrufwerkzeug, 19.11.2026)"}
       ], unterschied_notiz: null }
   ]
 };

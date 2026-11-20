@@ -5,7 +5,7 @@
 Die App ist nicht dazu bestimmt, Diagnosen zu stellen, Behandlungen zu empfehlen oder Daten einzelner Patienten auszuwerten, und nicht für die Eingabe von Patientendaten gedacht. Sie ersetzt weder die aktuelle Fachinformation noch die ärztliche Beurteilung. Nicht in der Datenbank heißt: nicht ausgeschlossen.
 
 - Private, nicht kommerzielle Lern- und Nachschlagehilfe; keine Gewähr für Vollständigkeit und Aktualität.
-- Datenschutz: Die Seite speichert keine Eingaben, setzt keine Cookies und lädt keine externen Inhalte.
+- Datenschutz: Die App speichert keine Eingaben, setzt selbst keine Cookies und lädt keine externen Inhalte. Bei Veröffentlichung über Cloudflare Pages mit Zugangsschutz setzt die vorgeschaltete Anmeldeseite ein technisch notwendiges Anmelde-Cookie.
 - Stand der Daten: siehe Kopfzeile der App bzw. `daten.js`.
 
 ## Dateien
@@ -13,3 +13,4 @@ Die App ist nicht dazu bestimmt, Diagnosen zu stellen, Behandlungen zu empfehlen
 - `index.html` – Oberfläche und Logik
 - `daten.js` – Wirkstoffe, Einträge, Belege und Quellen
 - `synonyme.js` – deutsch-englische Begriffsliste
+- `functions/_middleware.js` – Zugangsschutz mit Anmeldeseite, wenn die App über Cloudflare Pages veröffentlicht wird (enthält kein Passwort)
